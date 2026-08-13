@@ -1,5 +1,13 @@
-.git
-.wrangler
-node_modules
-wrangler.jsonc
-.assetsignore
+# Ignore everything except the deploy allowlist
+*
+!*/
+
+!/custom.css
+!/images/
+!/images/**
+!/webfonts/
+!/webfonts/**
+
+.DS_Store
+**/.DS_Store
+**/*.htaccess

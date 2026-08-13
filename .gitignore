@@ -1,0 +1,22 @@
+# Ignore everything except the allowlist
+*
+
+# Un-ignore directories so nested files can be allowed
+!*/
+
+# Deploy allowlist (root only)
+!/custom.css
+!/images/
+!/images/**
+!/webfonts/
+!/webfonts/**
+
+# System files for Git + Cloudflare
+!/.gitignore
+!/.assetsignore
+!/wrangler.jsonc
+
+# Junk
+.DS_Store
+**/.DS_Store
+**/*.htaccess

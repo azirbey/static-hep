@@ -8,6 +8,7 @@
 !/images/**
 !/webfonts/
 !/webfonts/**
+!/_headers
 
 .DS_Store
 **/.DS_Store

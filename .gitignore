@@ -11,6 +11,7 @@
 !/images/**
 !/webfonts/
 !/webfonts/**
+!/_headers
 
 # System files for Git + Cloudflare
 !/.gitignore

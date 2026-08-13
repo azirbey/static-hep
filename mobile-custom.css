@@ -44,4 +44,7 @@
     --desktop-nav-height: 44px !important;
     --fds-sem-dimension-medium: 36px !important;
   }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-promotion {
+    margin-left: auto;
+  }
 }

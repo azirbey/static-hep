@@ -1,8 +1,8 @@
 @charset "utf-8";
 :root {
   --b: 25, 34, 44 !important;
-  --oc-1: #233243 !important;
-  --hero: 25, 124, 255;
+  --oc-1: 35, 50, 67 !important;
+  --hero: 25, 124, 255 !important;
   --font-family: "Geist", sans-serif !important;
   --desktop-nav-height: 44px !important;
   --fds-sem-dimension-medium: 36px !important;
@@ -38,8 +38,8 @@
 @scope (html[data-app-version='4.19.1']) {
   body {
     --b: 25, 34, 44 !important;
-    --oc-1: #233243 !important;
-    --hero: 25, 124, 255;
+    --oc-1: 35, 50, 67 !important;
+    --hero: 25, 124, 255 !important;
     --font-family: "Geist", sans-serif !important;
     --desktop-nav-height: 44px !important;
     --fds-sem-dimension-medium: 36px !important;

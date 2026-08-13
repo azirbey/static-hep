@@ -5,7 +5,8 @@
 !*/
 
 # Deploy allowlist (root only)
-!/custom.css
+!/desktop-custom.css
+!/mobile-custom.css
 !/images/
 !/images/**
 !/webfonts/

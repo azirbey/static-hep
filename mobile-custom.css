@@ -2,6 +2,8 @@
 :root {
   --b: 25, 34, 44 !important;
   --oc-1: 35, 50, 67 !important;
+  --header: 25, 34, 44 !important;
+  --menu: 14, 20, 27 !important;
   --hero: 25, 124, 255 !important;
   --font-family: "Geist", sans-serif !important;
   --desktop-nav-height: 44px !important;
@@ -39,12 +41,108 @@
   body {
     --b: 25, 34, 44 !important;
     --oc-1: 35, 50, 67 !important;
+    --header: 25, 34, 44 !important;
+    --menu: 14, 20, 27 !important;
     --hero: 25, 124, 255 !important;
     --font-family: "Geist", sans-serif !important;
     --desktop-nav-height: 44px !important;
     --fds-sem-dimension-medium: 36px !important;
   }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info {
+    background: #19222c !important;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc {
+    width: 100%;
+    gap: 4px;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon {
+    width: fit-content !important;
+    height: fit-content !important;
+    background: #233243 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon + .user-nav-icon {
+    margin-inline-start: 0 !important;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon:after {
+    font-family: var(--font-family);
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-call {
+    padding: 6px;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-call:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg") no-repeat center center / contain !important;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-whatsapp {
+    padding: 6px;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-whatsapp:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg") no-repeat center center / contain !important;
+  }
   body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-promotion {
-    margin-left: auto;
+    margin-inline-start: auto !important;
+    padding: 8px;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-promotion:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg") no-repeat center center / contain !important;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-promotion:after {
+    content: "Promosyonlar";
+    font-size: 9px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.01em;
+    line-height: 1;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-bonus-request {
+    padding: 8px;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-bonus-request:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg") no-repeat center center / contain !important;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-bonus-request:after {
+    content: "Bonus Talebi";
+    font-size: 9px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.01em;
+    line-height: 1;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-money-dollar {
+    padding: 8px;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-money-dollar:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg") no-repeat center center / contain !important;
+  }
+  body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-money-dollar:after {
+    content: "Para Yatır";
+    font-size: 9px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.01em;
+    line-height: 1;
   }
 }

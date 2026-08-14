@@ -2,6 +2,8 @@
 :root {
   --b: 25, 34, 44 !important;
   --oc-1: 35, 50, 67 !important;
+  --header: 25, 34, 44 !important;
+  --menu: 14, 20, 27 !important;
   --hero: 25, 124, 255 !important;
   --font-family: "Geist", sans-serif !important;
   --desktop-nav-height: 44px !important;
@@ -39,6 +41,8 @@
   body {
     --b: 25, 34, 44 !important;
     --oc-1: 35, 50, 67 !important;
+    --header: 25, 34, 44 !important;
+    --menu: 14, 20, 27 !important;
     --hero: 25, 124, 255 !important;
     --font-family: "Geist", sans-serif !important;
     --desktop-nav-height: 44px !important;

@@ -8,6 +8,8 @@
   --font-family: "Geist", sans-serif !important;
   --desktop-nav-height: 44px !important;
   --fds-sem-dimension-medium: 36px !important;
+  --padding-page-aside: 16px !important;
+  --fds-ref-spacing-xsmall: 16px !important;
 }
 @font-face {
   font-family: 'Geist';
@@ -38,6 +40,9 @@
   font-display: swap;
 }
 @scope (html[data-app-version='4.19.1']) {
+  .product-banner-container-bc {
+    padding: 10px var(--padding-page-aside);
+  }
   body {
     --b: 25, 34, 44 !important;
     --oc-1: 35, 50, 67 !important;
@@ -47,6 +52,8 @@
     --font-family: "Geist", sans-serif !important;
     --desktop-nav-height: 44px !important;
     --fds-sem-dimension-medium: 36px !important;
+    --padding-page-aside: 16px !important;
+    --fds-ref-spacing-xsmall: 16px !important;
   }
   body .layout-bc .layout-header-holder-bc .header-bc .hdr-additional-info {
     background: #19222c !important;

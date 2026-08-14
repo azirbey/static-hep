@@ -8,6 +8,8 @@
   --font-family: "Geist", sans-serif !important;
   --desktop-nav-height: 44px !important;
   --fds-sem-dimension-medium: 36px !important;
+  --padding-page-aside: 16px !important;
+  --fds-ref-spacing-xsmall: 16px !important;
 }
 @font-face {
   font-family: 'Geist';
@@ -47,6 +49,8 @@
     --font-family: "Geist", sans-serif !important;
     --desktop-nav-height: 44px !important;
     --fds-sem-dimension-medium: 36px !important;
+    --padding-page-aside: 16px !important;
+    --fds-ref-spacing-xsmall: 16px !important;
   }
   .has-sub-navigation .layout-header-holder-bc {
     border-bottom: 1px solid #233243 !important;

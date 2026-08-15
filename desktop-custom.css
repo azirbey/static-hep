@@ -2756,7 +2756,90 @@
     background: transparent !important;
   }
   #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .favouriteTeamsWidget {
-    background: transparent !important;
+    background: rgba(var(--hero), 0.06) !important;
+    border: 1px solid #233243 !important;
+    border-radius: 6px !important;
+    margin-bottom: 8px;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .favouriteTeamsWidget .favouriteTeamsList .addYourFavouritesBtn {
+    height: 44px;
+    border-radius: 6px;
+    background: rgba(242, 165, 23, 0.08) !important;
+    border: 1px solid rgba(242, 165, 23, 0.24) !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .favouriteTeamsWidget .favouriteTeamsList .addYourFavouritesBtn .bc-i-star-radius {
+    color: #f2a517 !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .favouriteTeamsWidget .favouriteTeamsList .addYourFavouritesBtn span {
+    font-family: "Geist", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    letter-spacing: -0.01em !important;
+    color: #fff !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc:hover {
+    cursor: pointer;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 12px;
+    gap: 8px;
+    background: #1c2835;
+    border-radius: 6px;
+    min-height: 48px;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper {
+    max-width: fit-content;
+    height: fit-content;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper .bc-i-field-soccer {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 16px !important;
+    height: 16px !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    width: 40px !important;
+    height: 32px !important;
+    background: #2a3c50 !important;
+    border-radius: 6px;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper .bc-i-field-soccer::before {
+    content: '' !important;
+    display: block !important;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper .bc-i-field-soccer::before {
+    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/football.svg') no-repeat center / contain !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper::after {
+    content: "Animasyonlar";
+    font-family: "Geist", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.01em !important;
+    color: #fff !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc:empty {
+    display: none !important;
   }
   #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-full-content-bc .bs-f-header-bc .second-tabs-bc .tab-bc {
     background: #233243 !important;
@@ -2781,6 +2864,9 @@
   }
   #root.sportsbook.live .market-bc.active {
     background: #197cff !important;
+  }
+  #root.sportsbook.live .layout-content-holder-bc .live-calendar .live-calendar-filters-wrapper {
+    background: transparent !important;
   }
   #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search {
     padding: 0 !important;

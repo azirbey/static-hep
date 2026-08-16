@@ -2872,6 +2872,20 @@
   #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-full-content-bc .bs-f-body-bc .bs-bet-item-bc {
     background: #233243 !important;
   }
+  #root.sportsbook .market-filter-bc {
+    background: #1c2835 !important;
+  }
+  #root.sportsbook .market-filter-bc .market-filter-s-bc .form-control-bc {
+    background: #233243 !important;
+    height: 44px;
+  }
+  #root.sportsbook .market-filter-bc .market-filter-cell-bc {
+    height: 44px;
+  }
+  #root.sportsbook .market-filter-bc .market-filter-cell-bc .market-filter-info-bc {
+    background: #233243 !important;
+    line-height: 44px;
+  }
   #root.sportsbook.prematch .ss-icon-bc {
     color: #bccbdc !important;
   }
@@ -3158,6 +3172,27 @@
   #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section + .market-game-section {
     margin-top: 0 !important;
   }
+  #root.sportsbook .live-calendar .live-calendar-filters-wrapper {
+    background: transparent !important;
+  }
+  #root.sportsbook .live-calendar .live-calendar-filters-wrapper .multi-select-bc .form-control-select-bc {
+    background: #233243 !important;
+  }
+  #root.sportsbook .live-calendar .live-calendar-filters-wrapper .time-filters-bc {
+    background: #1c2835 !important;
+    overflow-x: auto !important;
+  }
+  #root.sportsbook .live-calendar .live-calendar-filters-wrapper .time-filters-bc .time-filters-content {
+    display: flex !important;
+  }
+  #root.sportsbook .live-calendar .live-calendar-filters-wrapper .time-filters-bc .time-filters-content .btn.a-outline {
+    background: #1c2835 !important;
+    border: solid 1px #2a3c50 !important;
+  }
+  #root.sportsbook .live-calendar .live-calendar-filters-wrapper .time-filters-bc .time-filters-content .btn.a-outline.a-white {
+    background: #197cff !important;
+    color: #fff !important;
+  }
   #root.sportsbook.live .ss-icon-bc {
     color: #bccbdc !important;
   }
@@ -3166,9 +3201,6 @@
   }
   #root.sportsbook.live .market-bc.active {
     background: #197cff !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .live-calendar .live-calendar-filters-wrapper {
-    background: transparent !important;
   }
   .sectionTitleBtnWrapper .ds-btn.ds-btn-variant--transparent,
   .horizontal-scroll .ds-btn.ds-btn-variant--transparent {

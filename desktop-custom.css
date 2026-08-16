@@ -2672,6 +2672,71 @@
     color: inherit !important;
     text-align: center !important;
   }
+  #root .results-container-bc {
+    gap: 10px !important;
+  }
+  #root .results-container-bc .second-tabs-bc {
+    height: 44px;
+  }
+  #root .results-container-bc .second-tabs-bc .tab-bc {
+    background: #233243 !important;
+  }
+  #root .results-container-bc .second-tabs-bc .tab-bc.active {
+    background: #197cff !important;
+    color: #fff !important;
+  }
+  #root .results-container-bc .results-filter-bc {
+    margin: 0 !important;
+  }
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc {
+    background: transparent !important;
+    flex-direction: row !important;
+    padding: 0 !important;
+    gap: 12px !important;
+  }
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc .componentFilterBody-content {
+    width: 100%;
+    gap: 12px !important;
+  }
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc {
+    margin-inline-start: 0 !important;
+  }
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc .componentFilterBody-content .reset-filter-btn {
+    margin-inline-start: 0 !important;
+    background: #466486 !important;
+    border: none !important;
+  }
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc .componentFilterBody-content .form-control-select-bc,
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc .componentFilterBody-content .form-control-input-bc {
+    background: #233243 !important;
+  }
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc {
+    margin-top: 0 !important;
+  }
+  #root .results-container-bc .results-filter-bc .componentFilterWrapper-bc .componentFilterBody-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn {
+    width: 136px;
+    height: 56px;
+    background: #197cff !important;
+    color: #fff !important;
+  }
+  #root .competition-header-bc {
+    background: #1c2835 !important;
+  }
+  #root .results-block-bc {
+    background: #2a3c50 !important;
+  }
+  #root .results-block-bc .results-info-bc {
+    background: #2a3c50 !important;
+  }
+  #root .results-block-bc .results-footer-bc {
+    background: #2a3c50 !important;
+  }
+  #root .results-game-details-header-bc {
+    background: #233243 !important;
+  }
+  #root .results-game-details-events-bc {
+    background: #1c2835 !important;
+  }
   #root.sportsbook .layout-content-holder-bc .sportsbook-container .sportsbook-center-section .sportsbook-center-section-scroll .game-details-section .live-page-sections-bc .game-details-container-live-bc .game-details-container-inner-bc {
     padding: 0 10px 10px 10px !important;
   }
@@ -2874,6 +2939,7 @@
   }
   #root.sportsbook .market-filter-bc {
     background: #1c2835 !important;
+    height: 44px;
   }
   #root.sportsbook .market-filter-bc .market-filter-s-bc .form-control-bc {
     background: #233243 !important;

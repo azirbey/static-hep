@@ -2737,6 +2737,36 @@
   #root .results-game-details-events-bc {
     background: #1c2835 !important;
   }
+  #root .multi-column-header {
+    background: #233243 !important;
+  }
+  #root .c-head-bc {
+    background: #1c2835 !important;
+  }
+  #root .multi-column-content {
+    background: #233243 !important;
+    position: relative;
+  }
+  #root .multi-column-content::before {
+    content: "";
+  }
+  #root .multi-column-content.active,
+  #root .multi-column-content:hover {
+    transition: background 0.8s ease;
+    background: linear-gradient(90deg, rgba(15, 235, 255, 0.04) 0%, rgba(15, 235, 255, 0) 100%), #233243 !important;
+  }
+  #root .multi-column-content.active::before,
+  #root .multi-column-content:hover::before {
+    position: absolute;
+    inset: 0;
+    border-radius: 6px;
+    padding: 1px;
+    background: linear-gradient(to right, rgba(25, 124, 255, 0.5), rgba(25, 124, 255, 0));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
   #root.sportsbook .layout-content-holder-bc .sportsbook-container .sportsbook-center-section .sportsbook-center-section-scroll .game-details-section .live-page-sections-bc .game-details-container-live-bc .game-details-container-inner-bc {
     padding: 0 10px 10px 10px !important;
   }
@@ -3286,6 +3316,9 @@
   }
   #root.sportsbook.prematch .ss-icon-bc {
     color: #bccbdc !important;
+  }
+  #root.sportsbook.prematch .prematch-page-bc .comp-name-fav-row-bc {
+    background: #233243 !important;
   }
   .sectionTitleBtnWrapper .ds-btn.ds-btn-variant--transparent,
   .horizontal-scroll .ds-btn.ds-btn-variant--transparent {

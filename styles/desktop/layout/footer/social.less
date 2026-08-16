@@ -1,0 +1,26 @@
+// Social banner row — imported inside .footerHeader
+
+.footerInnerLeftCol {
+    grid-area: left;
+    display: flex !important;
+
+    justify-content: flex-end !important;
+    background: url('@{hb-social-banner-url}') center / cover no-repeat;
+    min-height: 160px !important;
+
+    .footerSocialLinks {
+        position: relative;
+        right: 146px;
+        gap: 9px;
+
+        .footerSocialLink {
+            width: 52px;
+            height: 52px;
+            margin-right: 0;
+
+            i {
+                font-size: 24px !important;
+            }
+        }
+    }
+}

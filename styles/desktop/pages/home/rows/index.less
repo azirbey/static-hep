@@ -1,0 +1,58 @@
+// Homepage row router — only under #root.is-home-page (see home/index.less).
+
+// Icon-only rows: (nth-child icon-name)
+@hb-home-row-icons:
+	2 laurel-wreath,
+	4 fire,
+	5 slot-machine,
+	6 roulette,
+	7 rocket,
+	8 invoice,
+	10 link;
+
+.hb-row-icons(@hb-home-row-icons);
+
+& > .hm-row-bc {
+	border-bottom: 1px solid @border-subtle !important;
+	padding-bottom: 24px !important;
+	margin-top: 0 !important;
+
+	&:has(.casinoTopWinnersWidgetNoData) {
+		display: none !important;
+	}
+
+	.sectionTitle {
+		h6 {
+			font-size: 20px !important;
+			font-weight: 700 !important;
+			line-height: 28px !important;
+			letter-spacing: -0.01em !important;
+			color: @text-strong !important;
+		}
+	}
+
+	// Top Winners
+	&:nth-child(2) {
+		@import "top-winners.less";
+	}
+
+	// Recommended Bets
+	&:nth-child(8) {
+		// Swiper always nests .swiper-slide under .swiper-wrapper / .swiper,
+		// so only the widget root is worth naming.
+		.featuredGames .swiper-slide {
+			border-radius: @hb-radius !important;
+			@import "featured-games.less";
+		}
+	}
+
+	// Bet Size — hide until live
+	&:nth-child(9) {
+		display: none !important;
+	}
+
+	// Quick Links
+	&:nth-child(10) {
+		@import "quick-links.less";
+	}
+}

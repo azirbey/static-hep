@@ -1,0 +1,42 @@
+// Shared typography primitives — Figma text styles.
+
+.hb-text(@size; @lh; @weight; @color: inherit) {
+    font-family: @font-family !important;
+    font-weight: @weight !important;
+    font-size: @size !important;
+    line-height: @lh !important;
+    letter-spacing: -0.01em !important;
+    color: @color !important;
+}
+
+.hb-text-label(@color: @text-muted) {
+    .hb-text(13px; 20px; 600; @color);
+}
+
+.hb-text-body(@color: @text-body) {
+    .hb-text(15px; 20px; 500; @color);
+}
+
+.hb-text-title(@color: @text-strong) {
+    .hb-text(17px; 28px; 700; @color);
+}
+
+.hb-text-amount(@color: @highlight) {
+    .hb-text(28px; 32px; 700; @color);
+}
+
+.hb-text-caption(@color: @text-muted) {
+    .hb-text(11px; 12px; 600; @color);
+}
+
+.hb-text-badge(@color: @text-strong) {
+    .hb-text(9px; 12px; 700; @color);
+}
+
+.hb-text-countdown(@color: @text-strong) {
+    .hb-text(20px; 24px; 500; @color);
+}
+
+.hb-text-button(@color: @text-strong) {
+    .hb-text(15px; 20px; 700; @color);
+}

@@ -1,0 +1,32 @@
+.smartPanel-bc {
+    margin-inline-start: 0px !important;
+    width: 36px !important;
+    height: 32px !important;
+    border-radius: 6px !important;
+    background: @surface-raised !important;
+
+    .hb-header-divider(start);
+
+    i.hdr-toggle-button-bc {
+        width: 36px !important;
+        height: 32px !important;
+        background: transparent !important;
+        color: @text-muted !important;
+    }
+    &::after {
+        display: none !important;
+    }
+
+    .hdr-smart-panel-holder-arrow-bc {
+        &::before {
+            border-color: transparent transparent @border-subtle;
+        }
+        &::after {
+            border-color: transparent transparent @border-subtle;
+        }
+
+        .sp-button-bc {
+            background: @surface-raised !important;
+        }
+    }
+}

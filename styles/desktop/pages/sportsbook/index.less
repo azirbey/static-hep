@@ -1,0 +1,43 @@
+// Sportsbook orchestrator — #root.sportsbook
+//
+// Shared surfaces live here; variants only hold differences:
+//   #root.sportsbook.prematch → prematch.less
+//   #root.sportsbook.live     → live.less (+ _left-menu.less, _markets.less)
+//
+// Nesting-dependent partials use _ prefix (README rule 3).
+//
+// DOM:
+//   #root.sportsbook
+//   ├── .layout-content-holder-bc
+//   │   └── .sportsbook-container.multi-column-view
+//   │       ├── .left-menu-container              (live: _left-menu.less)
+//   │       │   ├── .left-menu-search > .sport-search-bc
+//   │       │   ├── .second-tabs-bc
+//   │       │   ├── .filter-sports-bc
+//   │       │   └── .pp-sport-list-holder-bc      (scroll)
+//   │       └── .sportsbook-center-section        (_center.less)
+//   │           └── .sportsbook-center-section-scroll   (scroll)
+//   │               └── .game-details-section
+//   └── .layout-betslip-holder-bc                 (_betslip.less)
+//       └── .betslip-bc#main
+
+@import "_tokens.less";
+
+#root {
+	@import "_live-results.less";
+	@import "_competition.less";
+
+	&.sportsbook {
+		.sportsbook-container {
+			// Shared column chrome only. Live left-menu is imported from live.less
+			// so #root.sportsbook.prematch does not inherit it.
+			@import "_center.less";
+		}
+
+		@import "_betslip.less";
+		@import "_market-filter.less";
+
+		@import "live.less";
+		@import "prematch.less";
+	}
+}

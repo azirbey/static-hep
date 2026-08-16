@@ -1,0 +1,98 @@
+// Content and asset configuration — not design tokens.
+//
+// The record lists below are read by mixins that walk them with nth-child, so
+// list order mirrors DOM order. Adding a menu item means adding a row here,
+// not writing a new rule.
+
+// ============================================
+// CDN roots
+// ============================================
+
+@hb-cdn-root: "https://static-hep.hepbet-static.workers.dev";
+@hb-cdn: "@{hb-cdn-root}/images/icons";
+@hb-nav-cdn: "@{hb-cdn-root}/images/nav-menu-icons/svg";
+@hb-nav-cdn-gray: "@{hb-nav-cdn}/gray";
+@hb-nav-cdn-white: "@{hb-nav-cdn}/white";
+@hb-flags-cdn: "@{hb-cdn-root}/images/flags";
+@hb-fonts-cdn: "@{hb-cdn-root}/webfonts/HepBet/";
+@hb-logo-url: "https://hepbet.dev/logo/1769173023461_g6gh4c_310_x_220_beyaz_logo.png";
+@hb-social-banner-url: "@{hb-cdn-root}/images/Hepbet-Social.png";
+
+// ============================================
+// Header buttons
+// ============================================
+
+// Records: (type icon 'label') — order = nth-child
+@hb-buttons:
+	icon call-back "",
+	icon whatsapp "",
+	label gift-box "promosyonlar",
+	label bonus-request "bonus talep",
+	label withdraw "para yatır";
+@hb-btn-count: length(@hb-buttons);
+
+// Records: (class 'label')
+@hb-auth:
+	sign-in "giriş",
+	register "kayıt";
+
+// Mobile header strip. Same five actions as @hb-buttons but the platform uses
+// different classes and longer labels there, so it needs its own list.
+// Records: (class icon 'label' icon-size padding)
+@hb-mobile-user-buttons:
+	bc-i-call call-back "" 16px 6px,
+	bc-i-whatsapp whatsapp "" 16px 6px,
+	bc-i-promotion gift-box "Promosyonlar" 12px 8px,
+	bc-i-bonus-request bonus-request "Bonus Talebi" 12px 8px,
+	bc-i-money-dollar withdraw "Para Yatır" 12px 8px;
+
+// ============================================
+// Navigation
+// ============================================
+
+@hb-nav-more-label: "Daha";
+
+// Records: (icon 'href') — main menu nth-child + more/overflow href match
+@hb-nav-items:
+	soccer "sports/live/event-view",
+	soccer-jersey "sports/pre-match/event-view",
+	slot-machine "casino/slots",
+	roulette "live-casino/home",
+	slot-machine-1 "casino/slots/1634-vipslots",
+	rocket "casino/slots/406-crashgames",
+	plane "casino/game-view/806666/aviator",
+	badge "SpecialBets",
+	horse "virtual-sports",
+	trophy "esports",
+	microphone "tv-games",
+	monitor "hepbettv",
+	grocery-store "?page=loyalty-points&profile=open",
+	coupon-wars "tab=express",
+	affiliate "hepbetaffiliate";
+@hb-nav-item-count: length(@hb-nav-items);
+
+// Records: ('href' icon)
+@hb-nav-sub-items:
+	"sports/live/event-view" soccer,
+	"sports/live/live-calendar" calendar,
+	"sports/live/results" scoreboard,
+	"sports/pre-match/event-view" stopwatch,
+	"sports/pre-match/live-calendar" calendar,
+	"sports/pre-match/results" scoreboard,
+	"sports/pre-match/tournaments" trophy,
+	"casino/slots" slot-machine,
+	"casino/tournaments" trophy,
+	"casino/jackpot" diamond,
+	"live-casino/home" roulette,
+	"casino/live-rtp" live-rtp;
+@hb-nav-sub-count: length(@hb-nav-sub-items);
+
+// ============================================
+// Casino
+// ============================================
+
+@hb-casino-random-label: "Rastgele Oyna";
+
+// Records: (Class icon-name)
+@hb-casino-cats: Lobby list-text;
+@hb-casino-cat-count: length(@hb-casino-cats);

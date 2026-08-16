@@ -1,0 +1,207 @@
+// Shared HepBet nav mixins (only nav-related helpers).
+
+.hb-nav-icon-box() {
+    background: linear-gradient(180deg, @surface-raised 0%, @surface-base 100%) !important;
+    width: @hb-nav-icon-box !important;
+    height: @hb-nav-icon-box !important;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
+    border-radius: @hb-nav-radius !important;
+
+    svg {
+        display: none !important;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: @hb-nav-icon-size;
+        height: @hb-nav-icon-size;
+    }
+}
+
+.hb-nav-apply-icon(@name) {
+    span.CMSIconSVGWrapper {
+        .hb-nav-icon-box();
+
+        &::before {
+            background: url('@{hb-nav-cdn}/@{name}.svg') no-repeat center center / contain !important;
+        }
+    }
+}
+
+// Main menu — nth-child from @hb-nav-items (icon, href)
+.hb-nav-menu-icons(@i: 1) when (@i =< @hb-nav-item-count) {
+    @row: extract(@hb-nav-items, @i);
+    @name: extract(@row, 1);
+
+    &:nth-child(@{i}) > a.nav-menu-item {
+        .hb-nav-apply-icon(@name);
+    }
+
+    .hb-nav-menu-icons(@i + 1);
+}
+
+// More dropdown — href → icon. casino/slots guarded so VIP/Crash do not steal Casino icon.
+.hb-nav-href-icons(@i: 1) when (@i =< @hb-nav-item-count) {
+    @row: extract(@hb-nav-items, @i);
+    @name: extract(@row, 1);
+    @href: extract(@row, 2);
+
+    & when (@href = 'casino/slots') {
+        a.nav-menu-item[href*='casino/slots']:not([href*='1634-vipslots']):not([href*='406-crashgames']) {
+            .hb-nav-apply-icon(@name);
+        }
+    }
+
+    & when not (@href = 'casino/slots') {
+        a.nav-menu-item[href*='@{href}'] {
+            .hb-nav-apply-icon(@name);
+        }
+    }
+
+    .hb-nav-href-icons(@i + 1);
+}
+
+.hb-nav-link-icon(@name; @size: @hb-nav-sub-icon-size) {
+    .hb-bg-icon('@{hb-nav-cdn-gray}/@{name}.svg'; @size);
+}
+
+.hb-nav-sub-icons(@i: 1) when (@i =< @hb-nav-sub-count) {
+    @row: extract(@hb-nav-sub-items, @i);
+    @href: extract(@row, 1);
+    @name: extract(@row, 2);
+
+    a.nav-menu-item[href*='@{href}'] {
+        &::before {
+            .hb-nav-link-icon(@name);
+        }
+
+        &.active::before,
+        &:hover::before {
+            background-image: url('@{hb-nav-cdn-white}/@{name}.svg') !important;
+        }
+    }
+
+    .hb-nav-sub-icons(@i + 1);
+}
+
+.hb-nav-item() {
+    &.nav-menu-item {
+        padding-inline-start: 0 !important;
+        padding: @hb-nav-item-pad !important;
+
+        span.CMSIconSVGWrapper {
+            .hb-nav-icon-box();
+        }
+
+        &[class*='badge-'] {
+            &::after {
+                height: fit-content;
+                top: -1px;
+                right: -1px;
+                border-radius: @hb-radius-sm !important;
+                padding: 1px 10px !important;
+            }
+        }
+    }
+
+    span:not(:has(svg)) {
+        color: @text-body !important;
+        font-size: @hb-nav-label-size !important;
+        line-height: @hb-nav-label-lh !important;
+        letter-spacing: -0.01em !important;
+    }
+}
+
+.hb-nav-active-surface() {
+    box-shadow: none !important;
+    background: @accent !important;
+}
+
+.hb-nav-item-hover() {
+    & > a {
+        .hb-nav-active-surface();
+
+        span {
+            color: @text-strong !important;
+        }
+    }
+}
+
+.hb-nav-dropdown-link() {
+    background: transparent !important;
+    transition: background 0.2s ease-in-out !important;
+
+    span {
+        font-weight: 500 !important;
+        letter-spacing: -0.01em !important;
+        font-size: 15px !important;
+        line-height: 20px !important;
+        color: @text-body !important;
+    }
+
+    &.active,
+    &:hover {
+        background: @accent !important;
+
+        &:hover {
+            &::before {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.hb-nav-more() {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    height: @desktop-nav-height !important;
+    padding: @hb-nav-item-pad !important;
+    color: @text-body !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    cursor: pointer;
+
+    &::before {
+        content: @hb-nav-more-label;
+        order: 2;
+        margin-inline-end: @hb-space-1;
+        font-size: @hb-nav-label-size !important;
+        line-height: @hb-nav-label-lh !important;
+        color: @text-body !important;
+    }
+
+    i.bc-i-apps {
+        .hb-nav-icon-box();
+        order: 1;
+        margin-inline-end: @hb-space-2;
+        .hb-flex-center();
+        flex-shrink: 0;
+        font-size: 0 !important;
+
+        &::before {
+            .hb-bg-icon('@{hb-nav-cdn}/more.svg'; @hb-nav-icon-size);
+        }
+    }
+
+    &::after {
+        content: '\e5cf';
+        order: 3;
+        font-family: BetConstruct-Icons, sans-serif;
+        font-size: 8px;
+        line-height: 1;
+        color: inherit;
+        flex-shrink: 0;
+    }
+
+    &:hover {
+        .hb-nav-active-surface();
+
+        &::before,
+        &::after {
+            color: @text-strong !important;
+        }
+    }
+}

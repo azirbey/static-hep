@@ -1,0 +1,28 @@
+@import "_mixins.less";
+
+.layout-header-holder-bc {
+	.has-sub-navigation & {
+		border-bottom: 1px solid @border-subtle !important;
+	}
+
+	header {
+		.nav-content-bc {
+			background: transparent !important;
+
+			.nav-content-menu {
+				background: @surface-sunken !important;
+				border-radius: @hb-nav-radius !important;
+
+				& .nav-menu-container {
+					background: transparent !important;
+					gap: 5px !important;
+
+					@import "menu.less";
+					@import "more.less";
+				}
+
+				@import "_sub-menu.less";
+			}
+		}
+	}
+}

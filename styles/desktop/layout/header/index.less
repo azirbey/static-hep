@@ -1,0 +1,17 @@
+// Header orchestrator — partials import at the same nesting depth (selectors unchanged).
+
+.layout-header-holder-bc {
+    header {
+        padding: 0 @hb-default-padding !important;
+
+        .hdr-main-content-bc {
+            gap: @hb-header-gap;
+
+            @import 'logo.less';
+            @import 'user.less';
+            @import 'lang.less';
+            @import 'time.less';
+            @import 'smart-panel.less';
+        }
+    }
+}

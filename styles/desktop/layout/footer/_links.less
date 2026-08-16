@@ -1,0 +1,36 @@
+// Link columns — sibling of .footerHeader; imported inside .footerHeader so `& +` stays valid
+
+& + .footerLinksSection {
+    will-change: auto;
+
+    .footerLinkCols {
+        .footerLinkCol {
+            min-width: 250px;
+
+            .footerLinkColTitle {
+                display: flex;
+                justify-content: center;
+                color: @text-strong !important;
+                font-weight: 600 !important;
+                font-size: 13px !important;
+                line-height: 20px !important;
+                letter-spacing: -0.01em !important;
+
+                a {
+                    color: @text-strong !important;
+                }
+            }
+
+            .footerLinkColEl {
+                text-align: center !important;
+                a {
+                    color: @text-muted !important;
+                    font-weight: 600 !important;
+                    font-size: 13px !important;
+                    line-height: 20px !important;
+                    letter-spacing: -0.01em !important;
+                }
+            }
+        }
+    }
+}

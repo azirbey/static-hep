@@ -1,0 +1,24 @@
+// Footer orchestrator — partials import at the same nesting depth (selectors unchanged).
+
+.layout-footer-holder-bc {
+    padding: 0 @hb-default-padding !important;
+
+    .footerContainer {
+        max-width: 100% !important;
+    }
+
+    .footerHeader {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            'left left'
+            'logo info';
+        align-items: center;
+        row-gap: 24px;
+
+        @import 'social.less';
+        @import 'logo.less';
+        @import 'info.less';
+        @import '_links.less';
+    }
+}

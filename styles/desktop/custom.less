@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "../core/palette.less";
+@import "../core/tokens.less";
+@import "../core/data.less";
+@import "../core/typography.less";
+@import "../core/mixins.less";
+@import "../core/fonts.less";
+
+// Also set on body, not just :root: custom properties resolve from the nearest
+// ancestor that declares them, so a platform rule on body would otherwise win
+// over ours on :root.
+body {
+	.theme-vars();
+}
+
+@import "layout/nav/index.less";
+@import "layout/header/index.less";
+@import "layout/footer/index.less";
+@import "layout/body.less";
+@import "pages/index.less";
+@import "components/buttons.less";

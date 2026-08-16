@@ -1,0 +1,55 @@
+// Raw palette — the only place hex values are written.
+//
+// Do not reference these from page styles. Page styles use the semantic names
+// in tokens.less, so a palette change lands in one place and every surface
+// that means "raised panel" moves together.
+
+@white: #fff;
+
+// Dark
+@shade-1: #070a0d;
+@shade-2: #0e141b;
+@shade-3: #131b24;
+@shade-4: #19222c;
+@shade-5: #1c2835;
+@shade-6: #233243;
+@shade-7: #2a3c50;
+@shade-8: #31465e;
+@shade-9: #38506b;
+@shade-10: #3f5a78;
+
+// Mid
+@shade-11: #466486;
+@shade-12: #4d6e93;
+@shade-13: #5478a0;
+@shade-14: #5f82ab;
+@shade-15: #6c8cb2;
+@shade-16: #7997b9;
+@shade-17: #87a1c0;
+@shade-18: #94acc7;
+@shade-19: #a1b6ce;
+@shade-20: #afc1d5;
+
+// Light
+@shade-21: #bccbdc;
+@shade-22: #cad5e3;
+@shade-23: #d7e0ea;
+@shade-24: #e4eaf1;
+@shade-25: #f2f5f8;
+
+@main-color: #197cff;
+@cyan: #0febff;
+@green: #23aa27;
+@red: #ff3b65;
+@orange: #f2a517;
+
+// RGB triplets, for rgba() composition and CSS custom properties that the
+// platform consumes as "r, g, b". Derived from the palette so they cannot
+// drift out of sync — previously all 25 were transcribed by hand.
+// Only the triplets actually in use are defined.
+@shade-2-rgb: red(@shade-2), green(@shade-2), blue(@shade-2);
+@shade-4-rgb: red(@shade-4), green(@shade-4), blue(@shade-4);
+@shade-6-rgb: red(@shade-6), green(@shade-6), blue(@shade-6);
+@main-color-rgb: red(@main-color), green(@main-color), blue(@main-color);
+@orange-rgb: red(@orange), green(@orange), blue(@orange);
+@cyan-rgb: red(@cyan), green(@cyan), blue(@cyan);

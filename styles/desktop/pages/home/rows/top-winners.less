@@ -1,0 +1,82 @@
+// Top Winners widget — imported inside home &:nth-child(2)
+
+// Default title is a single text node ("Canlı Kazançlar") — split colors via pseudo-elements
+.sectionTitle {
+    h6 {
+        font-size: 0 !important;
+
+        &::before,
+        &::after {
+            font-size: 20px !important;
+            font-weight: 700 !important;
+            line-height: 36px !important;
+            letter-spacing: -0.01em !important;
+        }
+
+        &::before {
+            content: 'Canlı';
+            color: @negative !important;
+        }
+
+        &::after {
+            content: ' Kazançlar';
+            color: @text-strong !important;
+        }
+    }
+}
+
+.casinoWinnerWidgetItem {
+    background: @surface-raised !important;
+    min-width: 175px !important;
+    width: 175px !important;
+
+    .casinoWinnerWidgetName,
+    .casinoWinnerWidgetGameName {
+        font-size: 11px !important;
+        font-weight: 600 !important;
+        line-height: 16px !important;
+        letter-spacing: -0.01em !important;
+    }
+
+    .casinoWinnerWidgetName {
+        color: @text-dim !important;
+    }
+
+    .casinoWinnerWidgetGameName {
+        color: @text-soft !important;
+    }
+
+    .casinoWinnerWidgetAmount {
+        color: @text-strong !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        line-height: 20px !important;
+        letter-spacing: -0.01em !important;
+    }
+}
+
+.casinoTopWinnersPeriodsSection {
+    .ds-chip {
+        width: 63px !important;
+        height: 36px !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        line-height: 20px !important;
+        letter-spacing: -0.01em !important;
+        background: transparent !important;
+
+        &:hover {
+            &::after {
+                display: none !important;
+            }
+        }
+    }
+
+    .ds-chip--selected {
+        box-shadow: none !important;
+        background: @surface-raised !important;
+        border: none !important;
+        border-radius: @hb-radius !important;
+        color: @text-strong !important;
+    }
+}

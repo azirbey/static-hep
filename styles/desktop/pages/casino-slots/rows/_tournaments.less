@@ -1,0 +1,100 @@
+// Tournament card info panel — imported inside casinoLobby &:nth-child(4)
+
+.tournamentsWidgetInfo {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 16px !important;
+    gap: 8px !important;
+    background: fade(@surface-control, 20%) !important;
+    backdrop-filter: blur(20px) !important;
+    border-radius: 6px !important;
+}
+
+.tournamentsWidgetCounter {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 16px !important;
+    gap: 8px !important;
+    background: @surface-elevated !important;
+    border-radius: 6px !important;
+    width: fit-content !important;
+}
+
+.tournamentsWidgetCounterLabel {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    .hb-text-label(@text-body);
+
+    &::after {
+        content: '';
+        width: 1px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.12);
+        flex-shrink: 0;
+    }
+}
+
+.tournamentsWidgetCounterValue {
+    .hb-text(13px; 20px; 600; );
+}
+
+.tournamentsWidgetName {
+    .hb-text-title();
+    text-align: center !important;
+}
+
+.tournamentsWidgetAmount {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+.tournamentsWidgetAmountTitle {
+    .hb-text-label();
+    text-align: center !important;
+}
+
+.tournamentsWidgetPrice {
+    .hb-text-amount();
+    text-align: center !important;
+}
+
+.tournamentsWidgetButtons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+
+    .ds-btn {
+        flex: 1 1 0 !important;
+        height: 44px !important;
+        min-height: 44px !important;
+        border-radius: 6px !important;
+        padding: 0 12px !important;
+        box-shadow: none !important;
+
+        .btn__label {
+            .hb-text(15px; 20px; 600; );
+        }
+    }
+
+    .ds-btn-variant--primary {
+        background: @accent !important;
+
+        .btn__label {
+            font-weight: 700 !important;
+        }
+    }
+
+    .ds-btn-variant--transparent {
+        background: @surface-control !important;
+
+        .btn__label {
+            font-weight: 600 !important;
+        }
+    }
+}

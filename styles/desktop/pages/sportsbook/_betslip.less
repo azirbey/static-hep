@@ -1,0 +1,107 @@
+// Nesting partial — imported under #root.sportsbook from index.less.
+// Sibling of .layout-content-holder-bc (outside .sportsbook-container).
+//
+// Anchored on #betslip_container: an id is unique per document, so
+// .layout-betslip-holder-bc .betslip-bc above it added nothing.
+
+.waduaAnimation.hasHeader {
+	width: auto !important;
+	z-index: 1 !important;
+}
+
+#betslip_container {
+	overflow-y: auto;
+
+	.favouriteTeamsWidget {
+		background: rgba(var(--hero), 0.06) !important;
+		border: 1px solid @border-subtle !important;
+		border-radius: @hb-radius !important;
+		margin-bottom: @hb-space-2;
+
+		.addYourFavouritesBtn {
+			height: 44px;
+			border-radius: @hb-radius;
+			background: rgba(@orange-rgb, 0.08) !important;
+			border: 1px solid rgba(@orange-rgb, 0.24) !important;
+
+			.bc-i-star-radius {
+				color: @warning !important;
+			}
+
+			span {
+				.hb-text(15px; 20px; 600; @text-strong);
+			}
+		}
+	}
+
+	.betslip-game-animation-block .game-details-container-bc {
+		display: flex;
+		flex-direction: column;
+		gap: @hb-space-2;
+		margin-bottom: @hb-space-2;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.game-details-c-live-icons-row-bc {
+			.hb-flex-center();
+			padding: @hb-space-2 @hb-space-3;
+			gap: @hb-space-2;
+			background: @surface-base;
+			border-radius: @hb-radius;
+			min-height: 48px;
+
+			&:empty {
+				display: none !important;
+			}
+
+			.tooltipIconWrapper {
+				max-width: fit-content;
+				height: fit-content;
+				.hb-flex-center();
+				gap: @hb-space-2;
+
+				.bc-i-field-soccer {
+					.hb-icon-glyph(football; 16px);
+					width: 40px !important;
+					height: @hb-control-sm !important;
+					background: @surface-elevated !important;
+					border-radius: @hb-radius;
+				}
+
+				&::after {
+					content: "Animasyonlar";
+					.hb-text(15px; 24px; 600; @text-strong);
+				}
+			}
+		}
+	}
+
+	.bs-f-header-bc {
+		.second-tabs-bc .tab-bc {
+			background: @surface-raised !important;
+			box-shadow: none !important;
+
+			&::before {
+				display: none !important;
+			}
+		}
+
+		.settings-r-b-row-bc {
+			padding-inline-end: 12px !important;
+
+			&::after {
+				.hb-icon(calculator; 16px);
+			}
+		}
+	}
+
+	.bs-f-header-sub-navigation-bc {
+		background: @surface-elevated !important;
+	}
+
+	.bs-f-body-bc .bs-bet-item-bc {
+		background: @surface-raised !important;
+	}
+}

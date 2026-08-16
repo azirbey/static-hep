@@ -1,0 +1,21 @@
+& > ul.nav-menu > li {
+	.hb-nav-menu-icons();
+
+	& > a {
+		.hb-nav-item();
+
+		& + .nav-menu-sub {
+			background: @surface-sunken !important;
+
+			li {
+				a.nav-menu-item {
+					.hb-nav-dropdown-link();
+				}
+			}
+		}
+	}
+
+	&:hover {
+		.hb-nav-item-hover();
+	}
+}

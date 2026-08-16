@@ -1,0 +1,16 @@
+// Live only differences — #root.sportsbook.live
+// Anything shared with prematch belongs in the orchestrator / shared partials.
+
+@import "_live-calendar.less";
+
+&.live {
+	.ss-icon-bc {
+		color: @text-muted !important;
+	}
+
+	@import "_markets.less";
+}
+
+.sportsbook-container {
+	@import "_left-menu.less";
+}

@@ -1,0 +1,133 @@
+// Semantic tokens — this is the vocabulary page styles are written in.
+//
+// Two names may resolve to the same palette entry; that is intentional. A
+// border that happens to match a surface today should still be able to change
+// on its own tomorrow.
+
+// ============================================
+// Colour
+// ============================================
+
+// Surfaces, from the page background upwards
+@surface-sunken: @shade-2;
+@surface-header: @shade-4;
+@surface-base: @shade-5;
+@surface-raised: @shade-6;
+@surface-elevated: @shade-7;
+@surface-control: @shade-8;
+
+// Borders
+@border-subtle: @shade-6;
+@border-medium: @shade-7;
+@border-strong: @shade-8;
+@border-soft: rgba(255, 255, 255, 0.08);
+
+@shadow-color: @shade-8;
+@shadow-deep: @shade-2;
+
+// Text.
+// Four near-identical greys are in use (@shade-20/21/22/23) across ~18 call
+// sites, which looks like drift rather than intent. Kept distinct here because
+// collapsing them would change rendered output; worth a design decision later.
+@text-strong: @white;
+@text-body: @shade-23;
+@text-soft: @shade-22;
+@text-muted: @shade-21;
+@text-dim: @shade-20;
+
+// Meaning
+@accent: @main-color;
+@highlight: @cyan;
+@positive: @green;
+@negative: @red;
+@warning: @orange;
+
+// ============================================
+// Scale
+// ============================================
+
+@font-family: "Geist", sans-serif;
+@hb-default-padding: 18px;
+
+@hb-radius: 6px;
+@hb-radius-sm: 2px;
+@hb-control-sm: 32px;
+@hb-control-md: 36px;
+@hb-control-lg: 44px;
+@hb-space-1: 4px;
+@hb-space-2: 8px;
+@hb-space-3: 12px;
+@hb-space-4: 16px;
+
+@desktop-nav-height: @hb-control-lg;
+
+// ============================================
+// Custom properties read by the platform
+// ============================================
+
+.theme-vars() {
+	--b: @shade-4-rgb !important;
+	--oc-1: @shade-6-rgb !important;
+	--header: @shade-4-rgb !important;
+	--menu: @shade-2-rgb !important;
+	--hero: @main-color-rgb !important;
+	// -----
+	--font-family: @font-family !important;
+	--desktop-nav-height: @desktop-nav-height !important;
+	--fds-sem-dimension-medium: @hb-control-md !important;
+	--padding-page-aside: @hb-space-4 !important;
+	--fds-ref-spacing-xsmall: @hb-space-4 !important;
+}
+
+:root {
+	.theme-vars();
+}
+
+// ============================================
+// Header
+// ============================================
+
+@hb-icon-btn-size: @hb-control-sm;
+@hb-icon-size-lg: 20px;
+@hb-icon-size-sm: 12px;
+
+@hb-logo-width: 94px;
+@hb-logo-height: 48px;
+
+@hb-header-gap: 25px;
+@hb-user-gap: @hb-space-3;
+@hb-divider-width: 1px;
+@hb-divider-height: 30px;
+@hb-divider-gap: @hb-space-3;
+@hb-divider-offset: @hb-divider-gap + @hb-divider-width;
+@hb-divider-extra: @hb-header-gap - @hb-user-gap;
+
+// ============================================
+// Nav
+// ============================================
+
+@hb-nav-radius: @hb-radius;
+@hb-nav-icon-box: 28px;
+@hb-nav-icon-size: 16px;
+@hb-nav-label-size: 15px;
+@hb-nav-label-lh: 20px;
+@hb-nav-item-pad: 0 16px 0 12px;
+@hb-nav-sub-icon-size: 16px;
+
+// ============================================
+// Casino category chips
+// ============================================
+
+@hb-casino-cat-radius: @hb-radius;
+@hb-casino-cat-height: @hb-control-md;
+@hb-casino-cat-icon-size: 16px;
+@hb-casino-cat-pad: @hb-space-2 @hb-space-3;
+@hb-casino-cat-gap: 6px;
+
+// Filter bar defaults (overridable via pages/casino-slots/_tokens.less)
+@hb-casino-filter-radius: @hb-radius;
+@hb-casino-filter-height: @hb-control-md;
+@hb-casino-filter-icon-size: 16px;
+@hb-casino-filter-pad: 0 @hb-space-3;
+@hb-casino-filter-gap: @hb-space-2;
+@hb-casino-filter-btn-width: 220px;

@@ -1,0 +1,89 @@
+.competition-header-bc {
+	background: @surface-base !important;
+}
+
+.results-block-bc {
+	background: @surface-elevated !important;
+
+	.results-info-bc {
+		background: @surface-elevated !important;
+	}
+
+	.results-footer-bc {
+		background: @surface-elevated !important;
+	}
+}
+
+.results-game-details-header-bc {
+	background: @surface-raised !important;
+}
+
+.results-game-details-events-bc {
+	background: @surface-base !important;
+}
+
+.multi-column-header {
+	background: @surface-raised !important;
+}
+
+.c-head-bc {
+	background: @surface-base !important;
+}
+
+.multi-column-content {
+	background: @surface-raised !important;
+	position: relative;
+
+	&::before {
+		content: "";
+	}
+
+	&.active,
+	&:hover {
+		transition: background 0.8s ease;
+		background:
+			linear-gradient(90deg, rgba(@cyan-rgb, 0.04) 0%, rgba(@cyan-rgb, 0) 100%), @surface-raised !important;
+
+		&::before {
+			position: absolute;
+			inset: 0;
+			border-radius: 6px;
+			padding: 1px;
+			background: linear-gradient(to right, rgba(25, 124, 255, 0.5), rgba(25, 124, 255, 0));
+			-webkit-mask:
+				linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+			pointer-events: none;
+		}
+	}
+}
+
+.c-segment-holder-title {
+	background: @surface-raised !important;
+}
+
+.c-info-content-bc,
+.c-teams-bc,
+.c-info-more-bc,
+.game-list-item-score {
+	background: @surface-elevated !important;
+}
+
+.market-bc {
+	background: @surface-elevated !important;
+	&.active,
+	&:hover {
+		background: @accent !important;
+		color: @text-strong !important;
+	}
+}
+
+.competition-details-header {
+	background: @surface-raised !important;
+}
+
+.competition-details-info-container {
+	background: @surface-elevated !important;
+}

@@ -1,0 +1,24 @@
+.nav-menu-other {
+    height: @desktop-nav-height !important;
+
+    &::after {
+        display: none !important;
+    }
+
+    & > li.nav-menu-item {
+        .hb-nav-more();
+
+        ul.nav-menu-sub {
+            background: @surface-sunken !important;
+
+            // Overflow items: same icon names as main, matched by href
+            .hb-nav-href-icons();
+
+            li {
+                a.nav-menu-item {
+                    .hb-nav-dropdown-link();
+                }
+            }
+        }
+    }
+}

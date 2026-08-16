@@ -1,0 +1,34 @@
+// Shared page widgets (row title icons, etc.) — used by pages/*/rows
+
+.hb-row-title-icon(@name) {
+    .sectionTitle,
+    .page-view-more {
+        &:before {
+            content: '';
+            background:
+                url('@{hb-cdn}/@{name}.svg') center / 16px 16px no-repeat,
+                linear-gradient(180deg, @surface-raised 0%, @surface-base 100%);
+            width: @hb-control-md;
+            height: @hb-control-md;
+            border-radius: @hb-radius;
+            .hb-soft-border();
+            box-sizing: border-box;
+        }
+    }
+    .page-view-more {
+        gap: var(--fds-ref-spacing-medium);
+    }
+}
+
+// Apply (nth-child icon) pairs from a record list onto & > .hm-row-bc
+.hb-row-icons(@list; @i: 1) when (@i =< length(@list)) {
+    @row: extract(@list, @i);
+    @n: extract(@row, 1);
+    @name: extract(@row, 2);
+
+    & > .hm-row-bc:nth-child(@{n}) {
+        .hb-row-title-icon(@name);
+    }
+
+    .hb-row-icons(@list; @i + 1);
+}

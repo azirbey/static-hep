@@ -1,0 +1,108 @@
+.form-control-bc {
+    height: @hb-icon-btn-size !important;
+    min-height: @hb-icon-btn-size !important;
+    border: 0 !important;
+    .hb-header-divider(start);
+
+    &::after {
+        display: none !important;
+    }
+
+    .form-control-label-bc {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 6px !important;
+        height: @hb-icon-btn-size !important;
+        min-height: @hb-icon-btn-size !important;
+        max-height: @hb-icon-btn-size !important;
+        padding: 0 12px !important;
+        box-sizing: border-box !important;
+        background: @surface-raised !important;
+        border-radius: 6px !important;
+        .hb-soft-border(important);
+
+        i.ftr-lang-bar-flag-bc {
+            background-position: center center !important;
+            width: 16px !important;
+            height: 16px !important;
+            flex-shrink: 0;
+
+            &.turkey {
+                background: url('@{hb-flags-cdn}/tr.svg') no-repeat 0 0/100% !important;
+            }
+
+            &.unitedkingdom {
+                background: url('@{hb-flags-cdn}/en.svg') no-repeat 0 0/100% !important;
+            }
+
+            & + span {
+                font-size: 13px !important;
+                line-height: 20px !important;
+                font-weight: 600 !important;
+                color: @text-strong !important;
+            }
+        }
+
+        .form-control-icon-bc {
+            margin: 0 !important;
+            font-size: 8px !important;
+            color: @text-strong !important;
+        }
+
+        .form-control-input-stroke-bc {
+            display: none !important;
+        }
+    }
+
+    // Same dropdown surface as nav / user .nav-menu-sub
+    .multi-select-label-bc {
+        background: @surface-sunken !important;
+        border: 0 !important;
+        border-radius: 6px !important;
+        box-shadow: none !important;
+        padding: 4px !important;
+
+        .checkbox-control-content-bc {
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            background: transparent !important;
+            border-radius: 6px !important;
+            transition: background 0.2s ease-in-out !important;
+
+            i.ftr-lang-bar-flag-bc,
+            i.multi-select-icon-bc {
+                width: 16px !important;
+                height: 16px !important;
+                background-position: center center !important;
+                flex-shrink: 0;
+
+                &.turkey {
+                    background: url('@{hb-flags-cdn}/tr.svg') no-repeat 0 0/100% !important;
+                }
+
+                &.unitedkingdom {
+                    background: url('@{hb-flags-cdn}/en.svg') no-repeat 0 0/100% !important;
+                }
+            }
+
+            .checkbox-control-text-bc {
+                font-weight: 500 !important;
+                letter-spacing: -0.01em !important;
+                font-size: 15px !important;
+                line-height: 20px !important;
+                color: @text-body !important;
+            }
+
+            &.active,
+            &:hover {
+                background: @accent !important;
+
+                .checkbox-control-text-bc {
+                    color: @text-strong !important;
+                }
+            }
+        }
+    }
+}

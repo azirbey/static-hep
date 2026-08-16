@@ -1,0 +1,253 @@
+// User cluster — login vs guest via :has(.header-user-nav)
+
+.hdr-user-bc {
+    gap: @hb-user-gap;
+    .hb-header-divider(start);
+
+    .header-custom-buttons {
+        // Keep platform margins off links/buttons, but leave sign-in
+        // room for its divider (left: -13px needs margin-inline-start).
+        & ~ button:not(.sign-in),
+        a {
+            margin-inline-start: 0px !important;
+            &::after {
+                display: none !important;
+            }
+        }
+
+        // Icon group separators (phone | whatsapp | …)
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-inline-end: @hb-divider-extra;
+            .hb-header-divider(end);
+        }
+    }
+
+    // Logged in — buttons are direct <a> children
+    &:has(.header-user-nav) {
+        .header-custom-buttons {
+            .hb-buttons-on-links();
+            gap: 12px !important;
+
+            // Single wrapper when logged in — don't treat whole group as icon slot
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-inline-end: 0;
+                &::after {
+                    display: none !important;
+                }
+            }
+
+            // call | hpwp | … — same separators as guest wrappers
+            // Platform a::after uses left:-10px + margin that centers the line on the icon;
+            // reset those so our end-divider (right: -13px) lands between items.
+            & > a:nth-child(1),
+            & > a:nth-child(2) {
+                margin-inline-end: @hb-divider-extra !important;
+                .hb-header-divider(end);
+
+                &::after {
+                    display: block !important;
+                    left: auto !important;
+                    bottom: auto !important;
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        .header-buttons-wallet {
+            display: none !important;
+        }
+
+        .header-user-nav {
+            margin-inline-start: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            height: @hb-icon-btn-size !important;
+
+            &::after,
+            .nav-menu-other::after {
+                display: none !important;
+            }
+
+            .nav-menu-other {
+                height: @hb-icon-btn-size !important;
+
+                & > li {
+                    height: 100% !important;
+
+                    & > a {
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        height: @hb-icon-btn-size !important;
+                        box-sizing: border-box !important;
+                        background: @surface-raised !important;
+                        border-radius: 6px !important;
+                        border-top: 0 !important;
+                        .hb-soft-border(important);
+                    }
+                }
+
+                // Balance — same chrome as .hb-label-button
+                &:not(.profileDetails) > li > a {
+                    padding: 6px 12px !important;
+                    width: fit-content !important;
+
+                    .hdr-user-info-content-bc,
+                    .hdr-user-info-texts-bc {
+                        display: flex !important;
+                        align-items: center !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        height: auto !important;
+                        background: transparent !important;
+                        border: 0 !important;
+                    }
+
+                    .balanceAmount {
+                        margin: 0 !important;
+                        font-size: 13px !important;
+                        line-height: 20px !important;
+                        font-weight: 500 !important;
+                        color: @text-strong !important;
+                        letter-spacing: -0.01em !important;
+
+                        .currencySymbol {
+                            font-size: inherit !important;
+                            font-weight: inherit !important;
+                            color: inherit !important;
+                        }
+                    }
+                }
+
+                // Avatar — square icon button (img or default <i>)
+                &.profileDetails > li > a {
+                    width: @hb-icon-btn-size !important;
+                    padding: 0 !important;
+                    overflow: hidden !important;
+
+                    .avatarHolderImg,
+                    .hdr-user-avatar-icon-bc {
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        width: 100% !important;
+                        height: 100% !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        border-radius: 0 !important;
+                        background: transparent !important;
+                        object-fit: cover !important;
+                        font-size: @hb-icon-size-lg !important;
+                        line-height: 1 !important;
+                    }
+
+                    .backFace {
+                        display: none !important;
+                    }
+                }
+            }
+
+            // Same dropdown surface as main nav .nav-menu-sub
+            .nav-menu-sub {
+                background: @surface-sunken !important;
+
+                li a.nav-menu-item {
+                    .hb-nav-dropdown-link();
+
+                    // Platform labels are ALL CAPS — title-case via ::before
+                    span.checkbox-control-text-bc {
+                        font-size: 0 !important;
+                        line-height: 0 !important;
+
+                        &::before {
+                            font-size: 15px !important;
+                            line-height: 20px !important;
+                            font-weight: 500 !important;
+                            letter-spacing: -0.01em !important;
+                            color: @text-body !important;
+                        }
+                    }
+
+                    .count-odd-animation {
+                        &::after {
+                            box-shadow: -1px 1px 5px @shadow-deep;
+                        }
+                    }
+                }
+            }
+
+            // Balance dropdown — same hrefs as profile "Bakiye Yönetimi", scope by parent
+            .nav-menu-other:not(.profileDetails) .nav-menu-sub {
+                a.nav-menu-item {
+                    &[href*='page=deposit'] span::before {
+                        content: 'Para Yatır';
+                    }
+                    &[href*='page=withdraw'] span::before {
+                        content: 'Çekim';
+                    }
+                    &[href*='page=history'] span::before {
+                        content: 'İşlem Geçmişi';
+                    }
+                    &[href*='page=info'] span::before {
+                        content: 'Bilgi';
+                    }
+                }
+            }
+
+            // Profile dropdown
+            .nav-menu-other.profileDetails .nav-menu-sub {
+                a.nav-menu-item {
+                    &[href*='account=profile'][href*='page=details'] span::before {
+                        content: 'Profilim';
+                    }
+                    &[href*='account=balance'][href*='page=deposit'] span::before {
+                        content: 'Bakiye Yönetimi';
+                    }
+                    &[href*='account=history'][href*='page=bets'] span::before {
+                        content: 'Bahis Geçmişi';
+                    }
+                    &[href*='account=bonuses'] span::before {
+                        content: 'Bonuslar';
+                    }
+                    &[href*='account=messages'] span::before {
+                        content: 'Mesajlar';
+                    }
+                    &[href*='account=rewards'] span::before {
+                        content: 'Ödüller';
+                    }
+                }
+
+                li.logout-profile .userLogoutBtn span {
+                    text-transform: capitalize !important;
+                }
+            }
+        }
+    }
+
+    // Guest — each button is a wrapper with an <a> inside
+    &:not(:has(.header-user-nav)) {
+        .header-custom-buttons {
+            .hb-buttons-on-wrappers();
+        }
+
+        .btn {
+            .hb-auth-buttons();
+
+            &.register {
+                min-width: 64px !important;
+            }
+
+            // Separator before auth group (… | Giriş Kayıt)
+            &.sign-in {
+                margin-inline-start: @hb-divider-extra !important;
+                .hb-header-divider(start);
+                &::after {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

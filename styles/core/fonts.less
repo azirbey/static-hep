@@ -1,0 +1,14 @@
+.geist(@file, @weight) {
+    @font-face {
+        font-family: 'Geist';
+        src: url('@{hb-fonts-cdn}@{file}.woff2') format('woff2');
+        font-weight: @weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+.geist(Geist-Regular, 400);
+.geist(Geist-Medium, 500);
+.geist(Geist-SemiBold, 600);
+.geist(Geist-Bold, 700);

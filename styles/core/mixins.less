@@ -1,0 +1,360 @@
+// Shared HepBet mixins — imported from each platform entry (custom.less).
+
+// --- primitives ---
+
+.hb-flex-center() {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.hb-bg-transparent() {
+    background: transparent !important;
+}
+
+// Surface gradients (two intentional variants)
+.hb-surface-gradient() {
+    background: linear-gradient(180deg, @surface-raised 0%, @surface-base 100%);
+}
+
+.hb-surface-gradient(strong) {
+    background: linear-gradient(180deg, @surface-elevated 0%, @surface-raised 100%);
+}
+
+.hb-soft-border() {
+    border: 1px solid @border-soft;
+}
+
+.hb-soft-border(important) {
+    border: 1px solid @border-soft !important;
+}
+
+.hb-soft-shadow() {
+    box-shadow: 1px 1px 1px 1px @shadow-color !important;
+}
+
+.hb-no-shadow() {
+    box-shadow: none !important;
+}
+
+// Placeholder color. Each vendor selector needs its own rule — grouping them
+// makes browsers drop the whole block over the one selector they don't parse.
+// opacity is reset because Firefox dims placeholders by default.
+.hb-placeholder-fill(@color) {
+    color: @color !important;
+    opacity: 1 !important;
+}
+
+.hb-placeholder(@color) {
+    &::placeholder {
+        .hb-placeholder-fill(@color);
+    }
+
+    &::-webkit-input-placeholder {
+        .hb-placeholder-fill(@color);
+    }
+
+    &::-moz-placeholder {
+        .hb-placeholder-fill(@color);
+    }
+
+    &:-ms-input-placeholder {
+        .hb-placeholder-fill(@color);
+    }
+}
+
+.hb-bg-icon(@url; @size) {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: @size;
+    height: @size;
+    background: url(@url) no-repeat center center / contain !important;
+}
+
+.hb-cms-icon-swap(@url; @size) {
+    .hb-flex-center();
+    width: @size !important;
+    height: @size !important;
+    color: transparent !important;
+
+    svg {
+        display: none !important;
+    }
+
+    &::before {
+        .hb-bg-icon(@url; @size);
+    }
+}
+
+// Swap a platform font-icon (<i class="bc-i-*">) for a CDN SVG.
+// Omit @color to use the asset as-is; pass a color to tint via mask.
+.hb-icon-glyph-base(@size) {
+    .hb-flex-center();
+    width: @size !important;
+    height: @size !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+
+    &::before {
+        content: '' !important;
+        display: block !important;
+        flex-shrink: 0;
+        width: @size;
+        height: @size;
+    }
+}
+
+.hb-icon-glyph(@icon; @size: @hb-icon-size-lg) {
+    .hb-icon-glyph-base(@size);
+
+    &::before {
+        background: url('@{hb-cdn}/@{icon}.svg') no-repeat center / contain !important;
+    }
+}
+
+.hb-icon-glyph(@icon; @size; @color) {
+    .hb-icon-glyph-base(@size);
+
+    &::before {
+        background-color: @color !important;
+        mask: url('@{hb-cdn}/@{icon}.svg') no-repeat center / contain;
+        -webkit-mask: url('@{hb-cdn}/@{icon}.svg') no-repeat center / contain;
+    }
+}
+
+// Icon button — CDN glyph on inner <i>, bg defaults to @surface-elevated.
+// Pass @icon-color only when the glyph needs a CSS tint.
+// Pass @icon-active to swap glyph + @active-bg when the button has .a-white.
+.hb-icon-btn(
+    @icon;
+    @bg: @surface-elevated;
+    @size: @hb-icon-size-lg;
+    @icon-color: _;
+    @icon-active: _;
+    @active-bg: @accent
+) {
+    .hb-flex-center();
+    background: @bg !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+
+    > i {
+        .hb-icon-btn-glyph(@icon; @size; @icon-color);
+    }
+
+    .hb-icon-btn-a-white(@icon-active; @size; @icon-color; @active-bg);
+}
+
+.hb-icon-btn-a-white(@icon-active; @size; @icon-color; @active-bg) when (@icon-active = _) {
+}
+
+.hb-icon-btn-a-white(@icon-active; @size; @icon-color; @active-bg) when not (@icon-active = _) {
+    &.a-white {
+        background: @active-bg !important;
+
+        > i {
+            .hb-icon-btn-glyph(@icon-active; @size; @icon-color);
+        }
+    }
+}
+
+.hb-icon-btn-glyph(@icon; @size; @icon-color: _) when (@icon-color = _) {
+    .hb-icon-glyph(@icon; @size);
+}
+
+.hb-icon-btn-glyph(@icon; @size; @icon-color) when not (@icon-color = _) {
+    .hb-icon-glyph(@icon; @size; @icon-color);
+}
+
+.hb-header-divider-line() {
+    content: '' !important;
+    background: @surface-raised !important;
+    width: @hb-divider-width !important;
+    height: @hb-divider-height !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 1 !important;
+}
+
+.hb-header-divider(start) {
+    position: relative !important;
+
+    &::before {
+        .hb-header-divider-line();
+        left: -@hb-divider-offset !important;
+    }
+}
+
+.hb-header-divider(end) {
+    position: relative !important;
+
+    &::after {
+        .hb-header-divider-line();
+        right: -@hb-divider-offset !important;
+    }
+}
+
+.hb-icon(@name; @size: @hb-icon-size-sm) {
+    .hb-bg-icon('@{hb-cdn}/@{name}.svg'; @size);
+}
+
+.hb-icon-button(@name) {
+    background: transparent !important;
+    padding: 0 !important;
+    width: @hb-icon-btn-size;
+    height: @hb-icon-btn-size;
+
+    &:before {
+        .hb-icon(@name; @hb-icon-size-lg);
+    }
+}
+
+.hb-span-label(@label) {
+    span {
+        font-size: 0 !important;
+        line-height: 0 !important;
+
+        &::before {
+            content: @label;
+            text-transform: capitalize;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+.hb-label-button(@name; @label) {
+    background: @surface-raised !important;
+    padding: 6px @hb-space-3 !important;
+    width: fit-content !important;
+    height: @hb-icon-btn-size !important;
+    font-family: var(--font-family) !important;
+    border-radius: @hb-radius !important;
+    .hb-soft-border(important);
+
+    &:before {
+        .hb-icon(@name);
+    }
+
+    .hb-span-label(@label);
+
+    span:not(:empty) {
+        margin-inline-start: @hb-space-2 !important;
+    }
+}
+
+// Fill colors only — sizing, padding and radius stay at the call site so one
+// element can restyle its colors per state without repeating layout rules.
+.hb-fill(@bg; @color) {
+    background: @bg !important;
+    color: @color !important;
+}
+
+// --- button dispatcher (reads @hb-buttons records) ---
+
+.hb-btn-apply(icon; @icon; @label) {
+    .hb-icon-button(@icon);
+}
+
+.hb-btn-apply(label; @icon; @label) {
+    .hb-label-button(@icon; @label);
+}
+
+.hb-btn(@i) {
+    @row: extract(@hb-buttons, @i);
+    .hb-btn-apply(extract(@row, 1); extract(@row, 2); extract(@row, 3));
+}
+
+.hb-each-nth-link(@i: 1) when (@i =< @hb-btn-count) {
+    &:nth-child(@{i}) {
+        .hb-btn(@i);
+    }
+    .hb-each-nth-link(@i + 1);
+}
+
+.hb-each-nth-wrapper(@i: 1) when (@i =< @hb-btn-count) {
+    &:nth-child(@{i}) {
+        a {
+            .hb-btn(@i);
+        }
+    }
+    .hb-each-nth-wrapper(@i + 1);
+}
+
+.hb-buttons-on-links() {
+    a {
+        .hb-each-nth-link();
+    }
+}
+
+.hb-buttons-on-wrappers() {
+    .hb-each-nth-wrapper();
+}
+
+// --- guest auth buttons (reads @hb-auth records) ---
+
+.hb-auth-buttons-each(@i: 1) when (@i =< length(@hb-auth)) {
+    @row: extract(@hb-auth, @i);
+    @class: extract(@row, 1);
+    @label: extract(@row, 2);
+
+    &.@{class} {
+        .hb-span-label(@label);
+    }
+
+    .hb-auth-buttons-each(@i + 1);
+}
+
+.hb-auth-buttons() {
+    .hb-auth-buttons-each();
+    margin-inline-end: 0px !important;
+    height: @hb-icon-btn-size !important;
+}
+
+// --- casino category chips ---
+
+.hb-casino-cat-chip() {
+    .ds-chip {
+        background: @surface-raised !important;
+        border-radius: @hb-casino-cat-radius !important;
+        height: @hb-casino-cat-height !important;
+        padding: @hb-casino-cat-pad !important;
+        gap: @hb-casino-cat-gap !important;
+        color: @text-strong !important;
+        box-shadow: none !important;
+        border: none !important;
+
+        &::after {
+            display: none !important;
+        }
+
+        &.ds-chip--selected {
+            background: @accent !important;
+            color: @text-strong !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.hb-casino-cat-apply-icon(@name) {
+    span.CMSIconSVGWrapper.chip__icon {
+        .hb-cms-icon-swap('@{hb-cdn}/@{name}.svg'; @hb-casino-cat-icon-size);
+    }
+}
+
+.hb-casino-cat-icons(@i: 1) when (@i =< @hb-casino-cat-count) {
+    @row: extract(@hb-casino-cats, @i);
+    @class: extract(@row, 1);
+    @name: extract(@row, 2);
+
+    [class='category-@{class}'] {
+        .hb-casino-cat-apply-icon(@name);
+    }
+
+    .hb-casino-cat-icons(@i + 1);
+}

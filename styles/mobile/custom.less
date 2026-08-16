@@ -1,0 +1,120 @@
+// Mobile entry — skeleton until mobile design lands.
+// Core produces no page selectors; this file is the mobile CSS producer.
+
+@charset "utf-8";
+
+@import "../core/palette.less";
+@import "../core/tokens.less";
+@import "../core/data.less";
+@import "../core/typography.less";
+@import "../core/mixins.less";
+@import "../core/fonts.less";
+
+// Also set on body, not just :root: custom properties resolve from the nearest
+// ancestor that declares them, so a platform rule on body would otherwise win
+// over ours on :root.
+body {
+	.theme-vars();
+}
+
+.product-banner-container-bc {
+	padding: 10px var(--padding-page-aside);
+}
+
+// ============================================
+// Header user strip
+// ============================================
+
+.hb-mobile-user-label(@label) when not (@label = "") {
+	&::after {
+		content: @label;
+		font-size: 9px;
+		font-weight: 600;
+		color: @text-strong;
+		letter-spacing: 0.01em;
+		line-height: 1;
+	}
+}
+
+.hb-mobile-user-label(@label) when (@label = "") {
+}
+
+.hb-mobile-user-buttons(@i: 1) when (@i =< length(@hb-mobile-user-buttons)) {
+	@row: extract(@hb-mobile-user-buttons, @i);
+	@class: extract(@row, 1);
+	@icon: extract(@row, 2);
+	@label: extract(@row, 3);
+	@size: extract(@row, 4);
+	@pad: extract(@row, 5);
+
+	&.@{class} {
+		padding: @pad;
+
+		&::before {
+			.hb-bg-icon('@{hb-cdn}/@{icon}.svg'; @size);
+		}
+
+		.hb-mobile-user-label(@label);
+	}
+
+	.hb-mobile-user-buttons(@i + 1);
+}
+
+.hdr-additional-info {
+	background: @surface-header !important;
+
+	.hdr-user-bc {
+		width: 100%;
+		gap: 4px;
+	}
+
+	.hdr-user-bc .user-nav-icon {
+		width: fit-content !important;
+		height: fit-content !important;
+		background: @surface-raised !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 4px;
+
+		& + .user-nav-icon {
+			margin-inline-start: 0 !important;
+		}
+
+		&::after {
+			font-family: var(--font-family);
+		}
+
+		// Pushes the labelled group away from the two icon-only buttons
+		&.bc-i-promotion {
+			margin-inline-start: auto !important;
+		}
+
+		.hb-mobile-user-buttons();
+	}
+}
+
+// ============================================
+// Home hero slider
+// ============================================
+
+.hm-row-bc:nth-child(1) .slider-bc {
+	.sdr-item-holder-bc {
+		aspect-ratio: 14 / 8 !important;
+
+		.sdr-item-bc {
+			&::before {
+				display: none !important;
+			}
+
+			.sdr-image-bc {
+				height: auto !important;
+			}
+		}
+	}
+
+	.swiper-pagination {
+		font-size: 8px !important;
+		height: fit-content !important;
+	}
+}

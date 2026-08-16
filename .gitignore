@@ -1,24 +1,14 @@
-# Ignore everything except the allowlist
-*
+# Git tracks the full source tree (styles/, README, build config) as well as the
+# compiled CSS, which Cloudflare pulls from the repo.
+#
+# Do not turn this back into an allowlist: what gets deployed to Cloudflare is
+# controlled by .assetsignore, not by this file.
 
-# Un-ignore directories so nested files can be allowed
-!*/
+node_modules/
 
-# Deploy allowlist (root only)
-!/desktop-custom.css
-!/mobile-custom.css
-!/images/
-!/images/**
-!/webfonts/
-!/webfonts/**
-!/_headers
+# Pre-refactor CSS snapshot used by `npm run diff`
+.baseline/
 
-# System files for Git + Cloudflare
-!/.gitignore
-!/.assetsignore
-!/wrangler.jsonc
-
-# Junk
 .DS_Store
 **/.DS_Store
 **/*.htaccess

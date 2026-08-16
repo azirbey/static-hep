@@ -2767,6 +2767,29 @@
     mask-composite: exclude;
     pointer-events: none;
   }
+  #root .c-segment-holder-title {
+    background: #233243 !important;
+  }
+  #root .c-info-content-bc,
+  #root .c-teams-bc,
+  #root .c-info-more-bc,
+  #root .game-list-item-score {
+    background: #2a3c50 !important;
+  }
+  #root .market-bc {
+    background: #2a3c50 !important;
+  }
+  #root .market-bc.active,
+  #root .market-bc:hover {
+    background: #197cff !important;
+    color: #fff !important;
+  }
+  #root .competition-details-header {
+    background: #233243 !important;
+  }
+  #root .competition-details-info-container {
+    background: #2a3c50 !important;
+  }
   #root.sportsbook .layout-content-holder-bc .sportsbook-container .sportsbook-center-section .sportsbook-center-section-scroll .game-details-section .live-page-sections-bc .game-details-container-live-bc .game-details-container-inner-bc {
     padding: 0 10px 10px 10px !important;
   }

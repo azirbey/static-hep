@@ -2755,6 +2755,13 @@
   #root.sportsbook .layout-content-holder-bc .sportsbook-container .sportsbook-center-section .sportsbook-center-section-scroll .game-details-section .live-page-sections-bc .sgm-body-bc .sgm-market-g .sgm-market-g-item-bc {
     background: transparent !important;
   }
+  #root.sportsbook .waduaAnimation.hasHeader {
+    width: auto !important;
+    z-index: 1 !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container {
+    overflow-y: auto;
+  }
   #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .favouriteTeamsWidget {
     background: rgba(var(--hero), 0.06) !important;
     border: 1px solid #233243 !important;
@@ -2843,9 +2850,21 @@
   }
   #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-full-content-bc .bs-f-header-bc .second-tabs-bc .tab-bc {
     background: #233243 !important;
+    box-shadow: none !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-full-content-bc .bs-f-header-bc .second-tabs-bc .tab-bc::before {
+    display: none !important;
   }
   #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-full-content-bc .bs-f-header-bc .settings-r-b-row-bc {
-    background: #233243 !important;
+    padding-inline-end: 12px !important;
+  }
+  #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-full-content-bc .bs-f-header-bc .settings-r-b-row-bc::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/calculator.svg') no-repeat center center / contain !important;
   }
   #root.sportsbook .layout-betslip-holder-bc .betslip-bc #betslip_container .betslip-full-content-bc .bs-f-header-sub-navigation-bc {
     background: #2a3c50 !important;
@@ -2855,6 +2874,289 @@
   }
   #root.sportsbook.prematch .ss-icon-bc {
     color: #bccbdc !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search {
+    padding: 0 !important;
+    margin-bottom: 5px !important;
+    background: transparent !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc {
+    border-radius: 6px !important;
+    border: 1px solid #2a3c50 !important;
+    height: 44px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc::placeholder {
+    color: #bccbdc !important;
+    opacity: 1 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc::-webkit-input-placeholder {
+    color: #bccbdc !important;
+    opacity: 1 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc::-moz-placeholder {
+    color: #bccbdc !important;
+    opacity: 1 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc:-ms-input-placeholder {
+    color: #bccbdc !important;
+    opacity: 1 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .second-tabs-bc {
+    height: 44px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .second-tabs-bc .tab-bc {
+    background: #233243 !important;
+    color: #bccbdc !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .second-tabs-bc .tab-bc.active {
+    background: #197cff !important;
+    color: #fff !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc {
+    height: 48px;
+    padding: 0 12px !important;
+    background: #1c2835 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc button.btn {
+    width: 40px;
+    height: 32px;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #2a3c50 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i::before {
+    content: '' !important;
+    display: block !important;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i::before {
+    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/video-camera.svg') no-repeat center / contain !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white {
+    background: #197cff !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i::before {
+    content: '' !important;
+    display: block !important;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i::before {
+    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/video-camera-white.svg') no-repeat center / contain !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #2a3c50 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i::before {
+    content: '' !important;
+    display: block !important;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i::before {
+    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/world.svg') no-repeat center / contain !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white {
+    background: #197cff !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i::before {
+    content: '' !important;
+    display: block !important;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i::before {
+    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/world-white.svg') no-repeat center / contain !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc {
+    overflow-y: scroll !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding-inline-end: 0 !important;
+    width: calc(100% - 5px) !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc {
+    background: #2a3c50 !important;
+    max-height: 40px !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc:first-child {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+    overflow: hidden !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc:last-child {
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+    overflow: hidden !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc + .sp-sub-list-bc {
+    margin-top: 0 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.active {
+    max-height: 15000px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.active > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
+    background: #197cff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc > .sp-s-l-head-bc {
+    height: 40px !important;
+    background: #2a3c50 !important;
+    box-shadow: none !important;
+    border-bottom: solid 1px #31465e !important;
+    border-radius: 0 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
+    color: #fff !important;
+    background: #31465e !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc {
+    background: #2a3c50 !important;
+    padding: 8px 12px !important;
+    height: 52px !important;
+    border-top: none !important;
+    margin-bottom: 0 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc .form-control-select-bc {
+    width: 100% !important;
+    background: #233243 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc .form-control-select-bc + .multi-select-label-bc {
+    background: #1c2835 !important;
+    box-shadow: none !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc .form-control-select-bc + .multi-select-label-bc .checkbox-control-content-bc {
+    background: #2a3c50 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc {
+    background: #233243 !important;
+    padding: 0px 12px !important;
+    box-shadow: 1px 1px 1px 1px #31465e !important;
+    max-height: 52px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-sub-list-bc {
+    padding: 8px 12px !important;
+    box-shadow: none !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-sub-list-bc .sp-s-l-head-bc {
+    background: #1c2835 !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc.active {
+    max-height: 15000px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc.active > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
+    background: #197cff !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc.active > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc.active {
+    max-height: 15000px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc {
+    height: 40px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc:has(> .sp-s-l-h-title-content > p + p) {
+    height: 52px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
+    color: #fff !important;
+    background: #31465e !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc .region-flag {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc {
+    background: transparent !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section {
+    background: #233243 !important;
+    border: solid 2px #1c2835 !important;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section .selected-game-indicator {
+    width: 0 !important;
+    transition: width 0.2s ease !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section.active .selected-game-indicator {
+    width: 2px !important;
+    background: #0febff !important;
+  }
+  #root.sportsbook.prematch .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section + .market-game-section {
+    margin-top: 0 !important;
   }
   #root.sportsbook.live .ss-icon-bc {
     color: #bccbdc !important;
@@ -2867,289 +3169,6 @@
   }
   #root.sportsbook.live .layout-content-holder-bc .live-calendar .live-calendar-filters-wrapper {
     background: transparent !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search {
-    padding: 0 !important;
-    margin-bottom: 5px !important;
-    background: transparent !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc {
-    border-radius: 6px !important;
-    border: 1px solid #2a3c50 !important;
-    height: 44px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc::placeholder {
-    color: #bccbdc !important;
-    opacity: 1 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc::-webkit-input-placeholder {
-    color: #bccbdc !important;
-    opacity: 1 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc::-moz-placeholder {
-    color: #bccbdc !important;
-    opacity: 1 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .left-menu-search .sport-search-bc .ss-input-bc:-ms-input-placeholder {
-    color: #bccbdc !important;
-    opacity: 1 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .second-tabs-bc {
-    height: 44px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .second-tabs-bc .tab-bc {
-    background: #233243 !important;
-    color: #bccbdc !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .second-tabs-bc .tab-bc.active {
-    background: #197cff !important;
-    color: #fff !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc {
-    height: 48px;
-    padding: 0 12px !important;
-    background: #1c2835 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc button.btn {
-    width: 40px;
-    height: 32px;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: #2a3c50 !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 20px !important;
-    height: 20px !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    color: transparent !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i::before {
-    content: '' !important;
-    display: block !important;
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i::before {
-    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/video-camera.svg') no-repeat center / contain !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white {
-    background: #197cff !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 20px !important;
-    height: 20px !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    color: transparent !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i::before {
-    content: '' !important;
-    display: block !important;
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i::before {
-    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/video-camera-white.svg') no-repeat center / contain !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: #2a3c50 !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 20px !important;
-    height: 20px !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    color: transparent !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i::before {
-    content: '' !important;
-    display: block !important;
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i::before {
-    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/world.svg') no-repeat center / contain !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white {
-    background: #197cff !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 20px !important;
-    height: 20px !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    color: transparent !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i::before {
-    content: '' !important;
-    display: block !important;
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i::before {
-    background: url('https://static-hep.hepbet-static.workers.dev/images/icons/world-white.svg') no-repeat center / contain !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc {
-    overflow-y: scroll !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0 !important;
-    padding-inline-end: 0 !important;
-    width: calc(100% - 5px) !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc {
-    background: #2a3c50 !important;
-    max-height: 40px !important;
-    border-radius: 0 !important;
-    width: 100% !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc:first-child {
-    border-top-left-radius: 6px !important;
-    border-top-right-radius: 6px !important;
-    overflow: hidden !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc:last-child {
-    border-bottom-left-radius: 6px !important;
-    border-bottom-right-radius: 6px !important;
-    overflow: hidden !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc + .sp-sub-list-bc {
-    margin-top: 0 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.active {
-    max-height: 15000px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.active > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
-    background: #197cff !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc > .sp-s-l-head-bc {
-    height: 40px !important;
-    background: #2a3c50 !important;
-    box-shadow: none !important;
-    border-bottom: solid 1px #31465e !important;
-    border-radius: 0 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
-    color: #fff !important;
-    background: #31465e !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc {
-    background: #2a3c50 !important;
-    padding: 8px 12px !important;
-    height: 52px !important;
-    border-top: none !important;
-    margin-bottom: 0 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc .form-control-select-bc {
-    width: 100% !important;
-    background: #233243 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc .form-control-select-bc + .multi-select-label-bc {
-    background: #1c2835 !important;
-    box-shadow: none !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .form-control-bc .form-control-select-bc + .multi-select-label-bc .checkbox-control-content-bc {
-    background: #2a3c50 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc {
-    background: #233243 !important;
-    padding: 0px 12px !important;
-    box-shadow: 1px 1px 1px 1px #31465e !important;
-    max-height: 52px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-sub-list-bc {
-    padding: 8px 12px !important;
-    box-shadow: none !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-sub-list-bc .sp-s-l-head-bc {
-    background: #1c2835 !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc.active {
-    max-height: 15000px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc.active > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
-    background: #197cff !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc.active > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc.active {
-    max-height: 15000px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc {
-    height: 40px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc:has(> .sp-s-l-h-title-content > p + p) {
-    height: 52px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
-    color: #fff !important;
-    background: #31465e !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc > .sp-s-l-head-bc .region-flag {
-    width: 20px !important;
-    height: 20px !important;
-    border-radius: 50% !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc {
-    background: transparent !important;
-    padding: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 8px !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section {
-    background: #233243 !important;
-    border: solid 2px #1c2835 !important;
-    padding: 12px;
-    border-radius: 6px;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section .selected-game-indicator {
-    width: 0 !important;
-    transition: width 0.2s ease !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section.active .selected-game-indicator {
-    width: 2px !important;
-    background: #0febff !important;
-  }
-  #root.sportsbook.live .layout-content-holder-bc .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc .market-game-section + .market-game-section {
-    margin-top: 0 !important;
   }
   .sectionTitleBtnWrapper .ds-btn.ds-btn-variant--transparent,
   .horizontal-scroll .ds-btn.ds-btn-variant--transparent {

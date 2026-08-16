@@ -2886,6 +2886,25 @@
     background: #233243 !important;
     line-height: 44px;
   }
+  #root.sportsbook .live-calendar-market-scroll .live-calendar-market-bc .markets {
+    background: #1c2835 !important;
+  }
+  #root.sportsbook .live-calendar-market-scroll .live-calendar-market-bc .markets .c-row-bc .c-info-content-bc {
+    background: #1c2835 !important;
+  }
+  #root.sportsbook .live-calendar-market-scroll .live-calendar-market-bc .markets .c-row-bc .c-teams-bc {
+    background: #1c2835 !important;
+  }
+  #root.sportsbook .live-calendar-market-scroll .live-calendar-market-bc .markets .c-row-bc .c-info-more-bc {
+    background: #1c2835 !important;
+  }
+  #root.sportsbook .live-calendar-market-scroll .live-calendar-market-bc .markets .c-row-bc .c-odd-bc .market-bc {
+    background: #233243 !important;
+  }
+  #root.sportsbook .live-calendar-market-scroll .live-calendar-market-bc .markets .c-row-bc .c-odd-bc .market-bc.active {
+    background: #197cff !important;
+    color: #fff !important;
+  }
   #root.sportsbook.prematch .ss-icon-bc {
     color: #bccbdc !important;
   }

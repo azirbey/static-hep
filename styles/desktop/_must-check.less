@@ -99,3 +99,25 @@
 		background: @surface-elevated !important;
 	}
 }
+
+// --- User Profile Nav List ---
+
+.user-profile-nav-list {
+	overflow: hidden !important;
+	height: 0 !important;
+	max-height: 0 !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+	interpolate-size: allow-keywords;
+	transition:
+		height 0.25s ease,
+		max-height 0.25s ease,
+		opacity 0.2s ease !important;
+}
+
+.user-profile-nav.active .user-profile-nav-list {
+	height: auto !important;
+	max-height: 20rem !important;
+	opacity: 1 !important;
+	pointer-events: auto !important;
+}

@@ -1,9 +1,12 @@
 .overlay-header {
 	background: @surface-header !important;
+	height: 60px !important;
 }
 
 .u-i-profile-page-container {
 	background: @surface-base !important;
+	overflow-y: auto !important;
+	overflow-x: hidden !important;
 }
 
 .u-i-p-amounts-bc.withdrawable .u-i-p-a-content-bc {
@@ -49,10 +52,8 @@
 		}
 	}
 }
-
-.u-i-profile-page-bc {
-	overflow: auto !important;
-	height: fit-content !important;
+.u-i-profile-page-content {
+	padding: @hb-space-4 @hb-space-5 !important;
 }
 
 .u-i-profile-page-content {
@@ -60,6 +61,7 @@
 	display: grid;
 	overflow-x: unset;
 	overflow-y: unset;
+	flex: none !important;
 }
 
 .u-i-p-amount-holder-bc {
@@ -83,14 +85,27 @@
 	.user-profile-nav-header {
 		background: @surface-elevated !important;
 	}
+
+	&.active {
+		.user-profile-nav-header {
+			border-radius: @hb-radius @hb-radius 0 0 !important;
+		}
+	}
 }
 
 .user-profile-nav-list {
 	background: @surface-raised !important;
+	.user-profile-nav-item {
+		height: @hb-profile-nav-item-h !important;
+		line-height: @hb-profile-nav-item-h !important;
+	}
+
+	.hb-profile-nav-cursor();
 }
 
 .u-i-p-amounts-bc {
 	min-height: unset !important;
+	height: fit-content !important;
 }
 
 .u-i-profile-page-bc .profile-panel-promo-code .big-btn {
@@ -120,4 +135,11 @@
 
 .dep-w-info-bc .nav-ico-w-row-bc {
 	height: fit-content !important;
+}
+
+.user-profile-cursor-visible {
+	&:after {
+		height: @hb-profile-nav-item-h !important;
+		background-image: linear-gradient(90deg, rgba(25, 124, 255, 0.5) 0%, rgba(25, 124, 255, 0.04) 100%) !important;
+	}
 }

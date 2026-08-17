@@ -367,3 +367,10 @@
 
     .hb-casino-cat-icons(@i + 1);
 }
+
+.hb-profile-nav-cursor(@i: 1) when (@i =< @hb-profile-nav-item-count) {
+	.user-profile-nav-item:nth-child(@{i}).active ~ .user-profile-nav-item-cursor:after {
+		top: ((@i - 1) * @hb-profile-nav-item-h) !important;
+	}
+	.hb-profile-nav-cursor(@i + 1);
+}

@@ -3444,9 +3444,6 @@ div[id^="comm100-float-button"] > div {
   overflow: auto !important;
   height: fit-content !important;
 }
-.u-i-p-c-body-bc {
-  height: fit-content !important;
-}
 .u-i-profile-page-content {
   gap: 8px;
   display: grid;

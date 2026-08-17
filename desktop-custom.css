@@ -3442,6 +3442,10 @@ div[id^="comm100-float-button"] > div {
 }
 .u-i-profile-page-bc {
   overflow: auto !important;
+  height: fit-content !important;
+}
+.u-i-p-c-body-bc {
+  height: fit-content !important;
 }
 .u-i-profile-page-content {
   gap: 8px;
@@ -3468,6 +3472,9 @@ div[id^="comm100-float-button"] > div {
 .user-profile-nav .user-profile-nav-header {
   background: #2a3c50 !important;
 }
+.user-profile-nav-list {
+  background: #233243 !important;
+}
 .u-i-p-amounts-bc {
   min-height: unset !important;
 }
@@ -3480,6 +3487,19 @@ div[id^="comm100-float-button"] > div {
 .userLogoutBtn {
   order: 6 !important;
   background: #2a3c50 !important;
+}
+.dep-w-info-bc .m-block-nav-items-bc {
+  padding: 8px 0 !important;
+}
+.dep-w-info-bc .m-nav-items-list-item-bc {
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+.dep-w-info-bc .nav-ico-w-row-bc {
+  height: fit-content !important;
 }
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {
@@ -3504,7 +3524,8 @@ div[id^="comm100-float-button"] > div {
   box-shadow: none !important;
 }
 .form-control-input-bc {
-  background: #233243 !important;
+  background: #1c2835 !important;
+  border: solid 1px #2a3c50 !important;
 }
 .form-control-title-bc {
   color: #a1b6ce !important;

@@ -3397,6 +3397,36 @@ div[id^="comm100-float-button"] > div {
   right: 20px !important;
   bottom: 10px !important;
 }
+.overlay-header {
+  background: #19222c !important;
+}
+.u-i-profile-page-container {
+  background: #1c2835 !important;
+}
+.u-i-p-amounts-bc.withdrawable .u-i-p-a-content-bc {
+  background: #197cff !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+.u-i-p-amounts-bc.withdrawable .u-i-p-a-content-bc::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 131px !important;
+  height: 125px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-balance-bg.svg") no-repeat top right / contain !important;
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+  z-index: 1 !important;
+}
+.u-i-p-amounts-bc.bonuses .u-i-p-a-content-bc {
+  background: #23aa27 !important;
+}
+.u-i-p-a-loyaltyPoint-bc {
+  background: #f28f16 !important;
+  border: none !important;
+}
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {
   background: #197cff !important;
@@ -3415,7 +3445,60 @@ div[id^="comm100-float-button"] > div {
   width: 100% !important;
 }
 .ds-textfield.ds-textfield-layout--fill .ds-textfield__field {
-  background: #1c2835 !important;
+  background: #233243 !important;
   border-radius: 6px !important;
   box-shadow: none !important;
+}
+.form-control-input-bc {
+  background: #233243 !important;
+}
+.form-control-title-bc {
+  color: #a1b6ce !important;
+}
+.btn.a-color {
+  background: #197cff !important;
+}
+.entrance-form-bc.registration .entrance-form-content-bc {
+  gap: 16px !important;
+}
+.entrance-form-bc.registration .slider-bc {
+  max-width: fit-content !important;
+  min-width: unset !important;
+}
+.entrance-form-bc.registration .slider-bc .swiper-slide {
+  width: 200px !important;
+}
+.entrance-form-bc.registration .slider-bc .swiper-slide .sdr-image-bc {
+  object-fit: contain !important;
+}
+.entrance-popup-bc {
+  min-width: 620px !important;
+}
+.entrance-popup-bc.sign-in {
+  height: 70vh !important;
+}
+.entrance-popup-bc.sign-in .entrance-form-bc {
+  display: grid !important;
+  grid-template-columns: 1fr minmax(0, 200px) !important;
+}
+.entrance-popup-bc.sign-in .swiper-slide {
+  width: 200px !important;
+  max-width: 200px !important;
+}
+.entrance-popup-bc.sign-in .swiper-slide .sdr-image-bc {
+  object-fit: contain !important;
+}
+.e-p-close-icon-bc {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: #233243 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: background 0.2s ease-in-out !important;
+}
+.e-p-close-icon-bc:hover {
+  background: #2a3c50 !important;
 }

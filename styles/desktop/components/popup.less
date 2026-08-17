@@ -1,0 +1,35 @@
+.overlay-header {
+	background: @surface-header !important;
+}
+
+.u-i-profile-page-container {
+	background: @surface-base !important;
+}
+
+.u-i-p-amounts-bc.withdrawable .u-i-p-a-content-bc {
+	background: @main-color !important;
+	position: relative !important;
+	overflow: hidden !important;
+
+	&::after {
+		content: "" !important;
+		position: absolute !important;
+		top: 0 !important;
+		right: 0 !important;
+		width: 131px !important;
+		height: 125px !important;
+		background: url("@{hb-profile-balance-bg}") no-repeat top right / contain !important;
+		pointer-events: none !important;
+		opacity: 0.5 !important;
+		z-index: 1 !important;
+	}
+}
+
+.u-i-p-amounts-bc.bonuses .u-i-p-a-content-bc {
+	background: @positive !important;
+}
+
+.u-i-p-a-loyaltyPoint-bc {
+	background: @dark-orange !important;
+	border: none !important;
+}

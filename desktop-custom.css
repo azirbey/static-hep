@@ -3365,3 +3365,25 @@ div[id^="comm100-float-button"] > div {
   right: 20px !important;
   bottom: 10px !important;
 }
+.horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
+.horizontalCategoryItemWrp.active .horizontalCategoryItem:before {
+  background: #197cff !important;
+}
+.horizontalCategoryItemWrp:hover i,
+.horizontalCategoryItemWrp.active i {
+  color: #fff !important;
+}
+.horizontalCategoryItemWrp .horizontalCategoryItem:before {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+.jackpot-pool {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+.casino-jackpot-games__search {
+  width: 100% !important;
+}
+.ds-textfield.ds-textfield-layout--fill .ds-textfield__field {
+  background: #1c2835 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}

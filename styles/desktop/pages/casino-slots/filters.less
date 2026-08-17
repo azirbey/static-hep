@@ -5,10 +5,11 @@
 
 .casinoGameProviderFilters {
     gap: @hb-casino-filter-gap !important;
+    grid-template-columns: minmax(0, 1fr) @hb-casino-filter-btn-width !important;
+    align-items: center !important;
 
     &.casinoGameProviderFilters--withRandomGame {
         grid-template-columns: minmax(0, 1fr) @hb-casino-filter-btn-width @hb-casino-filter-btn-width !important;
-        align-items: center !important;
     }
 
     .casinoSearchWrapper,

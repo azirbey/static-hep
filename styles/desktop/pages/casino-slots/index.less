@@ -1,11 +1,16 @@
-// Casino slots shell — #root.casino-slots
+// Casino slots + live casino shell
+// #root.casino-slots / #root.live-casino-games share chips + filters.
+// Row maps stay slots-only. Live casino has no random-play column.
 
 @import '_tokens.less';
 
-#root.casino-slots {
+#root.casino-slots,
+#root.live-casino-games {
     @import 'categories.less';
     @import 'filters.less';
+}
 
+#root.casino-slots {
     .layout-content-holder-bc {
         @import 'rows/index.less';
     }

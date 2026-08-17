@@ -2046,7 +2046,8 @@ body .layout-content-holder-bc {
   object-fit: cover !important;
   object-position: center !important;
 }
-#root.casino-slots .horizontal-scroll .ds-chip {
+#root.casino-slots .horizontal-scroll .ds-chip,
+#root.live-casino-games .horizontal-scroll .ds-chip {
   background: #233243 !important;
   border-radius: 6px !important;
   height: 36px !important;
@@ -2056,15 +2057,18 @@ body .layout-content-holder-bc {
   box-shadow: none !important;
   border: none !important;
 }
-#root.casino-slots .horizontal-scroll .ds-chip::after {
+#root.casino-slots .horizontal-scroll .ds-chip::after,
+#root.live-casino-games .horizontal-scroll .ds-chip::after {
   display: none !important;
 }
-#root.casino-slots .horizontal-scroll .ds-chip.ds-chip--selected {
+#root.casino-slots .horizontal-scroll .ds-chip.ds-chip--selected,
+#root.live-casino-games .horizontal-scroll .ds-chip.ds-chip--selected {
   background: #197cff !important;
   color: #fff !important;
   box-shadow: none !important;
 }
-#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon {
+#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon,
+#root.live-casino-games .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2072,10 +2076,12 @@ body .layout-content-holder-bc {
   height: 16px !important;
   color: transparent !important;
 }
-#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon svg {
+#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon svg,
+#root.live-casino-games .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon svg {
   display: none !important;
 }
-#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon::before {
+#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon::before,
+#root.live-casino-games .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon::before {
   content: '';
   display: block;
   flex-shrink: 0;
@@ -2083,28 +2089,38 @@ body .layout-content-holder-bc {
   height: 16px;
   background: url('https://static-hep.hepbet-static.workers.dev/images/icons/list-text.svg') no-repeat center center / contain !important;
 }
-#root.casino-slots .casinoNavigationAndFilters {
+#root.casino-slots .casinoNavigationAndFilters,
+#root.live-casino-games .casinoNavigationAndFilters {
   gap: 0 !important;
 }
-#root.casino-slots .casinoGameProviderFilters {
+#root.casino-slots .casinoGameProviderFilters,
+#root.live-casino-games .casinoGameProviderFilters {
   gap: 8px !important;
-}
-#root.casino-slots .casinoGameProviderFilters.casinoGameProviderFilters--withRandomGame {
-  grid-template-columns: minmax(0, 1fr) 220px 220px !important;
+  grid-template-columns: minmax(0, 1fr) 220px !important;
   align-items: center !important;
 }
+#root.casino-slots .casinoGameProviderFilters.casinoGameProviderFilters--withRandomGame,
+#root.live-casino-games .casinoGameProviderFilters.casinoGameProviderFilters--withRandomGame {
+  grid-template-columns: minmax(0, 1fr) 220px 220px !important;
+}
 #root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper,
+#root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper,
 #root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper,
-#root.casino-slots .casinoGameProviderFilters > .ds-select {
+#root.live-casino-games .casinoGameProviderFilters .casinoRandomGameButtonWrapper,
+#root.casino-slots .casinoGameProviderFilters > .ds-select,
+#root.live-casino-games .casinoGameProviderFilters > .ds-select {
   width: 100% !important;
   min-width: 0 !important;
   max-width: none !important;
 }
 #root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield,
-#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__field {
+#root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield,
+#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__field,
+#root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__field {
   width: 100% !important;
 }
-#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__field {
+#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__field,
+#root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__field {
   background: #1c2835 !important;
   border-radius: 6px !important;
   height: 36px !important;
@@ -2114,13 +2130,17 @@ body .layout-content-holder-bc {
   border: none !important;
 }
 #root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__label,
-#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__input {
+#root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__label,
+#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__input,
+#root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__input {
   color: #afc1d5 !important;
 }
-#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__icon {
+#root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__icon,
+#root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__icon {
   color: #fff !important;
 }
-#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn {
+#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn,
+#root.live-casino-games .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2135,7 +2155,8 @@ body .layout-content-holder-bc {
   box-shadow: none !important;
   border: none !important;
 }
-#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn::before {
+#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn::before,
+#root.live-casino-games .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn::before {
   content: '';
   display: block;
   flex-shrink: 0;
@@ -2145,19 +2166,22 @@ body .layout-content-holder-bc {
   position: static !important;
   margin: 0 !important;
 }
-#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn .btn__label {
+#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn .btn__label,
+#root.live-casino-games .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn .btn__label {
   font-size: 0 !important;
   line-height: 0 !important;
   margin: 0 !important;
 }
-#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn .btn__label::before {
+#root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn .btn__label::before,
+#root.live-casino-games .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn .btn__label::before {
   content: 'Rastgele Oyna';
   font-size: 13px;
   line-height: 20px;
   font-weight: 600;
   color: #fff;
 }
-#root.casino-slots .casinoGameProviderFilters .ds-select__field {
+#root.casino-slots .casinoGameProviderFilters .ds-select__field,
+#root.live-casino-games .casinoGameProviderFilters .ds-select__field {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2172,14 +2196,16 @@ body .layout-content-holder-bc {
   box-shadow: none !important;
   border: none !important;
 }
-#root.casino-slots .casinoGameProviderFilters .ds-select__text {
+#root.casino-slots .casinoGameProviderFilters .ds-select__text,
+#root.live-casino-games .casinoGameProviderFilters .ds-select__text {
   flex: 0 0 auto !important;
   width: auto !important;
   min-width: auto !important;
   overflow: visible !important;
   align-self: center !important;
 }
-#root.casino-slots .casinoGameProviderFilters .ds-select__label {
+#root.casino-slots .casinoGameProviderFilters .ds-select__label,
+#root.live-casino-games .casinoGameProviderFilters .ds-select__label {
   position: static !important;
   top: auto !important;
   left: auto !important;
@@ -2189,14 +2215,18 @@ body .layout-content-holder-bc {
   white-space: nowrap !important;
   overflow: visible !important;
 }
-#root.casino-slots .casinoGameProviderFilters .ds-select__value {
+#root.casino-slots .casinoGameProviderFilters .ds-select__value,
+#root.live-casino-games .casinoGameProviderFilters .ds-select__value {
   color: #fff !important;
 }
 #root.casino-slots .casinoGameProviderFilters .ds-select__value--placeholder:empty,
-#root.casino-slots .casinoGameProviderFilters .ds-select__right:empty {
+#root.live-casino-games .casinoGameProviderFilters .ds-select__value--placeholder:empty,
+#root.casino-slots .casinoGameProviderFilters .ds-select__right:empty,
+#root.live-casino-games .casinoGameProviderFilters .ds-select__right:empty {
   display: none !important;
 }
-#root.casino-slots .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon {
+#root.casino-slots .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon,
+#root.live-casino-games .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon {
   position: static !important;
   margin: 0 !important;
   display: flex !important;
@@ -2207,10 +2237,12 @@ body .layout-content-holder-bc {
   color: transparent !important;
   flex-shrink: 0 !important;
 }
-#root.casino-slots .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon svg {
+#root.casino-slots .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon svg,
+#root.live-casino-games .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon svg {
   display: none !important;
 }
-#root.casino-slots .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon::before {
+#root.casino-slots .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon::before,
+#root.live-casino-games .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon::before {
   content: '';
   display: block;
   flex-shrink: 0;

@@ -132,7 +132,7 @@ what tells them apart.
 | Page | Scope |
 |------|-------|
 | `home/` | `#root.is-home-page` |
-| `casino-slots/` | `#root.casino-slots` |
+| `casino-slots/` | `#root.casino-slots` and `#root.live-casino-games` (chips + filters; rows are slots-only) |
 | `tournament/` | `#root.tournament` |
 | `sportsbook/` | `#root.sportsbook` + `.prematch` / `.live` |
 

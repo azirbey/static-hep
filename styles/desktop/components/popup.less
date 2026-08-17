@@ -147,3 +147,30 @@
 		background-image: linear-gradient(90deg, fade(@accent, 50%) 0%, fade(@accent, 4%) 100%) !important;
 	}
 }
+
+.u-i-p-control-item-holder-bc {
+	gap: @hb-space-3 !important;
+	display: grid !important;
+}
+
+.eligible-bonus {
+	padding: @hb-space-3;
+	background: fade(@highlight, 4%);
+	border: 1px solid fade(@highlight, 12%);
+	border-radius: @hb-radius;
+	display: flex !important;
+	gap: @hb-space-2 !important;
+
+	i {
+		font-size: 16px !important;
+	}
+
+	.eligible-bonus-title {
+		margin: 0 !important;
+		.hb-text-label();
+	}
+
+	.eligible-bonus-status {
+		.hb-text(13px; 20px; 400; @cyan);
+	}
+}

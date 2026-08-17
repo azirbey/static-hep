@@ -1,30 +1,46 @@
+.btn {
+	text-underline-offset: 0.1rem !important;
+}
+
 .sectionTitleBtnWrapper,
 .horizontal-scroll {
-    .ds-btn.ds-btn-variant--transparent {
-        .hb-surface-gradient(strong);
-        width: @hb-control-md;
-        height: @hb-control-md;
-    }
+	.ds-btn.ds-btn-variant--transparent {
+		background: url("@{hb-icon-box-bg}") no-repeat center / contain !important;
+		border: none !important;
+		width: @hb-control-md;
+		height: @hb-control-md;
+	}
 }
 
 .ds-link.ds-link-color--transparent {
-    height: @hb-control-md;
-    .hb-surface-gradient(strong);
-    border-radius: @hb-radius;
-    padding: 0 @hb-space-3;
+	height: @hb-control-md;
+	.hb-surface-gradient(strong);
+	border-radius: @hb-radius;
+	padding: 0 @hb-space-3;
 
-    span {
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 20px;
-        letter-spacing: -0.01em;
-    }
+	span {
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 20px;
+		letter-spacing: -0.01em;
+	}
 }
 
 .bs-number-button-bc {
-    background: @surface-raised !important;
+	background: @surface-raised !important;
 
-    &:hover {
-        background: @accent !important;
-    }
+	&:hover {
+		background: @accent !important;
+	}
+}
+
+.ds-btn {
+	&:after {
+		display: none !important;
+	}
+
+	&.ds-btn-radius--full {
+		border-radius: @hb-radius !important;
+		.hb-text(13px; 20px; 700; @white) !important;
+	}
 }

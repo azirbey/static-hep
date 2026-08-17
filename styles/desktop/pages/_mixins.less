@@ -7,11 +7,10 @@
             content: '';
             background:
                 url('@{hb-cdn}/@{name}.svg') center / 16px 16px no-repeat,
-                linear-gradient(180deg, @surface-raised 0%, @surface-base 100%);
+                url('@{hb-icon-box-bg}') center / contain no-repeat;
             width: @hb-control-md;
             height: @hb-control-md;
-            border-radius: @hb-radius;
-            .hb-soft-border();
+            border: none;
             box-sizing: border-box;
         }
     }

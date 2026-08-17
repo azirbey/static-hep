@@ -66,332 +66,331 @@ body {
   gap: 5px !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(1) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(1) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(1) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(1) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(2) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(2) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(2) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(2) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer-jersey.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer-jersey.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(3) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(3) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(3) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(3) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(4) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(4) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(4) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(4) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/roulette.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/roulette.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(5) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(5) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(5) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(5) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine-1.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine-1.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(6) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(6) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(6) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(6) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/rocket.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/rocket.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(7) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(7) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(7) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(7) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/plane.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/plane.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(8) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(8) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(8) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(8) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/badge.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/badge.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(9) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(9) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(9) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(9) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/horse.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/horse.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(10) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(10) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(10) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(10) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/trophy.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/trophy.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(11) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(11) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(11) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(11) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/microphone.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/microphone.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(12) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(12) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(12) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(12) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/monitor.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/monitor.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(13) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(13) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(13) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(13) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/grocery-store.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/grocery-store.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(14) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(14) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(14) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(14) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/coupon-wars.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/coupon-wars.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(15) > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(15) > a.nav-menu-item span.CMSIconSVGWrapper svg {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(15) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:nth-child(15) > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/affiliate.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/affiliate.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item {
   padding-inline-start: 0 !important;
   padding: 0 16px 0 12px !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
-  width: 28px !important;
-  height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
-}
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item span.CMSIconSVGWrapper svg {
-  display: none !important;
-}
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item span.CMSIconSVGWrapper::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 16px;
-}
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[class*='badge-']::after {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[class*="badge-"]::after {
   height: fit-content;
-  top: -1px;
-  right: -1px;
-  border-radius: 2px !important;
+  top: -5px;
+  right: -5px;
+  border-radius: 4px !important;
   padding: 1px 10px !important;
+  z-index: 1;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a span:not(:has(svg)) {
   color: #d7e0ea !important;
@@ -428,6 +427,9 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li:hover > a span {
   color: #fff !important;
 }
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container.header-navigation:first-child > ul.nav-menu > li:first-child:hover > .nav-menu-item {
+  border-end-start-radius: 0 !important;
+}
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other {
   height: 44px !important;
 }
@@ -454,17 +456,15 @@ body {
   color: #d7e0ea !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item i.bc-i-apps {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
-  width: 28px !important;
-  height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
-  order: 1;
-  margin-inline-end: 8px;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
+  order: 1;
+  margin-inline-end: 8px;
   flex-shrink: 0;
   font-size: 0 !important;
 }
@@ -472,7 +472,7 @@ body {
   display: none !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item i.bc-i-apps::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
@@ -483,10 +483,10 @@ body {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/more.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/more.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item::after {
-  content: '\e5cf';
+  content: "\e5cf";
   order: 3;
   font-family: BetConstruct-Icons, sans-serif;
   font-size: 8px;
@@ -505,305 +505,320 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub {
   background: #0e141b !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/live/event-view'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/live/event-view"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/live/event-view'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/live/event-view"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/live/event-view'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/live/event-view"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/live/event-view'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/live/event-view"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/pre-match/event-view'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/pre-match/event-view"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/pre-match/event-view'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/pre-match/event-view"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/pre-match/event-view'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/pre-match/event-view"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='sports/pre-match/event-view'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer-jersey.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/pre-match/event-view"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer-jersey.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots']:not([href*='1634-vipslots']):not([href*='406-crashgames']) span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots"]:not([href*="1634-vipslots"]):not([href*="406-crashgames"]) span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots']:not([href*='1634-vipslots']):not([href*='406-crashgames']) span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots"]:not([href*="1634-vipslots"]):not([href*="406-crashgames"]) span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots']:not([href*='1634-vipslots']):not([href*='406-crashgames']) span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots"]:not([href*="1634-vipslots"]):not([href*="406-crashgames"]) span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots']:not([href*='1634-vipslots']):not([href*='406-crashgames']) span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots"]:not([href*="1634-vipslots"]):not([href*="406-crashgames"]) span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='live-casino/home'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="live-casino/home"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='live-casino/home'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="live-casino/home"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='live-casino/home'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="live-casino/home"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='live-casino/home'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/roulette.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="live-casino/home"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/roulette.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/1634-vipslots'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/1634-vipslots"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/1634-vipslots'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/1634-vipslots"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/1634-vipslots'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/1634-vipslots"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/1634-vipslots'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine-1.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/1634-vipslots"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine-1.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/406-crashgames'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/406-crashgames"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/406-crashgames'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/406-crashgames"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/406-crashgames'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/406-crashgames"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/slots/406-crashgames'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/rocket.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/slots/406-crashgames"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/rocket.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/game-view/806666/aviator'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/806666/aviator"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/game-view/806666/aviator'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/806666/aviator"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/game-view/806666/aviator'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/806666/aviator"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='casino/game-view/806666/aviator'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/plane.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/806666/aviator"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/plane.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='SpecialBets'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="SpecialBets"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='SpecialBets'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="SpecialBets"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='SpecialBets'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="SpecialBets"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='SpecialBets'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/badge.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="SpecialBets"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/badge.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='virtual-sports'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="virtual-sports"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='virtual-sports'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="virtual-sports"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='virtual-sports'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="virtual-sports"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='virtual-sports'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/horse.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="virtual-sports"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/horse.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='esports'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="esports"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='esports'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="esports"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='esports'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="esports"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='esports'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/trophy.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="esports"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/trophy.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tv-games'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tv-games"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tv-games'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tv-games"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tv-games'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tv-games"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tv-games'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/microphone.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tv-games"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/microphone.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbettv'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbettv"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbettv'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbettv"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbettv'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbettv"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbettv'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/monitor.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbettv"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/monitor.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='?page=loyalty-points&profile=open'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="?page=loyalty-points&profile=open"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='?page=loyalty-points&profile=open'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="?page=loyalty-points&profile=open"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='?page=loyalty-points&profile=open'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="?page=loyalty-points&profile=open"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='?page=loyalty-points&profile=open'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/grocery-store.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="?page=loyalty-points&profile=open"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/grocery-store.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tab=express'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tab=express'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tab=express'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='tab=express'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/coupon-wars.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/coupon-wars.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbetaffiliate'] span.CMSIconSVGWrapper {
-  background: linear-gradient(180deg, #233243 0%, #1c2835 100%) !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 28px !important;
   height: 28px !important;
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  border-radius: 6px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbetaffiliate'] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbetaffiliate'] span.CMSIconSVGWrapper::before {
-  content: '';
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper::before {
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*='hepbetaffiliate'] span.CMSIconSVGWrapper::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/affiliate.svg') no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/affiliate.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub li a.nav-menu-item {
   background: transparent !important;
@@ -824,6 +839,9 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub li a.nav-menu-item:hover:hover::before {
   display: none !important;
 }
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container.header-navigation:first-child .nav-menu-other > li:hover {
+  border-end-end-radius: 0 !important;
+}
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container {
   background: transparent !important;
 }
@@ -833,149 +851,149 @@ body {
   box-sizing: content-box !important;
   gap: 10px !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/event-view']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/event-view"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/soccer.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/soccer.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/event-view'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/event-view']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/soccer.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/event-view"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/event-view"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/soccer.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/live-calendar']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/live-calendar"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/calendar.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/calendar.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/live-calendar'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/live-calendar']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/live-calendar"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/live-calendar"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/results']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/results"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/scoreboard.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/scoreboard.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/results'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/live/results']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/results"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/results"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/event-view']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/event-view"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/stopwatch.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/stopwatch.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/event-view'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/event-view']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/stopwatch.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/event-view"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/event-view"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/stopwatch.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/live-calendar']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/live-calendar"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/calendar.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/calendar.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/live-calendar'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/live-calendar']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/live-calendar"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/live-calendar"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/results']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/results"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/scoreboard.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/scoreboard.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/results'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/results']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/results"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/results"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/tournaments']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/tournaments"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/trophy.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/trophy.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/tournaments'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='sports/pre-match/tournaments']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/tournaments"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/tournaments"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/slots']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/slots"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/slot-machine.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/slot-machine.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/slots'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/slots']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/slot-machine.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/slots"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/slots"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/slot-machine.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/tournaments']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/tournaments"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/trophy.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/trophy.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/tournaments'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/tournaments']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/tournaments"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/tournaments"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/jackpot']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/jackpot"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/diamond.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/diamond.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/jackpot'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/jackpot']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/diamond.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/jackpot"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/jackpot"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/diamond.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='live-casino/home']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="live-casino/home"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/roulette.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/roulette.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='live-casino/home'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='live-casino/home']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/roulette.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="live-casino/home"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="live-casino/home"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/roulette.svg") !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/live-rtp']::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/live-rtp"]::before {
   content: '';
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/live-rtp.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/live-rtp.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/live-rtp'].active::before,
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*='casino/live-rtp']:hover::before {
-  background-image: url('https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/live-rtp.svg') !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/live-rtp"].active::before,
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/live-rtp"]:hover::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/live-rtp.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu > li > a.nav-menu-item {
   display: flex !important;
@@ -1648,6 +1666,7 @@ body {
   background: #233243 !important;
   border-radius: 6px !important;
   min-width: 84px !important;
+  height: 32px !important;
   position: relative !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .infoTime::before {
@@ -1710,7 +1729,7 @@ body {
 .layout-footer-holder-bc .footerHeader {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: 'left left' 'logo info';
+  grid-template-areas: "left left" "logo info";
   align-items: center;
   row-gap: 24px;
 }
@@ -1801,11 +1820,10 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/laurel-wreath.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/laurel-wreath.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .page-view-more {
@@ -1814,11 +1832,10 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(4) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(4) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/fire.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/fire.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(4) .page-view-more {
@@ -1827,11 +1844,10 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(5) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(5) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/slot-machine.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/slot-machine.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(5) .page-view-more {
@@ -1840,11 +1856,10 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(6) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(6) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/roulette.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/roulette.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(6) .page-view-more {
@@ -1853,11 +1868,10 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(7) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(7) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/rocket.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/rocket.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(7) .page-view-more {
@@ -1866,11 +1880,10 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/invoice.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/invoice.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .page-view-more {
@@ -1879,11 +1892,10 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/link.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/link.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .page-view-more {
@@ -1915,17 +1927,27 @@ body .layout-content-holder-bc {
   letter-spacing: -0.01em !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .sectionTitle h6::before {
-  content: 'Canlı';
+  content: "Canlı";
   color: #ff3b65 !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .sectionTitle h6::after {
-  content: ' Kazançlar';
+  content: " Kazançlar";
   color: #fff !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .casinoTopWinnersWidget {
+  min-height: 140px !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .skeleton-loader-full-banner {
+  width: 185px !important;
+  min-width: 185px !important;
+  height: 88px !important;
+  border-radius: 6px !important;
+  background: #233243 !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .casinoWinnerWidgetItem {
   background: #233243 !important;
-  min-width: 175px !important;
-  width: 175px !important;
+  min-width: 185px !important;
+  width: 185px !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .casinoWinnerWidgetItem .casinoWinnerWidgetName,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .casinoWinnerWidgetItem .casinoWinnerWidgetGameName {
@@ -1945,7 +1967,8 @@ body .layout-content-holder-bc {
   font-size: 15px !important;
   font-weight: 700 !important;
   line-height: 20px !important;
-  letter-spacing: -0.01em !important;
+  letter-spacing: -0.04em !important;
+  white-space: nowrap !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(2) .casinoTopWinnersPeriodsSection .ds-chip {
   width: 63px !important;
@@ -2217,11 +2240,10 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(2, 2).svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(2, 2).svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .page-view-more {
@@ -2230,11 +2252,10 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(fire) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(fire) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(fire, 2).svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(fire, 2).svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(fire) .page-view-more {
@@ -2243,11 +2264,10 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(1) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(1) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/menus-blue.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/menus-blue.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(1) .page-view-more {
@@ -2256,11 +2276,10 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(3) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(3) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/slot-machine.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/slot-machine.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(3) .page-view-more {
@@ -2269,11 +2288,10 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(4) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(4) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/trophy.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/trophy.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(4) .page-view-more {
@@ -2282,11 +2300,10 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(5) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(5) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/roulette.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/roulette.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(5) .page-view-more {
@@ -2295,11 +2312,10 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(6) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(6) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/rocket.svg') center / 16px 16px no-repeat, linear-gradient(180deg, #233243 0%, #1c2835 100%);
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/rocket.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(6) .page-view-more {
@@ -3336,9 +3352,13 @@ body .layout-content-holder-bc {
 #root.sportsbook.prematch .prematch-page-bc .comp-name-fav-row-bc {
   background: #233243 !important;
 }
+.btn {
+  text-underline-offset: 0.1rem !important;
+}
 .sectionTitleBtnWrapper .ds-btn.ds-btn-variant--transparent,
 .horizontal-scroll .ds-btn.ds-btn-variant--transparent {
-  background: linear-gradient(180deg, #2a3c50 0%, #233243 100%);
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
   width: 36px;
   height: 36px;
 }
@@ -3359,4 +3379,20 @@ body .layout-content-holder-bc {
 }
 .bs-number-button-bc:hover {
   background: #197cff !important;
+}
+.ds-btn:after {
+  display: none !important;
+}
+.ds-btn.ds-btn-radius--full {
+  border-radius: 6px !important;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+div[id^="comm100-float-button"] > div {
+  right: 20px !important;
+  bottom: 10px !important;
 }

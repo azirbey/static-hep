@@ -374,3 +374,61 @@
 	}
 	.hb-profile-nav-cursor(@i + 1);
 }
+
+.hb-profile-icon-face(@name) {
+	.hb-icon-glyph-base(@hb-profile-nav-icon-size);
+
+	&::before {
+		background: url("@{hb-profile-icons-gray}/@{name}.svg") no-repeat center / contain !important;
+	}
+}
+
+.hb-profile-icon-active(@name) {
+	&::before {
+		background-image: url("@{hb-profile-icons-blue}/@{name}.svg") !important;
+	}
+}
+
+.hb-profile-nav-apply-icon(@class; @name) {
+	i.user-profile-nav-icon.@{class} {
+		.hb-profile-icon-face(@name);
+	}
+
+	&.active i.user-profile-nav-icon.@{class},
+	&:hover i.user-profile-nav-icon.@{class} {
+		.hb-profile-icon-active(@name);
+	}
+}
+
+.hb-profile-nav-apply-href(@href; @name) {
+	&:has([href*="@{href}"]) i.user-profile-nav-icon {
+		.hb-profile-icon-face(@name);
+	}
+
+	&.active:has([href*="@{href}"]) i.user-profile-nav-icon,
+	&:hover:has([href*="@{href}"]) i.user-profile-nav-icon {
+		.hb-profile-icon-active(@name);
+	}
+}
+
+.hb-profile-nav-icons(@i: 1) when (@i =< @hb-profile-nav-icon-count) {
+	@row: extract(@hb-profile-nav-icons, @i);
+	.hb-profile-nav-apply-icon(extract(@row, 1); extract(@row, 2));
+	.hb-profile-nav-icons(@i + 1);
+}
+
+.hb-profile-nav-href-icons(@i: 1) when (@i =< @hb-profile-nav-href-count) {
+	@row: extract(@hb-profile-nav-hrefs, @i);
+	.hb-profile-nav-apply-href(extract(@row, 1); extract(@row, 2));
+	.hb-profile-nav-href-icons(@i + 1);
+}
+
+.hb-profile-logout-icon() {
+	i {
+		.hb-profile-icon-face(exit);
+	}
+
+	&:hover i {
+		.hb-profile-icon-active(exit);
+	}
+}

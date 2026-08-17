@@ -3465,6 +3465,9 @@ div[id^="comm100-float-button"] > div {
   margin: 0 !important;
   order: 5 !important;
 }
+.user-profile-nav .user-profile-nav-header {
+  background: #2a3c50 !important;
+}
 .u-i-p-amounts-bc {
   min-height: unset !important;
 }
@@ -3476,6 +3479,7 @@ div[id^="comm100-float-button"] > div {
 }
 .userLogoutBtn {
   order: 6 !important;
+  background: #2a3c50 !important;
 }
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {

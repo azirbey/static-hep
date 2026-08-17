@@ -3700,6 +3700,8 @@ div[id^="comm100-float-button"] > div {
 .overlay-header {
   background: #19222c !important;
   height: 60px !important;
+  min-height: 60px !important;
+  flex-shrink: 0 !important;
 }
 .u-i-profile-page-container {
   background: #1c2835 !important;
@@ -4329,6 +4331,30 @@ div[id^="comm100-float-button"] > div {
   line-height: 20px !important;
   letter-spacing: -0.01em !important;
   color: #0febff !important;
+}
+.multi-select-bc.disabled {
+  opacity: 0.8 !important;
+}
+.form-control-select-bc {
+  background: #1c2835 !important;
+}
+.unlockRequiredField .form-control-label-bc {
+  border-color: #0febff !important;
+  box-shadow: 0 0 20px -10px #0febff !important;
+}
+.entrance-f-error-message-bc {
+  background: transparent !important;
+  justify-content: start !important;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  padding: 0 !important;
+}
+.u-i-p-control-item-holder-bc:has(hr.subscribeBelowSeparator) {
+  display: none !important;
 }
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {

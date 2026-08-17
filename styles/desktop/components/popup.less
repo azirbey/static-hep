@@ -1,6 +1,8 @@
 .overlay-header {
 	background: @surface-header !important;
 	height: 60px !important;
+	min-height: 60px !important;
+	flex-shrink: 0 !important;
 }
 
 .u-i-profile-page-container {
@@ -172,5 +174,31 @@
 
 	.eligible-bonus-status {
 		.hb-text(13px; 20px; 400; @cyan);
+	}
+}
+
+.multi-select-bc.disabled {
+	opacity: 0.8 !important;
+}
+
+.form-control-select-bc {
+	background: @surface-base !important;
+}
+
+.unlockRequiredField .form-control-label-bc {
+	border-color: @cyan !important;
+	box-shadow: 0 0 20px -10px @cyan !important;
+}
+
+.entrance-f-error-message-bc {
+	.hb-bg-transparent();
+	justify-content: start !important;
+	.hb-text(20px; 20px; 400; @white);
+	padding: 0 !important;
+}
+
+.u-i-p-control-item-holder-bc {
+	&:has(hr.subscribeBelowSeparator) {
+		display: none !important;
 	}
 }

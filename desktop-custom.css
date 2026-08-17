@@ -1365,6 +1365,306 @@ body {
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other:not(.profileDetails) .nav-menu-sub a.nav-menu-item[href*='page=info'] span::before {
   content: 'Bilgi';
 }
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-user {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-user::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-user::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/user.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-user::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-user::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-user::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/user.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-wallet {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-wallet::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-wallet::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/wallet.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-wallet::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-wallet::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-wallet::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/wallet.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-money {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-money::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-money::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/wallet.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-money::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-money::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-money::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/wallet.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-balance-management {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-balance-management::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-balance-management::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/wallet.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-balance-management::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-balance-management::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-balance-management::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/wallet.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-history {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-history::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-history::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/time.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-history::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-history::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-history::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/time.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-bonus {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-bonus::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-bonus::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/gift-box.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-bonus::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-bonus::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-bonus::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/gift-box.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-promotion {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-promotion::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-promotion::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/gift-box.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-promotion::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-promotion::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-promotion::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/gift-box.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-messages {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-messages::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-messages::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/message.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-messages::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-messages::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-messages::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/message.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-message {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-message::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-message::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/message.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-message::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-message::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-message::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/message.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-loyalty {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-loyalty::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-loyalty::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/medal-ribbon.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-loyalty::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-loyalty::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-loyalty::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/medal-ribbon.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-rewards {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-rewards::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-rewards::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/medal-ribbon.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-rewards::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-rewards::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-rewards::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/medal-ribbon.svg") !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-logout {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-logout::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-logout::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/exit.svg") no-repeat center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item:hover i.bc-i-logout::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item.active i.bc-i-logout::before,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub .userLogoutBtn:hover i.bc-i-logout::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/exit.svg") !important;
+}
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub a.nav-menu-item[href*='account=profile'][href*='page=details'] span::before {
   content: 'Profilim';
 }
@@ -3539,6 +3839,30 @@ div[id^="comm100-float-button"] > div {
 }
 .user-profile-nav.active i.user-profile-nav-icon.bc-i-money::before,
 .user-profile-nav:hover i.user-profile-nav-icon.bc-i-money::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/wallet.svg") !important;
+}
+.user-profile-nav i.user-profile-nav-icon.bc-i-balance-management {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+.user-profile-nav i.user-profile-nav-icon.bc-i-balance-management::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.user-profile-nav i.user-profile-nav-icon.bc-i-balance-management::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/gray/wallet.svg") no-repeat center / contain !important;
+}
+.user-profile-nav.active i.user-profile-nav-icon.bc-i-balance-management::before,
+.user-profile-nav:hover i.user-profile-nav-icon.bc-i-balance-management::before {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/profile-icons/blue/wallet.svg") !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-history {

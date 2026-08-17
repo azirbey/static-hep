@@ -423,6 +423,24 @@
 	.hb-profile-nav-href-icons(@i + 1);
 }
 
+.hb-profile-menu-apply-icon(@class; @name) {
+	i.@{class} {
+		.hb-profile-icon-face(@name);
+	}
+
+	a.nav-menu-item:hover i.@{class},
+	a.nav-menu-item.active i.@{class},
+	.userLogoutBtn:hover i.@{class} {
+		.hb-profile-icon-active(@name);
+	}
+}
+
+.hb-profile-menu-icons(@i: 1) when (@i =< @hb-profile-nav-icon-count) {
+	@row: extract(@hb-profile-nav-icons, @i);
+	.hb-profile-menu-apply-icon(extract(@row, 1); extract(@row, 2));
+	.hb-profile-menu-icons(@i + 1);
+}
+
 .hb-profile-logout-icon() {
 	i {
 		.hb-profile-icon-face(exit);

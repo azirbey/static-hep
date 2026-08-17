@@ -3426,6 +3426,56 @@ div[id^="comm100-float-button"] > div {
 .u-i-p-a-loyaltyPoint-bc {
   background: #f28f16 !important;
   border: none !important;
+  margin-bottom: 8px !important;
+  order: 3 !important;
+}
+.promoCodeWrapper-bc {
+  padding: 0 !important;
+  order: 4 !important;
+  margin-bottom: 8px !important;
+}
+.promoCodeWrapper-bc form {
+  padding: 0 !important;
+}
+.promoCodeWrapper-bc form .form-control-input-bc {
+  padding-inline-end: 0 !important;
+}
+.u-i-profile-page-bc {
+  overflow: auto !important;
+}
+.u-i-profile-page-content {
+  gap: 8px;
+  display: grid;
+  overflow-x: unset;
+  overflow-y: unset;
+}
+.u-i-p-amount-holder-bc {
+  margin-bottom: 8px !important;
+  gap: 8px;
+  order: 2 !important;
+}
+.u-i-p-amounts-bc + .u-i-p-amounts-bc {
+  margin-top: 0 !important;
+}
+.u-i-p-p-u-i-edit-button-bc {
+  margin-bottom: 8px !important;
+  order: 1 !important;
+}
+.user-profile-nav {
+  margin: 0 !important;
+  order: 5 !important;
+}
+.u-i-p-amounts-bc {
+  min-height: unset !important;
+}
+.u-i-profile-page-bc .profile-panel-promo-code .big-btn {
+  min-width: unset !important;
+}
+.u-i-p-p-u-i-avatar-holder-bc {
+  border-radius: 6px !important;
+}
+.userLogoutBtn {
+  order: 6 !important;
 }
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {

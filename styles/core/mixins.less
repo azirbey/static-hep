@@ -347,7 +347,16 @@
     }
 }
 
-.hb-casino-cat-icons(@i: 1) when (@i =< @hb-casino-cat-count) {
+.hb-casino-cat-icons() when (length(@hb-casino-cats) = 2) and (length(extract(@hb-casino-cats, 1)) = 1) {
+    @class: extract(@hb-casino-cats, 1);
+    @name: extract(@hb-casino-cats, 2);
+
+    [class='category-@{class}'] {
+        .hb-casino-cat-apply-icon(@name);
+    }
+}
+
+.hb-casino-cat-icons(@i: 1) when (@i =< @hb-casino-cat-count) and (length(extract(@hb-casino-cats, @i)) >= 2) {
     @row: extract(@hb-casino-cats, @i);
     @class: extract(@row, 1);
     @name: extract(@row, 2);

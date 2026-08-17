@@ -19,8 +19,18 @@
     }
 }
 
-// Apply (nth-child icon) pairs from a record list onto & > .hm-row-bc
-.hb-row-icons(@list; @i: 1) when (@i =< length(@list)) {
+// Apply (nth-child icon) pairs onto & > .hm-row-bc.
+// One pair is space-separated (`2 fire`); several pairs are comma-separated.
+.hb-row-icons(@list) when (length(@list) = 2) and (length(extract(@list, 1)) = 1) {
+    @n: extract(@list, 1);
+    @name: extract(@list, 2);
+
+    & > .hm-row-bc:nth-child(@{n}) {
+        .hb-row-title-icon(@name);
+    }
+}
+
+.hb-row-icons(@list; @i: 1) when (@i =< length(@list)) and (length(extract(@list, @i)) >= 2) {
     @row: extract(@list, @i);
     @n: extract(@row, 1);
     @name: extract(@row, 2);

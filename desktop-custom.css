@@ -2081,26 +2081,7 @@ body .layout-content-holder-bc {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(Lobby, 2).svg') no-repeat center center / contain !important;
-}
-#root.casino-slots .horizontal-scroll [class='category-list-text'] span.CMSIconSVGWrapper.chip__icon {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 16px !important;
-  height: 16px !important;
-  color: transparent !important;
-}
-#root.casino-slots .horizontal-scroll [class='category-list-text'] span.CMSIconSVGWrapper.chip__icon svg {
-  display: none !important;
-}
-#root.casino-slots .horizontal-scroll [class='category-list-text'] span.CMSIconSVGWrapper.chip__icon::before {
-  content: '';
-  display: block;
-  flex-shrink: 0;
-  width: 16px;
-  height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(list-text, 2).svg') no-repeat center center / contain !important;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/list-text.svg') no-repeat center center / contain !important;
 }
 #root.casino-slots .casinoNavigationAndFilters {
   gap: 0 !important;
@@ -2240,25 +2221,13 @@ body .layout-content-holder-bc {
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .page-view-more:before {
   content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(2, 2).svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/fire.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
   width: 36px;
   height: 36px;
   border: none;
   box-sizing: border-box;
 }
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .page-view-more {
-  gap: var(--fds-ref-spacing-medium);
-}
-#root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(fire) .sectionTitle:before,
-#root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(fire) .page-view-more:before {
-  content: '';
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/extract(fire, 2).svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
-  width: 36px;
-  height: 36px;
-  border: none;
-  box-sizing: border-box;
-}
-#root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(fire) .page-view-more {
   gap: var(--fds-ref-spacing-medium);
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(1) .sectionTitle:before,

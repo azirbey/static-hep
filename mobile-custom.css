@@ -11,6 +11,7 @@
   --padding-page-aside: 16px !important;
   --fds-ref-spacing-xsmall: 16px !important;
   --mobile-header-main-section-height: 48px !important;
+  --mobile-header-navigation-height: 40px !important;
 }
 @font-face {
   font-family: 'Geist';
@@ -53,12 +54,10 @@ body {
   --padding-page-aside: 16px !important;
   --fds-ref-spacing-xsmall: 16px !important;
   --mobile-header-main-section-height: 48px !important;
+  --mobile-header-navigation-height: 40px !important;
 }
-.product-banner-container-bc {
-  padding: 10px var(--padding-page-aside);
-}
-.layout-header-holder-bc ~ div {
-  display: none !important;
+.layout-content-holder-bc {
+  padding-top: calc(var(--mobile-header-navigation-height) + var(--dynamic-header) + var(--mobile-self-exclusion-height) + 44px + 16px) !important;
 }
 .hdr-additional-info {
   background: #19222c !important;

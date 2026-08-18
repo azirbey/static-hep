@@ -1,9 +1,16 @@
 // Global mobile chrome only — page row maps live under pages/<page>/.
 
-.product-banner-container-bc {
-	padding: @hb-mobile-banner-pad-y var(--padding-page-aside);
+.layout-content-holder-bc {
+	padding-top: calc(
+		var(--mobile-header-navigation-height) + var(--dynamic-header) + var(--mobile-self-exclusion-height) +
+			@hb-mobile-user-strip-h + @hb-mobile-content-gap
+	) !important;
 }
 
-.layout-header-holder-bc ~ div {
-	display: none !important;
-}
+// .layout-content-holder-bc ~ div {
+// 	display: none !important;
+// }
+
+// .layout-content-holder-bc .hm-row-bc:nth-child(n + 2) {
+// 	display: none !important;
+// }

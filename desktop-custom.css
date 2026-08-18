@@ -3117,8 +3117,15 @@ body .layout-content-holder-bc {
   padding: 8px !important;
   margin-bottom: 0 !important;
 }
+#root.sportsbook .sportsbook-container .sportsbook-center-section .live-page-sections-bc .game-details-container-inner-bc .game-details-c-head-bc .game-d-c-h-c-r-sport-icon {
+  font-size: 16px;
+  color: #fff;
+}
 #root.sportsbook .sportsbook-container .sportsbook-center-section .live-page-sections-bc .game-details-container-inner-bc .game-details-c-head-bc .game-d-c-h-c-r-sport-country {
   margin: 0px !important;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
 }
 #root.sportsbook .sportsbook-container .sportsbook-center-section .live-page-sections-bc .game-details-container-inner-bc .game-details-c-head-bc .game-details-c-head-title-bc {
   gap: 8px !important;
@@ -3186,6 +3193,406 @@ body .layout-content-holder-bc {
 #root.sportsbook .sportsbook-container .sportsbook-center-section .live-page-sections-bc .sgm-body-bc .sgm-market-g .sgm-market-g-head-bc,
 #root.sportsbook .sportsbook-container .sportsbook-center-section .live-page-sections-bc .sgm-body-bc .sgm-market-g .sgm-market-g-item-bc {
   background: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Soccer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Soccer::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Soccer::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/soccer.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Basketball {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Basketball::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Basketball::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/basketball.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Volleyball {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Volleyball::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Volleyball::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/volleyball.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Tennis {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Tennis::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Tennis::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/tennis.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-IceHockey {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-IceHockey::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-IceHockey::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/ice-hockey.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Baseball {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Baseball::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Baseball::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/baseball.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-TableTennis {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-TableTennis::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-TableTennis::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/table-tennis.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Cricket {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Cricket::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Cricket::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/cricket.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Handball {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Handball::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Handball::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/handball.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Rugby {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Rugby::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Rugby::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/rugby.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyUnion {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyUnion::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyUnion::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/rugby.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyLeague {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyLeague::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyLeague::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/rugby.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Golf {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Golf::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Golf::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/golf.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Boxing {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Boxing::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Boxing::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/box.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Darts {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Darts::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Darts::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/dart.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Snooker {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Snooker::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Snooker::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/snooker.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachVolleyball {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachVolleyball::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachVolleyball::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/beach-volley.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachSoccer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachSoccer::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachSoccer::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/beach-soccer.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Biathlon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Biathlon::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Biathlon::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/biathlon.svg") no-repeat center / contain !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Pickleball {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Pickleball::before {
+  content: '' !important;
+  display: block !important;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+#root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Pickleball::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/sports-icons/sports/pickleball.svg") no-repeat center / contain !important;
 }
 #root.sportsbook .waduaAnimation.hasHeader {
   width: auto !important;
@@ -3584,7 +3991,7 @@ body .layout-content-holder-bc {
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc {
   background: #233243 !important;
   padding: 0px 12px !important;
-  box-shadow: 1px 1px 1px 1px #31465e !important;
+  box-shadow: -1px 0px 0px 1px #31465e !important;
   max-height: 52px !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc .sp-s-l-b-content-wrp .sp-s-l-b-content-bc > .sp-sub-list-bc .sp-sub-list-bc {

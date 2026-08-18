@@ -451,6 +451,27 @@
 	}
 }
 
+// Sportsbook left-rail sport flags — CDN SVG, keep platform glyph if unmapped.
+.hb-sport-icon(@name; @size: @hb-icon-size-lg) {
+	.hb-icon-glyph-base(@size);
+
+	&::before {
+		background: url("@{hb-sports-cdn}/@{name}.svg") no-repeat center / contain !important;
+	}
+}
+
+.hb-sport-flag-icons(@i: 1) when (@i =< @hb-sport-icon-count) {
+	@row: extract(@hb-sport-icons, @i);
+	@class: extract(@row, 1);
+	@name: extract(@row, 2);
+
+	&.@{class} {
+		.hb-sport-icon(@name);
+	}
+
+	.hb-sport-flag-icons(@i + 1);
+}
+
 // Highlight callout (eligible bonus, payment copy, etc.)
 .hb-highlight-panel() {
 	background: fade(@highlight, 4%);

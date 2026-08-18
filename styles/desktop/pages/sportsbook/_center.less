@@ -6,97 +6,105 @@
 // only pass through and never distinguish anything.
 
 .sportsbook-center-section .live-page-sections-bc {
-    .game-details-container-inner-bc {
-        padding: 0 10px 10px 10px !important;
+	.game-details-container-inner-bc {
+		padding: 0 10px 10px 10px !important;
 
-        &::before {
-            display: none !important;
-        }
+		&::before {
+			display: none !important;
+		}
 
-        .game-details-c-head-bc {
-            align-items: center !important;
-            padding: 8px !important;
-            margin-bottom: 0 !important;
+		.game-details-c-head-bc {
+			align-items: center !important;
+			padding: 8px !important;
+			margin-bottom: 0 !important;
 
-            .game-d-c-h-c-r-sport-country {
-                margin: 0px !important;
-            }
+			.game-d-c-h-c-r-sport-icon {
+				font-size: @hb-icon-size-md;
+				color: @white;
+			}
 
-            .game-details-c-head-title-bc {
-                gap: 8px !important;
+			.game-d-c-h-c-r-sport-country {
+				margin: 0px !important;
+				border-radius: 50%;
+				width: @hb-icon-size-md;
+				height: @hb-icon-size-md;
+			}
 
-                & * {
-                    margin-bottom: 0px !important;
-                }
+			.game-details-c-head-title-bc {
+				gap: 8px !important;
 
-                .game-d-c-h-c-r-sport-league-bc {
-                    .hb-text(13px; 20px; 600; @text-strong);
-                }
-            }
+				& * {
+					margin-bottom: 0px !important;
+				}
 
-            .game-details-c-head-time-bc {
-                height: 28px !important;
-            }
-        }
-    }
+				.game-d-c-h-c-r-sport-league-bc {
+					.hb-text(13px; 20px; 600; @text-strong);
+				}
+			}
 
-    .sport-game-detail-holder-bc {
-        margin-bottom: 4px !important;
+			.game-details-c-head-time-bc {
+				height: 28px !important;
+			}
+		}
+	}
 
-        .stats-section-bc {
-            background: @surface-raised !important;
-        }
-    }
+	.sport-game-detail-holder-bc {
+		margin-bottom: 4px !important;
 
-    .sgm-market-search {
-        background: @surface-raised !important;
-        margin-bottom: 4px !important;
+		.stats-section-bc {
+			background: @surface-raised !important;
+		}
+	}
 
-        .sport-search-bc {
-            height: 40px;
+	.sgm-market-search {
+		background: @surface-raised !important;
+		margin-bottom: 4px !important;
 
-            .ss-icon-holder-bc {
-                width: 40px;
-                background: @surface-elevated !important;
-            }
-        }
+		.sport-search-bc {
+			height: 40px;
 
-        .horizontal-sl-tab {
-            height: 40px !important;
-            .hb-bg-transparent();
+			.ss-icon-holder-bc {
+				width: 40px;
+				background: @surface-elevated !important;
+			}
+		}
 
-            .horizontal-sl-tab-bc {
-                .hb-text(15px; 20px; 600; @text-strong);
+		.horizontal-sl-tab {
+			height: 40px !important;
+			.hb-bg-transparent();
 
-                &.selected-underline::before {
-                    background: @highlight !important;
-                }
+			.horizontal-sl-tab-bc {
+				.hb-text(15px; 20px; 600; @text-strong);
 
-                &.active {
-                    color: @highlight !important;
-                }
-            }
-        }
-    }
+				&.selected-underline::before {
+					background: @highlight !important;
+				}
 
-    .sgm-body-bc {
-        .sgm-markets-head-bc {
-            background: @surface-raised !important;
-            height: 40px !important;
-            margin-bottom: 4px !important;
-        }
+				&.active {
+					color: @highlight !important;
+				}
+			}
+		}
+	}
 
-        .sgm-market-g {
-            background: @surface-raised !important;
+	.sgm-body-bc {
+		.sgm-markets-head-bc {
+			background: @surface-raised !important;
+			height: 40px !important;
+			margin-bottom: 4px !important;
+		}
 
-            .marketHeaderBBIcon {
-                fill: @highlight !important;
-            }
+		.sgm-market-g {
+			background: @surface-raised !important;
 
-            .sgm-market-g-head-bc,
-            .sgm-market-g-item-bc {
-                .hb-bg-transparent();
-            }
-        }
-    }
+			.marketHeaderBBIcon {
+				fill: @highlight !important;
+			}
+
+			.sgm-market-g-head-bc,
+			.sgm-market-g-item-bc {
+				.hb-bg-transparent();
+			}
+		}
+	}
 }

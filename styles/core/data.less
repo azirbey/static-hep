@@ -22,6 +22,7 @@
 @hb-profile-icons: "@{hb-cdn-root}/images/profile-icons";
 @hb-profile-icons-gray: "@{hb-profile-icons}/gray";
 @hb-profile-icons-blue: "@{hb-profile-icons}/blue";
+@hb-sports-cdn: "@{hb-cdn-root}/images/sports-icons/sports";
 
 // ============================================
 // Header buttons
@@ -131,3 +132,32 @@
 	"account=messages" message,
 	"account=rewards" medal-ribbon;
 @hb-profile-nav-href-count: length(@hb-profile-nav-hrefs);
+
+// ============================================
+// Sportsbook sport flags
+// ============================================
+
+// Records: (platform-class file) — only sports we ship an SVG for.
+// Unlisted bc-i-* classes keep the platform font-icon.
+@hb-sport-icons:
+	bc-i-Soccer soccer,
+	bc-i-Basketball basketball,
+	bc-i-Volleyball volleyball,
+	bc-i-Tennis tennis,
+	bc-i-IceHockey ice-hockey,
+	bc-i-Baseball baseball,
+	bc-i-TableTennis table-tennis,
+	bc-i-Cricket cricket,
+	bc-i-Handball handball,
+	bc-i-Rugby rugby,
+	bc-i-RugbyUnion rugby,
+	bc-i-RugbyLeague rugby,
+	bc-i-Golf golf,
+	bc-i-Boxing box,
+	bc-i-Darts dart,
+	bc-i-Snooker snooker,
+	bc-i-BeachVolleyball beach-volley,
+	bc-i-BeachSoccer beach-soccer,
+	bc-i-Biathlon biathlon,
+	bc-i-Pickleball pickleball;
+@hb-sport-icon-count: length(@hb-sport-icons);

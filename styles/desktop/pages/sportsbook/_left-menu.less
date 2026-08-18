@@ -9,226 +9,226 @@
 // rules stay flat.
 
 .left-menu-container {
-    @sport-item: ~".pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc";
-    @sport-body: ~"@{sport-item} .sp-s-l-b-content-wrp .sp-s-l-b-content-bc";
-    @league-item: ~"@{sport-body} > .sp-sub-list-bc";
-    @league-body: ~"@{league-item} .sp-s-l-b-content-wrp .sp-s-l-b-content-bc";
+	@sport-item: ~".pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc";
+	@sport-body: ~"@{sport-item} .sp-s-l-b-content-wrp .sp-s-l-b-content-bc";
+	@league-item: ~"@{sport-body} > .sp-sub-list-bc";
+	@league-body: ~"@{league-item} .sp-s-l-b-content-wrp .sp-s-l-b-content-bc";
 
-    // Search box wrapper; .sport-search-bc gains .active while focused
-    .left-menu-search {
-        padding: 0 !important;
-        margin-bottom: 5px !important;
-        background: transparent !important;
+	// Search box wrapper; .sport-search-bc gains .active while focused
+	.left-menu-search {
+		padding: 0 !important;
+		margin-bottom: 5px !important;
+		background: transparent !important;
 
-        .sport-search-bc {
-            border-radius: @hb-radius !important;
-            border: 1px solid @border-medium !important;
-            height: 44px !important;
+		.sport-search-bc {
+			border-radius: @hb-radius !important;
+			border: 1px solid @border-medium !important;
+			height: 44px !important;
 
-            .ss-input-bc {
-                .hb-placeholder(@text-muted);
-            }
-        }
-    }
+			.ss-input-bc {
+				.hb-placeholder(@text-muted);
+			}
+		}
+	}
 
-    // Time / view tab switch above the tree
-    .second-tabs-bc {
-        height: 44px !important;
+	// Time / view tab switch above the tree
+	.second-tabs-bc {
+		height: 44px !important;
 
-        .tab-bc {
-            .hb-fill(@surface-raised; @text-muted);
+		.tab-bc {
+			.hb-fill(@surface-raised; @text-muted);
 
-            &.active {
-                .hb-fill(@accent; @text-strong);
-            }
-        }
-    }
+			&.active {
+				.hb-fill(@accent; @text-strong);
+			}
+		}
+	}
 
-    // Sport type filter row
-    .filter-sports-bc {
-        height: 48px;
-        padding: 0 12px !important;
-        background: @surface-base !important;
+	// Sport type filter row
+	.filter-sports-bc {
+		height: 48px;
+		padding: 0 12px !important;
+		background: @surface-base !important;
 
-        button.btn {
-            width: 40px;
-            height: 32px;
-        }
+		button.btn {
+			width: 40px;
+			height: 32px;
+		}
 
-        .tooltipIconWrapper .btn.s-small.a-outline {
-            &:has(> .filter-icon-bc.bc-i-stream) {
-                .hb-icon-btn('video-camera'; @icon-active: 'video-camera-white');
-            }
+		.tooltipIconWrapper .btn.s-small.a-outline {
+			&:has(> .filter-icon-bc.bc-i-stream) {
+				.hb-icon-btn("video-camera"; @icon-active: "video-camera-white");
+			}
 
-            &:has(> .filter-icon-bc.bc-i-world) {
-                .hb-icon-btn('world'; @icon-active: 'world-white');
-            }
-        }
-    }
+			&:has(> .filter-icon-bc.bc-i-world) {
+				.hb-icon-btn("world"; @icon-active: "world-white");
+			}
+		}
+	}
 
-    // Always reserve the scrollbar track so item width never jumps when the
-    // tree grows past the viewport.
-    .pp-sport-list-holder-bc {
-        overflow-y: scroll !important;
+	// Always reserve the scrollbar track so item width never jumps when the
+	// tree grows past the viewport.
+	.pp-sport-list-holder-bc {
+		overflow-y: scroll !important;
 
-        .left-menu-scroll {
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 0 !important;
-            padding-inline-end: 0 !important;
-            width: calc(100% - 5px) !important;
-        }
-    }
+		.left-menu-scroll {
+			display: flex !important;
+			flex-direction: column !important;
+			gap: 0 !important;
+			padding-inline-end: 0 !important;
+			width: calc(100% - 5px) !important;
+		}
+	}
 
-    // --- Sport level ---
+	// --- Sport level ---
 
-    @{sport-item} {
-        background: @surface-elevated !important;
-        max-height: 40px !important;
-        border-radius: 0 !important;
-        width: 100% !important;
+	@{sport-item} {
+		background: @surface-elevated !important;
+		max-height: 40px !important;
+		border-radius: 0 !important;
+		width: 100% !important;
 
-        &:first-child {
-            border-top-left-radius: @hb-radius !important;
-            border-top-right-radius: @hb-radius !important;
-            overflow: hidden !important;
-        }
+		&:first-child {
+			border-top-left-radius: @hb-radius !important;
+			border-top-right-radius: @hb-radius !important;
+			overflow: hidden !important;
+		}
 
-        &:last-child {
-            border-bottom-left-radius: @hb-radius !important;
-            border-bottom-right-radius: @hb-radius !important;
-            overflow: hidden !important;
-        }
+		&:last-child {
+			border-bottom-left-radius: @hb-radius !important;
+			border-bottom-right-radius: @hb-radius !important;
+			overflow: hidden !important;
+		}
 
-        & + .sp-sub-list-bc {
-            margin-top: 0 !important;
-        }
+		& + .sp-sub-list-bc {
+			margin-top: 0 !important;
+		}
 
-        &.active {
-            max-height: 15000px !important;
+		&.active {
+			max-height: 15000px !important;
 
-            & > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
-                background: @accent !important;
-                .hb-flex-center();
-            }
-        }
+			& > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
+				background: @accent !important;
+				.hb-flex-center();
+			}
+		}
 
-        & > .sp-s-l-head-bc {
-            height: 40px !important;
-            background: @surface-elevated !important;
-            box-shadow: none !important;
-            border-bottom: solid 1px @border-strong !important;
-            border-radius: 0 !important;
+		& > .sp-s-l-head-bc {
+			height: 40px !important;
+			background: @surface-elevated !important;
+			box-shadow: none !important;
+			border-bottom: solid 1px @border-strong !important;
+			border-radius: 0 !important;
 
-            .sp-s-l-h-arrow-icon-bc {
-                color: @text-strong !important;
-                background: @surface-control !important;
-            }
-        }
-    }
+			.sp-s-l-h-arrow-icon-bc {
+				color: @text-strong !important;
+				background: @surface-control !important;
+			}
+		}
+	}
 
-    // Market selector above the league list
-    @{sport-body} > .form-control-bc {
-        background: @surface-elevated !important;
-        padding: 8px 12px !important;
-        height: 52px !important;
-        border-top: none !important;
-        margin-bottom: 0 !important;
+	// Market selector above the league list
+	@{sport-body} > .form-control-bc {
+		background: @surface-elevated !important;
+		padding: 8px 12px !important;
+		height: 52px !important;
+		border-top: none !important;
+		margin-bottom: 0 !important;
 
-        .form-control-select-bc {
-            width: 100% !important;
-            background: @surface-raised !important;
+		.form-control-select-bc {
+			width: 100% !important;
+			background: @surface-raised !important;
 
-            & + .multi-select-label-bc {
-                background: @surface-base !important;
-                .hb-no-shadow();
+			& + .multi-select-label-bc {
+				background: @surface-base !important;
+				.hb-no-shadow();
 
-                .checkbox-control-content-bc {
-                    background: @surface-elevated !important;
-                }
-            }
-        }
-    }
+				.checkbox-control-content-bc {
+					background: @surface-elevated !important;
+				}
+			}
+		}
+	}
 
-    // --- League level ---
+	// --- League level ---
 
-    @{league-item} {
-        background: @surface-raised !important;
-        padding: 0px 12px !important;
-        .hb-soft-shadow();
-        max-height: 52px !important;
+	@{league-item} {
+		background: @surface-raised !important;
+		padding: 0px 12px !important;
+		box-shadow: -1px 0px 0px 1px @shadow-color !important;
+		max-height: 52px !important;
 
-        & .sp-sub-list-bc {
-            padding: 8px 12px !important;
-            box-shadow: none !important;
+		& .sp-sub-list-bc {
+			padding: 8px 12px !important;
+			box-shadow: none !important;
 
-            .sp-s-l-head-bc {
-                background: @surface-base !important;
-            }
-        }
+			.sp-s-l-head-bc {
+				background: @surface-base !important;
+			}
+		}
 
-        &.active {
-            max-height: 15000px !important;
+		&.active {
+			max-height: 15000px !important;
 
-            & > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
-                background: @accent !important;
+			& > .sp-s-l-head-bc .sp-s-l-h-arrow-icon-bc {
+				background: @accent !important;
 
-                &.active {
-                    max-height: 15000px !important;
-                }
-            }
-        }
+				&.active {
+					max-height: 15000px !important;
+				}
+			}
+		}
 
-        & > .sp-s-l-head-bc {
-            height: 40px !important;
+		& > .sp-s-l-head-bc {
+			height: 40px !important;
 
-            // İki satırlı başlık
-            &:has(> .sp-s-l-h-title-content > p + p) {
-                height: 52px !important;
-            }
+			// İki satırlı başlık
+			&:has(> .sp-s-l-h-title-content > p + p) {
+				height: 52px !important;
+			}
 
-            .sp-s-l-h-arrow-icon-bc {
-                color: @text-strong !important;
-                background: @surface-control !important;
-                .hb-flex-center();
-            }
+			.sp-s-l-h-arrow-icon-bc {
+				color: @text-strong !important;
+				background: @surface-control !important;
+				.hb-flex-center();
+			}
 
-            .region-flag {
-                width: 20px !important;
-                height: 20px !important;
-                border-radius: 50% !important;
-                margin-top: 10px !important;
-                margin-bottom: 10px !important;
-            }
-        }
-    }
+			.region-flag {
+				width: 20px !important;
+				height: 20px !important;
+				border-radius: 50% !important;
+				margin-top: 10px !important;
+				margin-bottom: 10px !important;
+			}
+		}
+	}
 
-    @{league-body} {
-        background: transparent !important;
-        padding: 0 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 8px !important;
+	@{league-body} {
+		background: transparent !important;
+		padding: 0 !important;
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 8px !important;
 
-        .market-game-section {
-            background: @surface-raised !important;
-            border: solid 2px @surface-base !important;
-            padding: 12px;
-            border-radius: @hb-radius;
+		.market-game-section {
+			background: @surface-raised !important;
+			border: solid 2px @surface-base !important;
+			padding: 12px;
+			border-radius: @hb-radius;
 
-            .selected-game-indicator {
-                width: 0 !important;
-                transition: width 0.2s ease !important;
-            }
+			.selected-game-indicator {
+				width: 0 !important;
+				transition: width 0.2s ease !important;
+			}
 
-            &.active .selected-game-indicator {
-                width: 2px !important;
-                background: @highlight !important;
-            }
+			&.active .selected-game-indicator {
+				width: 2px !important;
+				background: @highlight !important;
+			}
 
-            & + .market-game-section {
-                margin-top: 0 !important;
-            }
-        }
-    }
+			& + .market-game-section {
+				margin-top: 0 !important;
+			}
+		}
+	}
 }

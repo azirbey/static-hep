@@ -21,6 +21,10 @@
 					.providerItemsInner {
 						background: @surface-raised !important;
 						border-radius: @hb-radius !important;
+
+						&.active {
+							border: solid 2px @highlight !important;
+						}
 					}
 					.providerItemsBtn {
 						svg {
@@ -31,6 +35,33 @@
 							}
 						}
 					}
+				}
+			}
+		}
+		.casinoProvidersPopupContent__footer {
+			.hb-bg-transparent();
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 200px;
+				width: 100%;
+				background: linear-gradient(to top, @surface-header 30%, fade(@surface-header, 0%) 100%);
+				pointer-events: none;
+			}
+
+			.ds-btn {
+				&:first-child {
+					background: @surface-control !important;
+				}
+				&:last-child {
+					background: @main-color !important;
+					.hb-text(13px; 20px; 700; @white) !important;
+				}
+				&:disabled {
+					opacity: 0.8 !important;
 				}
 			}
 		}

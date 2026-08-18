@@ -5000,8 +5000,39 @@ div[id^="comm100-float-button"] > div {
   background: #233243 !important;
   border-radius: 6px !important;
 }
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsInner.active {
+  border: solid 2px #0febff !important;
+}
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg path,
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg rect,
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg polygon {
   fill: #fff !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer {
+  background: transparent !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to top, #19222c 30%, rgba(25, 34, 44, 0) 100%);
+  pointer-events: none;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer .ds-btn:first-child {
+  background: #31465e !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer .ds-btn:last-child {
+  background: #197cff !important;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer .ds-btn:disabled {
+  opacity: 0.8 !important;
 }

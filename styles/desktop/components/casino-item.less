@@ -1,3 +1,33 @@
 .casinoBtnWrp {
-    
+}
+
+.horizontalCategoryItemWrp {
+	.horizontalCategoryItem::before {
+		background: @border-soft !important;
+	}
+
+	&:hover,
+	&.active {
+		.horizontalCategoryItem::before {
+			background: @accent !important;
+		}
+
+		i {
+			color: @text-strong !important;
+		}
+	}
+}
+
+.jackpot-pool {
+	background: fade(@text-strong, 4%) !important;
+}
+
+.casino-jackpot-games__search {
+	width: 100% !important;
+}
+
+.ds-textfield.ds-textfield-layout--fill .ds-textfield__field {
+	background: @surface-raised !important;
+	border-radius: @hb-radius !important;
+	.hb-no-shadow();
 }

@@ -1,0 +1,94 @@
+.dep-w-info-bc .m-block-nav-items-bc {
+	padding: @hb-space-2 0 !important;
+}
+
+.dep-w-info-bc .m-nav-items-list-item-bc {
+	padding-inline: 0 !important;
+	border: none !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+}
+
+.dep-w-info-bc .nav-ico-w-row-bc {
+	height: fit-content !important;
+}
+
+.payment-info-bc {
+	.hb-bg-transparent();
+	padding: 10px 0 0 !important;
+
+	.description-c-row-bc,
+	.description-c-row-bc.deposit {
+		max-width: 100% !important;
+		background: @surface-base !important;
+	}
+
+	.expandableContentWrapper {
+		max-width: @hb-payment-copy-max !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.expandableContentData.not-expandable {
+		.hb-highlight-panel();
+		margin-bottom: 0 !important;
+		padding: @hb-space-3 @hb-space-4 !important;
+	}
+
+	.expandableContent {
+		padding: @hb-space-3 @hb-space-4 0 @hb-space-4 !important;
+
+		&.opened .expandableContentBody {
+			max-height: none !important;
+		}
+	}
+
+	.expandableContentBody {
+		max-height: @hb-expand-body-max !important;
+
+		.container p {
+			border-radius: @hb-radius !important;
+			overflow: hidden !important;
+			color: @text-strong !important;
+			text-align: center !important;
+			margin-bottom: @hb-space-2 !important;
+
+			img {
+				max-width: 100% !important;
+				object-fit: contain !important;
+			}
+		}
+	}
+
+	.expandableContentToggle {
+		background: linear-gradient(to bottom, transparent, @surface-base) !important;
+
+		.expandableContentIcon {
+			.hb-circle-control();
+			color: @text-strong !important;
+			background: @surface-elevated !important;
+		}
+	}
+}
+
+.WithdrawAmount-All {
+	.WithdrawAmount-Row:nth-child(odd) {
+		background: @surface-base !important;
+	}
+
+	.WithdrawAmount-Row:nth-child(2n) {
+		background: @surface-elevated !important;
+	}
+
+	.WithdrawAmount-Row-ValueBalance {
+		color: @highlight !important;
+	}
+
+	.WithdrawAmount-Row-Value {
+		color: @text-strong !important;
+	}
+}
+
+.description-wrapper-bc .description-c-row-bc {
+	background: @surface-base !important;
+}

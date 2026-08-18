@@ -1,0 +1,49 @@
+.entrance-form-bc.registration .entrance-form-content-bc {
+	gap: @hb-space-4 !important;
+}
+
+.entrance-form-bc.registration .slider-bc {
+	max-width: fit-content !important;
+	min-width: unset !important;
+
+	.swiper-slide {
+		width: @hb-auth-slider-w !important;
+
+		.sdr-image-bc {
+			object-fit: contain !important;
+		}
+	}
+}
+
+.entrance-popup-bc {
+	min-width: @hb-auth-popup-min !important;
+
+	&.sign-in {
+		height: @hb-auth-signin-h !important;
+
+		.entrance-form-bc {
+			display: grid !important;
+			grid-template-columns: 1fr minmax(0, @hb-auth-slider-w) !important;
+		}
+
+		.swiper-slide {
+			width: @hb-auth-slider-w !important;
+			max-width: @hb-auth-slider-w !important;
+
+			.sdr-image-bc {
+				object-fit: contain !important;
+			}
+		}
+	}
+}
+
+.e-p-close-icon-bc {
+	.hb-circle-control();
+	background: @surface-raised !important;
+	cursor: pointer !important;
+	transition: background 0.2s ease-in-out !important;
+
+	&:hover {
+		background: @surface-elevated !important;
+	}
+}

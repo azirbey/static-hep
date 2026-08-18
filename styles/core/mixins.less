@@ -450,3 +450,17 @@
 		.hb-profile-icon-active(exit);
 	}
 }
+
+// Highlight callout (eligible bonus, payment copy, etc.)
+.hb-highlight-panel() {
+	background: fade(@highlight, 4%);
+	border: 1px solid fade(@highlight, 12%);
+	border-radius: @hb-radius;
+}
+
+.hb-circle-control() {
+	.hb-flex-center();
+	width: @hb-control-md !important;
+	height: @hb-control-md !important;
+	border-radius: 50% !important;
+}

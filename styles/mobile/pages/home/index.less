@@ -1,0 +1,22 @@
+// Homepage — selectors kept as they compile today (no extra #root wrap).
+
+.hm-row-bc:nth-child(1) .slider-bc {
+	.sdr-item-holder-bc {
+		aspect-ratio: @hb-mobile-hero-aspect !important;
+
+		.sdr-item-bc {
+			&::before {
+				display: none !important;
+			}
+
+			.sdr-image-bc {
+				height: auto !important;
+			}
+		}
+	}
+
+	.swiper-pagination {
+		font-size: @hb-mobile-slider-pagination-size !important;
+		height: fit-content !important;
+	}
+}

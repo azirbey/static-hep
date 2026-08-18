@@ -1,0 +1,17 @@
+@smart-panel-color: @surface-raised;
+
+.hdr-smart-panel-holder-arrow-bc {
+	right: 12px !important;
+
+	&::before {
+		border-color: transparent transparent @smart-panel-color !important;
+	}
+
+	&::after {
+		border-color: transparent transparent fade(@smart-panel-color, 20%) !important;
+	}
+}
+
+.sp-button-bc {
+	background: @smart-panel-color !important;
+}

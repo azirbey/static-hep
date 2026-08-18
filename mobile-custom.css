@@ -10,6 +10,7 @@
   --fds-sem-dimension-medium: 36px !important;
   --padding-page-aside: 16px !important;
   --fds-ref-spacing-xsmall: 16px !important;
+  --mobile-header-main-section-height: 48px !important;
 }
 @font-face {
   font-family: 'Geist';
@@ -39,6 +40,7 @@
   font-style: normal;
   font-display: swap;
 }
+:root,
 body {
   --b: 25, 34, 44 !important;
   --oc-1: 35, 50, 67 !important;
@@ -50,15 +52,25 @@ body {
   --fds-sem-dimension-medium: 36px !important;
   --padding-page-aside: 16px !important;
   --fds-ref-spacing-xsmall: 16px !important;
+  --mobile-header-main-section-height: 48px !important;
 }
 .product-banner-container-bc {
   padding: 10px var(--padding-page-aside);
 }
+.layout-header-holder-bc ~ div {
+  display: none !important;
+}
 .hdr-additional-info {
   background: #19222c !important;
+  box-sizing: border-box !important;
+  height: 44px !important;
+  padding: 8px 16px !important;
+  display: flex;
+  align-items: center;
 }
 .hdr-additional-info .hdr-user-bc {
   width: 100%;
+  height: 28px !important;
   gap: 4px;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon {
@@ -81,6 +93,7 @@ body {
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-call {
   padding: 6px;
+  box-shadow: inset 0 0 0 1px #2a3c50;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-call::before {
   content: '';
@@ -88,10 +101,11 @@ body {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg") no-repeat center center / contain !important;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-whatsapp {
   padding: 6px;
+  box-shadow: inset 0 0 0 1px #2a3c50;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-whatsapp::before {
   content: '';
@@ -99,10 +113,11 @@ body {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg") no-repeat center center / contain !important;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-promotion {
   padding: 8px;
+  box-shadow: inset 0 0 0 1px #2a3c50;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-promotion::before {
   content: '';
@@ -110,7 +125,7 @@ body {
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg") no-repeat center center / contain !important;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-promotion::after {
   content: "Promosyonlar";
@@ -122,6 +137,7 @@ body {
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-bonus-request {
   padding: 8px;
+  box-shadow: inset 0 0 0 1px #2a3c50;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-bonus-request::before {
   content: '';
@@ -129,7 +145,7 @@ body {
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg") no-repeat center center / contain !important;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-bonus-request::after {
   content: "Bonus Talebi";
@@ -141,6 +157,7 @@ body {
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-money-dollar {
   padding: 8px;
+  box-shadow: inset 0 0 0 1px #2a3c50;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-money-dollar::before {
   content: '';
@@ -148,7 +165,7 @@ body {
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg") no-repeat center center / contain !important;
 }
 .hdr-additional-info .hdr-user-bc .user-nav-icon.bc-i-money-dollar::after {
   content: "Para Yatır";
@@ -157,6 +174,334 @@ body {
   color: #fff;
   letter-spacing: 0.01em;
   line-height: 1;
+}
+.logo {
+  height: 32px !important;
+}
+.hdr-toggle-button-bc {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border-radius: 0 !important;
+  margin-inline-start: 8px !important;
+}
+.smart-panel-is-visible .hdr-toggle-button-bc {
+  color: #bccbdc !important;
+}
+.hdr-smart-panel-holder-arrow-bc {
+  right: 12px !important;
+}
+.hdr-smart-panel-holder-arrow-bc::before {
+  border-color: transparent transparent #233243 !important;
+}
+.hdr-smart-panel-holder-arrow-bc::after {
+  border-color: transparent transparent rgba(35, 50, 67, 0.2) !important;
+}
+.sp-button-bc {
+  background: #233243 !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc {
+  box-sizing: border-box !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc .hdr-navigation-link-bc {
+  box-sizing: border-box !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  box-shadow: none !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc .hdr-navigation-link-bc[class*="badge-"]::after {
+  top: 0 !important;
+  right: 0 !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(1)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(2)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/soccer-jersey.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(3)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(4)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/roulette.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(5)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/slot-machine-1.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(6)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/rocket.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(7)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/plane.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(8)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/badge.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(9)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/horse.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(10)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/trophy.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(11)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/microphone.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(12)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/monitor.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(13)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/coupon-wars.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(1) .hdr-navigation-scrollable-content > .hdr-navigation-link-bc:nth-child(14)::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/affiliate.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/live/event-view"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/soccer.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/live/event-view"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/soccer.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/live/live-calendar"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/calendar.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/live/live-calendar"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/live/results"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/scoreboard.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/live/results"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/event-view"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/stopwatch.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/event-view"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/stopwatch.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/live-calendar"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/calendar.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/live-calendar"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/results"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/scoreboard.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/results"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/tournaments"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/trophy.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="sports/pre-match/tournaments"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/slots"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/slot-machine.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/slots"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/slot-machine.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/tournaments"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/trophy.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/tournaments"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/jackpot"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/diamond.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/jackpot"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/diamond.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="live-casino/home"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/roulette.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="live-casino/home"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/roulette.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/live-rtp"]::before {
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/gray/live-rtp.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+}
+.hdr-navigation-scrollable-bc-holder .hdr-navigation-scrollable-bc:nth-child(2) .hdr-navigation-scrollable-content .hdr-navigation-link-bc[href*="casino/live-rtp"].active::before {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/live-rtp.svg"), url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") !important;
+}
+.btn.sign-in {
+  text-underline-offset: 2px !important;
+}
+.btn.sign-in span {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+.btn.sign-in span::before {
+  content: "Giriş";
+  text-transform: none !important;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
 }
 .hm-row-bc:nth-child(1) .slider-bc .sdr-item-holder-bc {
   aspect-ratio: 14 / 8 !important;

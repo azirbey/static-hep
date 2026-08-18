@@ -1,0 +1,12 @@
+// Page-level styles — folder name matches #root class when possible.
+//
+// Add a page:
+//   1. Create pages/<root-class>/index.less wrapping #root.<root-class>
+//      only when that wrapper does not change current selectors.
+//   2. Add @import below
+//
+// layout/              → chrome (header, body)
+// pages/<page>/        → that page's rows / differences
+// components/          → site-wide UI, not page-scoped (add when needed)
+
+@import "home/index.less";

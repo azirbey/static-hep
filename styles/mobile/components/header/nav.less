@@ -1,0 +1,92 @@
+.hb-mobile-nav-icon(@name) {
+	&::before {
+		content: "" !important;
+		display: block !important;
+		position: relative !important;
+		flex-shrink: 0;
+		width: @hb-mobile-nav-icon-box !important;
+		height: @hb-mobile-nav-icon-box !important;
+		background:
+			url("@{hb-nav-cdn}/@{name}.svg") center / @hb-mobile-nav-icon-size @hb-mobile-nav-icon-size no-repeat,
+			url("@{hb-icon-box-bg}") center / contain no-repeat !important;
+	}
+}
+
+.hb-mobile-nav-main-icons(@i: 1) when (@i =< @hb-mobile-nav-item-count) {
+	@name: extract(@hb-mobile-nav-items, @i);
+
+	& > .hdr-navigation-link-bc:nth-child(@{i}) {
+		.hb-mobile-nav-icon(@name);
+	}
+
+	.hb-mobile-nav-main-icons(@i + 1);
+}
+
+.hb-mobile-nav-sub-icon(@name) {
+	&::before {
+		content: "" !important;
+		display: block !important;
+		position: relative !important;
+		flex-shrink: 0;
+		width: @hb-mobile-nav-icon-box !important;
+		height: @hb-mobile-nav-icon-box !important;
+		background:
+			url("@{hb-nav-cdn-gray}/@{name}.svg") center / @hb-mobile-nav-icon-size @hb-mobile-nav-icon-size no-repeat,
+			url("@{hb-icon-box-bg}") center / contain no-repeat !important;
+	}
+
+	&.active::before {
+		background-image:
+			url("@{hb-nav-cdn-white}/@{name}.svg"),
+			url("@{hb-icon-box-bg}") !important;
+	}
+}
+
+.hb-mobile-nav-sub-icons(@i: 1) when (@i =< @hb-nav-sub-count) {
+	@row: extract(@hb-nav-sub-items, @i);
+	@href: extract(@row, 1);
+	@name: extract(@row, 2);
+
+	.hdr-navigation-link-bc[href*="@{href}"] {
+		.hb-mobile-nav-sub-icon(@name);
+	}
+
+	.hb-mobile-nav-sub-icons(@i + 1);
+}
+
+.hdr-navigation-scrollable-bc-holder {
+	.hdr-navigation-scrollable-bc {
+		box-sizing: border-box !important;
+		height: @hb-mobile-nav-h !important;
+		display: flex !important;
+		align-items: center !important;
+
+		.hdr-navigation-link-bc {
+			box-sizing: border-box !important;
+			height: @hb-mobile-nav-item-h !important;
+			display: flex !important;
+			align-items: center !important;
+			gap: @hb-space-1 !important;
+			box-shadow: none !important;
+
+			&[class*="badge-"]::after {
+				top: 0 !important;
+				right: 0 !important;
+			}
+		}
+
+		// Main Navigation Bar
+		&:nth-child(1) {
+			.hdr-navigation-scrollable-content {
+				.hb-mobile-nav-main-icons();
+			}
+		}
+
+		// Sub Navigation Bar
+		&:nth-child(2) {
+			.hdr-navigation-scrollable-content {
+				.hb-mobile-nav-sub-icons();
+			}
+		}
+	}
+}

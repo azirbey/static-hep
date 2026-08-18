@@ -1,0 +1,16 @@
+.btn {
+	&.sign-in {
+		text-underline-offset: 2px !important;
+
+		span {
+			font-size: 0 !important;
+			line-height: 0 !important;
+
+			&::before {
+				content: "Giriş";
+				text-transform: none !important;
+				.hb-text-label(@text-strong);
+			}
+		}
+	}
+}

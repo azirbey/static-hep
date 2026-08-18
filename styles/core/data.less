@@ -77,6 +77,10 @@
 	affiliate "hepbetaffiliate";
 @hb-nav-item-count: length(@hb-nav-items);
 
+// Mobile main strip — same icons as desktop, DOM order (loyalty is not in the mobile bar).
+@hb-mobile-nav-items: soccer, soccer-jersey, slot-machine, roulette, slot-machine-1, rocket, plane, badge, horse, trophy, microphone, monitor, coupon-wars, affiliate;
+@hb-mobile-nav-item-count: length(@hb-mobile-nav-items);
+
 // Records: ('href' icon)
 @hb-nav-sub-items:
 	"sports/live/event-view" soccer,

@@ -1,0 +1,81 @@
+// Header user strip — classes come from the platform, labels/icons from data.less.
+
+.hb-mobile-user-label(@label) when not (@label = "") {
+	&::after {
+		content: @label;
+		font-size: @hb-mobile-user-label-size;
+		font-weight: 600;
+		color: @text-strong;
+		letter-spacing: 0.01em;
+		line-height: 1;
+	}
+}
+
+.hb-mobile-user-label(@label) when (@label = "") {
+}
+
+.hb-mobile-user-buttons(@i: 1) when (@i =< length(@hb-mobile-user-buttons)) {
+	@row: extract(@hb-mobile-user-buttons, @i);
+	@class: extract(@row, 1);
+	@icon: extract(@row, 2);
+	@label: extract(@row, 3);
+	@size: extract(@row, 4);
+	@pad: extract(@row, 5);
+
+	&.@{class} {
+		padding: @pad;
+		box-shadow: inset 0 0 0 1px @surface-elevated;
+
+		&::before {
+			.hb-bg-icon("@{hb-cdn}/@{icon}.svg"; @size);
+		}
+
+		.hb-mobile-user-label(@label);
+	}
+
+	.hb-mobile-user-buttons(@i + 1);
+}
+
+.hdr-additional-info {
+	background: @surface-header !important;
+	box-sizing: border-box !important;
+	height: @hb-mobile-user-strip-h !important;
+	padding: @hb-space-2 @hb-space-4 !important;
+	display: flex;
+	align-items: center;
+
+	.hdr-user-bc {
+		width: 100%;
+		height: @hb-mobile-user-row-h !important;
+		gap: @hb-mobile-user-gap;
+	}
+
+	.hdr-user-bc .user-nav-icon {
+		width: fit-content !important;
+		height: fit-content !important;
+		background: @surface-raised !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: @hb-mobile-user-gap;
+
+		& + .user-nav-icon {
+			margin-inline-start: 0 !important;
+		}
+
+		&::after {
+			font-family: var(--font-family);
+		}
+
+		// Pushes the labelled group away from the two icon-only buttons
+		&.bc-i-promotion {
+			margin-inline-start: auto !important;
+		}
+
+		.hb-mobile-user-buttons();
+	}
+}
+
+.logo {
+	height: 32px !important;
+}

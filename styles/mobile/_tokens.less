@@ -1,0 +1,20 @@
+// Mobile-only scale. Colour and shared scale live in core/tokens.less.
+// Values match the current compiled output; change them here, not in pages.
+
+@hb-mobile-banner-pad-y: 10px;
+@hb-mobile-header-h: 48px;
+@hb-mobile-user-strip-h: @hb-control-lg;
+@hb-mobile-user-row-h: 28px;
+@hb-mobile-user-gap: @hb-space-1;
+@hb-mobile-user-label-size: 9px;
+@hb-mobile-slider-pagination-size: 8px;
+@hb-mobile-hero-aspect: 14 / 8;
+@hb-mobile-nav-h: 40px;
+@hb-mobile-nav-item-h: 40px;
+@hb-mobile-nav-icon-box: 24px;
+@hb-mobile-nav-icon-size: 12px;
+
+// Merges with core .theme-vars() — later declarations in the same rule win.
+.theme-vars() {
+	--mobile-header-main-section-height: @hb-mobile-header-h !important;
+}

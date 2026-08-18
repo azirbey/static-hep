@@ -4387,6 +4387,95 @@ div[id^="comm100-float-button"] > div {
   border-radius: 50% !important;
   background: #3f5a78 !important;
 }
+.payment-info-bc {
+  background: transparent !important;
+  padding: 10px 0 0 !important;
+}
+.payment-info-bc .description-c-row-bc,
+.payment-info-bc .description-c-row-bc.deposit {
+  max-width: 100% !important;
+  background: #1c2835 !important;
+}
+.payment-info-bc .expandableContentWrapper {
+  max-width: 460px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContentData.not-expandable {
+  background: rgba(15, 235, 255, 0.04);
+  border: 1px solid rgba(15, 235, 255, 0.12);
+  border-radius: 6px;
+  margin-bottom: 0 !important;
+  padding: 12px 16px !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContent {
+  padding: 12px 16px 0 16px !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContent.opened .expandableContentBody {
+  max-height: none !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContent .expandableContentBody {
+  max-height: 200px !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContent .expandableContentBody .container p {
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  color: #fff !important;
+  text-align: center !important;
+  margin-bottom: 8px !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContent .expandableContentBody .container p img {
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContentToggle {
+  background: linear-gradient(to bottom, transparent, #1c2835) !important;
+}
+.payment-info-bc .expandableContentWrapper .expandableContentToggle .expandableContentIcon {
+  color: #fff !important;
+  background: #2a3c50 !important;
+  border-radius: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.WithdrawAmount-All .WithdrawAmount-Row:nth-child(odd) {
+  background: #1c2835 !important;
+}
+.WithdrawAmount-All .WithdrawAmount-Row:nth-child(2n) {
+  background: #2a3c50 !important;
+}
+.WithdrawAmount-All .WithdrawAmount-Row-ValueBalance {
+  color: #0febff !important;
+}
+.WithdrawAmount-All .WithdrawAmount-Row-Value {
+  color: #fff !important;
+}
+.u-i-e-p-p-content-bc .filter-form-w-bc {
+  background: transparent !important;
+  padding: 0 !important;
+}
+.historyList-thead .historyListEl-list-item,
+.balance-thead-item {
+  background: #2a3c50 !important;
+}
+.historyList-tbody > .historyListEl .historyListEl-list-item {
+  background: #1c2835 !important;
+}
+.balance-tbody-item {
+  background: #233243 !important;
+}
+.balanceHistoryDetails {
+  background: #1c2835 !important;
+}
+[data-status="1"] {
+  color: #0febff !important;
+}
+.description-wrapper-bc .description-c-row-bc {
+  background: #1c2835 !important;
+}
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {
   background: #197cff !important;

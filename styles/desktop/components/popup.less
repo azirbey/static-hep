@@ -247,3 +247,123 @@
 		}
 	}
 }
+
+.payment-info-bc {
+	.hb-bg-transparent();
+	padding: 10px 0 0 !important;
+
+	.description-c-row-bc,
+	.description-c-row-bc.deposit {
+		max-width: 100% !important;
+		background: @surface-base !important;
+	}
+
+	.expandableContentWrapper {
+		max-width: 460px !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+
+		.expandableContentData {
+			&.not-expandable {
+				background: fade(@highlight, 4%);
+				border: 1px solid fade(@highlight, 12%);
+				border-radius: @hb-radius;
+				margin-bottom: 0 !important;
+				padding: @hb-space-3 @hb-space-4 !important;
+			}
+		}
+
+		.expandableContent {
+			padding: 12px 16px 0 16px !important;
+
+			&.opened {
+				.expandableContentBody {
+					max-height: none !important;
+				}
+			}
+
+			.expandableContentBody {
+				max-height: 200px !important;
+				.container {
+					p {
+						border-radius: @hb-radius !important;
+						overflow: hidden !important;
+						color: @white !important;
+						text-align: center !important;
+						margin-bottom: @hb-space-2 !important;
+
+						img {
+							max-width: 100% !important;
+							object-fit: contain !important;
+						}
+					}
+				}
+			}
+		}
+
+		.expandableContentToggle {
+			background: linear-gradient(to bottom, transparent, @surface-base) !important;
+			.expandableContentIcon {
+				color: @white !important;
+				background: @surface-elevated !important;
+				border-radius: 50% !important;
+				width: 36px !important;
+				height: 36px !important;
+				display: flex !important;
+				align-items: center !important;
+				justify-content: center !important;
+			}
+		}
+	}
+}
+
+.WithdrawAmount-All {
+	.WithdrawAmount-Row:nth-child(odd) {
+		background: @surface-base !important;
+	}
+	.WithdrawAmount-Row:nth-child(2n) {
+		background: @surface-elevated !important;
+	}
+
+	.WithdrawAmount-Row-ValueBalance {
+		color: @cyan !important;
+	}
+
+	.WithdrawAmount-Row-Value {
+		color: @white !important;
+	}
+}
+
+.u-i-e-p-p-content-bc {
+	.filter-form-w-bc {
+		.hb-bg-transparent();
+		padding: 0 !important;
+	}
+}
+
+.historyList-thead .historyListEl-list-item,
+.balance-thead-item {
+	background: @surface-elevated !important;
+}
+
+.historyList-tbody > .historyListEl .historyListEl-list-item {
+	background: @surface-base !important;
+}
+
+.balance-tbody-item {
+	background: @surface-raised !important;
+}
+
+.balanceHistoryDetails {
+	background: @surface-base !important;
+}
+
+[data-status="1"] {
+	color: @cyan !important;
+}
+
+.description-wrapper-bc {
+	.description-c-row-bc {
+		background: @surface-base !important;
+	}
+}

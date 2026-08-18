@@ -1,0 +1,17 @@
+.ds-popup {
+	border-radius: @hb-radius;
+	border: 1px solid transparent;
+	background:
+		linear-gradient(@surface-header, @surface-header) padding-box,
+		linear-gradient(to bottom, @border-soft, fade(@text-strong, 2%)) border-box !important;
+
+	.ds-popup__header {
+		padding: @hb-space-5 @hb-space-5 @hb-space-3 @hb-space-5 !important;
+
+		.ds-popup__header-content {
+			.ds-label {
+				.hb-text(20px; 24px; 600; @white);
+			}
+		}
+	}
+}

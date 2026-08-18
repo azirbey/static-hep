@@ -2318,9 +2318,6 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody .market-group-holder-bc .market-group-item-bc .market-bc .market-name-bc {
   color: #bccbdc !important;
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) {
-  display: none !important;
-}
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .product-banner-container-bc .carouselWrapper {
   margin-inline-start: 0 !important;
 }
@@ -4161,6 +4158,22 @@ div[id^="comm100-float-button"] > div {
   border-radius: 6px !important;
   box-shadow: none !important;
 }
+.ds-popup {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: linear-gradient(#19222c, #19222c) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)) border-box !important;
+}
+.ds-popup .ds-popup__header {
+  padding: 20px 20px 12px 20px !important;
+}
+.ds-popup .ds-popup__header .ds-popup__header-content .ds-label {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
 .overlay-header {
   background: #19222c !important;
   height: 60px !important;
@@ -4967,4 +4980,28 @@ div[id^="comm100-float-button"] > div {
 }
 [data-status="1"] {
   color: #0febff !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__search {
+  padding-bottom: 12px !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__search .ds-textfield .ds-textfield__field {
+  height: 48px !important;
+  border: solid 1px #2a3c50 !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__titleToggleContainer .ds-label {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsInner {
+  background: #233243 !important;
+  border-radius: 6px !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg path,
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg rect,
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg polygon {
+  fill: #fff !important;
 }

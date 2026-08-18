@@ -1,43 +1,48 @@
 // Casino slots row map — only under #root.casino-slots .layout-content-holder-bc
 
 @hb-casino-top-row-icons: 2 fire;
-@hb-casino-lobby-row-icons: 1 menus-blue, 3 slot-machine, 4 trophy, 5 roulette, 6 rocket;
+@hb-casino-lobby-row-icons:
+	1 menus-blue,
+	3 slot-machine,
+	4 trophy,
+	5 roulette,
+	6 rocket;
 
 .hb-row-icons(@hb-casino-top-row-icons);
 
 .casinoLobbyContainer {
-    .hb-row-icons(@hb-casino-lobby-row-icons);
+	.hb-row-icons(@hb-casino-lobby-row-icons);
 
-    & > .hm-row-bc {
-        // Providers
-        &:nth-child(1) {
-            .providerItemsInner {
-                background: @surface-raised !important;
-                width: 150px !important;
-                min-width: 150px !important;
+	& > .hm-row-bc {
+		// Providers
+		&:nth-child(1) {
+			.providerItemsInner {
+				background: @surface-raised !important;
+				width: 150px !important;
+				min-width: 150px !important;
 
-                .providerBadge {
-                    top: 0 !important;
-                    right: 0 !important;
+				.providerBadge {
+					top: 0 !important;
+					right: 0 !important;
 
-                    .badge {
-                        border-radius: @hb-radius-sm !important;
-                    }
-                }
+					.badge {
+						border-radius: @hb-radius-sm !important;
+					}
+				}
 
-                .providerItemsBtn {
-                    padding: 5px 0 !important;
-                }
-            }
+				.providerItemsBtn {
+					padding: 5px 0 !important;
+				}
+			}
 
-            .swiper-slide {
-                width: 150px !important;
-            }
-        }
+			.swiper-slide {
+				width: 150px !important;
+			}
+		}
 
-        // Tournaments
-        &:nth-child(4) {
-            @import '_tournaments.less';
-        }
-    }
+		// Tournaments
+		&:nth-child(4) {
+			@import "_tournaments.less";
+		}
+	}
 }

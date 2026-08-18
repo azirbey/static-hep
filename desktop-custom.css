@@ -4360,6 +4360,33 @@ div[id^="comm100-float-button"] > div {
 .form-control-input-bc:read-only {
   color: #fff !important;
 }
+.popup-holder-bc.user-profile-container .user-profile .userProfile-content .userProfileSection-2 {
+  background: #1c2835 !important;
+  border-radius: 6px !important;
+  padding: 16px 20px !important;
+  position: relative !important;
+  margin-top: 40px !important;
+}
+.popup-holder-bc.user-profile-container .user-profile .userProfile-content .userProfileSection-2 .u-i-p-control-item-holder-bc:first-child {
+  position: absolute !important;
+  top: -30px !important;
+  margin-bottom: 0 !important;
+  left: 0 !important;
+}
+.popup-holder-bc.user-profile-container .user-profile .userProfile-content .userProfileSection-2 .u-i-p-control-item-holder-bc:nth-child(n + 3) {
+  position: relative !important;
+  padding-inline-start: 12px !important;
+}
+.popup-holder-bc.user-profile-container .user-profile .userProfile-content .userProfileSection-2 .u-i-p-control-item-holder-bc:nth-child(n + 3)::before {
+  content: "" !important;
+  position: absolute !important;
+  inset-inline-start: 0 !important;
+  top: 0.55em !important;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 50% !important;
+  background: #3f5a78 !important;
+}
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {
   background: #197cff !important;

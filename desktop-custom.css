@@ -2037,7 +2037,7 @@ body {
   grid-area: left;
   display: flex !important;
   justify-content: flex-end !important;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/Hepbet-Social.png') center / cover no-repeat;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/Hepbet-Social-No-Icon.png') center / cover no-repeat;
   min-height: 160px !important;
 }
 .layout-footer-holder-bc .footerHeader .footerInnerLeftCol .footerSocialLinks {

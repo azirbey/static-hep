@@ -2189,6 +2189,18 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .page-view-more {
   gap: var(--fds-ref-spacing-medium);
 }
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .sectionTitle:before,
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .page-view-more:before {
+  content: '';
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/profit.svg') center / 16px 16px no-repeat, url('https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg') center / contain no-repeat;
+  width: 36px;
+  height: 36px;
+  border: none;
+  box-sizing: border-box;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .page-view-more {
+  gap: var(--fds-ref-spacing-medium);
+}
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .sectionTitle:before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .page-view-more:before {
   content: '';

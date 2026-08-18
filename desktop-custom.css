@@ -4356,6 +4356,10 @@ div[id^="comm100-float-button"] > div {
 .u-i-p-control-item-holder-bc:has(hr.subscribeBelowSeparator) {
   display: none !important;
 }
+.form-control-select-bc,
+.form-control-input-bc:read-only {
+  color: #fff !important;
+}
 .horizontalCategoryItemWrp:hover .horizontalCategoryItem:before,
 .horizontalCategoryItemWrp.active .horizontalCategoryItem:before {
   background: #197cff !important;

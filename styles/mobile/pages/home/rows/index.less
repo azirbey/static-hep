@@ -22,6 +22,7 @@
 	&:has(.casinoTopWinnersWidgetNoData) {
 		display: none !important;
 	}
+
 	.sectionTitle {
 		display: flex !important;
 		align-items: center !important;
@@ -29,13 +30,19 @@
 		gap: @hb-space-2 !important;
 		width: 100% !important;
 		max-height: @hb-control-sm !important;
+	}
 
-		.sectionTitleText {
-			font-size: 16px !important;
-			font-weight: 700 !important;
-			line-height: @hb-control-sm !important;
-			letter-spacing: -0.01em !important;
-			color: @text-strong !important;
-		}
+	&:not(:has(.casinoTopWinnersWidget)) .sectionTitleText {
+		font-size: 16px !important;
+		font-weight: 700 !important;
+		line-height: @hb-control-sm !important;
+		letter-spacing: -0.01em !important;
+		color: @text-strong !important;
+	}
+
+	.casinoTopWinnersWidget .sectionTitleText {
+		font-size: 0 !important;
+		line-height: 0 !important;
+		color: transparent !important;
 	}
 }

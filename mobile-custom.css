@@ -515,7 +515,6 @@ body {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 0 !important;
   width: fit-content !important;
   height: 32px !important;
   padding: 0 12px !important;
@@ -524,19 +523,20 @@ body {
   background: linear-gradient(180deg, #2a3c50 0%, #233243 100%) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   box-sizing: border-box !important;
+  overflow: visible !important;
+  line-height: 1 !important;
 }
 .sectionTitle .ds-link.ds-link-color--transparent .link__label {
+  display: flex !important;
+  align-items: center !important;
   font-weight: 600 !important;
   font-size: 13px !important;
-  line-height: 20px !important;
+  line-height: 1 !important;
   letter-spacing: -0.01em !important;
   color: #fff !important;
 }
 .sectionTitle .ds-link.ds-link-color--transparent .link__icon {
-  flex-shrink: 0;
-  width: 12px !important;
-  height: 12px !important;
-  color: #fff !important;
+  display: none !important;
 }
 .ds-btn::after {
   display: none !important;
@@ -560,6 +560,7 @@ body {
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
+  max-height: 32px !important;
 }
 .casinoTopWinnersWidget .sectionTitleText {
   font-size: 0 !important;
@@ -569,7 +570,7 @@ body {
 .casinoTopWinnersWidget .sectionTitleText::after {
   font-size: 16px !important;
   font-weight: 700 !important;
-  line-height: 28px !important;
+  line-height: 32px !important;
   letter-spacing: -0.01em !important;
 }
 .casinoTopWinnersWidget .sectionTitleText::before {
@@ -651,6 +652,21 @@ body {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(4) .page-view-more {
   gap: var(--fds-ref-spacing-medium);
 }
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(5) .sectionTitle::before,
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(5) .page-view-more::before {
+  content: "" !important;
+  display: block !important;
+  flex-shrink: 0;
+  position: relative !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/slot-machine.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+  width: 24px !important;
+  height: 24px !important;
+  border: none !important;
+  box-sizing: border-box !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(5) .page-view-more {
+  gap: var(--fds-ref-spacing-medium);
+}
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(6) .sectionTitle::before,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(6) .page-view-more::before {
   content: "" !important;
@@ -672,7 +688,7 @@ body {
   display: block !important;
   flex-shrink: 0;
   position: relative !important;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/slot-machine.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/rocket.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
   width: 24px !important;
   height: 24px !important;
   border: none !important;
@@ -711,32 +727,18 @@ body {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .page-view-more {
   gap: var(--fds-ref-spacing-medium);
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .sectionTitle::before,
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .page-view-more::before {
-  content: "" !important;
-  display: block !important;
-  flex-shrink: 0;
-  position: relative !important;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/link.svg") center / 12px 12px no-repeat, url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") center / contain no-repeat !important;
-  width: 24px !important;
-  height: 24px !important;
-  border: none !important;
-  box-sizing: border-box !important;
-}
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .page-view-more {
-  gap: var(--fds-ref-spacing-medium);
-}
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc .sectionTitle {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   gap: 8px !important;
   width: 100% !important;
+  max-height: 32px !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc .sectionTitle .sectionTitleText {
   font-size: 16px !important;
   font-weight: 700 !important;
-  line-height: 28px !important;
+  line-height: 32px !important;
   letter-spacing: -0.01em !important;
   color: #fff !important;
 }

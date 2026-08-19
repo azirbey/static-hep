@@ -31,7 +31,6 @@
 	display: flex !important;
 	align-items: center !important;
 	justify-content: center !important;
-	gap: 0 !important;
 	width: fit-content !important;
 	height: @hb-control-sm !important;
 	padding: 0 @hb-space-3 !important;
@@ -40,20 +39,21 @@
 	background: linear-gradient(180deg, @surface-elevated 0%, @surface-raised 100%) !important;
 	.hb-soft-border(important);
 	box-sizing: border-box !important;
+	overflow: visible !important;
+	line-height: 1 !important;
 
 	.link__label {
+		display: flex !important;
+		align-items: center !important;
 		font-weight: 600 !important;
 		font-size: 13px !important;
-		line-height: 20px !important;
+		line-height: 1 !important;
 		letter-spacing: -0.01em !important;
 		color: @text-strong !important;
 	}
 
 	.link__icon {
-		flex-shrink: 0;
-		width: @hb-mobile-nav-icon-size !important;
-		height: @hb-mobile-nav-icon-size !important;
-		color: @text-strong !important;
+		display: none !important;
 	}
 }
 

@@ -8,6 +8,8 @@
     "build:mobile": "lessc styles/mobile/custom.less mobile-custom.css",
     "build": "npm run build:desktop && npm run build:mobile",
     "watch": "chokidar \"styles/**/*.less\" --initial -c \"npm run build\"",
+    "watch:desktop": "chokidar \"styles/desktop/**/*.less\" --initial -c \"npm run build:desktop\"",
+    "watch:mobile": "chokidar \"styles/mobile/**/*.less\" --initial -c \"npm run build:mobile\"",
     "lint": "stylelint \"styles/**/*.less\"",
     "baseline": "mkdir -p .baseline && cp desktop-custom.css mobile-custom.css .baseline/",
     "diff": "diff .baseline/desktop-custom.css desktop-custom.css && diff .baseline/mobile-custom.css mobile-custom.css && echo 'Output unchanged.'"

@@ -1,0 +1,30 @@
+// Homepage row router — only under #root.is-home-page (see home/index.less).
+
+// Remaining title rows (slider = 1, winners = 2, banner = 3, empty = 5)
+@hb-home-row-icons:
+	4 fire,
+	6 roulette,
+	7 slot-machine,
+	8 invoice,
+	9 profit,
+	10 link;
+
+.hb-row-icons(@hb-home-row-icons);
+
+& > .hm-row-bc {
+	.sectionTitle {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		gap: @hb-space-2 !important;
+		width: 100% !important;
+
+		.sectionTitleText {
+			font-size: 16px !important;
+			font-weight: 700 !important;
+			line-height: 28px !important;
+			letter-spacing: -0.01em !important;
+			color: @text-strong !important;
+		}
+	}
+}

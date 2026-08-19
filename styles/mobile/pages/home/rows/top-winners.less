@@ -1,0 +1,87 @@
+// Top Winners — scoped to the widget, not nth-child / h6.
+
+.casinoTopWinnersWidget {
+	.hb-row-title-icon(laurel-wreath);
+
+	.sectionTitle {
+		display: flex !important;
+		align-items: center !important;
+		gap: @hb-space-2 !important;
+	}
+
+	.sectionTitleText {
+		font-size: 0 !important;
+		line-height: 0 !important;
+
+		&::before,
+		&::after {
+			font-size: 16px !important;
+			font-weight: 700 !important;
+			line-height: 28px !important;
+			letter-spacing: -0.01em !important;
+		}
+
+		&::before {
+			content: "Canlı";
+			color: @negative !important;
+		}
+
+		&::after {
+			content: " Kazançlar";
+			color: @text-strong !important;
+		}
+	}
+
+	.casinoTopWinnersPeriodsSection {
+		.ds-chip {
+			background: transparent !important;
+		}
+
+		.ds-chip--selected {
+			box-shadow: none !important;
+			background: @surface-raised !important;
+			border: none !important;
+			border-radius: @hb-radius !important;
+			color: @text-strong !important;
+		}
+	}
+
+	.skeleton-loader-full-banner {
+		width: 160px !important;
+		min-width: 160px !important;
+		height: 88px !important;
+		border-radius: @hb-radius !important;
+		background: @surface-raised !important;
+	}
+
+	.casinoWinnerWidgetItem {
+		background: @surface-raised !important;
+		min-width: 160px !important;
+		width: 160px !important;
+
+		.casinoWinnerWidgetName,
+		.casinoWinnerWidgetGameName {
+			font-size: 11px !important;
+			font-weight: 600 !important;
+			line-height: 16px !important;
+			letter-spacing: -0.01em !important;
+		}
+
+		.casinoWinnerWidgetName {
+			color: @text-dim !important;
+		}
+
+		.casinoWinnerWidgetGameName {
+			color: @text-soft !important;
+		}
+
+		.casinoWinnerWidgetAmount {
+			color: @text-strong !important;
+			font-size: 15px !important;
+			font-weight: 700 !important;
+			line-height: 20px !important;
+			letter-spacing: -0.04em !important;
+			white-space: nowrap !important;
+		}
+	}
+}

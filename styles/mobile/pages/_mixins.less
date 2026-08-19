@@ -1,0 +1,45 @@
+// Shared page widgets (row title icons, etc.) — used by pages/*/rows
+
+.hb-row-title-icon(@name) {
+	.sectionTitle,
+	.page-view-more {
+		&::before {
+			content: "" !important;
+			display: block !important;
+			flex-shrink: 0;
+			position: relative !important;
+			background:
+				url("@{hb-cdn}/@{name}.svg") center / @hb-mobile-nav-icon-size @hb-mobile-nav-icon-size no-repeat,
+				url("@{hb-icon-box-bg}") center / contain no-repeat !important;
+			width: @hb-mobile-nav-icon-box !important;
+			height: @hb-mobile-nav-icon-box !important;
+			border: none !important;
+			box-sizing: border-box !important;
+		}
+	}
+
+	.page-view-more {
+		gap: var(--fds-ref-spacing-medium);
+	}
+}
+
+.hb-row-icons(@list) when (length(@list) = 2) and (length(extract(@list, 1)) = 1) {
+	@n: extract(@list, 1);
+	@name: extract(@list, 2);
+
+	& > .hm-row-bc:nth-child(@{n}) {
+		.hb-row-title-icon(@name);
+	}
+}
+
+.hb-row-icons(@list; @i: 1) when (@i =< length(@list)) and (length(extract(@list, @i)) >= 2) {
+	@row: extract(@list, @i);
+	@n: extract(@row, 1);
+	@name: extract(@row, 2);
+
+	& > .hm-row-bc:nth-child(@{n}) {
+		.hb-row-title-icon(@name);
+	}
+
+	.hb-row-icons(@list; @i + 1);
+}

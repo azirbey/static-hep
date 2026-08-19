@@ -1,0 +1,39 @@
+.featuredGameItem {
+	height: 180px !important;
+	background: @surface-base !important;
+	.hb-soft-border(important);
+
+	.featuredGameItemHeader,
+	.featuredGameItemBody {
+		background: transparent !important;
+	}
+
+	.featuredGameItemHeader {
+		.featuredGameItemHeaderContent {
+			.featuredGameItemCompetitionName {
+				font-size: 15px !important;
+				font-weight: 700 !important;
+				line-height: 20px !important;
+				letter-spacing: -0.01em !important;
+				color: @text-muted !important;
+			}
+		}
+	}
+
+	.featuredGameItemBody {
+		.market-group-holder-bc {
+			.market-group-item-bc {
+				background: @surface-raised !important;
+				border-radius: @hb-radius !important;
+
+				.market-bc {
+					background: transparent !important;
+
+					.market-name-bc {
+						color: @text-muted !important;
+					}
+				}
+			}
+		}
+	}
+}

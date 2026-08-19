@@ -727,6 +727,52 @@ body {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .page-view-more {
   gap: var(--fds-ref-spacing-medium);
 }
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide {
+  border-radius: 6px !important;
+}
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide .featuredGameItem {
+  height: 180px !important;
+  background: #1c2835 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide .featuredGameItem .featuredGameItemHeader,
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody {
+  background: transparent !important;
+}
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide .featuredGameItem .featuredGameItemHeader .featuredGameItemHeaderContent .featuredGameItemCompetitionName {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #bccbdc !important;
+}
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody .market-group-holder-bc .market-group-item-bc {
+  background: #233243 !important;
+  border-radius: 6px !important;
+}
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody .market-group-holder-bc .market-group-item-bc .market-bc {
+  background: transparent !important;
+}
+#root.is-home-page .layout-content-holder-bc .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody .market-group-holder-bc .market-group-item-bc .market-bc .market-name-bc {
+  color: #bccbdc !important;
+}
+#root.is-home-page .layout-content-holder-bc .product-banner-container-bc .carouselWrapper {
+  margin-inline-start: 0 !important;
+}
+#root.is-home-page .layout-content-holder-bc .product-banner-container-bc .carouselWrapper .swiper-slide a,
+#root.is-home-page .layout-content-holder-bc .product-banner-container-bc .carouselWrapper .swiper-slide button {
+  justify-content: center;
+}
+#root.is-home-page .layout-content-holder-bc .product-banner-container-bc .carouselWrapper .swiper-slide a img,
+#root.is-home-page .layout-content-holder-bc .product-banner-container-bc .carouselWrapper .swiper-slide button img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:has(.casinoTopWinnersWidgetNoData) {
+  display: none !important;
+}
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc .sectionTitle {
   display: flex !important;
   align-items: center !important;

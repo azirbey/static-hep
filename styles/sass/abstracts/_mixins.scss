@@ -1,0 +1,214 @@
+@use "sass:list";
+@use "sass:map";
+@use "functions" as *;
+@use "variables" as *;
+
+@mixin type($size: 13px, $weight: 600, $leading: 20px, $tracking: 0.01em) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $leading;
+	letter-spacing: $tracking;
+}
+
+@mixin linear-border-box(
+	$fill: color-hex(border-blue),
+	$from: color-rgba(white-color, 0.08),
+	$to: color-rgba(white-color, 0),
+	$angle: to bottom,
+	$width: 1px,
+	$radius: radius(),
+	$image: null,
+	$image-position: top center,
+	$image-size: cover,
+	$image-repeat: no-repeat
+) {
+	box-sizing: border-box;
+	border: $width solid transparent;
+	border-radius: $radius;
+
+	@if $image {
+		background:
+			#{$image} $image-position / $image-size $image-repeat padding-box,
+			linear-gradient($fill, $fill) padding-box,
+			linear-gradient($angle, $from, $to) border-box;
+		background-origin: padding-box, padding-box, border-box;
+		background-clip: padding-box, padding-box, border-box;
+	} @else {
+		background:
+			linear-gradient($fill, $fill) padding-box,
+			linear-gradient($angle, $from, $to) border-box;
+		background-origin: padding-box, border-box;
+		background-clip: padding-box, border-box;
+	}
+}
+
+@mixin theme-vars($map) {
+	@each $name, $value in $map {
+		--#{$name}: #{$value} !important;
+	}
+}
+
+@mixin theme-colors {
+	@include theme-vars($colors-rgb);
+}
+
+@mixin reset-bg-color {
+	background-color: transparent !important;
+}
+
+@mixin reset-box-shadow {
+	box-shadow: none !important;
+}
+
+@mixin default-gap-column {
+	display: flex;
+	flex-direction: column;
+	gap: space(default-spacing);
+}
+
+@mixin on-classes($names) {
+	$selectors: ();
+
+	@each $name in $names {
+		$selectors: list.append($selectors, ".#{$name}", $separator: comma);
+	}
+
+	#{$selectors} {
+		@content;
+	}
+}
+
+// First Letter Capitalize
+@mixin first-letter-capitalize {
+	text-transform: lowercase;
+
+	&::first-letter {
+		text-transform: capitalize;
+	}
+}
+
+// Reset Text Transform
+@mixin reset-text-transform {
+	text-transform: none !important;
+}
+
+@mixin font-face($family, $file, $weight) {
+	@font-face {
+		font-family: $family;
+		src: url("#{$cdn-fonts-url}#{$file}.woff2") format("woff2");
+		font-weight: $weight;
+		font-style: normal;
+		font-display: swap;
+	}
+}
+
+@mixin bg-icon($file, $size) {
+	content: "" !important;
+	display: block;
+	flex-shrink: 0;
+	width: $size;
+	height: $size;
+	font-family: inherit !important;
+	background: url("#{$cdn-icons-url}#{$file}.svg") no-repeat center / contain !important;
+}
+
+@mixin user-nav-icons($map) {
+	@each $class, $meta in $map {
+		&.#{$class}::before {
+			@include bg-icon(map.get($meta, file), map.get($meta, size));
+		}
+	}
+}
+
+@mixin user-nav-labels($map) {
+	@each $class, $meta in $map {
+		$label: map.get($meta, label);
+
+		@if $label {
+			&.#{$class}::after {
+				content: $label;
+			}
+		}
+	}
+}
+
+@mixin user-nav-push($classes) {
+	@each $class in $classes {
+		&.#{$class} {
+			margin-inline-start: auto !important;
+		}
+	}
+}
+
+@mixin row-title-icon($name, $glyph: 12px, $box: 24px) {
+	.sectionTitle,
+	.page-view-more {
+		&::before {
+			content: "" !important;
+			display: block !important;
+			flex-shrink: 0;
+			position: relative !important;
+			width: $box !important;
+			height: $box !important;
+			border: none !important;
+			box-sizing: border-box !important;
+			background:
+				url("#{$cdn-icons-url}#{$name}.svg") center / #{$glyph} #{$glyph} no-repeat,
+				url("#{$cdn-icons-url}icon-bg-with-border.svg") center / contain no-repeat !important;
+		}
+	}
+
+	.page-view-more {
+		gap: var(--fds-ref-spacing-medium);
+	}
+}
+
+@mixin row-icons($map) {
+	@each $n, $name in $map {
+		& > .hm-row-bc:nth-child(#{$n}) {
+			@include row-title-icon($name);
+		}
+	}
+}
+
+@mixin nav-link-icon($name, $variant: null, $glyph: 12px) {
+	&::before {
+		background-image: url("#{nav-icon($name, $variant)}"), url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
+		background-size: $glyph $glyph, contain !important;
+		background-position: center, center !important;
+		background-repeat: no-repeat !important;
+	}
+}
+
+@mixin nav-main-icons($names) {
+	$i: 1;
+
+	@each $name in $names {
+		& > .hdr-navigation-link-bc:nth-child(#{$i}) {
+			@include nav-link-icon($name);
+		}
+
+		$i: $i + 1;
+	}
+}
+
+@mixin nav-sub-icons($map) {
+	@each $href, $name in $map {
+		.hdr-navigation-link-bc[href*="#{$href}"] {
+			@include nav-link-icon($name, gray);
+
+			&.active {
+				@include nav-link-icon($name, white);
+			}
+		}
+	}
+}
+
+// Icon Background
+@mixin default-icon-background {
+	background-image: url("#{$cdn-icons-url}icon-bg-with-border.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: transparent;
+}

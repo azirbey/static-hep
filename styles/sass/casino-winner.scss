@@ -1,0 +1,27 @@
+@use "abstracts" as *;
+
+.casinoWinnerWidgetItem {
+	background: color-hex(border-blue);
+	padding: space(small-spacing) space(default-spacing) space(small-spacing) space(small-spacing) !important;
+
+	.casinoWinnerWidgetImg {
+		width: 56px !important;
+		height: 56px !important;
+	}
+
+	.casinoWinnerWidgetInfo {
+		.casinoWinnerWidgetName {
+			color: color-hex(text-gray);
+		}
+		.casinoWinnerWidgetGameName {
+			color: color-hex(text-light-gray);
+			max-width: 100px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.casinoWinnerWidgetAmount {
+			color: color-hex(white-color);
+		}
+	}
+}

@@ -1,0 +1,5 @@
+@use "abstracts" as *;
+
+#root.is-home-page .layout-content-holder-bc {
+	@include row-icons($home-row-icons);
+}

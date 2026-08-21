@@ -1,0 +1,62 @@
+@use "abstracts" as *;
+.hdr-navigation-scrollable-content {
+	align-items: center !important;
+}
+
+.hdr-navigation-scrollable-bc {
+	&::before,
+	&::after {
+		display: none;
+	}
+
+	// Main Navigation
+	&:nth-child(1) {
+		.hdr-navigation-scrollable-content {
+			@include nav-main-icons($nav-items);
+		}
+
+		.hdr-navigation-link-bc {
+			background: color-rgba-rgb(menu, 1) !important;
+		}
+	}
+
+	// Sub Navigation
+	&:nth-child(2) {
+		height: calc(var(--mobile-header-navigation-height) + 4px) !important;
+
+		nav {
+			gap: space(small-spacing) !important;
+		}
+
+		.hdr-navigation-scrollable-content {
+			@include nav-sub-icons($nav-sub-items);
+		}
+
+		.hdr-navigation-link-bc {
+			background-color: color-rgba-rgb(header, 1) !important;
+			width: fit-content !important;
+		}
+	}
+
+	.hdr-navigation-link-bc {
+		@include reset-bg-color;
+		@include reset-text-transform;
+		@include reset-box-shadow;
+
+		height: fit-content !important;
+		padding: 0 space(small-spacing) !important;
+		gap: space(small-spacing) !important;
+
+		&::after {
+			right: -5px !important;
+			z-index: 1 !important;
+		}
+
+		&::before {
+			content: "" !important;
+			position: relative !important;
+			width: 24px !important;
+			height: 24px !important;
+		}
+	}
+}

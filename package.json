@@ -1,23 +1,26 @@
 {
-  "name": "hep-static",
-  "version": "1.0.0",
-  "private": true,
-  "description": "HepBet override stylesheets (LESS) served as static assets from Cloudflare.",
-  "scripts": {
-    "build:desktop": "lessc styles/desktop/custom.less desktop-custom.css",
-    "build:mobile": "lessc styles/mobile/custom.less mobile-custom.css",
-    "build": "npm run build:desktop && npm run build:mobile",
-    "watch": "chokidar \"styles/**/*.less\" --initial -c \"npm run build\"",
-    "watch:desktop": "chokidar \"styles/desktop/**/*.less\" --initial -c \"npm run build:desktop\"",
-    "watch:mobile": "chokidar \"styles/mobile/**/*.less\" --initial -c \"npm run build:mobile\"",
-    "lint": "stylelint \"styles/**/*.less\"",
-    "baseline": "mkdir -p .baseline && cp desktop-custom.css mobile-custom.css .baseline/",
-    "diff": "diff .baseline/desktop-custom.css desktop-custom.css && diff .baseline/mobile-custom.css mobile-custom.css && echo 'Output unchanged.'"
-  },
-  "devDependencies": {
-    "chokidar-cli": "^3.0.0",
-    "less": "^4.4.2",
-    "stylelint": "^16.26.0",
-    "stylelint-config-standard-less": "^3.0.1"
-  }
+	"name": "hep-static",
+	"version": "1.0.0",
+	"private": true,
+	"description": "HepBet override stylesheets (LESS) served as static assets from Cloudflare.",
+	"scripts": {
+		"build:desktop": "lessc styles/desktop/custom.less desktop-custom.css",
+		"build:mobile": "lessc styles/mobile/custom.less mobile-custom.css",
+		"build": "npm run build:desktop && npm run build:mobile",
+		"watch": "chokidar \"styles/**/*.less\" --initial -c \"npm run build\"",
+		"watch:desktop": "chokidar \"styles/desktop/**/*.less\" --initial -c \"npm run build:desktop\"",
+		"watch:mobile": "chokidar \"styles/mobile/**/*.less\" --initial -c \"npm run build:mobile\"",
+		"build:sass": "sass --style=compressed styles/sass/main.scss m-custom.css",
+		"watch:sass": "sass --watch --style=compressed styles/sass/main.scss:m-custom.css",
+		"lint": "stylelint \"styles/**/*.less\"",
+		"baseline": "mkdir -p .baseline && cp desktop-custom.css mobile-custom.css .baseline/",
+		"diff": "diff .baseline/desktop-custom.css desktop-custom.css && diff .baseline/mobile-custom.css mobile-custom.css && echo 'Output unchanged.'"
+	},
+	"devDependencies": {
+		"chokidar-cli": "^3.0.0",
+		"less": "^4.4.2",
+		"sass": "^1.90.0",
+		"stylelint": "^16.26.0",
+		"stylelint-config-standard-less": "^3.0.1"
+	}
 }

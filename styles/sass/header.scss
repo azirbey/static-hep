@@ -1,0 +1,148 @@
+@use "abstracts" as *;
+
+.logo-container {
+	margin-inline-end: 0;
+}
+
+.logo {
+	height: layout(logo-height);
+}
+
+.hdr-additional-info {
+	border-color: color-hex(border-blue);
+	height: 44px;
+	padding: 0 space(default-spacing);
+	border: none !important;
+	box-shadow: inset 0 -1px 0 0 color-hex(border-blue) !important;
+
+	.hdr-user-bc {
+		width: 100%;
+		margin-inline-start: 0;
+		gap: space(small-gap);
+
+		.user-nav-icon {
+			width: fit-content;
+			min-width: 28px;
+			height: 28px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: space(small-gap);
+			padding: space(tiny-spacing);
+			@include linear-border-box;
+
+			& + .user-nav-icon {
+				margin-inline-start: 0;
+			}
+
+			&::after {
+				font-family: $font-family;
+				font-size: 12px;
+				line-height: 12px;
+				letter-spacing: 0.01em;
+				font-weight: 600;
+				color: color-hex(white-color);
+			}
+
+			&::before {
+				font-size: 12px;
+				height: 12px;
+				width: 12px;
+				line-height: 12px;
+			}
+
+			@include user-nav-icons($header-user-buttons);
+			@include user-nav-push($header-user-push);
+		}
+
+		#root:not(.has-header-info) & .user-nav-icon {
+			@include user-nav-labels($header-user-buttons);
+			padding: space(small-spacing);
+		}
+	}
+}
+
+.hdr-main-content-bc {
+	border-color: color-hex(border-blue);
+	padding-inline-end: space(default-spacing);
+	border: none !important;
+	box-shadow: inset 0 -1px 0 0 color-hex(border-blue) !important;
+
+	.hdr-user-bc {
+		gap: space(default-gap);
+
+		.profileDetails {
+			display: flex;
+			align-items: center;
+			img {
+				border-radius: radius(md);
+			}
+		}
+		.btn {
+			&.register {
+				margin-inline-start: 0;
+			}
+		}
+	}
+}
+
+.hdr-user-close {
+	@include default-icon-background;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	justify-content: center;
+	font-size: 9px;
+	font-weight: 700;
+	&::before {
+		line-height: 28px;
+		top: 1px;
+		position: relative;
+		color: color-hex(link-gray);
+	}
+}
+
+.hdr-toggle-button-bc {
+	@include default-icon-background;
+	color: color-hex(link-gray);
+	border-radius: 0;
+	margin-inline-start: 8px;
+
+	#root.smart-panel-is-visible & {
+		@include default-icon-background;
+		color: color-hex(link-gray);
+	}
+}
+
+.hdr-smart-panel-holder-arrow-bc {
+	right: 12px !important;
+	top: calc(
+		var(--dynamic-header) + var(--mobile-header-main-section-height) + var(--mobile-self-exclusion-height) - 10px
+	);
+	&::before {
+		border-color: transparent transparent color-hex(border-blue) !important;
+	}
+
+	&::after {
+		border-color: transparent transparent rgba(color-hex(border-blue), 20%) !important;
+	}
+}
+.hdr-smart-panel-holder-bc {
+	background: color-hex(border-blue);
+
+	.sp-button-bc {
+		background: linear-gradient(-180deg, #2a3c50 0%, #233243 100%);
+
+		margin: 8px;
+		width: 34px;
+		height: 34px;
+		border-radius: 6px;
+		box-shadow: 0px 3px 5px -5px color-hex(main-color);
+
+		.count-odd-animation {
+			top: unset;
+			bottom: 10px !important;
+			right: 10px !important;
+		}
+	}
+}

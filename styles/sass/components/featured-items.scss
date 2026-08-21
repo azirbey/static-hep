@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+.featuredGameItem {
+	border-color: color-hex(border-blue) !important;
+	background-color: color-hex(market-blue) !important;
+	background-image: url("#{$cdn-images-url}markets-shine.png");
+	background-position: 100px 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: hard-light;
+
+	.featuredGameItemHeader,
+	.featuredGameItemBody {
+		@include reset-bg-color;
+	}
+	.featuredGameItemHeader {
+		&:before {
+			border-bottom-style: solid;
+			border-bottom-color: color-hex(border-blue);
+		}
+
+		.featuredGameItemCompetitionName {
+			@include type($weight: 700);
+			color: color-hex(link-gray);
+		}
+	}
+	.featuredGameItemPlayerName {
+		@include type($weight: 700);
+		color: color-hex(white-color);
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		max-width: 68px;
+	}
+
+	.featuredGameItemTime {
+		@include type($size: 11px, $weight: 500, $leading: 16px);
+
+		time {
+			&:first-child:nth-last-child(2) {
+				color: color-hex(link-gray);
+			}
+
+			&:last-child:nth-child(2) {
+				@include type($size: 13px, $weight: 700);
+				color: color-hex(cyan);
+			}
+		}
+	}
+}

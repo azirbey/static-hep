@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.market-bc {
+	background: color-hex(border-blue) !important;
+	border: solid 1px color-hex(market-blue) !important;
+
+	.market-name-bc {
+		@include type($size: 11px, $weight: 500, $leading: 16px);
+		color: color-hex(link-gray);
+	}
+	.market-odd-bc {
+		@include type;
+		color: color-hex(cyan);
+	}
+}

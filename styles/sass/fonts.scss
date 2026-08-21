@@ -1,0 +1,5 @@
+@use "abstracts" as *;
+
+@each $file, $weight in $font-faces {
+	@include font-face($font-name, $file, $weight);
+}

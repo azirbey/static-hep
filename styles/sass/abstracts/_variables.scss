@@ -1,0 +1,145 @@
+@use "sass:map";
+
+$cdn-url: "https://static-hep.hepbet-static.workers.dev";
+$cdn-fonts-url: $cdn-url + "/webfonts/HepBet/";
+$cdn-images-url: $cdn-url + "/images/";
+$cdn-icons-url: $cdn-images-url + "icons/";
+$cdn-nav-icons-url: $cdn-images-url + "nav-menu-icons/svg/";
+$font-name: "Geist";
+$font-family: $font-name, sans-serif;
+$font-faces: (
+	Geist-Regular: 400,
+	Geist-Medium: 500,
+	Geist-SemiBold: 600,
+	Geist-Bold: 700,
+);
+
+// Base colors RGB
+// prettier-ignore
+$colors-rgb: (
+  b: (25, 34, 44),
+  header: (25, 34, 44),
+  menu: (14, 20, 27),
+  hero: (25, 124, 255),
+  oc-1: (35, 50, 67),
+);
+
+// Base colors Hex
+$colors-hex: (
+	white-color: #ffffff,
+	link-gray: #bccbdc,
+	text-gray: #afc1d5,
+	text-light-gray: #cad5e3,
+	border-blue: #233243,
+	market-blue: #1c2835,
+	main-color: #197cff,
+	cyan: #0febff,
+);
+
+$radius: (
+	default: 6px,
+	sm: 2px,
+	md: 4px,
+);
+
+$layout: (
+	mobile-header-main-section-height: 48px,
+	padding-page-aside: 16px,
+	logo-height: 32px,
+	font-family: $font-family,
+);
+
+$spacing: (
+	default-spacing: 16px,
+	medium-spacing: 12px,
+	small-spacing: 8px,
+	tiny-spacing: 6px,
+	default-gap: 12px,
+	small-gap: 4px,
+);
+
+$header-user-buttons: (
+	bc-i-call: (
+		file: call-back,
+		size: 16px,
+	),
+	bc-i-whatsapp: (
+		file: whatsapp,
+		size: 16px,
+	),
+	bc-i-promotion: (
+		file: gift-box,
+		size: 12px,
+		label: "Promosyonlar",
+	),
+	bc-i-bonus-request: (
+		file: bonus-request,
+		size: 12px,
+		label: "Bonus Talebi",
+	),
+	bc-i-money-dollar: (
+		file: withdraw,
+		size: 12px,
+		label: "Para Yatır",
+	),
+);
+
+// prettier-ignore
+$header-user-push: (
+  bc-i-promotion,
+);
+
+$home-row-icons: (
+	4: fire,
+	5: slot-machine,
+	6: roulette,
+	7: rocket,
+	8: invoice,
+	9: profit,
+);
+
+$nav-items: (
+	soccer,
+	soccer-jersey,
+	slot-machine,
+	roulette,
+	slot-machine-1,
+	rocket,
+	plane,
+	badge,
+	horse,
+	trophy,
+	microphone,
+	monitor,
+	coupon-wars,
+	affiliate,
+);
+
+$nav-sub-items: (
+	"sports/live/event-view": soccer,
+	"sports/live/live-calendar": calendar,
+	"sports/live/results": scoreboard,
+	"sports/pre-match/event-view": stopwatch,
+	"sports/pre-match/live-calendar": calendar,
+	"sports/pre-match/results": scoreboard,
+	"sports/pre-match/tournaments": trophy,
+	"casino/slots": slot-machine,
+	"casino/tournaments": trophy,
+	"casino/jackpot": diamond,
+	"live-casino/home": roulette,
+	"casino/live-rtp": live-rtp,
+);
+
+$content-pad-x: (
+	sportMiniGame,
+	sectionTitle,
+	casinoCategories,
+	bbAiRecBetsScroll,
+	casinoGamesListWrapper,
+	casinoGameProviderFilters,
+	tournamentsHorizontalScroll,
+	horizontal-sl-list-container,
+	jackpot-pools-widget__scroll,
+	casinoProvidersWidgetHorizontalScroll,
+	casinoHorizontalGamesListHorizontalScroll
+);

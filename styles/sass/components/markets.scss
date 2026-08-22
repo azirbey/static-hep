@@ -5,7 +5,7 @@
 	border: solid 1px color-hex(market-blue) !important;
 
 	.market-name-bc {
-		@include type($size: 11px, $weight: 500, $leading: 16px);
+		@include type-token(caption);
 		color: color-hex(link-gray);
 	}
 	.market-odd-bc {

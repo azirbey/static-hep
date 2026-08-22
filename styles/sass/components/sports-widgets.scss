@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.sportMiniGame {
+	margin-block: unset !important;
+	padding-top: space(default-spacing) !important;
+}
+
+.special-games-button,
+.filter-sports-bc,
+.favouriteTeamsWidgetWrapper {
+	margin-top: 0 !important;
+}
+
+.live-page-sections-bc + .live-page-sections-bc,
+.prematch-page-bc {
+	min-height: fit-content !important;
+}

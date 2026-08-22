@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+.swiper-pagination {
+	right: calc(space(default-spacing) + space(compact-spacing)) !important;
+	top: auto !important;
+	bottom: space(tiny-spacing) !important;
+}

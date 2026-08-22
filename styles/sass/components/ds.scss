@@ -7,15 +7,9 @@
 		// background: color-hex(ds-button-blue) !important;
 		border-radius: radius() !important;
 
-		.casinoGameProviderFilters & {
-			@include linear-border-box(color-hex(ds-button-blue));
-			height: 44px;
-			max-height: unset !important;
-		}
-
 		#{$ds}-label {
 			color: color-hex(white-color) !important;
-			@include type(13px, 400, 16px, 0.01em, true);
+			@include type-token(body-control, true);
 		}
 
 		&::after {
@@ -28,21 +22,17 @@
 			border-radius: radius();
 			background: color-hex(market-blue) !important;
 			box-shadow: inset 0 0 0 1px color-hex(nav-border-blue) !important;
-			.casinoGameProviderFilters & {
-				height: 44px !important;
-				max-height: unset !important;
-			}
 		}
 		&__label {
 			color: color-hex(placeholder-gray) !important;
-			@include type(13px, 400, 16px, 0.01em, true);
+			@include type-token(body-control, true);
 		}
 		&__input {
-			@include type(13px, 400, 16px, 0.01em, true);
+			@include type-token(body-control, true);
 
 			&::placeholder {
 				color: color-hex(placeholder-gray) !important;
-				@include type(13px, 400, 16px, 0.01em, true);
+				@include type-token(body-control, true);
 			}
 		}
 	}
@@ -51,11 +41,6 @@
 		&__field {
 			border-radius: radius();
 			background: color-hex(main-color) !important;
-
-			.casinoGameProviderFilters & {
-				height: 44px !important;
-				max-height: unset !important;
-			}
 		}
 		&__text &__label {
 			color: color-hex(white-color) !important;
@@ -78,7 +63,7 @@
 			height: 40px;
 			background-color: color-hex(border-blue) !important;
 			color: color-hex(ds-chip-gray) !important;
-			@include type(13px, 600, 20px, 0.01em);
+			@include type-token(body-semibold);
 		}
 
 		border-radius: radius();
@@ -100,10 +85,6 @@
 			font-weight: 600;
 			line-height: 16px;
 			letter-spacing: 0.01em;
-		}
-
-		.casinoTopWinnersPeriodsSection & {
-			min-width: 55px !important;
 		}
 	}
 }

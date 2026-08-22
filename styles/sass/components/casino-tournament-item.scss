@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+#root .casinoGameTournamentListItemWrp,
+#root .tournamentSectionMainContainer {
+	.tournamentSectionDate .dataStatusTxt,
+	.tournamentPrizeFundTxt {
+		color: color-hex(link-gray) !important;
+		@include type-token(micro, true);
+	}
+
+	.tournamentSectionMoney {
+		color: color-hex(cyan) !important;
+		text-shadow: none !important;
+	}
+
+	.tournamentDateStartEnd {
+		.tourDateDuration,
+		.tourDateDuration time {
+			color: color-hex(text-light-gray) !important;
+			@include type-token(caption, true);
+		}
+
+		.bc-i-small-arrow-right {
+			color: color-hex(main-color) !important;
+		}
+	}
+}

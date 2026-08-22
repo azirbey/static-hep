@@ -18,18 +18,12 @@
 	@return token($colors-hex, $key);
 }
 
-@function hex-to-rgb($key) {
-	$hex: color-hex($key);
-
-	@return (
-		color.channel($hex, "red", $space: rgb),
-		color.channel($hex, "green", $space: rgb),
-		color.channel($hex, "blue", $space: rgb)
-	);
-}
-
 @function color-rgba($key, $alpha: 1) {
 	@return color.change(color-hex($key), $alpha: $alpha);
+}
+
+@function typography($key) {
+	@return token($typography, $key);
 }
 
 @function color-rgba-rgb($key, $alpha: 1) {

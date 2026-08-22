@@ -3,3 +3,47 @@
 #root.is-home-page .layout-content-holder-bc {
 	@include row-icons($home-row-icons);
 }
+
+.layout-content-holder-bc {
+	.is-home-page & {
+		.hm-row-bc {
+			&:not(:first-child) {
+				border-bottom: 1px solid color-hex(border-blue);
+				padding-bottom: space(default-spacing);
+			}
+		}
+	}
+}
+
+.hm-row-bc-inner {
+	&:has(.page-view-more) {
+		gap: space(medium-spacing);
+		.page-view-more {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.sectionTitle {
+		max-height: layout(section-title-height);
+		gap: space(medium-spacing);
+		.ds-link .ds-label,
+		.ds-link .link__icon {
+			height: layout(section-title-height);
+			background: color-hex(border-blue);
+			padding: 0 space(medium-spacing);
+			width: fit-content;
+			@include linear-border-box;
+			@include type-token(body);
+			display: inline-flex;
+			align-items: center;
+			color: color-hex(white-color);
+		}
+		.ds-link .link__icon {
+			padding: 0 space(tiny-spacing);
+			display: none !important;
+			svg {
+				width: layout(svg-size);
+			}
+		}
+	}
+}

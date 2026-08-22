@@ -1,4 +1,4 @@
-@use "abstracts" as *;
+@use "../abstracts" as *;
 
 .casinoWinnerWidgetItem {
 	background: color-hex(border-blue);
@@ -23,5 +23,11 @@
 		.casinoWinnerWidgetAmount {
 			color: color-hex(white-color);
 		}
+	}
+}
+
+.ds-chip {
+	.casinoTopWinnersPeriodsSection & {
+		min-width: 55px !important;
 	}
 }

@@ -4,6 +4,7 @@ $cdn-url: "https://static-hep.hepbet-static.workers.dev";
 $cdn-fonts-url: $cdn-url + "/webfonts/HepBet/";
 $cdn-images-url: $cdn-url + "/images/";
 $cdn-icons-url: $cdn-images-url + "icons/";
+$cdn-tournament-info-icons-url: $cdn-images-url + "tournament-info-icons/";
 $cdn-nav-icons-url: $cdn-images-url + "nav-menu-icons/svg/";
 $font-name: "Geist";
 $font-family: $font-name, sans-serif;
@@ -59,16 +60,78 @@ $layout: (
 	svg-size: 16px,
 	logo-height: 32px,
 	section-title-height: 32px,
+	control-height: 44px,
+	icon-hit: 28px,
 	font-family: $font-family,
 );
 
+// size, weight, leading, tracking
+$typography: (
+	body: (
+		size: 13px,
+		weight: 400,
+		leading: 20px,
+		tracking: 0.01em,
+	),
+	body-control: (
+		size: 13px,
+		weight: 400,
+		leading: 16px,
+		tracking: 0.01em,
+	),
+	body-semibold: (
+		size: 13px,
+		weight: 600,
+		leading: 20px,
+		tracking: 0.01em,
+	),
+	body-medium: (
+		size: 13px,
+		weight: 500,
+		leading: 24px,
+		tracking: 0.01em,
+	),
+	caption: (
+		size: 11px,
+		weight: 500,
+		leading: 16px,
+		tracking: 0.01em,
+	),
+	caption-bold: (
+		size: 11px,
+		weight: 700,
+		leading: 16px,
+		tracking: 0.01em,
+	),
+	micro: (
+		size: 9px,
+		weight: 400,
+		leading: 14px,
+		tracking: 0.01em,
+	),
+	micro-medium: (
+		size: 9px,
+		weight: 500,
+		leading: 12px,
+		tracking: 0.01em,
+	),
+	tab-tall: (
+		size: 13px,
+		weight: 400,
+		leading: 40px,
+		tracking: 0.01em,
+	),
+);
+
 $spacing: (
-	default-spacing: 16px,
-	medium-spacing: 12px,
-	small-spacing: 8px,
-	tiny-spacing: 6px,
-	default-gap: 12px,
 	small-gap: 4px,
+	tiny-spacing: 6px,
+	small-spacing: 8px,
+	compact-spacing: 10px,
+	medium-spacing: 12px,
+	default-gap: 12px,
+	relaxed-spacing: 14px,
+	default-spacing: 16px,
 );
 
 $header-user-buttons: (
@@ -103,6 +166,7 @@ $header-user-push: (
 );
 
 $home-row-icons: (
+	2: laurel-wreath,
 	4: fire,
 	5: slot-machine,
 	6: roulette,
@@ -142,6 +206,14 @@ $nav-sub-items: (
 	"casino/jackpot": diamond,
 	"live-casino/home": roulette,
 	"casino/live-rtp": live-rtp,
+);
+
+$casino-tournament-tab-icons: (
+	bc-i-player-info: info,
+	bc-i-slots: games,
+	bc-i-prizes: prices,
+	bc-i-leaderboard: score-table,
+	bc-i-rule: rules,
 );
 
 $root-pad-extra-top: (is-home-page, promotion-page, casino-slots, live-casino-games, casino-live-rtp-page);

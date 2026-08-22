@@ -1,15 +1,26 @@
 @use "sass:list";
 @use "sass:map";
+@use "sass:string";
 @use "functions" as *;
 @use "variables" as *;
 
 @mixin type($size: 13px, $weight: 600, $leading: 20px, $tracking: 0.01em, $important: false) {
-	$imp: if($important, !important, null);
+	$i: null;
 
-	font-size: $size $imp;
-	font-weight: $weight $imp;
-	line-height: $leading $imp;
-	letter-spacing: $tracking $imp;
+	@if $important {
+		$i: string.unquote("!important");
+	}
+
+	font-size: $size $i;
+	font-weight: $weight $i;
+	line-height: $leading $i;
+	letter-spacing: $tracking $i;
+}
+
+@mixin type-token($key, $important: false) {
+	$t: typography($key);
+
+	@include type(map.get($t, size), map.get($t, weight), map.get($t, leading), map.get($t, tracking), $important);
 }
 
 @mixin item-size($name) {
@@ -144,6 +155,28 @@
 	}
 }
 
+@mixin casino-tournament-tab-icons($map, $size: 28px) {
+	@each $icon, $file in $map {
+		i.#{$icon} {
+			width: $size !important;
+			height: $size !important;
+			font-size: 0 !important;
+			line-height: 0 !important;
+			background: none !important;
+			margin: 0 !important;
+
+			&::before {
+				content: "" !important;
+				display: block;
+				width: $size;
+				height: $size;
+				font-family: inherit !important;
+				background: url("#{$cdn-tournament-info-icons-url}#{$file}.svg") no-repeat center / contain !important;
+			}
+		}
+	}
+}
+
 @mixin user-nav-push($classes) {
 	@each $class in $classes {
 		&.#{$class} {
@@ -152,7 +185,7 @@
 	}
 }
 
-@mixin row-title-icon($name, $glyph: 12px, $box: 24px) {
+@mixin row-title-icon($name, $glyph: 12px, $box: 32px) {
 	.sectionTitle,
 	.page-view-more {
 		&::before {

@@ -1,0 +1,97 @@
+@use "../abstracts" as *;
+
+.casinoTournamentTabsWrp {
+	.casinoTournamentTabClm {
+		background: color-rgba-rgb(header, 1);
+		border: solid 1px color-hex(nav-border-blue);
+		min-width: 90px;
+		width: 90px;
+		height: 64px;
+		padding: space(small-spacing);
+		gap: space(tiny-spacing);
+
+		&::before {
+			display: none !important;
+		}
+
+		.casinoTournamentTabTitle {
+			color: color-hex(text-gray) !important;
+			@include type-token(caption, true);
+		}
+
+		@include casino-tournament-tab-icons($casino-tournament-tab-icons);
+
+		&.active {
+			background: color-hex(border-blue);
+		}
+	}
+
+	.casinoTournamentMobInfoBlock {
+		.tournamentDetailsInfo {
+			.casinoTournamentInfoItem {
+				background: color-hex(border-blue) !important;
+				border: 1px solid color-hex(nav-border-blue) !important;
+				border-radius: radius(large) !important;
+
+				&::before,
+				&::after {
+					display: none !important;
+				}
+			}
+
+			.casinoTournamentInfoSectionTitleBc {
+				color: color-hex(white-color) !important;
+				@include type-token(body-semibold, true);
+			}
+
+			.casinoTournamentSectionContentTitleBc {
+				color: color-hex(text-gray) !important;
+				@include type-token(caption, true);
+			}
+
+			.casinoTournamentSectionElStatusBc,
+			.casinoTournamentSectionElStatusBc time {
+				color: color-hex(white-color) !important;
+				@include type-token(caption, true);
+			}
+		}
+
+		.Rules {
+			.casinoTournamentRuleTxt {
+				color: color-hex(ds-chip-gray) !important;
+				@include type-token(body-medium, true);
+			}
+		}
+
+		.casinoTournamentInfoColumn.Leaderboard,
+		.casinoTournamentInfoColumn.Prize {
+			.casinoTournamentInfoRowWrp {
+				margin-bottom: space(small-spacing) !important;
+				background: transparent !important;
+
+				&:nth-child(odd) .casinoTournamentInfoRow {
+					background: color-hex(border-blue) !important;
+				}
+
+				&:nth-child(even) .casinoTournamentInfoRow {
+					background: color-hex(nav-border-blue) !important;
+				}
+			}
+
+			.casinoTournamentInfoRow {
+				border-radius: radius(large) !important;
+			}
+
+			.casinoTournamentInfoRowClm.left,
+			.casinoTournamentInfoRowClm.center {
+				color: color-hex(ds-chip-gray) !important;
+				@include type-token(body-medium, true);
+			}
+
+			.casinoTournamentInfoRowClm.right {
+				color: color-hex(cyan) !important;
+				@include type-token(body-medium, true);
+			}
+		}
+	}
+}

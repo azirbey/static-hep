@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+.casinoLobbyContainer {
+	@include default-gap-column;
+}
+
+.casinoTopWinnersWidgetHeader {
+	padding-inline-end: space(default-spacing) !important;
+}
+
+.casinoGamesWidget,
+.featuredGames,
+.bbAiRecBets {
+	gap: space(medium-spacing) !important;
+}
+
+.casinoGamesContainer {
+	display: flex;
+	flex-direction: column;
+	gap: space(default-spacing) !important;
+
+	.casinoNavigationAndFilters {
+		margin: 0 !important;
+		gap: space(small-spacing) !important;
+	}
+}
+
+.casinoTournamentSwitchBlockTxt {
+	color: color-hex(text-light-gray) !important;
+	@include type-token(body, true);
+}
+
+.casinoTournamentTabContent {
+	&:after {
+		display: none !important;
+	}
+	.casinoTournamentTabItem {
+		height: 40px !important;
+		background: color-hex(border-blue) !important;
+		color: color-hex(link-gray) !important;
+		display: block !important;
+		@include type-token(tab-tall, true);
+		@include first-letter-capitalize;
+
+		&.active {
+			background: color-hex(main-color) !important;
+			color: color-hex(white-color) !important;
+		}
+	}
+}

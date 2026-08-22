@@ -34,7 +34,7 @@
 	}
 
 	.featuredGameItemTime {
-		@include type($size: 11px, $weight: 500, $leading: 16px);
+		@include type-token(caption);
 
 		time {
 			&:first-child:nth-last-child(2) {

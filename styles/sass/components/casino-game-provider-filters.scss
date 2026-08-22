@@ -2,4 +2,20 @@
 
 .casinoGameProviderFilters {
 	gap: space(small-spacing) !important;
+
+	.ds-btn {
+		@include linear-border-box(color-hex(ds-button-blue));
+		height: layout(control-height);
+		max-height: unset !important;
+	}
+
+	.ds-textfield__field {
+		height: layout(control-height) !important;
+		max-height: unset !important;
+	}
+
+	.ds-select__field {
+		height: layout(control-height) !important;
+		max-height: unset !important;
+	}
 }

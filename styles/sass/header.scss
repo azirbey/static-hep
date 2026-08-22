@@ -10,7 +10,7 @@
 
 .hdr-additional-info {
 	border-color: color-hex(border-blue);
-	height: 44px;
+	height: layout(control-height);
 	padding: 0 space(default-spacing);
 	border: none !important;
 	box-shadow: inset 0 -1px 0 0 color-hex(border-blue) !important;
@@ -22,8 +22,8 @@
 
 		.user-nav-icon {
 			width: fit-content;
-			min-width: 28px;
-			height: 28px;
+			min-width: layout(icon-hit);
+			height: layout(icon-hit);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -36,7 +36,7 @@
 			}
 
 			&::after {
-				@include type(9px, 500, 12px, 0.01em);
+				@include type-token(micro-medium);
 				font-family: $font-family;
 				color: color-hex(white-color);
 			}
@@ -85,14 +85,14 @@
 
 .hdr-user-close {
 	@include default-icon-background;
-	width: 28px;
-	height: 28px;
+	width: layout(icon-hit);
+	height: layout(icon-hit);
 	display: flex;
 	justify-content: center;
 	font-size: 9px;
 	font-weight: 700;
 	&::before {
-		line-height: 28px;
+		line-height: layout(icon-hit);
 		top: 1px;
 		position: relative;
 		color: color-hex(link-gray);
@@ -127,7 +127,7 @@
 	background: color-hex(border-blue);
 
 	.sp-button-bc {
-		background: linear-gradient(-180deg, #2a3c50 0%, #233243 100%);
+		background: linear-gradient(-180deg, #{color-hex(nav-border-blue)} 0%, #{color-hex(border-blue)} 100%);
 
 		margin: 8px;
 		width: 34px;

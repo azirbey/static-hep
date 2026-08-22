@@ -62,12 +62,16 @@ html.is-mobile body {
 .layout-content-holder-bc {
 	@include default-gap-column;
 
-	$pad-top: "var(--mobile-header-navigation-height) + var(--dynamic-header) + var(--mobile-self-exclusion-height) + 44px";
-
-	padding-top: calc(#{$pad-top} + #{space(default-spacing)}) !important;
+	--content-nav-extra: 44px;
+	$pad-top: "var(--mobile-header-navigation-height) + var(--dynamic-header) + var(--mobile-self-exclusion-height) + var(--content-nav-extra)";
+	padding-top: calc(#{$pad-top}) !important;
 
 	.has-sub-navigation & {
-		padding-top: calc(#{$pad-top}) !important;
+		--content-nav-extra: 48px;
+	}
+
+	@include on-classes($root-pad-extra-top, $as-parent: true) {
+		padding-top: calc(#{$pad-top} + #{space(default-spacing)}) !important;
 	}
 
 	.hm-row-bc {
@@ -126,47 +130,61 @@ html.is-mobile body {
 			margin-bottom: 0 !important;
 		}
 	}
-}
 
-.ds-chip {
-	@include reset-box-shadow;
-	@include reset-bg-color;
-	color: color-hex(text-gray);
-	padding: space(medium-spacing) space(default-spacing);
-	height: 32px;
-	border-radius: radius(md);
-
-	&--selected {
-		background: color-hex(border-blue) !important;
-		color: color-hex(white-color) !important;
-	}
-
-	.ds-label {
-		font-size: 11px;
-		font-weight: 600;
-		line-height: 16px;
-		letter-spacing: 0.01em;
-	}
-
-	.casinoTopWinnersPeriodsSection & {
-		min-width: 55px !important;
-	}
-}
-
-.casinoGameItemContent {
-	width: 142px !important;
-	aspect-ratio: 142 / 100;
-
-	.casinoGameItem {
-		border-radius: radius();
-
-		.casinoGameItemImage {
-			border-radius: radius();
-			aspect-ratio: 142 / 100;
+	.sectionTitle {
+		max-height: layout(section-title-height);
+		.ds-link .ds-label,
+		.ds-link .link__icon {
+			height: layout(section-title-height);
+			background: color-hex(border-blue);
+			padding: 0 space(medium-spacing);
+			width: fit-content;
+			@include linear-border-box;
+			@include type(13px, 400, 20px, 0.01em);
+			display: inline-flex;
+			align-items: center;
+			color: color-hex(white-color);
+		}
+		.ds-link .link__icon {
+			padding: 0 space(tiny-spacing);
+			svg {
+				width: layout(svg-size);
+			}
 		}
 	}
 }
 
-.layout-header-holder-bc ~ div {
-	display: none !important;
+.casinoGamesContainer {
+	display: flex;
+	flex-direction: column;
+	gap: space(default-spacing) !important;
+
+	.casinoNavigationAndFilters {
+		margin: 0 !important;
+		gap: space(small-spacing) !important;
+	}
+}
+
+.casinoTournamentSwitchBlockTxt {
+	color: color-hex(text-light-gray) !important;
+	@include type(13px, 400, 20px, 0.01em, true);
+}
+
+.casinoTournamentTabContent {
+	&:after {
+		display: none !important;
+	}
+	.casinoTournamentTabItem {
+		height: 40px !important;
+		background: color-hex(border-blue) !important;
+		color: color-hex(link-gray) !important;
+		display: block !important;
+		@include type(13px, 400, 40px, 0.01em, true);
+		@include first-letter-capitalize;
+
+		&.active {
+			background: color-hex(main-color) !important;
+			color: color-hex(white-color) !important;
+		}
+	}
 }

@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.casinoProvidersWidget,
+.casinoProvidersPopupContent {
+	.providerItemsInner {
+		background: color-hex(border-blue) !important;
+		overflow: auto;
+		border-radius: radius(large);
+
+		&.active {
+			border-color: color-hex(cyan) !important;
+			border-width: 2px !important;
+		}
+
+		.providerBadge {
+			top: 0 !important;
+			right: 0 !important;
+
+			.badge {
+				border-radius: radius(sm);
+			}
+		}
+
+		.providerItemsBtn {
+			.CMSIconSVGWrapper {
+				max-width: 80px !important;
+			}
+		}
+	}
+}

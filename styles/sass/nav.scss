@@ -1,4 +1,5 @@
 @use "abstracts" as *;
+
 .hdr-navigation-scrollable-content {
 	align-items: center !important;
 }
@@ -9,6 +10,11 @@
 		display: none;
 	}
 
+	.hdr-navigation-scrollable-content {
+		padding-inline-start: space(default-spacing) !important;
+		padding-inline-end: space(default-spacing) !important;
+	}
+
 	// Main Navigation
 	&:nth-child(1) {
 		.hdr-navigation-scrollable-content {
@@ -17,6 +23,14 @@
 
 		.hdr-navigation-link-bc {
 			background: color-rgba-rgb(menu, 1) !important;
+
+			&:first-child {
+				padding-left: 0 !important;
+			}
+
+			&:last-child {
+				padding-right: 0 !important;
+			}
 		}
 	}
 
@@ -34,7 +48,23 @@
 
 		.hdr-navigation-link-bc {
 			background-color: color-rgba-rgb(header, 1) !important;
+			border-radius: radius();
+			border: 1px solid color-hex(nav-border-blue);
 			width: fit-content !important;
+			height: 24px !important;
+			line-height: 1 !important;
+
+			&.active {
+				border: none !important;
+				background-color: color-hex(main-color) !important;
+			}
+
+			&::before {
+				content: "" !important;
+				position: relative !important;
+				width: 12px !important;
+				height: 12px !important;
+			}
 		}
 	}
 
@@ -46,6 +76,11 @@
 		height: fit-content !important;
 		padding: 0 space(small-spacing) !important;
 		gap: space(small-spacing) !important;
+
+		&.active {
+			left: unset !important;
+			position: relative !important;
+		}
 
 		&::after {
 			right: -5px !important;

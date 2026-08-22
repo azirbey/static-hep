@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+/*
+175/124
+142/100
+*/
+
+.casinoGameItem {
+	border-radius: radius();
+
+	.casinoGameItemBlock {
+		.casinoGameButtons {
+			.casinoBtnWrp {
+				.ds-btn {
+					border-radius: radius();
+					background: color-hex(main-color) !important;
+				}
+				&:nth-child(1) {
+					.ds-btn {
+						background: color-hex(border-blue) !important;
+					}
+				}
+			}
+		}
+	}
+}

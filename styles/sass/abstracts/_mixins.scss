@@ -3,11 +3,17 @@
 @use "functions" as *;
 @use "variables" as *;
 
-@mixin type($size: 13px, $weight: 600, $leading: 20px, $tracking: 0.01em) {
-	font-size: $size;
-	font-weight: $weight;
-	line-height: $leading;
-	letter-spacing: $tracking;
+@mixin type($size: 13px, $weight: 600, $leading: 20px, $tracking: 0.01em, $important: false) {
+	$imp: if($important, !important, null);
+
+	font-size: $size $imp;
+	font-weight: $weight $imp;
+	line-height: $leading $imp;
+	letter-spacing: $tracking $imp;
+}
+
+@mixin item-size($name) {
+	height: token($items, $name) !important;
 }
 
 @mixin linear-border-box(
@@ -66,11 +72,17 @@
 	gap: space(default-spacing);
 }
 
-@mixin on-classes($names) {
+@mixin on-classes($names, $as-parent: false) {
 	$selectors: ();
 
 	@each $name in $names {
-		$selectors: list.append($selectors, ".#{$name}", $separator: comma);
+		$selector: ".#{$name}";
+
+		@if $as-parent {
+			$selector: ".#{$name} &";
+		}
+
+		$selectors: list.append($selectors, $selector, $separator: comma);
 	}
 
 	#{$selectors} {
@@ -171,11 +183,22 @@
 	}
 }
 
-@mixin nav-link-icon($name, $variant: null, $glyph: 12px) {
+@mixin nav-link-icon($name, $variant: null, $glyph: 12px, $with-border-bg: true) {
 	&::before {
-		background-image: url("#{nav-icon($name, $variant)}"), url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
-		background-size: $glyph $glyph, contain !important;
-		background-position: center, center !important;
+		@if $with-border-bg {
+			background-image:
+				url("#{nav-icon($name, $variant)}"), url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
+			background-size:
+				$glyph $glyph,
+				contain !important;
+			background-position: center, center !important;
+		} @else {
+			background-image: url("#{nav-icon($name, $variant)}") !important;
+			background-size: $glyph $glyph !important;
+			background-position: center !important;
+			background-color: transparent !important;
+		}
+
 		background-repeat: no-repeat !important;
 	}
 }
@@ -184,8 +207,10 @@
 	$i: 1;
 
 	@each $name in $names {
-		& > .hdr-navigation-link-bc:nth-child(#{$i}) {
-			@include nav-link-icon($name);
+		@if $name {
+			& > .hdr-navigation-link-bc:nth-child(#{$i}) {
+				@include nav-link-icon($name);
+			}
 		}
 
 		$i: $i + 1;
@@ -195,10 +220,10 @@
 @mixin nav-sub-icons($map) {
 	@each $href, $name in $map {
 		.hdr-navigation-link-bc[href*="#{$href}"] {
-			@include nav-link-icon($name, gray);
+			@include nav-link-icon($name, gray, $with-border-bg: false);
 
 			&.active {
-				@include nav-link-icon($name, white);
+				@include nav-link-icon($name, white, $with-border-bg: false);
 			}
 		}
 	}

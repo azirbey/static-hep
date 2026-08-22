@@ -44,6 +44,10 @@
 	@return token($layout, $key);
 }
 
+@function radius($key: default) {
+	@return token($radius, $key);
+}
+
 @function nav-icon($name, $variant: null) {
 	@if $variant {
 		@return "#{$cdn-nav-icons-url}#{$variant}/#{$name}.svg";

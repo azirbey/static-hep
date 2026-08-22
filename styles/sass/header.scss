@@ -36,11 +36,8 @@
 			}
 
 			&::after {
+				@include type(9px, 500, 12px, 0.01em);
 				font-family: $font-family;
-				font-size: 12px;
-				line-height: 12px;
-				letter-spacing: 0.01em;
-				font-weight: 600;
 				color: color-hex(white-color);
 			}
 
@@ -55,7 +52,7 @@
 			@include user-nav-push($header-user-push);
 		}
 
-		#root:not(.has-header-info) & .user-nav-icon {
+		#root:not(:has(.profileDetails)) & .user-nav-icon {
 			@include user-nav-labels($header-user-buttons);
 			padding: space(small-spacing);
 		}
@@ -115,7 +112,6 @@
 }
 
 .hdr-smart-panel-holder-arrow-bc {
-	right: 12px !important;
 	top: calc(
 		var(--dynamic-header) + var(--mobile-header-main-section-height) + var(--mobile-self-exclusion-height) - 10px
 	);

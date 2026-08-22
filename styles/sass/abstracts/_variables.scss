@@ -31,12 +31,23 @@ $colors-hex: (
 	text-gray: #afc1d5,
 	text-light-gray: #cad5e3,
 	border-blue: #233243,
+	nav-border-blue: #2a3c50,
 	market-blue: #1c2835,
 	main-color: #197cff,
 	cyan: #0febff,
+	ds-chip-gray: #d7e0ea,
+	ds-button-blue: #31465e,
+	placeholder-gray: #a1b6ce,
+	ui-kit-toggle-bg: #38506b,
+	ui-kit-toggle-disabled: #1c2835,
+);
+
+$items: (
+	casinoWinnerWidgetItem: 72px,
 );
 
 $radius: (
+	large: 8px,
 	default: 6px,
 	sm: 2px,
 	md: 4px,
@@ -45,7 +56,9 @@ $radius: (
 $layout: (
 	mobile-header-main-section-height: 48px,
 	padding-page-aside: 16px,
+	svg-size: 16px,
 	logo-height: 32px,
+	section-title-height: 32px,
 	font-family: $font-family,
 );
 
@@ -103,6 +116,7 @@ $nav-items: (
 	soccer-jersey,
 	slot-machine,
 	roulette,
+	bonus-request,
 	slot-machine-1,
 	rocket,
 	plane,
@@ -112,7 +126,7 @@ $nav-items: (
 	microphone,
 	monitor,
 	coupon-wars,
-	affiliate,
+	affiliate
 );
 
 $nav-sub-items: (
@@ -129,6 +143,8 @@ $nav-sub-items: (
 	"live-casino/home": roulette,
 	"casino/live-rtp": live-rtp,
 );
+
+$root-pad-extra-top: (is-home-page, promotion-page, casino-slots, live-casino-games, casino-live-rtp-page);
 
 $content-pad-x: (
 	sportMiniGame,

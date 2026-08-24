@@ -1,7 +1,6 @@
 @use "sass:meta";
 @use "abstracts" as *;
 @use "fonts";
-@use "components";
 
 #root {
 	@include meta.load-css("nav");

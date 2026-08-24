@@ -1,13 +1,14 @@
+@use "sass:meta";
 @use "abstracts" as *;
 @use "fonts";
 @use "header";
-@use "nav";
 @use "layout";
 @use "home";
 @use "components";
 
-//
-@use "sitelayout";
+#root {
+	@include meta.load-css("nav");
+}
 
 html.is-mobile,
 html.is-mobile body {

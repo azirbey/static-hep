@@ -43,12 +43,12 @@
 			@include user-nav-icons($header-user-buttons);
 			@include user-nav-push($header-user-push);
 		}
-
-		#root:not(:has(.profileDetails)) & .user-nav-icon {
-			@include user-nav-labels($header-user-buttons);
-			padding: space(small-spacing);
-		}
 	}
+}
+
+&:not(:has(.profileDetails)) .hdr-additional-info .hdr-user-bc .user-nav-icon {
+	@include user-nav-labels($header-user-buttons);
+	padding: space(small-spacing);
 }
 
 .hdr-user-close {
@@ -72,10 +72,10 @@
 	color: color-hex(link-gray) !important;
 	border-radius: 0 !important;
 	margin-inline-start: 8px !important;
+}
 
-	#root.smart-panel-is-visible & {
-		color: color-hex(link-gray) !important;
-	}
+&.smart-panel-is-visible .hdr-toggle-button-bc {
+	color: color-hex(link-gray) !important;
 }
 
 .hdr-smart-panel-holder-arrow-bc {

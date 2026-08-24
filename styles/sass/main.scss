@@ -1,13 +1,13 @@
 @use "sass:meta";
 @use "abstracts" as *;
 @use "fonts";
-@use "layout";
 @use "components";
 
 #root {
 	@include meta.load-css("nav");
 	@include meta.load-css("header");
 	@include meta.load-css("home");
+	@include meta.load-css("layout");
 	@include meta.load-css("components/in-root");
 
 	.btn {

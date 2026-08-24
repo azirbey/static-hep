@@ -1,27 +1,30 @@
 @use "abstracts" as *;
 
+$pad-top: "var(--mobile-header-navigation-height) + var(--dynamic-header) + var(--mobile-self-exclusion-height) + var(--content-nav-extra)";
+
 .layout-content-holder-bc {
 	@include default-gap-column;
 
 	--content-nav-extra: #{layout(control-height)};
-	$pad-top: "var(--mobile-header-navigation-height) + var(--dynamic-header) + var(--mobile-self-exclusion-height) + var(--content-nav-extra)";
 	padding-top: calc(#{$pad-top}) !important;
-
-	.has-sub-navigation & {
-		--content-nav-extra: 48px;
-	}
-
-	@include on-classes($root-pad-extra-top, $as-parent: true) {
-		padding-top: calc(#{$pad-top} + #{space(default-spacing)}) !important;
-	}
 
 	.hm-row-bc {
 		margin-top: 0 !important;
 	}
+}
 
-	.prematch & {
-		gap: space(medium-spacing) !important;
+&.has-sub-navigation .layout-content-holder-bc {
+	--content-nav-extra: 48px;
+}
+
+@each $name in $root-pad-extra-top {
+	&.#{$name} .layout-content-holder-bc {
+		padding-top: calc(#{$pad-top} + #{space(default-spacing)}) !important;
 	}
+}
+
+&.prematch .layout-content-holder-bc {
+	gap: space(medium-spacing) !important;
 }
 
 .product-banner-container-bc {

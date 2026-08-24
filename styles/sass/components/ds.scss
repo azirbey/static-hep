@@ -1,13 +1,11 @@
 @use "../abstracts" as *;
 
 .ds {
-	$ds: &;
-
 	&-btn {
 		// background: color-hex(ds-button-blue) !important;
 		border-radius: radius() !important;
 
-		#{$ds}-label {
+		.ds-label {
 			// color: color-hex(white-color) !important;
 			@include type-token(body-control, true);
 		}
@@ -55,10 +53,6 @@
 		padding: space(medium-spacing) space(default-spacing);
 		height: 32px;
 
-		@at-root .horizontal-scroll__inner:has(&) {
-			gap: gap(small);
-		}
-
 		&:has(.chip__icon) {
 			height: 40px;
 			background-color: color-hex(border-blue) !important;
@@ -73,13 +67,6 @@
 			color: color-hex(white-color) !important;
 		}
 
-		.horizontal-scroll & {
-			&--selected {
-				background-color: color-hex(main-color) !important;
-				color: color-hex(white-color) !important;
-			}
-		}
-
 		.ds-label {
 			font-size: 11px;
 			font-weight: 600;
@@ -87,4 +74,13 @@
 			letter-spacing: 0.01em;
 		}
 	}
+}
+
+.horizontal-scroll__inner:has(.ds-chip) {
+	gap: gap(small);
+}
+
+.horizontal-scroll .ds-chip--selected {
+	background-color: color-hex(main-color) !important;
+	color: color-hex(white-color) !important;
 }

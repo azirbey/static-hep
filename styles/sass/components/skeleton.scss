@@ -1,7 +1,5 @@
 @use "../abstracts" as *;
 
-.skeleton-loader-full-banner {
-	.casinoTopWinnersWidget & {
-		@include item-size(casinoWinnerWidgetItem);
-	}
+.casinoTopWinnersWidget .skeleton-loader-full-banner {
+	@include item-size(casinoWinnerWidgetItem);
 }

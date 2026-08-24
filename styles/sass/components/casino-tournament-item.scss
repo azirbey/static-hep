@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
-#root .casinoGameTournamentListItemWrp,
-#root .tournamentSectionMainContainer {
+.casinoGameTournamentListItemWrp,
+.tournamentSectionMainContainer {
 	.tournamentSectionDate .dataStatusTxt,
 	.tournamentPrizeFundTxt {
 		color: color-hex(link-gray) !important;

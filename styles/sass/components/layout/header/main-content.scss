@@ -1,0 +1,26 @@
+@use "../../../abstracts" as *;
+
+.hdr-main-content-bc {
+	border-color: color-hex(border-blue);
+	padding-inline-end: space(default-spacing) !important;
+	border: none !important;
+	box-shadow: inset 0 -1px 0 0 color-hex(border-blue) !important;
+
+	.hdr-user-bc {
+		margin-inline-start: 0 !important;
+		gap: gap(default);
+
+		.profileDetails {
+			display: flex;
+			align-items: center;
+			img {
+				border-radius: radius(medium);
+			}
+		}
+		.btn {
+			&.register {
+				margin-inline-start: 0;
+			}
+		}
+	}
+}

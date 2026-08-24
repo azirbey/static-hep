@@ -51,30 +51,6 @@
 	}
 }
 
-.hdr-main-content-bc {
-	border-color: color-hex(border-blue);
-	padding-inline-end: space(default-spacing);
-	border: none !important;
-	box-shadow: inset 0 -1px 0 0 color-hex(border-blue) !important;
-
-	.hdr-user-bc {
-		gap: gap(default);
-
-		.profileDetails {
-			display: flex;
-			align-items: center;
-			img {
-				border-radius: radius(medium);
-			}
-		}
-		.btn {
-			&.register {
-				margin-inline-start: 0;
-			}
-		}
-	}
-}
-
 .hdr-user-close {
 	@include default-icon-background;
 	width: layout(icon-hit);
@@ -115,6 +91,7 @@
 		border-color: transparent transparent rgba(color-hex(border-blue), 20%) !important;
 	}
 }
+
 .hdr-smart-panel-holder-bc {
 	background: color-hex(border-blue);
 

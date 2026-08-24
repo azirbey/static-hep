@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.favouriteTeams {
+	&Widget {
+		@include linear-gradient-border(color-hex(cyan));
+		border: none !important;
+		background: rgba(color-hex(main-color), 0.06) !important;
+		height: 100px;
+		display: flex;
+		gap: 8px;
+		flex-direction: column;
+	}
+	&List {
+		.btn {
+			height: 44px;
+			border-radius: radius();
+			background: rgba(color-hex(orange), 0.08) !important;
+			@include linear-gradient-border(color-hex(orange));
+		}
+	}
+	&WidgetHeader {
+		margin-bottom: 0 !important;
+	}
+
+	&WidgetTitle {
+		@include type(15px, 700, 24px);
+		color: color-hex(white-color) !important;
+	}
+}

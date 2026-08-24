@@ -1,0 +1,164 @@
+@use "../../../abstracts" as *;
+
+.special-games-container {
+	margin: 0 !important;
+
+	.upcoming-games {
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: space(medium-spacing);
+
+			.time-filter {
+				&-button-bc {
+					height: 32px;
+					border-color: color-hex(border-blue) !important;
+					background: color-rgba-rgb(header, 1) !important;
+
+					&.a-white {
+						background: color-hex(main-color) !important;
+						@include linear-gradient-border(color-hex(white-color), 0.12);
+						border: none !important;
+						color: color-hex(white-color) !important;
+					}
+				}
+			}
+		}
+		&-container {
+			display: flex;
+			flex-direction: column;
+			gap: space(medium-spacing);
+
+			& > .horizontalList {
+				.horizontal-sl {
+					&-list-container {
+						padding-top: space(small-gap) !important;
+					}
+
+					&-item-bc {
+						padding: 0 !important;
+						height: 44px;
+						min-width: 44px;
+						background: color-hex(border-blue) !important;
+
+						&.active {
+							background: color-hex(nav-border-blue) !important;
+							z-index: 2;
+						}
+					}
+
+					&-icon-bc {
+						height: 20px;
+						font-size: 20px;
+
+						& + .horizontal-sl-title-bc {
+							display: none !important;
+						}
+					}
+
+					&-count-bc {
+						background: color-hex(ds-button-blue) !important;
+						top: -2px !important;
+						right: -2px !important;
+						left: auto !important;
+						padding: 0 4px !important;
+						height: 16px;
+						border-radius: radius(sm);
+						line-height: 1;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+			}
+
+			& > .market-filter-scrollable-navigation-bc-holder {
+				margin-bottom: 0 !important;
+
+				.horizontalList {
+					.horizontal-sl {
+						&-list-container {
+							padding: 0 !important;
+						}
+						&-list {
+						}
+						&-item-bc {
+							border-radius: 0 !important;
+							height: 32px !important;
+							background: color-hex(market-blue) !important;
+							margin-inline-start: 0 !important;
+							&::before {
+								display: none !important;
+							}
+
+							&.active {
+								@include reset-box-shadow;
+								background: color-hex(border-blue) !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.pm-body-bc {
+			background: color-hex(border-blue) !important;
+			.internalBetBuilderIcon {
+				color: color-hex(cyan) !important;
+			}
+		}
+	}
+
+	.popular-matches-bc {
+		.horizontalList {
+			.horizontal-sl {
+				&-list-container {
+					padding-top: space(small-gap) !important;
+				}
+
+				&-item-bc {
+					padding: 0 !important;
+					height: 44px;
+					min-width: 44px;
+					background: color-hex(border-blue) !important;
+
+					&.active {
+						background: color-hex(nav-border-blue) !important;
+						z-index: 2;
+					}
+				}
+
+				&-icon-bc {
+					height: 20px;
+					font-size: 20px;
+
+					& + .horizontal-sl-title-bc {
+						display: none !important;
+					}
+				}
+
+				&-count-bc {
+					background: color-hex(ds-button-blue) !important;
+					top: -2px !important;
+					right: -2px !important;
+					left: auto !important;
+					padding: 0 4px !important;
+					height: 16px;
+					border-radius: radius(sm);
+					line-height: 1;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+
+		.c-segment-holder-title {
+			background: color-hex(border-blue) !important;
+		}
+
+		.marketSlider {
+			background: color-hex(market-blue) !important;
+		}
+	}
+}

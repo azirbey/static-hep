@@ -18,6 +18,10 @@
 	.hm-row-bc {
 		margin-top: 0 !important;
 	}
+
+	.prematch & {
+		gap: space(medium-spacing) !important;
+	}
 }
 
 .product-banner-container-bc {

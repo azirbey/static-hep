@@ -1,0 +1,13 @@
+@use "../../../abstracts" as *;
+
+.live-page-sections-bc {
+	.competition-bc {
+		.c-segment-holder-bc {
+			background: color-hex(market-blue) !important;
+		}
+
+		.marketSlider {
+			background: color-hex(market-blue) !important;
+		}
+	}
+}

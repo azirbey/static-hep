@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.special-games-button {
+	.btn {
+		background: color-hex(market-blue) !important;
+		border: solid 1px color-hex(border-blue) !important;
+
+		&.a-color {
+			background: color-hex(border-blue) !important;
+		}
+	}
+}

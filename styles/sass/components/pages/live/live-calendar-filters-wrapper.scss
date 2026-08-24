@@ -1,0 +1,22 @@
+@use "../../../abstracts" as *;
+
+.live-calendar-filters-wrapper {
+	.form-control-select-bc {
+		background: color-hex(market-blue) !important;
+	}
+	.checkbox-control-content-bc {
+		background: color-hex(market-blue) !important;
+	}
+
+	.time-filter-button-bc {
+		border-color: color-hex(border-blue) !important;
+		background: color-rgba-rgb(header, 1) !important;
+
+		&.a-white {
+			background: color-hex(main-color) !important;
+			@include linear-gradient-border(color-hex(white-color), 0.12);
+			border: none !important;
+			color: color-hex(white-color) !important;
+		}
+	}
+}

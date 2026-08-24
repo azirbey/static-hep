@@ -1,0 +1,33 @@
+@use "../../../abstracts" as *;
+
+.results-container-bc {
+	.second-tabs-bc {
+		.tab-bc {
+			background: color-hex(border-blue) !important;
+			&.active {
+				background: color-hex(main-color) !important;
+			}
+		}
+	}
+	.results-filter-bc {
+		.componentFilterLabel-bc {
+			background: color-hex(border-blue) !important;
+		}
+	}
+	.competition-wrapper-bc {
+		.competition-header-bc {
+			background: color-hex(market-blue) !important;
+		}
+		.results-block-bc {
+			background: color-hex(border-blue) !important;
+		}
+	}
+	.componentFilterBody-bc {
+		.filter-form-w-bc {
+			background: color-hex(border-blue) !important;
+		}
+		.form-control-select-bc {
+			background: color-hex(market-blue) !important;
+		}
+	}
+}

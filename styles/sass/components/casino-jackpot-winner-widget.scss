@@ -1,0 +1,81 @@
+@use "../abstracts" as *;
+
+.casino-jackpot-widget {
+	&__inner {
+		padding: space(medium-spacing) space(large-spacing) !important;
+		min-height: 263px !important;
+		&::before {
+			display: none !important;
+		}
+	}
+
+	&__providers {
+		&::before {
+			display: none !important;
+		}
+
+		.horizontal {
+			&SliderWrapper {
+				left: 0 !important;
+			}
+			&SliderRow {
+				display: flex !important;
+			}
+
+			&CategoryItemWrp {
+				background: color-rgba(white-color, 0.08) !important;
+				border: solid 1px color-rgba(white-color, 0.08) !important;
+				min-width: 76px !important;
+
+				width: 76px !important;
+				height: 32px !important;
+
+				&:first-child {
+					margin-inline-start: 0 !important;
+				}
+
+				&.active {
+					background: color-rgba(main-color, 1) !important;
+
+					i {
+						color: color-hex(white-color) !important;
+					}
+				}
+			}
+
+			&CategoryItem {
+				height: auto;
+
+				&:before {
+					display: none !important;
+				}
+
+				i {
+					font-size: 20px !important;
+				}
+			}
+		}
+	}
+
+	&__title {
+		@include type(20px, 700, 28px, $important: true);
+		color: color-hex(white-color) !important;
+	}
+
+	&__body {
+		&:has(.bc-loader) {
+			align-items: center !important;
+			height: 100% !important;
+		}
+	}
+
+	.jackpot-pool {
+		background: color-rgba(white-color, 0.04) !important;
+		border: solid 1px color-rgba(white-color, 0.06) !important;
+
+		&__price,
+		&__currency-symbol {
+			color: color-hex(cyan) !important;
+		}
+	}
+}

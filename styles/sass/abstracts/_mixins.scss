@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "sass:list";
 @use "sass:map";
 @use "sass:string";
@@ -46,16 +47,51 @@
 	@if $image {
 		background:
 			#{$image} $image-position / $image-size $image-repeat padding-box,
-			linear-gradient($fill, $fill) padding-box,
-			linear-gradient($angle, $from, $to) border-box;
-		background-origin: padding-box, padding-box, border-box;
-		background-clip: padding-box, padding-box, border-box;
+			linear-gradient($angle, $from, $to) border-box,
+			$fill padding-box;
+		background-origin: padding-box, border-box, padding-box;
+		background-clip: padding-box, border-box, padding-box;
 	} @else {
 		background:
-			linear-gradient($fill, $fill) padding-box,
-			linear-gradient($angle, $from, $to) border-box;
-		background-origin: padding-box, border-box;
-		background-clip: padding-box, border-box;
+			linear-gradient($angle, $from, $to) border-box,
+			$fill padding-box;
+		background-origin: border-box, padding-box;
+		background-clip: border-box, padding-box;
+	}
+}
+
+@mixin linear-gradient-border(
+	$color,
+	$from-alpha: 0.16,
+	$to-alpha: 0.08,
+	$angle: to bottom,
+	$width: 1px,
+	$radius: radius()
+) {
+	position: relative;
+	border-radius: $radius;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: 1;
+		padding: $width;
+		border-radius: inherit;
+		pointer-events: none;
+		background: linear-gradient(
+			$angle,
+			color.change($color, $alpha: $from-alpha),
+			color.change($color, $alpha: $to-alpha)
+		);
+		mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		mask-composite: exclude;
+		-webkit-mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
 	}
 }
 
@@ -219,20 +255,13 @@
 @mixin nav-link-icon($name, $variant: null, $glyph: 12px, $with-border-bg: true) {
 	&::before {
 		@if $with-border-bg {
-			background-image:
-				url("#{nav-icon($name, $variant)}"), url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
-			background-size:
-				$glyph $glyph,
-				contain !important;
-			background-position: center, center !important;
+			background:
+				url("#{nav-icon($name, $variant)}") center / #{$glyph} #{$glyph} no-repeat,
+				url("#{$cdn-icons-url}icon-bg-with-border.svg") center / contain no-repeat !important;
 		} @else {
-			background-image: url("#{nav-icon($name, $variant)}") !important;
-			background-size: $glyph $glyph !important;
-			background-position: center !important;
+			background: url("#{nav-icon($name, $variant)}") center / #{$glyph} #{$glyph} no-repeat !important;
 			background-color: transparent !important;
 		}
-
-		background-repeat: no-repeat !important;
 	}
 }
 

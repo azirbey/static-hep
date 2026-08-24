@@ -1,0 +1,62 @@
+@use "../../../abstracts" as *;
+
+.prematch-page-bc {
+	display: flex;
+	flex-direction: column;
+	gap: space(medium-spacing);
+
+	.horizontal-sl {
+		&-list-container {
+			padding-top: space(small-gap) !important;
+		}
+
+		&-item-bc {
+			padding: 0 !important;
+			height: 44px;
+			min-width: 44px;
+			background: color-hex(border-blue) !important;
+
+			&.active {
+				background: color-hex(nav-border-blue) !important;
+				z-index: 2;
+			}
+		}
+
+		&-icon-bc {
+			height: 20px;
+			font-size: 20px;
+
+			& + .horizontal-sl-title-bc {
+				display: none !important;
+			}
+		}
+
+		&-count-bc {
+			background: color-hex(ds-button-blue) !important;
+			top: -2px !important;
+			right: -2px !important;
+			left: auto !important;
+			padding: 0 4px !important;
+			height: 16px;
+			border-radius: radius(sm);
+			line-height: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.sp-sub-list-bc,
+	.comp-name-fav-row-bc {
+		background: color-hex(market-blue) !important;
+
+		.sp-s-l-b-c-item-bc,
+		.form-control-select-bc {
+			background: color-hex(border-blue) !important;
+		}
+	}
+
+	.marketSlider {
+		background: color-hex(market-blue) !important;
+	}
+}

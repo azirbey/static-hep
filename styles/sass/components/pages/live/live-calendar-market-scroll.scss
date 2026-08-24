@@ -1,0 +1,11 @@
+@use "../../../abstracts" as *;
+
+.live-calendar-market-scroll {
+	.market-filter-bc {
+		background: color-hex(market-blue) !important;
+	}
+
+	.marketSlider {
+		background: color-hex(market-blue) !important;
+	}
+}

@@ -8,7 +8,7 @@
 		border-radius: radius() !important;
 
 		#{$ds}-label {
-			color: color-hex(white-color) !important;
+			// color: color-hex(white-color) !important;
 			@include type-token(body-control, true);
 		}
 

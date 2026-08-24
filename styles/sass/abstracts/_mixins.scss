@@ -4,6 +4,7 @@
 @use "sass:string";
 @use "functions" as *;
 @use "variables" as *;
+@use "measurement" as *;
 
 @mixin type($size: 13px, $weight: 600, $leading: 20px, $tracking: 0.01em, $important: false) {
 	$i: null;

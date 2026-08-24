@@ -1,0 +1,58 @@
+@use "sass:map";
+
+$typography: (
+	body: (
+		size: 13px,
+		weight: 400,
+		leading: 20px,
+		tracking: 0.01em,
+	),
+	body-control: (
+		size: 13px,
+		weight: 400,
+		leading: 16px,
+		tracking: 0.01em,
+	),
+	body-semibold: (
+		size: 13px,
+		weight: 600,
+		leading: 20px,
+		tracking: 0.01em,
+	),
+	body-medium: (
+		size: 13px,
+		weight: 500,
+		leading: 24px,
+		tracking: 0.01em,
+	),
+	caption: (
+		size: 11px,
+		weight: 500,
+		leading: 16px,
+		tracking: 0.01em,
+	),
+	caption-bold: (
+		size: 11px,
+		weight: 700,
+		leading: 16px,
+		tracking: 0.01em,
+	),
+	micro: (
+		size: 9px,
+		weight: 400,
+		leading: 14px,
+		tracking: 0.01em,
+	),
+	micro-medium: (
+		size: 9px,
+		weight: 500,
+		leading: 12px,
+		tracking: 0.01em,
+	),
+	tab-tall: (
+		size: 13px,
+		weight: 400,
+		leading: 40px,
+		tracking: 0.01em,
+	),
+);

@@ -1,0 +1,9 @@
+@use "../../../abstracts" as *;
+
+.logo-container {
+	margin-inline-end: 0 !important;
+}
+
+.logo {
+	height: layout(logo-height) !important;
+}

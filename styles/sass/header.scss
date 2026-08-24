@@ -1,13 +1,5 @@
 @use "abstracts" as *;
 
-.logo-container {
-	margin-inline-end: 0;
-}
-
-.logo {
-	height: layout(logo-height) !important;
-}
-
 .hdr-additional-info {
 	border-color: color-hex(border-blue);
 	height: layout(control-height);

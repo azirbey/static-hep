@@ -1,0 +1,20 @@
+@use "sass:map";
+
+$spacing: (
+	small-gap: 4px,
+	tiny-spacing: 6px,
+	small-spacing: 8px,
+	compact-spacing: 10px,
+	medium-spacing: 12px,
+	large-spacing: 16px,
+	default-gap: 12px,
+	relaxed-spacing: 14px,
+	default-spacing: 16px,
+);
+
+$radius: (
+	large: 8px,
+	default: 6px,
+	sm: 2px,
+	md: 4px,
+);

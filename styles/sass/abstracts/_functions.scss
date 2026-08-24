@@ -1,6 +1,8 @@
 @use "sass:color";
 @use "sass:map";
 @use "variables" as *;
+@use "typography" as *;
+@use "measurement" as *;
 
 @function token($map, $key) {
 	@if not map.has-key($map, $key) {

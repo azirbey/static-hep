@@ -10,8 +10,9 @@
 		"watch": "chokidar \"styles/**/*.less\" --initial -c \"npm run build\"",
 		"watch:desktop": "chokidar \"styles/desktop/**/*.less\" --initial -c \"npm run build:desktop\"",
 		"watch:mobile": "chokidar \"styles/mobile/**/*.less\" --initial -c \"npm run build:mobile\"",
-		"build:sass": "sass --style=compressed styles/sass/main.scss m-custom.css",
-		"watch:sass": "sass --watch --style=compressed styles/sass/main.scss:m-custom.css",
+		"copy:sass": "cp m-custom.css mobile-custom.css",
+		"build:sass": "sass --style=compressed styles/sass/main.scss m-custom.css && npm run copy:sass",
+		"watch:sass": "chokidar \"styles/sass/**/*.scss\" --initial -c \"npm run build:sass\"",
 		"lint": "stylelint \"styles/**/*.less\"",
 		"baseline": "mkdir -p .baseline && cp desktop-custom.css mobile-custom.css .baseline/",
 		"diff": "diff .baseline/desktop-custom.css desktop-custom.css && diff .baseline/mobile-custom.css mobile-custom.css && echo 'Output unchanged.'"

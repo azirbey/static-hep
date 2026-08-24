@@ -24,3 +24,11 @@ html.is-mobile body {
 		padding: space(medium-spacing);
 	}
 }
+
+:focus-visible {
+	outline: none !important;
+}
+
+* {
+	-webkit-tap-highlight-color: transparent !important;
+}

@@ -1,16 +1,12 @@
 @use "abstracts" as *;
 
-#root.is-home-page .layout-content-holder-bc {
+&.is-home-page .layout-content-holder-bc {
 	@include row-icons($home-row-icons);
-}
 
-.layout-content-holder-bc {
-	.is-home-page & {
-		.hm-row-bc {
-			&:not(:first-child) {
-				border-bottom: 1px solid color-hex(border-blue);
-				padding-bottom: space(default-spacing);
-			}
+	.hm-row-bc {
+		&:not(:first-child) {
+			border-bottom: 1px solid color-hex(border-blue);
+			padding-bottom: space(default-spacing);
 		}
 	}
 }

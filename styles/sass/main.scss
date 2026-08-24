@@ -3,27 +3,28 @@
 @use "fonts";
 @use "header";
 @use "layout";
-@use "home";
 @use "components";
 
 #root {
 	@include meta.load-css("nav");
+	@include meta.load-css("home");
+	@include meta.load-css("components/in-root");
+
+	.btn {
+		span {
+			@include first-letter-capitalize;
+		}
+
+		&.register {
+			padding: space(medium-spacing);
+		}
+	}
 }
 
 html.is-mobile,
 html.is-mobile body {
 	@include theme-colors;
 	@include theme-vars($layout);
-}
-
-.btn {
-	span {
-		@include first-letter-capitalize;
-	}
-
-	&.register {
-		padding: space(medium-spacing);
-	}
 }
 
 :focus-visible {

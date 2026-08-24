@@ -14,7 +14,7 @@
 					.sg-n-text-row-1-bc {
 						@include type-token(body);
 						color: color-hex(link-gray) !important;
-						margin-bottom: space(small-gap) !important;
+						margin-bottom: gap(small) !important;
 					}
 
 					.sg-n-text-row-2-bc {
@@ -58,7 +58,7 @@
 					}
 
 					.entrance-f-item-checkbox-bc {
-						padding-top: space(small-gap) !important;
+						padding-top: gap(small) !important;
 					}
 
 					.entrance-form-actions-holder-bc {

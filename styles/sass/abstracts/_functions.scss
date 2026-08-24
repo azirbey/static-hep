@@ -36,6 +36,10 @@
 	@return token($spacing, $key);
 }
 
+@function gap($key) {
+	@return token($gap, $key);
+}
+
 @function layout($key) {
 	@return token($layout, $key);
 }

@@ -7,7 +7,7 @@
 
 	.horizontal-sl {
 		&-list-container {
-			padding-top: space(small-gap) !important;
+			padding-top: gap(small) !important;
 		}
 
 		&-item-bc {
@@ -38,7 +38,7 @@
 			left: auto !important;
 			padding: 0 4px !important;
 			height: 16px;
-			border-radius: radius(sm);
+			border-radius: radius(small);
 			line-height: 1;
 			display: flex;
 			justify-content: center;

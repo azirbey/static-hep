@@ -10,7 +10,7 @@
 	.hdr-user-bc {
 		width: 100%;
 		margin-inline-start: 0;
-		gap: space(small-gap);
+		gap: gap(small);
 
 		.user-nav-icon {
 			width: fit-content;
@@ -19,7 +19,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			gap: space(small-gap);
+			gap: gap(small);
 			padding: space(tiny-spacing);
 			@include linear-border-box;
 
@@ -58,13 +58,13 @@
 	box-shadow: inset 0 -1px 0 0 color-hex(border-blue) !important;
 
 	.hdr-user-bc {
-		gap: space(default-gap);
+		gap: gap(default);
 
 		.profileDetails {
 			display: flex;
 			align-items: center;
 			img {
-				border-radius: radius(md);
+				border-radius: radius(medium);
 			}
 		}
 		.btn {

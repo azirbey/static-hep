@@ -2,7 +2,7 @@
 
 .casino-jackpot-widget {
 	&__inner {
-		padding: space(medium-spacing) space(large-spacing) !important;
+		padding: space(medium-spacing) space(default-spacing) !important;
 		min-height: 263px !important;
 		&::before {
 			display: none !important;

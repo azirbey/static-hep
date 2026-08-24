@@ -56,7 +56,7 @@
 		height: 32px;
 
 		@at-root .horizontal-scroll__inner:has(&) {
-			gap: space(small-gap);
+			gap: gap(small);
 		}
 
 		&:has(.chip__icon) {

@@ -69,13 +69,12 @@
 
 .hdr-toggle-button-bc {
 	@include default-icon-background;
-	color: color-hex(link-gray);
-	border-radius: 0;
-	margin-inline-start: 8px;
+	color: color-hex(link-gray) !important;
+	border-radius: 0 !important;
+	margin-inline-start: 8px !important;
 
 	#root.smart-panel-is-visible & {
-		@include default-icon-background;
-		color: color-hex(link-gray);
+		color: color-hex(link-gray) !important;
 	}
 }
 

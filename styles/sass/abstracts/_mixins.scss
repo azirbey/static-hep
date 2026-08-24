@@ -294,9 +294,9 @@
 
 // Icon Background
 @mixin default-icon-background {
-	background-image: url("#{$cdn-icons-url}icon-bg-with-border.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	background-color: transparent;
+	background-image: url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: contain !important;
+	background-color: transparent !important;
 }

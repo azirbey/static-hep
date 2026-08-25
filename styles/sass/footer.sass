@@ -1,0 +1,42 @@
+@use "abstracts" as *
+
+.layout-footer-holder-bc
+    background: color-hex(footer-bg)
+
+    .footerWrapper
+        box-shadow: inset 0 1px 0 0 color-hex(border-blue)
+
+        .footerHeader
+            box-shadow: inset 0 -1px 0 0 color-hex(border-blue) 
+
+            .supportButton 
+                background: color-hex(main-color)
+                box-shadow: none
+                height: token($layout, control-height)
+
+        .footerLinksSection
+            .footerLinkColTitle
+                .footerLinkColText
+                    @include type(13px, 400, 20px)
+                    color: color-hex(white-color)            
+            .footerLinkColLinks
+                .footerLinkColText
+                    @include type(13px, 400, 20px)
+                    color: color-hex(link-gray)
+
+        .sliderGroup
+            .sliderContent
+                .sliderGroup
+                    .sliderImage
+                        img
+                            width: 150px
+                            height: auto
+
+                .sliderTitle
+                    @include type(11px, 400, 20px)
+                    color: color-hex(link-gray)
+
+                .horizontalList
+                    .horizontalSliderElem
+                        height: fit-content
+                        padding: 0

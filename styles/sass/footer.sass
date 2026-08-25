@@ -8,11 +8,72 @@
 
         .footerHeader
             box-shadow: inset 0 -1px 0 0 color-hex(border-blue) 
+            display: grid
+            padding-top: 0
+            grid-template-columns: 1fr
+            grid-template-areas: "social" "support" "language"
+            align-items: center
+            margin-bottom: 0
+            gap: space(default-spacing)
+
+            .footerTopButtonGroup
+                grid-area: support
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                gap: 8px
+                margin-bottom: 0
+            
+            .footerInnerLeftCol
+                grid-area: social
+                display: flex !important
+                justify-content: flex-end !important
+                background: url('https://static-hep.hepbet-static.workers.dev/images/Hepbet-Social-No-Icon.png') center / cover no-repeat
+                min-height: 45px !important
+
+                .footerSocialLinks
+                    .footerSocialLink
+                        width: 25px
+                        height: 25px
+                        margin-right: 0
+
+            .footerInfoColumn
+                grid-area: language
+                width: 100%
+                display: grid
+                grid-template-columns: minmax(0, 50%) 1fr
+                grid-template-areas: "logo lang" "copy lang"
+                align-items: center
+                column-gap: space(default-spacing)
+                row-gap: 8px
+
+                &::before
+                    content: ''
+                    grid-area: logo
+                    display: block
+                    max-width: 100px
+                    width: 100px
+                    aspect-ratio: 301 / 145
+                    background: url(https://hepbet.dev/logo/1769173023461_g6gh4c_310_x_220_beyaz_logo.png) center / contain no-repeat
+
+                &::after
+                    content: "© 2018 - 2026 Hepbet Online Casino ve Spor Bahisleri"
+                    grid-area: copy
+                    font-size: 12px
+                    line-height: 1.4
+                    font-weight: 500
+                    color: color-hex(link-gray)
+                    white-space: nowrap
+
+                > *
+                    grid-area: lang
+                    align-self: flex-start
 
             .supportButton 
                 background: color-hex(main-color)
                 box-shadow: none
                 height: token($layout, control-height)
+                width: 100%
 
         .footerLinksSection
             .footerLinkColTitle

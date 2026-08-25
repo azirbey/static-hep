@@ -4,6 +4,8 @@
 	"private": true,
 	"description": "HepBet override stylesheets (LESS) served as static assets from Cloudflare.",
 	"scripts": {
+		"watch:new": "sass --watch --style=expanded --no-source-map sass/main.scss custom-preview-mobile.css",
+		"build:new": "sass --style=compressed --no-source-map sass/main.scss custom-mobile.css",
 		"build:desktop": "lessc styles/desktop/custom.less desktop-custom.css",
 		"build:mobile": "lessc styles/mobile/custom.less mobile-custom.css",
 		"build": "npm run build:desktop && npm run build:mobile",
@@ -12,7 +14,7 @@
 		"watch:mobile": "chokidar \"styles/mobile/**/*.less\" --initial -c \"npm run build:mobile\"",
 		"copy:sass": "cp m-custom.css mobile-custom.css",
 		"build:sass": "sass --style=compressed styles/sass/main.scss m-custom.css && npm run copy:sass",
-		"watch:sass": "chokidar \"styles/sass/**/*.scss\" --initial -c \"npm run build:sass\"",
+		"watch:sass": "chokidar \"styles/sass/**/*.{scss,sass}\" --initial -c \"npm run build:sass\"",
 		"lint": "stylelint \"styles/**/*.less\"",
 		"baseline": "mkdir -p .baseline && cp desktop-custom.css mobile-custom.css .baseline/",
 		"diff": "diff .baseline/desktop-custom.css desktop-custom.css && diff .baseline/mobile-custom.css mobile-custom.css && echo 'Output unchanged.'"

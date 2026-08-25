@@ -1,0 +1,9 @@
+/*! HTML TAGS */
+html.is-mobile, html.is-mobile body {
+  --b: 25, 34, 45 !important;
+}
+
+/*! ROOT STYLES */
+#root {
+  background-color: var(--b);
+}

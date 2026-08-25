@@ -1,0 +1,48 @@
+@use "abstracts" as *;
+
+.layout-navigation-holder-bc
+	height: 60px !important
+	
+	.tab-navigation-w-bc
+		background: color-rgba-rgb(header, .9) !important
+		border: none
+		box-shadow: inset 0 1px 0 0 color-hex(border-blue) !important
+
+		.tab-nav-item-bc
+			color: color-hex(link-gray) !important
+			padding: 0
+			gap: 5
+
+			.tab-nav-title-bc
+				font-size: 10px
+				text-transform: lowercase
+				&:first-letter
+					text-transform: uppercase
+
+			// Live / Canlı ( order : 1 )
+			&[href*="/sports/live/event-view"]
+				order: 1
+
+			// Pre-Match / Spor ( order : 2 )
+			&[href*="/sports/pre-match/event-view"]
+				order: 2
+			
+			// Coupon / Kupon ( order : 3 )
+			&:is(button) 
+				order: 3
+			
+			// Casino / Slots ( order : 4 )
+			&[href*="/casino/slots"]
+				order: 4
+			
+			// Menu ( order : 5 )
+			&.menu
+				order: 5
+
+			// Casino > Games / Oyunlar ( order : 2 )
+			&[href*="/games/home"]
+				order: 2
+			
+			// Live Casino / Canlı Casino ( order : 3 )
+			&[href*="/live-casino/home"]
+				order: 3

@@ -4,6 +4,30 @@
     gap: @hb-user-gap;
     .hb-header-divider(start);
 
+    // Guest only: wrappers are flex items. Login links are `.btn` too —
+    // never set order on `.btn` or call/whatsapp/telegram jump behind labels.
+    .header-custom-buttons:nth-child(n + 3):not(:nth-child(@{hb-telegram-nth})) {
+        order: 1;
+    }
+
+    > .btn,
+    .header-user-nav {
+        order: 2;
+    }
+
+    a.bc-i-telegram {
+        .hb-icon-button(telegram);
+    }
+
+    a.bc-i-tv {
+        background: @surface-raised !important;
+        border-radius: @hb-radius !important;
+        .hb-soft-border(important);
+        width: @hb-icon-btn-size;
+        height: @hb-icon-btn-size !important;
+        padding: 0 !important;
+    }
+
     .header-custom-buttons {
         // Keep platform margins off links/buttons, but leave sign-in
         // room for its divider (left: -13px needs margin-inline-start).
@@ -15,18 +39,21 @@
             }
         }
 
-        // Icon group separators (phone | whatsapp | …)
+        // Icon group separators (phone | whatsapp | telegram | …)
         &:nth-child(1),
-        &:nth-child(2) {
+        &:nth-child(2),
+        &:nth-child(@{hb-telegram-nth}) {
             margin-inline-end: @hb-divider-extra;
             .hb-header-divider(end);
         }
+
     }
 
     // Logged in — buttons are direct <a> children
     &:has(.header-user-nav) {
         .header-custom-buttons {
             .hb-buttons-on-links();
+            display: flex !important;
             gap: 12px !important;
 
             // Single wrapper when logged in — don't treat whole group as icon slot
@@ -38,11 +65,19 @@
                 }
             }
 
-            // call | hpwp | … — same separators as guest wrappers
+            > a.bc-i-promotion,
+            > a.bc-i-bonus-request,
+            > a.bc-i-money-dollar,
+            > a.bc-i-tv {
+                order: 1;
+            }
+
+            // call | whatsapp | telegram | … — same separators as guest wrappers
             // Platform a::after uses left:-10px + margin that centers the line on the icon;
             // reset those so our end-divider (right: -13px) lands between items.
-            & > a:nth-child(1),
-            & > a:nth-child(2) {
+            > a.bc-i-call,
+            > a.bc-i-whatsapp,
+            > a.bc-i-telegram {
                 margin-inline-end: @hb-divider-extra !important;
                 .hb-header-divider(end);
 

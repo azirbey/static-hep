@@ -37,6 +37,11 @@
 	label withdraw "para yatır";
 @hb-btn-count: length(@hb-buttons);
 
+// Telegram is the 6th of 7 header icon wrappers. Visual slot 3 is via flex
+// order in header/user.less — do not insert it into @hb-buttons or the
+// gift/label nth-child map shifts.
+@hb-telegram-nth: 6;
+
 // Records: (class 'label')
 @hb-auth:
 	sign-in "giriş",

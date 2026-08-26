@@ -1057,6 +1057,35 @@ body {
   z-index: 1 !important;
   left: -13px !important;
 }
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(n + 3):not(:nth-child(6)) {
+  order: 1;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc > .btn,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-user-nav {
+  order: 2;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc a.bc-i-telegram {
+  background: transparent !important;
+  padding: 0 !important;
+  width: 32px;
+  height: 32px;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc a.bc-i-telegram:before {
+  content: '';
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/telegram.svg') no-repeat center center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc a.bc-i-tv {
+  background: #233243 !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  width: 32px;
+  height: 32px !important;
+  padding: 0 !important;
+}
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons ~ button:not(.sign-in),
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons a {
   margin-inline-start: 0px !important;
@@ -1066,12 +1095,14 @@ body {
   display: none !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(1),
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(2) {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(2),
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(6) {
   margin-inline-end: 13px;
   position: relative !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(1)::after,
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(2)::after {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(2)::after,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(6)::after {
   content: '' !important;
   background: #233243 !important;
   width: 1px !important;
@@ -1083,6 +1114,7 @@ body {
   right: -13px !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons {
+  display: flex !important;
   gap: 12px !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(1) {
@@ -1214,13 +1246,21 @@ body {
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons:nth-child(2)::after {
   display: none !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(1),
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(2) {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-promotion,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-bonus-request,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-money-dollar,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-tv {
+  order: 1;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-call,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-whatsapp,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-telegram {
   margin-inline-end: 13px !important;
   position: relative !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(1)::after,
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(2)::after {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-call::after,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-whatsapp::after,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-telegram::after {
   content: '' !important;
   background: #233243 !important;
   width: 1px !important;
@@ -1231,8 +1271,9 @@ body {
   z-index: 1 !important;
   right: -13px !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(1)::after,
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(2)::after {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-call::after,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-whatsapp::after,
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-telegram::after {
   display: block !important;
   left: auto !important;
   bottom: auto !important;

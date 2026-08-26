@@ -15,8 +15,9 @@
             }
         }
 
-        // Icon group separators (phone | whatsapp | telegram | …)
-        &:nth-child(-n + 3) {
+        // Icon group separators (phone | whatsapp | …)
+        &:nth-child(1),
+        &:nth-child(2) {
             margin-inline-end: @hb-divider-extra;
             .hb-header-divider(end);
         }
@@ -37,10 +38,11 @@
                 }
             }
 
-            // call | whatsapp | telegram | … — same separators as guest wrappers
+            // call | hpwp | … — same separators as guest wrappers
             // Platform a::after uses left:-10px + margin that centers the line on the icon;
             // reset those so our end-divider (right: -13px) lands between items.
-            & > a:nth-child(-n + 3) {
+            & > a:nth-child(1),
+            & > a:nth-child(2) {
                 margin-inline-end: @hb-divider-extra !important;
                 .hb-header-divider(end);
 

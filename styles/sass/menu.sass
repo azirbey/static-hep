@@ -117,7 +117,7 @@
 			height: calc(100% - 52px) !important
 
 			.m-nav-sab-container-right-bc
-				border-radius: 0 
+				border-radius: 0
 				
 				.m-nav-sab-container-r-row-bc
 					background: color-hex(market-blue)
@@ -125,14 +125,32 @@
 					border-left: solid 1px color-hex(border-blue)
 					border-right: solid 1px color-hex(border-blue)
 					border-bottom: solid 1px color-hex(border-blue)
+					padding-inline: 0
 
 					&:last-child
 						border-radius: 0 0 radius(default) radius(default)
 
 					a
+						display: flex
+						align-items: center
+						gap: space(small-spacing)
+						width: 100%
+						min-height: 52px
+						padding-inline: space(default-spacing)
+						box-sizing: border-box
+
+						&::before
+							content: ""
+							flex-shrink: 0
+							width: layout(icon-hit)
+							height: layout(icon-hit)
+							@include default-icon-background
+
 						.m-nav-sab-container-r-row-name
 							@include type(15px, 600, 44px, -0.01em)
 							color: color-hex(ds-chip-gray) !important
+
+				@include aside-nav-sub-icons($aside-nav-sub-icons)
 
 				.m-nav-sab-container-r-row-title-bc
 					background: color-hex(border-blue)

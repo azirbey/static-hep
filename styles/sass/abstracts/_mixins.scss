@@ -307,6 +307,29 @@
 	}
 }
 
+@mixin aside-nav-sub-icon($name, $glyph: layout(svg-size), $box: layout(icon-hit)) {
+	&::before {
+		content: "";
+		flex-shrink: 0;
+		width: $box;
+		height: $box;
+		background-image:
+			url("#{menu-icon($name)}"),
+			url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
+		background-size: $glyph $glyph, contain !important;
+		background-position: center, center !important;
+		background-repeat: no-repeat, no-repeat !important;
+	}
+}
+
+@mixin aside-nav-sub-icons($map) {
+	@each $href, $name in $map {
+		.m-nav-sab-container-r-row-bc a[href*="#{$href}"] {
+			@include aside-nav-sub-icon($name);
+		}
+	}
+}
+
 @mixin nav-link-icon($name, $variant: null, $glyph: 12px, $with-border-bg: true) {
 	&::before {
 		@if $with-border-bg {

@@ -104,12 +104,12 @@ $home-row-icons: (
 	9: profit,
 );
 
+// Mobile header main strip (nth-child). DOM from hdr-navigation-scrollable-bc first nav.
 $nav-items: (
 	soccer,
 	soccer-jersey,
 	slot-machine,
 	roulette,
-	bonus-request,
 	slot-machine-1,
 	rocket,
 	plane,
@@ -167,6 +167,23 @@ $nav-sub-items: (
 	"casino/jackpot": diamond,
 	"live-casino/home": roulette,
 	"casino/live-rtp": live-rtp,
+);
+
+// Aside sub. Files in images/menu-icons/ only. Header casino sub + aside sports sub.
+$aside-nav-sub-icons: (
+	"casino/slots": slot-machine,
+	"casino/tournaments": trophy,
+	"casino/jackpot": slot-machine,
+	"casino/live-rtp": rocket,
+	"sports/live/event-view": soccer,
+	"sports/live/live-calendar": calendar,
+	"sports/live/results": scoreboard,
+	"sports/pre-match/event-view": soccer-jersey,
+	"sports/pre-match/live-calendar": soccer-jersey,
+	"sports/pre-match/results": soccer-jersey,
+	"sports/pre-match/tournaments": trophy,
+	"pre-match/sport/Soccer/Turkey": soccer,
+	"tab=popular": soccer,
 );
 
 $casino-tournament-tab-icons: (

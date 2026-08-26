@@ -4112,6 +4112,22 @@ body .layout-content-holder-bc {
 #root.sportsbook.prematch .prematch-page-bc .comp-name-fav-row-bc {
   background: #233243 !important;
 }
+.promotion-page .layout-content-holder-bc {
+  width: 1340px !important;
+}
+.promotionsList-bc {
+  display: grid !important;
+  grid-template-columns: repeat(20, 1fr) !important;
+}
+.promotionsList-bc > * {
+  grid-column: span 4;
+}
+.promotionsList-bc > *:nth-child(-n + 4) {
+  grid-column: span 5;
+}
+.promotionsListEl-bc h3 {
+  display: none !important;
+}
 .btn {
   text-underline-offset: 0.1rem !important;
 }

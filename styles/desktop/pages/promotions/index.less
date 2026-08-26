@@ -1,0 +1,22 @@
+.promotion-page .layout-content-holder-bc {
+	width: 1340px !important;
+}
+
+.promotionsList-bc {
+	display: grid !important;
+	grid-template-columns: repeat(20, 1fr) !important;
+
+	> * {
+		grid-column: span 4;
+	}
+
+	> *:nth-child(-n + 4) {
+		grid-column: span 5;
+	}
+}
+
+.promotionsListEl-bc {
+	h3 {
+		display: none !important;
+	}
+}

@@ -273,6 +273,40 @@
 	}
 }
 
+@mixin aside-nav-icon($name, $glyph: layout(svg-size), $box: layout(icon-hit)) {
+	.nav-ico-w-row-bc {
+		width: $box !important;
+		height: $box !important;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background:
+			url("#{menu-icon($name)}") center / #{$glyph} #{$glyph} no-repeat,
+			url("#{$cdn-icons-url}icon-bg-with-border.svg") center / contain no-repeat !important;
+
+		.asideMenuNavItemIconWrapper,
+		svg {
+			display: none !important;
+		}
+	}
+}
+
+@mixin aside-nav-icons($href-map, $nth-map: ()) {
+	@each $key, $name in $href-map {
+		.app-nav-link[href*="#{$key}"] {
+			@include aside-nav-icon($name);
+		}
+	}
+
+	@each $n, $name in $nth-map {
+		.app-nav-arrow-block-bc:nth-child(#{$n}) .app-nav-link {
+			@include aside-nav-icon($name);
+		}
+	}
+}
+
 @mixin nav-link-icon($name, $variant: null, $glyph: 12px, $with-border-bg: true) {
 	&::before {
 		@if $with-border-bg {

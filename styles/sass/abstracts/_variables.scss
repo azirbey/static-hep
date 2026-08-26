@@ -133,6 +133,27 @@ $tab-nav-icons: (
 	"live-casino/home": roulette,
 );
 
+// Aside drawer. Files in images/menu-icons/. Matched by href substring.
+$aside-nav-icons: (
+	"promotions": gift-box,
+	"casino/bonus": invoice,
+	"openLiveChat": headset,
+	"casino/slots": slot-machine,
+	"live-casino/home": roulette,
+	"heptv": monitor,
+	"virtual-sports": horse,
+	"esports": trophy,
+	"games/home": rocket,
+	"aviator": plane,
+	"affiliate": deal,
+);
+
+// Aside items without a stable href (1-based index in .m-block-nav-items-bc).
+$aside-nav-icons-nth: (
+	6: soccer-jersey,
+	7: soccer,
+);
+
 $nav-sub-items: (
 	"sports/live/event-view": soccer,
 	"sports/live/live-calendar": calendar,

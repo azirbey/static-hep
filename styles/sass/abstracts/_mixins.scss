@@ -253,6 +253,26 @@
 	}
 }
 
+@mixin tab-nav-icon($name, $glyph: 12px, $box: 24px) {
+	.tab-nav-icon-bc {
+		width: $box !important;
+		height: $box !important;
+		flex-shrink: 0;
+
+		@if $name {
+			background:
+				url("#{menu-icon($name)}") center / #{$glyph} #{$glyph} no-repeat,
+				url("#{$cdn-icons-url}icon-bg-with-border.svg") center / contain no-repeat !important;
+		} @else {
+			background: url("#{$cdn-icons-url}icon-bg-with-border.svg") center / contain no-repeat !important;
+		}
+
+		svg {
+			display: none !important;
+		}
+	}
+}
+
 @mixin nav-link-icon($name, $variant: null, $glyph: 12px, $with-border-bg: true) {
 	&::before {
 		@if $with-border-bg {

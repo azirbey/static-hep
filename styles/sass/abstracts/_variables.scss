@@ -6,6 +6,7 @@ $cdn-images-url: $cdn-url + "/images/";
 $cdn-icons-url: $cdn-images-url + "icons/";
 $cdn-tournament-info-icons-url: $cdn-images-url + "tournament-info-icons/";
 $cdn-nav-icons-url: $cdn-images-url + "nav-menu-icons/svg/";
+$cdn-menu-icons-url: $cdn-images-url + "menu-icons/";
 $font-name: "Geist";
 $font-family: $font-name, sans-serif;
 $font-faces: (
@@ -59,7 +60,7 @@ $layout: (
 	control-height: 44px,
 	icon-hit: 28px,
 	font-family: $font-family,
-	tab-navigation-height: 60px,
+	tab-navigation-height: 56px,
 );
 
 $header-user-buttons: (
@@ -119,6 +120,17 @@ $nav-items: (
 	monitor,
 	coupon-wars,
 	affiliate
+);
+
+// Bottom tab bar. Files in images/menu-icons/. Empty = box only, no glyph.
+$tab-nav-icons: (
+	"sports/live/event-view": soccer,
+	"sports/pre-match/event-view": soccer-jersey,
+	button: invoice,
+	"casino/slots": slot-machine,
+	menu: menu,
+	"games/home": rocket,
+	"live-casino/home": roulette,
 );
 
 $nav-sub-items: (

@@ -55,3 +55,7 @@
 
 	@return "#{$cdn-nav-icons-url}#{$name}.svg";
 }
+
+@function menu-icon($name) {
+	@return "#{$cdn-menu-icons-url}#{$name}.svg";
+}

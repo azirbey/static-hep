@@ -1065,13 +1065,11 @@ body {
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons a::after {
   display: none !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(1),
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(2) {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(-n + 3) {
   margin-inline-end: 13px;
   position: relative !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(1)::after,
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(2)::after {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(-n + 3)::after {
   content: '' !important;
   background: #233243 !important;
   width: 1px !important;
@@ -1114,35 +1112,18 @@ body {
   background: url('https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3) {
-  background: #233243 !important;
-  padding: 6px 12px !important;
-  width: fit-content !important;
-  height: 32px !important;
-  font-family: var(--font-family) !important;
-  border-radius: 6px !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: 32px;
+  height: 32px;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3):before {
   content: '';
   display: block;
   flex-shrink: 0;
-  width: 12px;
-  height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg') no-repeat center center / contain !important;
-}
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3) span {
-  font-size: 0 !important;
-  line-height: 0 !important;
-}
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3) span::before {
-  content: "promosyonlar";
-  text-transform: capitalize;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 500;
-}
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3) span:not(:empty) {
-  margin-inline-start: 8px !important;
+  width: 20px;
+  height: 20px;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/telegram.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(4) {
   background: #233243 !important;
@@ -1159,14 +1140,14 @@ body {
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg') no-repeat center center / contain !important;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(4) span {
   font-size: 0 !important;
   line-height: 0 !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(4) span::before {
-  content: "bonus talep";
+  content: "promosyonlar";
   text-transform: capitalize;
   font-size: 13px;
   line-height: 20px;
@@ -1190,20 +1171,51 @@ body {
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg') no-repeat center center / contain !important;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(5) span {
   font-size: 0 !important;
   line-height: 0 !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(5) span::before {
-  content: "para yatır";
+  content: "bonus talep";
   text-transform: capitalize;
   font-size: 13px;
   line-height: 20px;
   font-weight: 500;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(5) span:not(:empty) {
+  margin-inline-start: 8px !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(6) {
+  background: #233243 !important;
+  padding: 6px 12px !important;
+  width: fit-content !important;
+  height: 32px !important;
+  font-family: var(--font-family) !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(6):before {
+  content: '';
+  display: block;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg') no-repeat center center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(6) span {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(6) span::before {
+  content: "para yatır";
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(6) span:not(:empty) {
   margin-inline-start: 8px !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons:nth-child(1),
@@ -1214,13 +1226,11 @@ body {
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons:nth-child(2)::after {
   display: none !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(1),
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(2) {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(-n + 3) {
   margin-inline-end: 13px !important;
   position: relative !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(1)::after,
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(2)::after {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(-n + 3)::after {
   content: '' !important;
   background: #233243 !important;
   width: 1px !important;
@@ -1231,8 +1241,7 @@ body {
   z-index: 1 !important;
   right: -13px !important;
 }
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(1)::after,
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(2)::after {
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a:nth-child(-n + 3)::after {
   display: block !important;
   left: auto !important;
   bottom: auto !important;
@@ -1717,35 +1726,18 @@ body {
   background: url('https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a {
-  background: #233243 !important;
-  padding: 6px 12px !important;
-  width: fit-content !important;
-  height: 32px !important;
-  font-family: var(--font-family) !important;
-  border-radius: 6px !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: 32px;
+  height: 32px;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a:before {
   content: '';
   display: block;
   flex-shrink: 0;
-  width: 12px;
-  height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg') no-repeat center center / contain !important;
-}
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a span {
-  font-size: 0 !important;
-  line-height: 0 !important;
-}
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a span::before {
-  content: "promosyonlar";
-  text-transform: capitalize;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 500;
-}
-.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a span:not(:empty) {
-  margin-inline-start: 8px !important;
+  width: 20px;
+  height: 20px;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/telegram.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(4) a {
   background: #233243 !important;
@@ -1762,14 +1754,14 @@ body {
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg') no-repeat center center / contain !important;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(4) a span {
   font-size: 0 !important;
   line-height: 0 !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(4) a span::before {
-  content: "bonus talep";
+  content: "promosyonlar";
   text-transform: capitalize;
   font-size: 13px;
   line-height: 20px;
@@ -1793,20 +1785,51 @@ body {
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg') no-repeat center center / contain !important;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg') no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(5) a span {
   font-size: 0 !important;
   line-height: 0 !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(5) a span::before {
-  content: "para yatır";
+  content: "bonus talep";
   text-transform: capitalize;
   font-size: 13px;
   line-height: 20px;
   font-weight: 500;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(5) a span:not(:empty) {
+  margin-inline-start: 8px !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(6) a {
+  background: #233243 !important;
+  padding: 6px 12px !important;
+  width: fit-content !important;
+  height: 32px !important;
+  font-family: var(--font-family) !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(6) a:before {
+  content: '';
+  display: block;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg') no-repeat center center / contain !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(6) a span {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(6) a span::before {
+  content: "para yatır";
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(6) a span:not(:empty) {
   margin-inline-start: 8px !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .btn {

@@ -1,6 +1,6 @@
 @use "abstracts" as *
 
-.layout-bc
+&.layout-bc
 	&.navigation-is-visible 
 		.tab-nav-item-bc
 			&.menu
@@ -73,6 +73,8 @@
 	
 	.m-nav-info-w-container-bc
 		padding: space(default-spacing)
+		height: calc(100% - 104px) !important
+
 
 		.m-nav-collapsed-container-bc
 			padding: 0
@@ -80,16 +82,98 @@
 			.m-block-nav-items-bc
 				padding: 0
 				gap: 0
+				border: solid 1px color-hex(nav-border-blue)
+				border-radius: radius(default)
 
 				.app-nav-arrow-block-bc
+					height: 52px
+					
+					&:last-child
+						border-bottom: none
+
 					.app-nav-link
 						background: color-hex(market-blue)
-						box-shadow: inset 0 -1px 0 0 color-hex(border-blue) 
+						box-shadow: inset 0px -1px 0px color-hex(border-blue)
+						border-radius: radius(default)
+
+						&.badge-free
+							&::after
+								background: linear-gradient(270deg, #197cff85, #197cff00 40%)
+
+						&::after
+							border-radius: 0
 
 						.m-nav-items-list-item-bc
 							background: transparent
 							height: 52px
+							border-radius: 0
 
 							.m-nav-list-item-title-bc
 								@include type(15px, 600, 24px, -0.01em)
 								color: color-hex(ds-chip-gray) !important
+
+		.m-nav-sab-container-bc
+			height: calc(100% - 52px) !important
+
+			.m-nav-sab-container-right-bc
+				border-radius: 0 
+				
+				.m-nav-sab-container-r-row-bc
+					background: color-hex(market-blue)
+					border-radius: 0
+					border-left: solid 1px color-hex(border-blue)
+					border-right: solid 1px color-hex(border-blue)
+					border-bottom: solid 1px color-hex(border-blue)
+
+					&:last-child
+						border-radius: 0 0 radius(default) radius(default)
+
+					a
+						.m-nav-sab-container-r-row-name
+							@include type(15px, 600, 44px, -0.01em)
+							color: color-hex(ds-chip-gray) !important
+
+				.m-nav-sab-container-r-row-title-bc
+					background: color-hex(border-blue)
+					border-radius: radius(default) radius(default) 0 0
+					@include type(15px, 600, 24px, -0.01em)
+					color: color-hex(ds-chip-gray) !important
+					height: 40px
+
+
+			.m-block-nav-items-bc
+				border: solid 1px color-hex(nav-border-blue)
+				border-radius: radius(default)
+				padding: 0
+				margin: 0 var(--padding-page-aside) 70px
+				gap: 0
+
+				.app-nav-arrow-block-bc
+					border-bottom: solid 1px color-hex(border-blue)
+					
+					&:last-child
+						padding-bottom: 0
+						border-bottom: none
+
+					.app-nav-link
+
+						.m-nav-items-list-item-bc 
+							height: 72px
+							display: flex
+							flex-direction: column
+							justify-content: space-evenly
+							border-radius: 0
+							background: color-hex(market-blue)
+							color: color-hex(ds-chip-gray) !important
+							
+							&.active
+								color: color-hex(ds-chip-gray) !important
+
+								.nav-ico-w-row-bc
+									box-shadow: none
+
+							.nav-ico-w-row-bc
+								height: fit-content
+							
+							.m-nav-list-item-title-bc
+								min-height: fit-content

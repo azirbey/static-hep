@@ -74,23 +74,23 @@ function render() {
 }
 
 async function load() {
-  const res = await fetch(
-    SUPABASE_URL +
-      "/rest/v1/" +
-      TABLE +
-      "?select=*&order=sort_order.asc&ts=" +
-      Date.now(),
-    {
-      headers: headers(),
-      cache: "no-store",
+  try {
+    const res = await fetch(
+      SUPABASE_URL + "/rest/v1/" + TABLE + "?select=*&order=sort_order.asc",
+      {
+        headers: headers(),
+        cache: "no-store",
+      }
+    );
+    if (!res.ok) {
+      document.getElementById("list").textContent = "Liste yüklenemedi.";
+      return;
     }
-  );
-  if (!res.ok) {
+    items = await res.json();
+    render();
+  } catch (err) {
     document.getElementById("list").textContent = "Liste yüklenemedi.";
-    return;
   }
-  items = await res.json();
-  render();
 }
 
 document.getElementById("list").addEventListener("change", async function (e) {

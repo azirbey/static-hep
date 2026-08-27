@@ -5169,3 +5169,27 @@ div[id^="comm100-float-button"] > div {
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer .ds-btn:disabled {
   opacity: 0.8 !important;
 }
+.ds-popup__content .randomGamePopupContent .randomGamePopupBtnGroup .ds-btn-variant--transparent {
+  background: #31465e !important;
+  height: 48px;
+  max-height: 48px !important;
+  border-radius: 6px;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+.ds-popup__content .randomGamePopupContent .randomGamePopupBtnGroup .ds-btn-variant--secondary {
+  height: 48px;
+  max-height: 48px !important;
+  background: #197cff;
+  border-radius: 6px;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}

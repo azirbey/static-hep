@@ -2479,7 +2479,7 @@ body .layout-content-holder-bc {
   min-height: 36px !important;
   padding: 0 12px !important;
   box-shadow: none !important;
-  border: none !important;
+  border: solid 1px #2a3c50 !important;
 }
 #root.casino-slots .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__label,
 #root.live-casino-games .casinoGameProviderFilters .casinoSearchWrapper .ds-textfield__label,
@@ -2514,7 +2514,7 @@ body .layout-content-holder-bc {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/shuffle.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/shuffle.svg") no-repeat center center / contain !important;
   position: static !important;
   margin: 0 !important;
 }
@@ -2600,7 +2600,7 @@ body .layout-content-holder-bc {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/menus.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/menus.svg") no-repeat center center / contain !important;
 }
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .sectionTitle:before,
 #root.casino-slots .layout-content-holder-bc > .hm-row-bc:nth-child(2) .page-view-more:before {

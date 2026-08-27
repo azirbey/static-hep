@@ -36,6 +36,30 @@
 						}
 					}
 				}
+
+				.casinoProvidersPopupContent__grid--list {
+					.casinoProvidersPopupContent__providerListViewItem {
+						background-color: @surface-raised !important;
+						height: 44px !important;
+
+						.casinoProvidersPopupContent__providerListViewItem--text {
+							.hb-text(15px; 24px; 600; @shade-22) !important;
+						}
+
+						.badge {
+							border-radius: 2px !important;
+						}
+
+						&.casinoProvidersPopupContent__providerListViewItem--selected {
+							background-color: rgba(25, 124, 255, 0.12) !important;
+							border: 1px solid rgba(15, 235, 255, 0.4) !important;
+
+							.casinoProvidersPopupContent__providerListViewItem--text {
+								.hb-text(15px; 24px; 600; @white) !important;
+							}
+						}
+					}
+				}
 			}
 		}
 		.casinoProvidersPopupContent__footer {

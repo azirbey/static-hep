@@ -5114,6 +5114,33 @@ div[id^="comm100-float-button"] > div {
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg polygon {
   fill: #fff !important;
 }
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem {
+  background-color: #233243 !important;
+  height: 44px !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem .casinoProvidersPopupContent__providerListViewItem--text {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #cad5e3 !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem .badge {
+  border-radius: 2px !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem.casinoProvidersPopupContent__providerListViewItem--selected {
+  background-color: rgba(25, 124, 255, 0.12) !important;
+  border: 1px solid rgba(15, 235, 255, 0.4) !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem.casinoProvidersPopupContent__providerListViewItem--selected .casinoProvidersPopupContent__providerListViewItem--text {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer {
   background: transparent !important;
 }

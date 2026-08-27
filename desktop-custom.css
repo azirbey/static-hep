@@ -3823,6 +3823,9 @@ body .layout-content-holder-bc {
 #root.sportsbook.live .market-bc {
   background: #38506b !important;
 }
+#root.sportsbook.live .market-bc.m-g-header {
+  background: #2a3c50 !important;
+}
 #root.sportsbook.live .market-bc.active {
   background: #197cff !important;
 }

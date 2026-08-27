@@ -2994,6 +2994,7 @@ body .layout-content-holder-bc {
   color: inherit !important;
   text-align: center !important;
   text-transform: none !important;
+  color: #fff !important;
 }
 #root.tournament .layout-content-holder-bc .casinoTournamentSectionContentBlockBc {
   display: flex !important;
@@ -3021,9 +3022,9 @@ body .layout-content-holder-bc {
 }
 #root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc,
 #root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc[data-status],
-#root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc[data-status='0'],
-#root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc[data-status='1'],
-#root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc[data-status='3'],
+#root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc[data-status="0"],
+#root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc[data-status="1"],
+#root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc[data-status="3"],
 #root.tournament .layout-content-holder-bc .casinoTournamentSectionElStatusBc time {
   flex: 0 0 auto !important;
   margin: 0 !important;
@@ -3032,7 +3033,7 @@ body .layout-content-holder-bc {
   font-size: 11px !important;
   line-height: 16px !important;
   letter-spacing: -0.01em !important;
-  color: inherit !important;
+  color: #fff !important;
 }
 #root.tournament .layout-content-holder-bc .tournamentsShowAllCount {
   display: flex !important;

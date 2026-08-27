@@ -1,82 +1,83 @@
 // Right info + detail boxes — colors / fonts from Figma
 
 .tournamentSectionInfoTitle {
-    .hb-text-title();
+	.hb-text-title();
 }
 
 .tournamentSectionInfoTxt {
-    .hb-text(13px; 20px; 500; @text-soft);
+	.hb-text(13px; 20px; 500; @text-soft);
 }
 
 .tournamentSectionMoreTxt {
-    .hb-text(15px; 20px; 700; @highlight);
-    text-shadow: 0 0 12px rgba(15, 235, 255, 0.32) !important;
+	.hb-text(15px; 20px; 700; @highlight);
+	text-shadow: 0 0 12px rgba(15, 235, 255, 0.32) !important;
 }
 
 .tournamentSectionMoreTxtIcon {
-    color: @highlight !important;
+	color: @highlight !important;
 }
 
 .horizontalCategoryItem.casinoTournamentInfoItem,
 .casinoTournamentInfoItem {
-    position: relative !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    gap: 8px !important;
-    padding: 10px 16px !important;
-    min-height: 0 !important;
-    background: fade(@accent, 6%) !important;
-    border: none !important;
-    border-radius: 6px !important;
-    font-size: initial !important;
-    box-shadow: none !important;
+	position: relative !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: flex-start !important;
+	gap: 8px !important;
+	padding: 10px 16px !important;
+	min-height: 0 !important;
+	background: fade(@accent, 6%) !important;
+	border: none !important;
+	border-radius: 6px !important;
+	font-size: initial !important;
+	box-shadow: none !important;
 
-    &::before,
-    &::after {
-        content: none !important;
-        display: none !important;
-    }
+	&::before,
+	&::after {
+		content: none !important;
+		display: none !important;
+	}
 }
 
 .casinoTournamentInfoSectionTitleBc {
-    align-self: stretch !important;
-    margin: 0 !important;
-    .hb-text(13px; 20px; 700; );
-    text-align: center !important;
-    text-transform: none !important;
+	align-self: stretch !important;
+	margin: 0 !important;
+	.hb-text(13px; 20px; 700; );
+	text-align: center !important;
+	text-transform: none !important;
+	color: @white !important;
 }
 
 .casinoTournamentSectionContentBlockBc {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 8px !important;
-    width: 100% !important;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 8px !important;
+	width: 100% !important;
 }
 
 .casinoTournamentSectionContentElBc {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
-    width: 100% !important;
-    font-size: initial !important;
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	gap: 8px !important;
+	width: 100% !important;
+	font-size: initial !important;
 }
 
 .casinoTournamentSectionContentTitleBc {
-    flex: 1 1 auto !important;
-    margin: 0 !important;
-    .hb-text(11px; 16px; 600; @text-muted);
+	flex: 1 1 auto !important;
+	margin: 0 !important;
+	.hb-text(11px; 16px; 600; @text-muted);
 }
 
 .casinoTournamentSectionElStatusBc,
 .casinoTournamentSectionElStatusBc[data-status],
-.casinoTournamentSectionElStatusBc[data-status='0'],
-.casinoTournamentSectionElStatusBc[data-status='1'],
-.casinoTournamentSectionElStatusBc[data-status='3'],
+.casinoTournamentSectionElStatusBc[data-status="0"],
+.casinoTournamentSectionElStatusBc[data-status="1"],
+.casinoTournamentSectionElStatusBc[data-status="3"],
 .casinoTournamentSectionElStatusBc time {
-    flex: 0 0 auto !important;
-    margin: 0 !important;
-    .hb-text(11px; 16px; 600; );
+	flex: 0 0 auto !important;
+	margin: 0 !important;
+	.hb-text(11px; 16px; 600; @white);
 }

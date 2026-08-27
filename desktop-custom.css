@@ -2722,9 +2722,12 @@ body .layout-content-holder-bc {
   line-height: 20px !important;
   letter-spacing: -0.01em !important;
   color: #d7e0ea !important;
+  margin-inline-end: 0 !important;
+  border-inline-end: none !important;
+  padding-inline-end: 0 !important;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(4) .tournamentsWidgetCounterLabel::after {
-  content: '';
+  content: "";
   width: 1px;
   height: 20px;
   background: rgba(255, 255, 255, 0.12);
@@ -2736,7 +2739,7 @@ body .layout-content-holder-bc {
   font-size: 13px !important;
   line-height: 20px !important;
   letter-spacing: -0.01em !important;
-  color: inherit !important;
+  color: #fff !important;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(4) .tournamentsWidgetName {
   font-family: "Geist", sans-serif !important;

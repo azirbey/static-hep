@@ -75,8 +75,15 @@ function render() {
 
 async function load() {
   const res = await fetch(
-    SUPABASE_URL + "/rest/v1/" + TABLE + "?select=*&order=sort_order.asc",
-    { headers: headers() }
+    SUPABASE_URL +
+      "/rest/v1/" +
+      TABLE +
+      "?select=*&order=sort_order.asc&ts=" +
+      Date.now(),
+    {
+      headers: headers(),
+      cache: "no-store",
+    }
   );
   if (!res.ok) {
     document.getElementById("list").textContent = "Liste yüklenemedi.";
@@ -102,21 +109,17 @@ document.getElementById("list").addEventListener("change", async function (e) {
     e.target.checked = !done;
     return;
   }
-  items = items.map(function (item) {
-    if (item.id === id) item.done = done;
-    return item;
-  });
-  render();
+  await load();
 });
 
 document.getElementById("btn-open").addEventListener("click", function () {
   view = "open";
-  render();
+  load();
 });
 
 document.getElementById("btn-done").addEventListener("click", function () {
   view = "done";
-  render();
+  load();
 });
 
 document.getElementById("form").addEventListener("submit", async function (e) {
@@ -136,11 +139,9 @@ document.getElementById("form").addEventListener("submit", async function (e) {
     }),
   });
   if (!res.ok) return;
-  const created = await res.json();
-  items = items.concat(created);
   document.getElementById("form").reset();
   view = "open";
-  render();
+  await load();
 });
 
 load();

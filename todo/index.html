@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hepbet UI Notları</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="col col-list">
+        <h1>Hepbet UI Notları</h1>
+        <nav>
+          <button type="button" id="btn-open" class="nav-btn active">Açık</button>
+          <button type="button" id="btn-done" class="nav-btn">Tamamlanan</button>
+          <span id="count"></span>
+        </nav>
+        <div id="list"></div>
+      </div>
+      <div class="col col-add">
+        <form id="form">
+          <p class="hint">Yeni madde listenin en sonuna eklenir.</p>
+          <textarea id="text" rows="8" required></textarea>
+          <button type="submit">Ekle</button>
+        </form>
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

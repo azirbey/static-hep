@@ -2886,10 +2886,17 @@ body .layout-content-holder-bc {
   color: #bccbdc !important;
   text-align: center !important;
 }
-#root.tournament .layout-content-holder-bc .countdownBannerCounter {
+#root.tournament .layout-content-holder-bc .countdownBannerContent {
+  gap: 4px !important;
+}
+#root.tournament .layout-content-holder-bc .countdownBannerContent .countdownBannerCounter {
   background: #31465e !important;
   border-radius: 6px !important;
   padding: 8px !important;
+  width: 52px !important;
+}
+#root.tournament .layout-content-holder-bc .countdownBannerContent .countdownBannerCounter:before {
+  display: none !important;
 }
 #root.tournament .layout-content-holder-bc .countdownBannerDate {
   font-family: "Geist", sans-serif !important;

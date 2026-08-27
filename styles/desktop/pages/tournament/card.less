@@ -1,76 +1,85 @@
 // Left tournament card — colors / fonts from Figma
 
 .tournamentSectionMainContainer {
-    background: linear-gradient(180deg, @surface-elevated 0%, @surface-base 100%) !important;
-    border-radius: 6px !important;
-    border: none !important;
+	background: linear-gradient(180deg, @surface-elevated 0%, @surface-base 100%) !important;
+	border-radius: 6px !important;
+	border: none !important;
 }
 
 .tournamentSectionDataButtonWrp {
-    background: transparent !important;
-    border-radius: 6px !important;
+	background: transparent !important;
+	border-radius: 6px !important;
 }
 
 .tournamentSectionCircle {
-    background: @surface-sunken !important;
+	background: @surface-sunken !important;
 }
 
 .tournamentGameStatus {
-    .hb-text-badge();
-    background: @accent !important;
-    border-radius: 2px 2px 2px 0 !important;
+	.hb-text-badge();
+	background: @accent !important;
+	border-radius: 2px 2px 2px 0 !important;
 
-    span {
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        font-size: inherit !important;
-        color: inherit !important;
-        text-transform: uppercase;
-    }
+	span {
+		font-family: inherit !important;
+		font-weight: inherit !important;
+		font-size: inherit !important;
+		color: inherit !important;
+		text-transform: uppercase;
+	}
 }
 
 .tournamentPrizeFundTxt {
-    .hb-text-label();
-    text-align: center !important;
+	.hb-text-label();
+	text-align: center !important;
 }
 
 .tournamentSectionMoney {
-    .hb-text-amount();
-    text-align: center !important;
+	.hb-text-amount();
+	text-align: center !important;
 }
 
 .dataStatusTxt {
-    .hb-text-label();
-    text-align: center !important;
+	.hb-text-label();
+	text-align: center !important;
 }
 
-.countdownBannerCounter {
-    background: @surface-control !important;
-    border-radius: 6px !important;
-    padding: 8px !important;
+.countdownBannerContent {
+	gap: 4px !important;
+
+	.countdownBannerCounter {
+		background: @surface-control !important;
+		border-radius: 6px !important;
+		padding: 8px !important;
+		width: 52px !important;
+
+		&:before {
+			display: none !important;
+		}
+	}
 }
 
 .countdownBannerDate {
-    .hb-text-countdown();
-    text-align: center !important;
+	.hb-text-countdown();
+	text-align: center !important;
 }
 
 .countdownBannerNames {
-    .hb-text-caption();
-    text-align: center !important;
-    text-transform: uppercase;
+	.hb-text-caption();
+	text-align: center !important;
+	text-transform: uppercase;
 }
 
 .tournamentJoinButton {
-    .button {
-        background: @accent !important;
-        border-radius: 6px !important;
-        height: 44px !important;
-        box-shadow: none !important;
-        border: none !important;
+	.button {
+		background: @accent !important;
+		border-radius: 6px !important;
+		height: 44px !important;
+		box-shadow: none !important;
+		border: none !important;
 
-        span {
-            .hb-text-button();
-        }
-    }
+		span {
+			.hb-text-button();
+		}
+	}
 }

@@ -1,38 +1,35 @@
-const STORAGE_KEY = "hepbet-ui-todos-v3";
+const SUPABASE_URL = "https://phbguhhmfdxgdbrtmijg.supabase.co";
+const SUPABASE_KEY = "sb_publishable_uCEqBHisCoijis0BOWFkOA_DruDz-m6";
+const TABLE = "hep_ui_notes";
 
 let view = "open";
+let items = [];
 
-function defaultState() {
+function headers() {
   return {
-    items: TODOS.slice(),
-    done: [],
-    nextId: TODOS.length + 1,
+    apikey: SUPABASE_KEY,
+    Authorization: "Bearer " + SUPABASE_KEY,
+    "Content-Type": "application/json",
+    Prefer: "return=representation",
   };
 }
 
-function load() {
-  try {
-    const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-    if (!data || !data.items) return defaultState();
-    return data;
-  } catch {
-    return defaultState();
-  }
-}
-
-function save(state) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
 function itemHtml(item, checked) {
   return (
     '<div class="item">' +
     '<span class="num">' +
-    item.id +
+    item.sort_order +
     "</span>" +
     "<div>" +
     "<p>" +
-    item.text +
+    escapeHtml(item.body) +
     "</p>" +
     "</div>" +
     '<label class="check-wrap">' +
@@ -48,13 +45,12 @@ function itemHtml(item, checked) {
 }
 
 function render() {
-  const state = load();
   const list = document.getElementById("list");
-  const openItems = state.items.filter(function (item) {
-    return state.done.indexOf(item.id) === -1;
+  const openItems = items.filter(function (item) {
+    return !item.done;
   });
-  const doneItems = state.items.filter(function (item) {
-    return state.done.indexOf(item.id) !== -1;
+  const doneItems = items.filter(function (item) {
+    return item.done;
   });
 
   document.getElementById("btn-open").className =
@@ -77,18 +73,39 @@ function render() {
     .join("");
 }
 
-document.getElementById("list").addEventListener("change", function (e) {
+async function load() {
+  const res = await fetch(
+    SUPABASE_URL + "/rest/v1/" + TABLE + "?select=*&order=sort_order.asc",
+    { headers: headers() }
+  );
+  if (!res.ok) {
+    document.getElementById("list").textContent = "Liste yüklenemedi.";
+    return;
+  }
+  items = await res.json();
+  render();
+}
+
+document.getElementById("list").addEventListener("change", async function (e) {
   if (e.target.type !== "checkbox") return;
   const id = Number(e.target.getAttribute("data-id"));
-  const state = load();
-  if (e.target.checked) {
-    if (state.done.indexOf(id) === -1) state.done.push(id);
-  } else {
-    state.done = state.done.filter(function (n) {
-      return n !== id;
-    });
+  const done = e.target.checked;
+  const res = await fetch(
+    SUPABASE_URL + "/rest/v1/" + TABLE + "?id=eq." + id,
+    {
+      method: "PATCH",
+      headers: headers(),
+      body: JSON.stringify({ done: done }),
+    }
+  );
+  if (!res.ok) {
+    e.target.checked = !done;
+    return;
   }
-  save(state);
+  items = items.map(function (item) {
+    if (item.id === id) item.done = done;
+    return item;
+  });
   render();
 });
 
@@ -102,20 +119,28 @@ document.getElementById("btn-done").addEventListener("click", function () {
   render();
 });
 
-document.getElementById("form").addEventListener("submit", function (e) {
+document.getElementById("form").addEventListener("submit", async function (e) {
   e.preventDefault();
   const text = document.getElementById("text").value.trim();
   if (!text) return;
-  const state = load();
-  state.items.push({
-    id: state.nextId,
-    text: text,
+  const maxSort = items.reduce(function (max, item) {
+    return item.sort_order > max ? item.sort_order : max;
+  }, 0);
+  const res = await fetch(SUPABASE_URL + "/rest/v1/" + TABLE, {
+    method: "POST",
+    headers: headers(),
+    body: JSON.stringify({
+      body: text,
+      done: false,
+      sort_order: maxSort + 1,
+    }),
   });
-  state.nextId += 1;
-  save(state);
+  if (!res.ok) return;
+  const created = await res.json();
+  items = items.concat(created);
   document.getElementById("form").reset();
   view = "open";
   render();
 });
 
-render();
+load();

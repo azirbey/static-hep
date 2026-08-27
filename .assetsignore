@@ -9,6 +9,8 @@
 !/images/**
 !/webfonts/
 !/webfonts/**
+!/todo/
+!/todo/**
 !/_headers
 
 .DS_Store

@@ -1,14 +1,1 @@
-@use "sass:meta";
-
-/*! HTML TAGS */
-html {
-	&.is-mobile,
-	&.is-mobile body {
-		--b: 25, 34, 45 !important;
-	}
-}
-
-/*! ROOT STYLES */
-#root {
-	background-color: var(--b);
-}
+@use "icons";

@@ -1,28 +1,276 @@
 // Last-wins overrides. Keep this file thin — platform rules that still beat
 // the component sheets after import order belong here, nothing else.
 
-.results-banner-wrapper-bc {
-	padding: 8px 5px 0px;
-	margin-bottom: 5px;
-
-	.results-banner-bc {
-		background: rgba(25, 124, 255, 0.08);
-		border-radius: 6px;
-		border: 1px solid rgba(25, 124, 255, 0.08);
-		overflow: hidden;
-		&::before {
-			background: transparent;
-			background-image: url(https://static-hep.hepbet-static.workers.dev/images/box-shine.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position-x: -100px;
-			background-position-y: -100px;
-			width: 200px;
-			height: 200px;
+#root {
+	.FooterLicenceCuracaoContainer.anj-container {
+		max-width: 200px !important;
+		max-height: 200px !important;
+		div {
+			max-width: 200px !important;
+			max-height: 200px !important;
+			a {
+				max-width: 200px !important;
+				max-height: 200px !important;
+			}
 		}
 	}
-}
 
-.results-game-details-header-bc:has(i.opened) {
-	border-radius: var(--border-radius) var(--border-radius);
+	.results-banner-wrapper-bc {
+		padding: 8px 5px 0px;
+		margin-bottom: 5px;
+
+		.results-banner-bc {
+			background: rgba(25, 124, 255, 0.08);
+			border-radius: 6px;
+			border: 1px solid rgba(25, 124, 255, 0.08);
+			overflow: hidden;
+			&::before {
+				background: transparent;
+				background-image: url(https://static-hep.hepbet-static.workers.dev/images/box-shine.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position-x: -100px;
+				background-position-y: -100px;
+				width: 200px;
+				height: 200px;
+			}
+		}
+	}
+
+	.results-game-details-header-bc:has(i.opened) {
+		border-radius: var(--border-radius) var(--border-radius);
+	}
+
+	.ds-popup.casinoGameDetailsPopup {
+		.casinoGameDetails {
+			.cgdHeroSection {
+				align-items: flex-start;
+
+				.cgdInfoPanel {
+					height: fit-content;
+
+					.cgdProviderWrapper {
+						align-items: flex-start;
+						.cgdProvidedBy {
+							.hb-text(13px; 20px; 400; #A1B6CE) !important;
+						}
+						.cgdProviderIcon svg path,
+						.cgdProviderIcon svg rect,
+						.cgdProviderIcon svg polygon {
+							fill: #fff !important;
+						}
+					}
+
+					.cgdActionsWrp {
+						max-width: 100%;
+						flex-direction: row;
+						.ds-btn,
+						& > span {
+							flex: 1 1 0;
+							min-width: 0;
+							width: 0;
+							height: 44px;
+						}
+
+						.ds-btn {
+							order: 2;
+							padding: 0;
+						}
+						& > span {
+							order: 1;
+							background-color: #233243;
+							border-radius: 6px;
+							justify-content: center;
+							.hb-text(15px; 24px; 700; @white) !important;
+
+							span {
+								text-decoration: none !important;
+							}
+						}
+					}
+				}
+			}
+
+			.cgdTabsSection {
+				.ds-tab-item {
+					span {
+						.hb-text(15px; 24px; 400; @shade-19) !important;
+					}
+				}
+				.ds-tab-item--active {
+					span {
+						.hb-text(15px; 24px; 400; @cyan) !important;
+					}
+					&::after {
+						background-color: @cyan;
+					}
+				}
+			}
+		}
+	}
+
+	.tournamentDetailsContainerWrp {
+		.tournamentDetailsHeaderItem {
+			background: #1c2835;
+
+			&:nth-child(1) {
+				i {
+					background: #197cff;
+				}
+			}
+			&:nth-child(2) {
+				i {
+					background: #23aa27;
+				}
+			}
+			&:nth-child(3) {
+				i {
+					background: #f2a517;
+				}
+			}
+
+			i {
+				width: 52px;
+				height: 52px;
+				border-radius: 50%;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				&::before {
+					display: none;
+				}
+
+				&::after {
+					display: block;
+					width: 24px;
+					height: 24px;
+					content: "";
+					background-image: url(https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+			}
+		}
+
+		.casinoTournamentInfoRowWrp {
+			.casinoTournamentInfoRowClm.type-1 {
+				color: @cyan;
+			}
+			&:nth-child(odd) {
+				.casinoTournamentInfoRow {
+					background: @shade-6;
+				}
+			}
+
+			&:not(.Me, .active) {
+				&:nth-child(2n) {
+					.casinoTournamentInfoRow {
+						background: #2a3c50;
+					}
+				}
+			}
+
+			&.active {
+				.casinoTournamentInfoRow {
+					background: transparent;
+				}
+
+				&:nth-child(1) {
+					background: rgba(35, 170, 39, 0.12);
+				}
+				&:nth-child(2) {
+					background: rgba(25, 124, 255, 0.12);
+				}
+				&:nth-child(3) {
+					background: rgba(242, 165, 23, 0.12);
+				}
+			}
+		}
+
+		.casinoTournamentInfoColumn {
+			&.Rules {
+				background: #1c2835;
+				p {
+					.hb-text(15px; 24px; 400; #D7E0EA) !important;
+					padding: 0 20px;
+				}
+			}
+		}
+	}
+
+	&.sportsbook {
+		.sportsbook-container {
+			.left-menu-container {
+				.pp-sport-list-holder-bc {
+					.left-menu-scroll {
+						> .sp-sub-list-bc {
+							border-left: solid 1px #31465e !important;
+							border-right: solid 1px #31465e !important;
+							border-top: solid 1px #31465e !important;
+
+							&.SpecialBets {
+								margin-bottom: 10px;
+							}
+
+							&.upcoming-matches,
+							&.popular-matches,
+							&.popular-competitions,
+							&.multiple-of-the-day,
+							&.SpecialBets {
+								> .sp-s-l-head-bc {
+									background: #1c2835 !important;
+
+									.sp-s-l-h-flag-bc {
+										.hb-nav-icon-box();
+										font-size: 0 !important;
+										color: transparent !important;
+									}
+								}
+							}
+
+							@hb-sports-nav: "@{hb-cdn-root}/images/sports-nav-icons";
+
+							&.upcoming-matches > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
+								.hb-bg-icon("@{hb-sports-nav}/upcoming-matches.svg"; @hb-nav-icon-size);
+								background: @cyan !important;
+								mask: url("@{hb-sports-nav}/upcoming-matches.svg") no-repeat center / contain;
+								-webkit-mask: url("@{hb-sports-nav}/upcoming-matches.svg") no-repeat center / contain;
+							}
+
+							&.popular-matches > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
+								.hb-bg-icon("@{hb-sports-nav}/popular-matches.svg"; @hb-nav-icon-size);
+								background: @red !important;
+								mask: url("@{hb-sports-nav}/popular-matches.svg") no-repeat center / contain;
+								-webkit-mask: url("@{hb-sports-nav}/popular-matches.svg") no-repeat center / contain;
+							}
+
+							&.popular-competitions > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
+								.hb-bg-icon("@{hb-sports-nav}/popular-tournaments.svg"; @hb-nav-icon-size);
+								background: #ffda44 !important;
+								mask: url("@{hb-sports-nav}/popular-tournaments.svg") no-repeat center / contain;
+								-webkit-mask: url("@{hb-sports-nav}/popular-tournaments.svg") no-repeat center / contain;
+							}
+
+							&.multiple-of-the-day > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
+								.hb-bg-icon("@{hb-sports-nav}/combo-of-the-day.svg"; @hb-nav-icon-size);
+								background: #ff7b29 !important;
+								mask: url("@{hb-sports-nav}/combo-of-the-day.svg") no-repeat center / contain;
+								-webkit-mask: url("@{hb-sports-nav}/combo-of-the-day.svg") no-repeat center / contain;
+							}
+
+							&.SpecialBets > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
+								.hb-bg-icon("@{hb-nav-cdn}/badge.svg"; @hb-nav-icon-size);
+								background: #ef8a00 !important;
+								mask: url("@{hb-nav-cdn}/badge.svg") no-repeat center / contain;
+								-webkit-mask: url("@{hb-nav-cdn}/badge.svg") no-repeat center / contain;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

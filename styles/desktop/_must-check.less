@@ -361,5 +361,91 @@
 				}
 			}
 		}
+
+		&.history-page {
+			.u-i-e-p-p-content-bc.u-i-common-content {
+				gap: 21px;
+			}
+
+			.componentFilterWrapper-bc {
+				.filter-form-w-bc {
+					flex-direction: row;
+					gap: 8px;
+
+					.componentFilterBody-content {
+						flex: 1;
+						gap: 8px;
+						.u-i-p-control-item-holder-bc {
+							margin-inline-start: 0;
+							gap: 0px !important;
+							height: 100%;
+							.react-datepicker-wrapper {
+								.form-control-label-bc.inputs {
+									height: 56px;
+								}
+							}
+						}
+					}
+
+					.u-i-p-c-filter-footer-bc {
+						margin-top: 0;
+						.btn {
+							width: 56px;
+							height: 56px;
+							position: relative;
+
+							&::before {
+								content: "✓";
+								color: @white;
+								font-size: 15px;
+								font-weight: 700;
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+							}
+							span {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+
+			.historyListEl-info-id {
+				i {
+					color: @cyan !important;
+				}
+			}
+
+			.historyListEl-info {
+				&:not([data-status="1"]) {
+					color: @white !important;
+				}
+			}
+			.balanceHistory-table {
+				width: 100%;
+			}
+
+			.balanceHistoryItem-expand-button {
+				border-radius: 50%;
+				top: 20px;
+				right: 20px;
+				width: 35px;
+				height: 35px;
+				background: #233243;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				&:hover {
+					background: #233243;
+				}
+				i {
+					color: @cyan !important;
+				}
+			}
+		}
 	}
 }

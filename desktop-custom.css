@@ -5584,3 +5584,71 @@ div[id^="comm100-float-button"] > div {
 #root .my-profile-info-block.info-page .description-container-bc .second-tabs-bc .tab-bc.active::before {
   display: none;
 }
+#root .my-profile-info-block.history-page .u-i-e-p-p-content-bc.u-i-common-content {
+  gap: 21px;
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc {
+  flex-direction: row;
+  gap: 8px;
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content {
+  flex: 1;
+  gap: 8px;
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc {
+  margin-inline-start: 0;
+  gap: 0px !important;
+  height: 100%;
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .react-datepicker-wrapper .form-control-label-bc.inputs {
+  height: 56px;
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc {
+  margin-top: 0;
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before {
+  content: "✓";
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#root .my-profile-info-block.history-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span {
+  display: none;
+}
+#root .my-profile-info-block.history-page .historyListEl-info-id i {
+  color: #0febff !important;
+}
+#root .my-profile-info-block.history-page .historyListEl-info:not([data-status="1"]) {
+  color: #fff !important;
+}
+#root .my-profile-info-block.history-page .balanceHistory-table {
+  width: 100%;
+}
+#root .my-profile-info-block.history-page .balanceHistoryItem-expand-button {
+  border-radius: 50%;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.history-page .balanceHistoryItem-expand-button:hover {
+  background: #233243;
+}
+#root .my-profile-info-block.history-page .balanceHistoryItem-expand-button i {
+  color: #0febff !important;
+}

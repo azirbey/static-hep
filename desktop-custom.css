@@ -5652,3 +5652,361 @@ div[id^="comm100-float-button"] > div {
 #root .my-profile-info-block.history-page .balanceHistoryItem-expand-button i {
   color: #0febff !important;
 }
+#root .my-profile-info-block.bets-page .betHistoryList-table .betHistoryList-thead,
+#root .my-profile-info-block.open-bets-page .betHistoryList-table .betHistoryList-thead,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-table .betHistoryList-thead,
+#root .my-profile-info-block.won-page .betHistoryList-table .betHistoryList-thead,
+#root .my-profile-info-block.lost-page .betHistoryList-table .betHistoryList-thead,
+#root .my-profile-info-block.returned-page .betHistoryList-table .betHistoryList-thead,
+#root .my-profile-info-block.won-return-page .betHistoryList-table .betHistoryList-thead,
+#root .my-profile-info-block.lost-return-page .betHistoryList-table .betHistoryList-thead {
+  background: #2a3c50;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.open-bets-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.returned-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-return-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-return-page .betHistoryList-table .betHistoryList-thead .betHistoryListEl .betHistoryListEl-list-item {
+  background: transparent;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open {
+  background: #19222c;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .dataListEl-open .bet-history-match-result {
+  background: #1c2835;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell,
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item {
+  background: #1c2835;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-odds-title,
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-odds-title {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.01em !important;
+  color: #A1B6CE !important;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .bet-history-possible-win,
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .bet-history-possible-win {
+  color: #23aa27 !important;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bet-history-possible-win,
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId i[data-status="1"],
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"],
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item .betHistoryListElId .bethistoryListEl-item-status span[data-status="1"] {
+  color: #23aa27 !important;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item,
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-list-item + .betHistoryListEl-list-item {
+  border-inline-start: none;
+}
+#root .my-profile-info-block.bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
+#root .my-profile-info-block.open-bets-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
+#root .my-profile-info-block.cashed-out-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
+#root .my-profile-info-block.won-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
+#root .my-profile-info-block.lost-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
+#root .my-profile-info-block.returned-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
+#root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
+#root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i {
+  border-radius: 50%;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc {
+  flex-direction: row;
+  gap: 8px;
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content {
+  flex: 1;
+  gap: 8px;
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc {
+  margin-inline-start: 0;
+  gap: 0px !important;
+  height: 100%;
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .multi-select-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs {
+  height: 56px;
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc {
+  margin-top: 0;
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before {
+  content: "✓";
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#root .my-profile-info-block.bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span,
+#root .my-profile-info-block.open-bets-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span,
+#root .my-profile-info-block.cashed-out-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span,
+#root .my-profile-info-block.won-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span,
+#root .my-profile-info-block.lost-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span,
+#root .my-profile-info-block.returned-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span,
+#root .my-profile-info-block.won-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span,
+#root .my-profile-info-block.lost-return-page .componentFilterWrapper-bc .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span {
+  display: none;
+}
+#root .my-profile-info-block.bets-page .historyListEl-info-id i,
+#root .my-profile-info-block.open-bets-page .historyListEl-info-id i,
+#root .my-profile-info-block.cashed-out-page .historyListEl-info-id i,
+#root .my-profile-info-block.won-page .historyListEl-info-id i,
+#root .my-profile-info-block.lost-page .historyListEl-info-id i,
+#root .my-profile-info-block.returned-page .historyListEl-info-id i,
+#root .my-profile-info-block.won-return-page .historyListEl-info-id i,
+#root .my-profile-info-block.lost-return-page .historyListEl-info-id i {
+  color: #0febff !important;
+}
+#root .my-profile-info-block.bets-page .historyListEl-info:not([data-status="1"]),
+#root .my-profile-info-block.open-bets-page .historyListEl-info:not([data-status="1"]),
+#root .my-profile-info-block.cashed-out-page .historyListEl-info:not([data-status="1"]),
+#root .my-profile-info-block.won-page .historyListEl-info:not([data-status="1"]),
+#root .my-profile-info-block.lost-page .historyListEl-info:not([data-status="1"]),
+#root .my-profile-info-block.returned-page .historyListEl-info:not([data-status="1"]),
+#root .my-profile-info-block.won-return-page .historyListEl-info:not([data-status="1"]),
+#root .my-profile-info-block.lost-return-page .historyListEl-info:not([data-status="1"]) {
+  color: #fff !important;
+}
+#root .my-profile-info-block.bets-page .balanceHistory-table,
+#root .my-profile-info-block.open-bets-page .balanceHistory-table,
+#root .my-profile-info-block.cashed-out-page .balanceHistory-table,
+#root .my-profile-info-block.won-page .balanceHistory-table,
+#root .my-profile-info-block.lost-page .balanceHistory-table,
+#root .my-profile-info-block.returned-page .balanceHistory-table,
+#root .my-profile-info-block.won-return-page .balanceHistory-table,
+#root .my-profile-info-block.lost-return-page .balanceHistory-table {
+  width: 100%;
+}
+#root .my-profile-info-block.bets-page .balanceHistoryItem-expand-button,
+#root .my-profile-info-block.open-bets-page .balanceHistoryItem-expand-button,
+#root .my-profile-info-block.cashed-out-page .balanceHistoryItem-expand-button,
+#root .my-profile-info-block.won-page .balanceHistoryItem-expand-button,
+#root .my-profile-info-block.lost-page .balanceHistoryItem-expand-button,
+#root .my-profile-info-block.returned-page .balanceHistoryItem-expand-button,
+#root .my-profile-info-block.won-return-page .balanceHistoryItem-expand-button,
+#root .my-profile-info-block.lost-return-page .balanceHistoryItem-expand-button {
+  border-radius: 50%;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.bets-page .balanceHistoryItem-expand-button:hover,
+#root .my-profile-info-block.open-bets-page .balanceHistoryItem-expand-button:hover,
+#root .my-profile-info-block.cashed-out-page .balanceHistoryItem-expand-button:hover,
+#root .my-profile-info-block.won-page .balanceHistoryItem-expand-button:hover,
+#root .my-profile-info-block.lost-page .balanceHistoryItem-expand-button:hover,
+#root .my-profile-info-block.returned-page .balanceHistoryItem-expand-button:hover,
+#root .my-profile-info-block.won-return-page .balanceHistoryItem-expand-button:hover,
+#root .my-profile-info-block.lost-return-page .balanceHistoryItem-expand-button:hover {
+  background: #233243;
+}
+#root .my-profile-info-block.bets-page .balanceHistoryItem-expand-button i,
+#root .my-profile-info-block.open-bets-page .balanceHistoryItem-expand-button i,
+#root .my-profile-info-block.cashed-out-page .balanceHistoryItem-expand-button i,
+#root .my-profile-info-block.won-page .balanceHistoryItem-expand-button i,
+#root .my-profile-info-block.lost-page .balanceHistoryItem-expand-button i,
+#root .my-profile-info-block.returned-page .balanceHistoryItem-expand-button i,
+#root .my-profile-info-block.won-return-page .balanceHistoryItem-expand-button i,
+#root .my-profile-info-block.lost-return-page .balanceHistoryItem-expand-button i {
+  color: #0febff !important;
+}

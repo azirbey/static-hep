@@ -447,5 +447,157 @@
 				}
 			}
 		}
+
+		&.bets-page,
+		&.open-bets-page,
+		&.cashed-out-page,
+		&.won-page,
+		&.lost-page,
+		&.returned-page,
+		&.won-return-page,
+		&.lost-return-page {
+			.betHistoryList-table {
+				.betHistoryList-thead {
+					background: #2a3c50;
+					.betHistoryListEl {
+						.betHistoryListEl-list-item {
+							background: transparent;
+						}
+					}
+				}
+			}
+
+			.betHistoryList-scroller {
+				.betHistoryList-table {
+					.dataListEl-open {
+						background: #19222c;
+						.bet-history-match-result {
+							background: #1c2835;
+						}
+					}
+
+					.betHistoryListEl {
+						.betHistoryListEl-borrow-cell,
+						.betHistoryListEl-list-item {
+							background: #1c2835;
+							.bet-history-odds-title {
+								.hb-text(12px; 16px; 400; #A1B6CE) !important;
+							}
+							.bet-history-possible-win {
+								color: @green !important;
+							}
+							.betHistoryListElId {
+								.bet-history-possible-win,
+								i[data-status="1"],
+								.bethistoryListEl-item-status span[data-status="1"] {
+									color: @green !important;
+								}
+							}
+							& + .betHistoryListEl-list-item {
+								border-inline-start: none;
+							}
+						}
+						.betHistoryListEl-borrow-cell {
+							& + .betHistoryListEl-list-item {
+								i {
+									border-radius: 50%;
+									top: 20px;
+									right: 20px;
+									width: 35px;
+									height: 35px;
+									background: #233243;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									cursor: pointer;
+									transition: all 0.3s ease;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.componentFilterWrapper-bc {
+				.filter-form-w-bc {
+					flex-direction: row;
+					gap: 8px;
+
+					.componentFilterBody-content {
+						flex: 1;
+						gap: 8px;
+						.u-i-p-control-item-holder-bc {
+							margin-inline-start: 0;
+							gap: 0px !important;
+							height: 100%;
+							.multi-select-bc,
+							.form-control-bc {
+								.form-control-label-bc.inputs {
+									height: 56px;
+								}
+							}
+						}
+					}
+
+					.u-i-p-c-filter-footer-bc {
+						margin-top: 0;
+						.btn {
+							width: 56px;
+							height: 56px;
+							position: relative;
+
+							&::before {
+								content: "✓";
+								color: @white;
+								font-size: 15px;
+								font-weight: 700;
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+							}
+							span {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+
+			.historyListEl-info-id {
+				i {
+					color: @cyan !important;
+				}
+			}
+
+			.historyListEl-info {
+				&:not([data-status="1"]) {
+					color: @white !important;
+				}
+			}
+			.balanceHistory-table {
+				width: 100%;
+			}
+
+			.balanceHistoryItem-expand-button {
+				border-radius: 50%;
+				top: 20px;
+				right: 20px;
+				width: 35px;
+				height: 35px;
+				background: #233243;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				&:hover {
+					background: #233243;
+				}
+				i {
+					color: @cyan !important;
+				}
+			}
+		}
 	}
 }

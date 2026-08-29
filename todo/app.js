@@ -122,6 +122,11 @@ document.getElementById("btn-done").addEventListener("click", function () {
   load();
 });
 
+document.getElementById("btn-add").addEventListener("click", function () {
+  this.classList.toggle("active");
+  document.querySelector(".col-add").classList.toggle("active");
+});
+
 document.getElementById("form").addEventListener("submit", async function (e) {
   e.preventDefault();
   const text = document.getElementById("text").value.trim();

@@ -1,30 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hepbet UI Notları</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="layout">
-      <div class="col col-list">
-        <h1>Hepbet UI Notları</h1>
-        <nav>
-          <button type="button" id="btn-open" class="nav-btn active">Açık</button>
-          <button type="button" id="btn-done" class="nav-btn">Tamamlanan</button>
-          <span id="count"></span>
-        </nav>
-        <div id="list"></div>
-      </div>
-      <div class="col col-add">
-        <form id="form">
-          <p class="hint">Yeni madde listenin en sonuna eklenir.</p>
-          <textarea id="text" rows="8" required></textarea>
-          <button type="submit">Ekle</button>
-        </form>
-      </div>
-    </div>
-    <script src="app.js"></script>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>Hepbet UI Notları</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body>
+		<div class="layout">
+			<div class="col col-list">
+				<div class="col-list-header-container">
+					<h1>Hepbet UI Notları</h1>
+					<button
+						type="button"
+						id="btn-add"
+						class="nav-btn add-button">
+						<svg
+							width="14"
+							height="14"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12 5V19M5 12H19"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+				<nav>
+					<button
+						type="button"
+						id="btn-open"
+						class="nav-btn active">
+						Açık
+					</button>
+					<button
+						type="button"
+						id="btn-done"
+						class="nav-btn">
+						Tamamlanan
+					</button>
+					<span id="count"></span>
+				</nav>
+				<div id="list"></div>
+			</div>
+			<div class="col col-add">
+				<form id="form">
+					<p class="hint">Yeni madde listenin en sonuna eklenir.</p>
+					<textarea
+						id="text"
+						rows="8"
+						required></textarea>
+					<button type="submit">Ekle</button>
+				</form>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
 </html>

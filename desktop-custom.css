@@ -5216,3 +5216,26 @@ div[id^="comm100-float-button"] > div {
   letter-spacing: -0.01em !important;
   color: #fff !important;
 }
+.results-banner-wrapper-bc {
+  padding: 8px 5px 0px;
+  margin-bottom: 5px;
+}
+.results-banner-wrapper-bc .results-banner-bc {
+  background: rgba(25, 124, 255, 0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(25, 124, 255, 0.08);
+  overflow: hidden;
+}
+.results-banner-wrapper-bc .results-banner-bc::before {
+  background: transparent;
+  background-image: url(https://static-hep.hepbet-static.workers.dev/images/box-shine.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -100px;
+  background-position-y: -100px;
+  width: 200px;
+  height: 200px;
+}
+.results-game-details-header-bc:has(i.opened) {
+  border-radius: var(--border-radius) var(--border-radius);
+}

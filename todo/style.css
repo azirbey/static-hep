@@ -123,6 +123,11 @@ nav {
 	background: #eef2f6;
 }
 
+.item-temp {
+	border-style: dashed;
+	border-color: #7eb8c9;
+}
+
 .item > div {
 	flex: 1;
 	min-width: 0;
@@ -167,6 +172,17 @@ nav {
 	border-bottom: 2px solid #fff;
 	transform: rotate(45deg);
 	margin-top: -2px;
+}
+
+.check-temp {
+	border-style: dashed;
+	border-color: #3d8ea3;
+}
+
+.item input:checked + .check-temp {
+	background: #3d8ea3;
+	border-color: #3d8ea3;
+	border-style: solid;
 }
 
 .num {

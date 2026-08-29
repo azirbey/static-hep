@@ -273,4 +273,93 @@
 			}
 		}
 	}
+
+	.jackpot-pool-card__wrapper {
+		background: #1a7dff0a;
+
+		&::after {
+			content: "";
+			background: url(https://static-hep.hepbet-static.workers.dev/images/box-shine.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position-x: -100px;
+			background-position-y: -100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 300px;
+			height: 300px;
+		}
+
+		&::before {
+			background: linear-gradient(90deg, rgba(15, 235, 255, 0) 0%, #0febff 50.48%, rgba(15, 235, 255, 0) 100%);
+			box-shadow: none !important;
+		}
+
+		.jackpot-pool-card__title {
+			color: @white !important;
+		}
+
+		.jackpot-pool {
+			padding: 8px 0;
+			display: flex;
+			justify-content: center;
+		}
+		.jackpot-pool__item {
+			width: fit-content;
+		}
+		.jackpot-pool__price,
+		.jackpot-pool__currency-symbol {
+			color: @cyan !important;
+		}
+	}
+
+	.expandableContentData .container p {
+		margin-bottom: 0;
+	}
+
+	.expandableContentWrapper {
+		max-width: 100% !important;
+	}
+
+	.withdraw-form-l-bc {
+		max-width: 460px !important;
+	}
+
+	.u-i-p-c-footer-bc .btn.withdraw {
+		max-width: 460px !important;
+		height: 48px !important;
+	}
+
+	.my-profile-info-block {
+		&.info-page {
+			.description-container-bc {
+				.second-tabs-bc {
+					height: 56px !important;
+					background: #31465e;
+					border-radius: 6px;
+					overflow: hidden;
+					align-items: center;
+					padding: 4px;
+
+					.tab-bc {
+						background: transparent;
+						height: 48px;
+						border-radius: 6px;
+						.hb-text(15px; 20px; 400; #BCCBDC) !important;
+
+						&.active {
+							background: @main-color;
+							.hb-text(15px; 20px; 400; @white) !important;
+
+							&::before {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

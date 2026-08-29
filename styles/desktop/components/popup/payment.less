@@ -72,20 +72,35 @@
 }
 
 .WithdrawAmount-All {
+	border: solid 1px @surface-elevated !important;
+	border-radius: @hb-radius !important;
+
+	.WithdrawAmount-Row-Title {
+		color: #bccbdc;
+	}
+
+	.WithdrawAmount-Row {
+		border-bottom: solid 1px @surface-elevated !important;
+
+		&:last-child {
+			border-bottom: none !important;
+		}
+	}
+
 	.WithdrawAmount-Row:nth-child(odd) {
 		background: @surface-base !important;
 	}
 
 	.WithdrawAmount-Row:nth-child(2n) {
-		background: @surface-elevated !important;
+		background: @surface-base !important;
 	}
 
 	.WithdrawAmount-Row-ValueBalance {
-		color: @highlight !important;
+		color: @white !important;
 	}
 
 	.WithdrawAmount-Row-Value {
-		color: @text-strong !important;
+		color: @white !important;
 	}
 }
 

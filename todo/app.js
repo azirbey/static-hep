@@ -110,10 +110,10 @@ function itemHtml(item, checked) {
 function render() {
   const list = document.getElementById("list");
   const openItems = items.filter(function (item) {
-    return !item.done && !isTempDone(item);
+    return !item.done;
   });
   const doneItems = items.filter(function (item) {
-    return item.done || isTempDone(item);
+    return item.done;
   });
 
   document.getElementById("btn-open").className =

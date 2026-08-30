@@ -6010,3 +6010,322 @@ div[id^="comm100-float-button"] > div {
 #root .my-profile-info-block.lost-return-page .balanceHistoryItem-expand-button i {
   color: #0febff !important;
 }
+#root .my-profile-info-block.sport-page .bonusList-thead {
+  background-color: #2a3c50;
+  box-shadow: none;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+#root .my-profile-info-block.sport-page .bonusList-thead ul li {
+  background: transparent;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc {
+  display: grid;
+  gap: 8px;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .bonusList-tbody {
+  border: solid 1px #2a3c50;
+  border-radius: 6px;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc {
+  background: transparent;
+  margin-bottom: 0;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetails-content .sport-casino-bonus .sportBonusFundProgressBar-bc {
+  background-color: #2a3c50;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetails-content .sport-casino-bonus .sportBonusFundProgressBar-bc .progress-bar {
+  background-color: #197cff;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetailsTablesItem-bc .acceptance-date span time {
+  color: #fff;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetailsTablesItem-bc .client_bonus_expiration_date .countdown-banner-content {
+  background: transparent;
+  border: none;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetailsTablesItem-bc .client_bonus_expiration_date .countdown-banner-content .countdown-banner-counter {
+  background: #31465e;
+  padding: 2px;
+  border-radius: 6px;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetailsTablesItem-bc .client_bonus_expiration_date .countdown-banner-content .countdown-banner-counter::before {
+  display: none;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetails-Title {
+  color: #a1b6ce;
+}
+#root .my-profile-info-block.sport-page .sportBonusList-bc .sportBonusDetailsItemWrapper-bc .sportBonusDetails-Description .sportBonusListElDescription-bc {
+  color: #a1b6ce;
+}
+#root .my-profile-info-block.sport-page .bonusList-tbody > ul li {
+  background: #1c2835;
+  height: 56px;
+  align-items: center;
+  display: flex;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .my-profile-info-block.sport-page .bonusList-tbody > ul li[data-status="1"] {
+  color: #23aa27 !important;
+}
+#root .my-profile-info-block.sport-page .bonusList-tbody > ul li:last-child {
+  width: fit-content;
+  min-width: auto;
+  padding: 0 10px;
+}
+#root .my-profile-info-block.sport-page .bonusList-tbody > ul li i {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.casino-page .bonusList-thead {
+  background-color: #2a3c50;
+  box-shadow: none;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+#root .my-profile-info-block.casino-page .bonusList-thead ul li {
+  background: transparent;
+}
+#root .my-profile-info-block.casino-page .bonusList-tbody > ul li {
+  background: #1c2835;
+  height: 56px;
+  align-items: center;
+  display: flex;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .my-profile-info-block.casino-page .bonusList-tbody > ul li[data-status="1"] {
+  color: #23aa27 !important;
+}
+#root .my-profile-info-block.casino-page .bonusList-tbody > ul li:last-child {
+  width: fit-content;
+  min-width: auto;
+  padding: 0 10px;
+}
+#root .my-profile-info-block.casino-page .bonusList-tbody > ul li i {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.casino-page .sportBonusDetailsItemWrapper-bc {
+  background: transparent;
+  margin-bottom: 0;
+}
+#root .my-profile-info-block.casino-page .bonusEligibleGames {
+  background: transparent;
+}
+#root .my-profile-info-block.casino-free-spins-page .freeSpinsList-thead {
+  background-color: #2a3c50;
+  box-shadow: none;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+#root .my-profile-info-block.casino-free-spins-page .freeSpinsList-thead ul li {
+  background: transparent;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc .freeSpins-tbody > ul li {
+  background: #1c2835;
+  height: 56px;
+  align-items: center;
+  display: flex;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc .freeSpins-tbody > ul li[data-status="1"] {
+  color: #23aa27 !important;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc .freeSpins-tbody > ul li:last-child {
+  width: fit-content;
+  min-width: auto;
+  padding: 0 10px;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc .freeSpins-tbody > ul li i {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc > .casino-free-spin-block {
+  margin-top: 0;
+  background: transparent;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc > .casino-free-spin-block .client_bonus_expiration_date .countdown-banner-content {
+  background: transparent;
+  border: none;
+  gap: 4px;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc > .casino-free-spin-block .client_bonus_expiration_date .countdown-banner-content .countdown-banner-counter {
+  background: #31465e;
+  padding: 2px;
+  border-radius: 6px;
+}
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc > .casino-free-spin-block .client_bonus_expiration_date .countdown-banner-content .countdown-banner-counter::before {
+  display: none;
+}
+#root .my-profile-info-block.casino-free-spins-page .second-tabs-bc {
+  margin-bottom: 20px;
+  height: 56px;
+  padding: 4px;
+  border-radius: 6px;
+  background: #31465e;
+}
+#root .my-profile-info-block.casino-free-spins-page .second-tabs-bc .tab-bc {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #BCCBDC !important;
+  border-radius: 6px;
+  background: transparent;
+}
+#root .my-profile-info-block.casino-free-spins-page .second-tabs-bc .tab-bc.active {
+  background-color: #197cff;
+  color: #fff !important;
+}
+#root .my-profile-info-block.casino-free-spins-page .second-tabs-bc .tab-bc.active::before {
+  display: none;
+}
+#root .my-profile-info-block.casino-free-chip-page .freeSpinsList-thead {
+  background-color: #2a3c50;
+  box-shadow: none;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+#root .my-profile-info-block.casino-free-chip-page .freeSpinsList-thead ul li {
+  background: transparent;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc .freeSpins-tbody > ul li {
+  background: #1c2835;
+  height: 56px;
+  align-items: center;
+  display: flex;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc .freeSpins-tbody > ul li[data-status="1"] {
+  color: #23aa27 !important;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc .freeSpins-tbody > ul li:last-child {
+  width: fit-content;
+  min-width: auto;
+  padding: 0 10px;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc .freeSpins-tbody > ul li i {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc > .casino-free-spin-block {
+  margin-top: 0;
+  background: transparent;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc > .casino-free-spin-block .client_bonus_expiration_date .countdown-banner-content {
+  background: transparent;
+  border: none;
+  gap: 4px;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc > .casino-free-spin-block .client_bonus_expiration_date .countdown-banner-content .countdown-banner-counter {
+  background: #31465e;
+  padding: 2px;
+  border-radius: 6px;
+}
+#root .my-profile-info-block.casino-free-chip-page .casinoFreeSpins-bc > .casino-free-spin-block .client_bonus_expiration_date .countdown-banner-content .countdown-banner-counter::before {
+  display: none;
+}
+#root .my-profile-info-block.casino-free-chip-page .freeSpins-tbody > ul li {
+  background: #1c2835;
+  height: 56px;
+  align-items: center;
+  display: flex;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .my-profile-info-block.casino-free-chip-page .freeSpins-tbody > ul li[data-status="1"] {
+  color: #23aa27 !important;
+}
+#root .my-profile-info-block.casino-free-chip-page .freeSpins-tbody > ul li:last-child {
+  width: fit-content;
+  min-width: auto;
+  padding: 0 10px;
+}
+#root .my-profile-info-block.casino-free-chip-page .freeSpins-tbody > ul li i {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #233243;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#root .my-profile-info-block.casino-free-chip-page .second-tabs-bc {
+  margin-bottom: 20px;
+  height: 56px;
+  padding: 4px;
+  border-radius: 6px;
+  background: #31465e;
+}
+#root .my-profile-info-block.casino-free-chip-page .second-tabs-bc .tab-bc {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #BCCBDC !important;
+  border-radius: 6px;
+  background: transparent;
+}
+#root .my-profile-info-block.casino-free-chip-page .second-tabs-bc .tab-bc.active {
+  background-color: #197cff;
+  color: #fff !important;
+}
+#root .my-profile-info-block.casino-free-chip-page .second-tabs-bc .tab-bc.active::before {
+  display: none;
+}

@@ -1,0 +1,242 @@
+.table-head-bg() {
+	background-color: #2a3c50;
+	box-shadow: none;
+	border-radius: 6px;
+	margin-bottom: 8px;
+	ul {
+		li {
+			background: transparent;
+		}
+	}
+}
+
+.table-body-bg() {
+	& > ul {
+		li {
+			background: #1c2835;
+			height: 56px;
+			align-items: center;
+			display: flex;
+			.hb-text(15px, 20px, 400, #fff);
+
+			&[data-status="1"] {
+				color: @green !important;
+			}
+
+			&:last-child {
+				width: fit-content;
+				min-width: auto;
+				padding: 0 10px;
+			}
+
+			i {
+				border-radius: 50%;
+				width: 35px;
+				height: 35px;
+				background: #233243;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+}
+
+.tab-menu-switcher() {
+	margin-bottom: 20px;
+	height: 56px;
+	padding: 4px;
+	border-radius: 6px;
+	background: #31465e;
+
+	.tab-bc {
+		.hb-text(15px, 20px, 400, #BCCBDC);
+		border-radius: 6px;
+		background: transparent;
+
+		&.active {
+			background-color: @main-color;
+			color: #fff !important;
+
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
+#root {
+	.my-profile-info-block {
+		&.sport-page {
+			.bonusList-thead {
+				.table-head-bg();
+			}
+
+			.sportBonusList-bc {
+				display: grid;
+				gap: 8px;
+
+				.bonusList-tbody {
+					border: solid 1px #2a3c50;
+					border-radius: 6px;
+				}
+
+				.sportBonusDetailsItemWrapper-bc {
+					background: transparent;
+					margin-bottom: 0;
+
+					.sportBonusDetails-content {
+						.sport-casino-bonus {
+							.sportBonusFundProgressBar-bc {
+								background-color: #2a3c50;
+								.progress-bar {
+									background-color: @main-color;
+								}
+							}
+						}
+					}
+
+					.sportBonusDetailsTablesItem-bc {
+						.acceptance-date {
+							span {
+								time {
+									color: #fff;
+								}
+							}
+						}
+						.client_bonus_expiration_date {
+							.countdown-banner-content {
+								background: transparent;
+								border: none;
+								.countdown-banner-counter {
+									background: #31465e;
+									padding: 2px;
+									border-radius: 6px;
+
+									&::before {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+
+					.sportBonusDetails-Title {
+						color: #a1b6ce;
+					}
+
+					.sportBonusDetails-Description {
+						.sportBonusListElDescription-bc {
+							color: #a1b6ce;
+						}
+					}
+				}
+			}
+
+			.bonusList-tbody {
+				.table-body-bg();
+			}
+		}
+
+		&.casino-page {
+			.bonusList-thead {
+				.table-head-bg();
+			}
+
+			.bonusList-tbody {
+				.table-body-bg();
+			}
+
+			.sportBonusDetailsItemWrapper-bc {
+				background: transparent;
+				margin-bottom: 0;
+			}
+
+			.bonusEligibleGames {
+				background: transparent;
+			}
+		}
+
+		&.casino-free-spins-page {
+			.freeSpinsList-thead {
+				.table-head-bg();
+			}
+
+			.casinoFreeSpins-bc {
+				.freeSpins-tbody {
+					.table-body-bg();
+				}
+
+				& > .casino-free-spin-block {
+					margin-top: 0;
+					background: transparent;
+
+					.client_bonus_expiration_date {
+						.countdown-banner-content {
+							background: transparent;
+							border: none;
+							gap: 4px;
+							.countdown-banner-counter {
+								background: #31465e;
+								padding: 2px;
+								border-radius: 6px;
+
+								&::before {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.second-tabs-bc {
+				.tab-menu-switcher();
+			}
+		}
+
+		&.casino-free-chip-page {
+			.freeSpinsList-thead {
+				.table-head-bg();
+			}
+
+			.casinoFreeSpins-bc {
+				.freeSpins-tbody {
+					.table-body-bg();
+				}
+
+				& > .casino-free-spin-block {
+					margin-top: 0;
+					background: transparent;
+
+					.client_bonus_expiration_date {
+						.countdown-banner-content {
+							background: transparent;
+							border: none;
+							gap: 4px;
+							.countdown-banner-counter {
+								background: #31465e;
+								padding: 2px;
+								border-radius: 6px;
+
+								&::before {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.freeSpins-tbody {
+				.table-body-bg();
+			}
+
+			.second-tabs-bc {
+				.tab-menu-switcher();
+			}
+		}
+	}
+}

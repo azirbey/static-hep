@@ -5246,6 +5246,7 @@ div[id^="comm100-float-button"] > div {
 #root .FooterLicenceCuracaoContainer.anj-container div a {
   max-width: 200px !important;
   max-height: 200px !important;
+  height: 120px !important;
 }
 #root .results-banner-wrapper-bc {
   padding: 8px 5px 0px;

@@ -1,0 +1,103 @@
+#root {
+	.content-manager {
+		&:has(.popup-inner-bc .sign-in) {
+			.e-p-close-icon-bc {
+				top: 19px;
+				right: 12px;
+			}
+
+			.e-p-header-bc {
+				height: 72px;
+				padding: 12px 68px 12px 20px;
+
+				.popup-t-logo-w-bc {
+					height: 48px;
+
+					.hdr-logo-bc {
+						padding: 0;
+					}
+				}
+			}
+
+			.btn.register {
+				padding: 16px;
+			}
+
+			.e-p-body-bc {
+				.entrance-form-bc {
+					.btn {
+						width: 100%;
+						max-width: 100%;
+						height: 48px;
+					}
+
+					&.login.popup {
+						padding: 20px;
+						gap: 20px;
+						display: grid;
+						align-items: flex-start;
+						grid-template-rows: 1fr 1fr;
+						grid-template-areas:
+							"image form"
+							"image button";
+
+						.sg-n-text-row-1-bc {
+							.hb-text(15px, 24px, 400, #BCCBDC);
+						}
+
+						.sg-n-text-row-2-bc {
+							.hb-text(20px, 24px, 400, #FFFFFF);
+							margin-bottom: 20px;
+						}
+
+						.sg-n-forgot-password-text {
+							.sg-n-forgot-password-text {
+								height: 48px;
+								border: solid 1px #2a3c50;
+								border-radius: 4px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+							}
+							margin-top: 20px;
+						}
+
+						.entrance-f-item-checkbox-bc {
+							margin-top: 20px;
+							margin-bottom: 20px;
+						}
+
+						.entrance-form-action-item-bc {
+							margin-top: 0;
+							margin-bottom: 0;
+						}
+
+						.sg-n-text-row-1-bc,
+						.sg-n-text-row-2-bc,
+						.entrance-f-item-bc,
+						.entrance-form-action-item-bc,
+						.sg-n-forgot-password-text {
+							padding: 0;
+						}
+					}
+					.form-sign-bc {
+						order: 2 !important;
+						grid-area: form;
+					}
+
+					.form-sign-in-slider-wrapper {
+						order: 1 !important;
+						grid-area: image;
+						margin: 0;
+						padding: 0;
+					}
+
+					.live-chat-adviser-bc {
+						order: 3 !important;
+						grid-area: button;
+					}
+				}
+			}
+		}
+	}
+}

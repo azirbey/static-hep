@@ -4983,6 +4983,9 @@ div[id^="comm100-float-button"] > div {
 .entrance-popup-bc.sign-in .swiper-slide .sdr-image-bc {
   object-fit: contain !important;
 }
+.entrance-popup-bc.register {
+  height: 714px !important;
+}
 .entrance-popup-bc.register .sg-n-text-row-2-bc {
   font-size: 16px !important;
 }
@@ -6511,16 +6514,67 @@ div[id^="comm100-float-button"] > div {
   padding: 0;
 }
 #root .content-manager:has(.popup-inner-bc .sign-in) .e-p-body-bc .entrance-form-bc .form-sign-bc {
-  order: 2 !important;
   grid-area: form;
 }
 #root .content-manager:has(.popup-inner-bc .sign-in) .e-p-body-bc .entrance-form-bc .form-sign-in-slider-wrapper {
-  order: 1 !important;
   grid-area: image;
   margin: 0;
   padding: 0;
 }
 #root .content-manager:has(.popup-inner-bc .sign-in) .e-p-body-bc .entrance-form-bc .live-chat-adviser-bc {
-  order: 3 !important;
   grid-area: button;
+}
+#root .content-manager:has(.popup-inner-bc .register) .e-p-close-icon-bc {
+  top: 19px;
+  right: 12px;
+}
+#root .content-manager:has(.popup-inner-bc .register) .e-p-header-bc {
+  height: 72px;
+  padding: 12px 68px 12px 20px;
+}
+#root .content-manager:has(.popup-inner-bc .register) .e-p-header-bc .popup-t-logo-w-bc {
+  height: 48px;
+}
+#root .content-manager:has(.popup-inner-bc .register) .e-p-header-bc .popup-t-logo-w-bc .hdr-logo-bc {
+  padding: 0;
+}
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup {
+  padding: 20px;
+}
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .reg-form-content {
+  padding-top: 0;
+  width: 100%;
+  max-width: 460px;
+}
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .sg-n-text-row-1-bc {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #BCCBDC !important;
+}
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .sg-n-text-row-2-bc {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #FFFFFF !important;
+  margin-bottom: 20px;
+}
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .sg-n-text-row-1-bc,
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .sg-n-text-row-2-bc,
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .entrance-f-item-bc,
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .entrance-form-action-item-bc,
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .sg-n-forgot-password-text {
+  padding: 0;
+}
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .entrance-form-content-bc .slider-bc {
+  width: 240px;
+}
+#root .content-manager:has(.popup-inner-bc .register) .entrance-form-bc.registration.popup .reg-form-footer-bc .entrance-form-actions-holder-bc {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
 }

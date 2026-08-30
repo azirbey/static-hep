@@ -6176,6 +6176,10 @@ div[id^="comm100-float-button"] > div {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+#root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc .freeSpins-tbody ul li {
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
 #root .my-profile-info-block.casino-free-spins-page .casinoFreeSpins-bc > .casino-free-spin-block {
   margin-top: 0;
   background: transparent;
@@ -6304,6 +6308,10 @@ div[id^="comm100-float-button"] > div {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+#root .my-profile-info-block.casino-free-chip-page .freeSpins-tbody ul li {
+  justify-content: center !important;
+  align-items: flex-start !important;
 }
 #root .my-profile-info-block.casino-free-chip-page .second-tabs-bc {
   margin-bottom: 20px;

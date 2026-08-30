@@ -4178,16 +4178,58 @@ body .layout-content-holder-bc {
   color: #fff;
   font-size: 14px;
 }
+#root .promotion-details-info p {
+  margin-block: 16px;
+}
+#root .promotion-details-info p a {
+  background: #197cff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+#root .promotion-details-info p a:hover {
+  background: #0063e5;
+}
 #root .promotion-details-info > ol {
   list-style: none;
   padding-inline-start: 0;
+  display: grid;
+  gap: 8px;
+  counter-reset: promo-step;
 }
 #root .promotion-details-info > ol > li {
-  margin-bottom: 24px;
+  background: #1c2835;
+  border-radius: 6px;
+  border: solid 1px #31465e;
+  padding: 16px;
+  counter-increment: promo-step;
+}
+#root .promotion-details-info > ol > li::before {
+  content: counter(promo-step);
+  display: inline-flex;
+  width: 1em;
+  margin-inline-end: 0.5em;
+  background: #197cff;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 10px;
+}
+#root .promotion-details-info > ol > li + li {
+  margin: 0;
 }
 #root .promotion-details-info > ol > li > ul {
   list-style: none;
-  padding-inline-start: 20px;
+  padding-inline-start: 45px;
   margin-block-start: 8px;
 }
 #root .promotion-details-info > ol > li > ul > li {

@@ -62,3 +62,49 @@
 		animation: none;
 	}
 }
+
+#root {
+	.promotion-details-info {
+		color: @white;
+		font-size: 14px;
+
+		& > ol {
+			list-style: none;
+			padding-inline-start: 0;
+
+			& > li {
+				margin-bottom: @hb-space-6;
+
+				& > ul {
+					list-style: none;
+					padding-inline-start: @hb-space-5;
+					margin-block-start: @hb-space-2;
+
+					& > li {
+						position: relative;
+						padding-inline-start: @hb-space-5;
+						color: @text-body;
+
+						&::before {
+							content: "✓";
+							position: absolute;
+							inset-inline-start: 0;
+							top: 0;
+							color: @accent;
+						}
+
+						> ul {
+							margin-top: @hb-space-4;
+
+							li {
+								&:last-child {
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

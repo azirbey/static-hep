@@ -4174,6 +4174,40 @@ body .layout-content-holder-bc {
     animation: none;
   }
 }
+#root .promotion-details-info {
+  color: #fff;
+  font-size: 14px;
+}
+#root .promotion-details-info > ol {
+  list-style: none;
+  padding-inline-start: 0;
+}
+#root .promotion-details-info > ol > li {
+  margin-bottom: 24px;
+}
+#root .promotion-details-info > ol > li > ul {
+  list-style: none;
+  padding-inline-start: 20px;
+  margin-block-start: 8px;
+}
+#root .promotion-details-info > ol > li > ul > li {
+  position: relative;
+  padding-inline-start: 20px;
+  color: #d7e0ea;
+}
+#root .promotion-details-info > ol > li > ul > li::before {
+  content: "✓";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  color: #197cff;
+}
+#root .promotion-details-info > ol > li > ul > li > ul {
+  margin-top: 16px;
+}
+#root .promotion-details-info > ol > li > ul > li > ul li:last-child {
+  margin-bottom: 0;
+}
 .btn {
   text-underline-offset: 0.1rem !important;
 }

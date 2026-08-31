@@ -12,6 +12,8 @@
 !/todo/
 !/todo/**
 !/_headers
+!/sass/
+!/sass/**
 
 .DS_Store
 **/.DS_Store

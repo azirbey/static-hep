@@ -7,7 +7,7 @@ $icon-white: #ffffff;
 $icon-gray: #bccbdc;
 
 $icon-root: "https://static-hep.hepbet-static.workers.dev/";
-$icon-path: "sass/icons";
+$icon-path: "sass/images/icons";
 $icon-url: "#{$icon-root}#{$icon-path}";
 $icon-bg: url("#{$icon-url}/icon-bg.svg");
 
@@ -115,7 +115,6 @@ $icon-flags: (
 	uruguay,
 	uzbekistan,
 	vietnam,
-	world,
 );
 
 @function hb-icon-paint($color) {

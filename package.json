@@ -6,8 +6,8 @@
 	"scripts": {
 		"watch:new": "sass --watch --style=expanded --no-source-map sass/main.scss custom-preview-mobile.css",
 		"build:new": "sass --style=compressed --no-source-map sass/main.scss custom-mobile.css",
-		"build:icons": "sass --style=expanded --no-source-map sass/icons/_index.scss:preview/site.css preview/preview.scss:preview/preview.css",
-		"watch:icons": "sass --watch --style=expanded --no-source-map sass/icons/_index.scss:preview/site.css preview/preview.scss:preview/preview.css",
+		"build:icons": "sass --style=expanded --no-source-map sass/images/icons/_index.scss:preview/site.css preview/preview.scss:preview/preview.css",
+		"watch:icons": "sass --watch --style=expanded --no-source-map sass/images/icons/_index.scss:preview/site.css preview/preview.scss:preview/preview.css",
 		"build:desktop": "lessc styles/desktop/custom.less desktop-custom.css",
 		"build:mobile": "lessc styles/mobile/custom.less mobile-custom.css",
 		"build": "npm run build:desktop && npm run build:mobile",

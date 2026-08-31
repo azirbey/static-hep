@@ -1,4 +1,4 @@
-@use "../sass/icons/hb-icon" as *;
+@use "../sass/images/icons/hb-icon" as *;
 
 @each $name in $icon-nav {
 	.i-#{$name} {
@@ -14,7 +14,7 @@
 
 @each $name in $icon-sports {
 	.i-#{$name} {
-		@include hb-icon($icon: $name, $has-bg: true, $color: cyan);
+		@include hb-icon($icon: $name, $has-bg: false);
 	}
 }
 

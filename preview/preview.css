@@ -1378,6 +1378,134 @@
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
+.i-table-tennis svg {
+  display: none !important;
+}
+.i-table-tennis .CMSIconSVGWrapper {
+  display: none !important;
+}
+.i-table-tennis {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.i-table-tennis::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/table-tennis.svg") !important;
+  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
+}
+
+.i-boxing svg {
+  display: none !important;
+}
+.i-boxing .CMSIconSVGWrapper {
+  display: none !important;
+}
+.i-boxing {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.i-boxing::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/boxing.svg") !important;
+  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
+}
+
+.i-beach-soccer svg {
+  display: none !important;
+}
+.i-beach-soccer .CMSIconSVGWrapper {
+  display: none !important;
+}
+.i-beach-soccer {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.i-beach-soccer::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/beach-soccer.svg") !important;
+  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
+}
+
+.i-beach-volley svg {
+  display: none !important;
+}
+.i-beach-volley .CMSIconSVGWrapper {
+  display: none !important;
+}
+.i-beach-volley {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.i-beach-volley::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/beach-volley.svg") !important;
+  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
+}
+
 .i-cricket svg {
   display: none !important;
 }
@@ -1407,38 +1535,6 @@
   width: var(--icon-box, 28px) !important;
   height: var(--icon-box, 28px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/cricket.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-pickleball svg {
-  display: none !important;
-}
-.i-pickleball .CMSIconSVGWrapper {
-  display: none !important;
-}
-.i-pickleball {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-pickleball::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/pickleball.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
@@ -1474,13 +1570,13 @@
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
-.i-boxing svg {
+.i-golf svg {
   display: none !important;
 }
-.i-boxing .CMSIconSVGWrapper {
+.i-golf .CMSIconSVGWrapper {
   display: none !important;
 }
-.i-boxing {
+.i-golf {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -1490,7 +1586,7 @@
   background-position: left center;
   background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
-.i-boxing::before {
+.i-golf::before {
   content: "" !important;
   display: inline-block !important;
   flex-shrink: 0 !important;
@@ -1502,7 +1598,71 @@
   background-position: center !important;
   width: var(--icon-box, 28px) !important;
   height: var(--icon-box, 28px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/boxing.svg") !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/golf.svg") !important;
+  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
+}
+
+.i-rugby svg {
+  display: none !important;
+}
+.i-rugby .CMSIconSVGWrapper {
+  display: none !important;
+}
+.i-rugby {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.i-rugby::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/rugby.svg") !important;
+  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
+}
+
+.i-pickleball svg {
+  display: none !important;
+}
+.i-pickleball .CMSIconSVGWrapper {
+  display: none !important;
+}
+.i-pickleball {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.i-pickleball::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/pickleball.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
@@ -1599,6 +1759,38 @@
   width: var(--icon-box, 28px) !important;
   height: var(--icon-box, 28px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/globe.svg") !important;
+  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
+}
+
+.i-snooker svg {
+  display: none !important;
+}
+.i-snooker .CMSIconSVGWrapper {
+  display: none !important;
+}
+.i-snooker {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.i-snooker::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/snooker.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 

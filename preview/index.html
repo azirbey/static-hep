@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>HEP icons</title>
+		<link rel="stylesheet" href="site.css" />
+		<link rel="stylesheet" href="preview.css" />
+		<style>
+			:root {
+				--bg: #f4f6f8;
+				--panel: #ffffff;
+				--text: #1c2835;
+				--muted: #64748b;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+				font:
+					13px/1.4 ui-sans-serif,
+					system-ui,
+					sans-serif;
+				background: var(--bg);
+				color: var(--text);
+			}
+			header {
+				padding: 16px 24px;
+				background: #fff;
+				border-bottom: 1px solid #dce3ea;
+				margin-bottom: 24px;
+			}
+			h1 {
+				margin: 0 0 4px;
+				font-size: 18px;
+			}
+			p {
+				margin: 0;
+				color: var(--muted);
+			}
+			code {
+				font-size: 12px;
+			}
+			h2 {
+				margin: 0 0 12px;
+				font-size: 13px;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+			}
+			.group {
+				padding: 0 24px 24px;
+			}
+			.group > h2 {
+				margin-bottom: 16px;
+			}
+			.cards {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+				gap: 10px;
+			}
+			.cards > div {
+				display: contents;
+			}
+			.card {
+				min-width: 0;
+				background: var(--panel);
+				border: 1px solid #dce3ea;
+				border-radius: 8px;
+				padding: 14px 10px 10px;
+				text-align: center;
+			}
+			.row {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: center;
+				gap: 8px;
+			}
+			.swatch {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 4px;
+			}
+			.swatch label {
+				font-size: 9px;
+				color: var(--muted);
+			}
+			.name {
+				margin-top: 8px;
+				font-size: 11px;
+				color: var(--muted);
+				word-break: break-all;
+			}
+			.samples {
+				padding: 0 24px 24px;
+			}
+			.samples > p {
+				margin: 0 0 12px;
+			}
+			.sample {
+				background: #fff;
+				border: 1px solid #dce3ea;
+				border-radius: 8px;
+				padding: 16px 20px;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 32px;
+				align-items: center;
+			}
+			.sample a {
+				color: var(--text);
+				text-decoration: none;
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+			}
+			.sample-item {
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+			}
+			.sample-item code {
+				font-size: 11px;
+				color: var(--muted);
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>İkon galerisi</h1>
+			<p>
+				<code>@include hb-icon($icon, $has-bg: false, $color: white)</code>
+				— HTML değişmez, mevcut selector ezilir.
+			</p>
+		</header>
+		<div class="samples">
+			<p>Sitedeki HTML (sınıf eklenmez). Mixin ilgili selector’a yazılır.</p>
+			<div class="sample">
+				<div class="sample-item">
+					<code>@include hb-icon($icon: headset, $has-bg: true, $color: cyan)</code>
+					<i class="bc-i-live-chat"></i>
+				</div>
+				<div class="sample-item">
+					<code>.header-custom-buttons .btn.bc-i-promotion</code>
+					<div class="header-custom-buttons">
+						<a target="_self" class="btn a-color header-icon-text bc-i-promotion" aria-label="Promosyonlar" href="#"><span>Promosyonlar</span></a>
+					</div>
+				</div>
+				<div class="sample-item">
+					<code>.nav-menu-item { @include hb-icon($icon: live-casino, $has-bg: true) }</code>
+					<a class="nav-menu-item" target="_self" aria-label="Canlı Casino" href="#">
+						<span class="CMSIconSVGWrapper">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="16" height="16"><path d="M2 2h12v12H2z"></path></svg>
+						</span>
+						<span>Canlı Casino</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="group">
+			<h2>Mono</h2>
+			<div class="cards">
+				<div id="nav"></div>
+				<div id="ui"></div>
+			</div>
+		</div>
+		<div class="group">
+			<h2>Colors</h2>
+			<div class="cards">
+				<div id="sports"></div>
+				<div id="flags"></div>
+			</div>
+		</div>
+		<script>
+			const groups = {
+				nav: [
+					"live-betting",
+					"sports",
+					"casino",
+					"live-casino",
+					"vip-slot",
+					"crash-games",
+					"aviator",
+					"special-odds",
+					"virtual-sports",
+					"esports",
+					"tv-games",
+					"hep-tv",
+					"hep-market",
+					"coupon-wars",
+					"affiliate",
+					"promotions",
+					"hepbet-iptv",
+				],
+				ui: [
+					"star",
+					"search",
+					"calendar",
+					"clock",
+					"stopwatch",
+					"scoreboard",
+					"more",
+					"menu",
+					"padlock",
+					"gift-box",
+					"call-back",
+					"diamond",
+					"headset",
+					"whatsapp",
+					"telegram",
+					"wallet",
+					"column-chart",
+					"trend",
+					"live-rtp",
+				],
+				sports: [
+					"football",
+					"basketball-ball",
+					"tennis-balls",
+					"volleyball",
+					"ice-hockey",
+					"handball",
+					"cricket",
+					"pickleball",
+					"dart",
+					"boxing-gloves",
+					"baseball-glove",
+					"biathlon",
+					"globe",
+				],
+				flags: [
+					"angola",
+					"argentina",
+					"australia",
+					"brazil",
+					"canada",
+					"england",
+					"estonia",
+					"european-union",
+					"france",
+					"germany",
+					"india",
+					"italy",
+					"kazakhstan",
+					"lebanon",
+					"malaysia",
+					"mexico",
+					"myanmar",
+					"netherlands",
+					"new-zealand",
+					"paraguay",
+					"peru",
+					"portugal",
+					"south-korea",
+					"spain",
+					"tanzania",
+					"turkey",
+					"united-kingdom",
+					"united-states",
+					"uruguay",
+					"uzbekistan",
+					"vietnam",
+					"world",
+				],
+			};
+
+			const paints = ["cyan", "white", "gray"];
+
+			function renderMono(group) {
+				const root = document.getElementById(group);
+				groups[group].forEach((name) => {
+					const card = document.createElement("div");
+					card.className = "card";
+					card.innerHTML = `<div class="row">${paints
+						.map(
+							(paint) => `
+						<div class="swatch">
+							<i class="i-${name} i-${paint}"></i>
+							<label>${paint}</label>
+						</div>
+					`,
+						)
+						.join("")}</div>
+					<div class="name">i-${name}</div>`;
+					root.appendChild(card);
+				});
+			}
+
+			function renderColor(group) {
+				const root = document.getElementById(group);
+				groups[group].forEach((name) => {
+					const card = document.createElement("div");
+					card.className = "card";
+					card.innerHTML = `<i class="i-${name}"></i>` + `<div class="name">i-${name}</div>`;
+					root.appendChild(card);
+				});
+			}
+
+			renderMono("nav");
+			renderMono("ui");
+			renderColor("sports");
+			renderColor("flags");
+		</script>
+	</body>
+</html>

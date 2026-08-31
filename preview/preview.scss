@@ -1,0 +1,37 @@
+@use "../sass/icons/hb-icon" as *;
+
+@each $name in $icon-nav {
+	.i-#{$name} {
+		@include hb-icon($icon: $name, $has-bg: true, $color: cyan);
+	}
+}
+
+@each $name in $icon-ui {
+	.i-#{$name} {
+		@include hb-icon($icon: $name, $has-bg: true, $color: cyan);
+	}
+}
+
+@each $name in $icon-sports {
+	.i-#{$name} {
+		@include hb-icon($icon: $name, $has-bg: true, $color: cyan);
+	}
+}
+
+@each $name in $icon-flags {
+	.i-#{$name} {
+		@include hb-icon($icon: $name, $has-bg: true, $color: cyan);
+	}
+}
+
+.i-white {
+	--icon-color: #{$icon-white};
+}
+
+.i-gray {
+	--icon-color: #{$icon-gray};
+}
+
+.i-cyan {
+	--icon-color: #{$icon-cyan};
+}

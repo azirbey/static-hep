@@ -1,5 +1,5 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip_canli_casino)">
+<g clip-path="url(#clip_live_casino)">
 <path id="Vector" d="M5.10933 2.05409C5.84991 1.69258 6.66755 1.46556 7.53044 1.4047V0C6.42923 0.0632041 5.36991 0.347857 4.40454 0.833361L5.10933 2.05409Z" fill="currentColor"/>
 <path id="Vector_2" d="M2.05409 10.8906C1.69258 10.15 1.46556 9.33236 1.4047 8.46948H0C0.0632041 9.57069 0.347857 10.63 0.833361 11.5954L2.05409 10.8906Z" fill="currentColor"/>
 <path id="Vector_3" d="M13.9459 5.10933C14.3074 5.84991 14.5345 6.66755 14.5953 7.53044H16C15.9368 6.42923 15.6522 5.36991 15.1666 4.40454L13.9459 5.10933Z" fill="currentColor"/>
@@ -16,7 +16,7 @@
 <path id="Vector_14" d="M8 9.10083C8.60804 9.10083 9.10095 8.60792 9.10095 7.99988C9.10095 7.39184 8.60804 6.89893 8 6.89893C7.39196 6.89893 6.89905 7.39184 6.89905 7.99988C6.89905 8.60792 7.39196 9.10083 8 9.10083Z" fill="currentColor"/>
 </g>
 <defs>
-<clipPath id="clip_canli_casino">
+<clipPath id="clip_live_casino">
 <rect width="16" height="16" fill="white"/>
 </clipPath>
 </defs>

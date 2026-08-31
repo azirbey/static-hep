@@ -1,0 +1,233 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+
+$icon-cyan: #0febff;
+$icon-white: #ffffff;
+$icon-gray: #bccbdc;
+
+$icon-root: "https://static-hep.hepbet-static.workers.dev/";
+$icon-path: "sass/icons";
+$icon-url: "#{$icon-root}#{$icon-path}";
+$icon-bg: url("#{$icon-url}/icon-bg.svg");
+
+$icon-box: 28px;
+
+$icon-colors: (
+	cyan: $icon-cyan,
+	white: $icon-white,
+	gray: $icon-gray,
+);
+
+$icon-nav: (
+	live-betting,
+	sports,
+	casino,
+	live-casino,
+	vip-slot,
+	crash-games,
+	aviator,
+	special-odds,
+	virtual-sports,
+	esports,
+	tv-games,
+	hep-tv,
+	hep-market,
+	coupon-wars,
+	affiliate,
+	promotions,
+	hepbet-iptv,
+);
+
+$icon-ui: (
+	star,
+	search,
+	calendar,
+	clock,
+	stopwatch,
+	scoreboard,
+	more,
+	menu,
+	padlock,
+	gift-box,
+	call-back,
+	diamond,
+	headset,
+	whatsapp,
+	telegram,
+	wallet,
+	column-chart,
+	trend,
+	live-rtp,
+);
+
+$icon-sports: (
+	football,
+	basketball-ball,
+	tennis-balls,
+	volleyball,
+	ice-hockey,
+	handball,
+	cricket,
+	pickleball,
+	dart,
+	boxing-gloves,
+	baseball-glove,
+	biathlon,
+	globe,
+);
+
+$icon-flags: (
+	angola,
+	argentina,
+	australia,
+	brazil,
+	canada,
+	england,
+	estonia,
+	european-union,
+	france,
+	germany,
+	india,
+	italy,
+	kazakhstan,
+	lebanon,
+	malaysia,
+	mexico,
+	myanmar,
+	netherlands,
+	new-zealand,
+	paraguay,
+	"peru",
+	portugal,
+	south-korea,
+	spain,
+	tanzania,
+	turkey,
+	united-kingdom,
+	united-states,
+	uruguay,
+	uzbekistan,
+	vietnam,
+	world,
+);
+
+@function hb-icon-paint($color) {
+	@if map.has-key($icon-colors, $color) {
+		@return map.get($icon-colors, $color);
+	}
+
+	@return $color;
+}
+
+@function hb-icon-find($name) {
+	@each $item in $icon-nav {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: nav, kind: mono, native: 16px);
+		}
+	}
+
+	@each $item in $icon-ui {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: ui, kind: mono, native: 16px);
+		}
+	}
+
+	@each $item in $icon-sports {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: sports, kind: color, native: 20px);
+		}
+	}
+
+	@each $item in $icon-flags {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: flags, kind: color, native: 20px);
+		}
+	}
+
+	@error "Unknown icon `#{$name}`.";
+}
+
+@function hb-to-px($v) {
+	@if $v == null {
+		@return null;
+	}
+
+	@if meta.type-of($v) == "number" and math.is-unitless($v) {
+		@return $v * 1px;
+	}
+
+	@return $v;
+}
+
+@mixin hb-icon($icon, $has-bg: false, $color: white, $size: null, $icon-size: null) {
+	$meta: hb-icon-find($icon);
+	$group: map.get($meta, group);
+	$kind: map.get($meta, kind);
+	$native: map.get($meta, native);
+	$paint: hb-icon-paint($color);
+
+	$box: $icon-box;
+	$glyph: $native;
+
+	@if $size {
+		$box: hb-to-px($size);
+	}
+
+	@if $icon-size {
+		$glyph: hb-to-px($icon-size);
+	} @else if $size and not $has-bg {
+		$glyph: hb-to-px($size);
+	}
+
+	$slot: $glyph;
+
+	@if $has-bg {
+		$slot: $box;
+	}
+
+	$src: url("#{$icon-url}/#{$group}/#{$icon}.svg");
+
+	svg {
+		display: none !important;
+	}
+
+	.CMSIconSVGWrapper {
+		display: none !important;
+	}
+
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	gap: 8px;
+
+	@if $has-bg {
+		background-image: $icon-bg;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: var(--icon-box, #{$box}) var(--icon-box, #{$box});
+	}
+
+	&::before {
+		content: "" !important;
+		display: inline-block !important;
+		flex-shrink: 0 !important;
+		box-sizing: border-box !important;
+		font-size: 0 !important;
+		line-height: 0 !important;
+		color: transparent !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		width: var(--icon-box, #{$slot}) !important;
+		height: var(--icon-box, #{$slot}) !important;
+
+		@if $kind == color {
+			background-image: $src !important;
+			background-size: var(--icon-size, #{$glyph}) var(--icon-size, #{$glyph}) !important;
+		} @else {
+			background-color: var(--icon-color, #{$paint}) !important;
+			-webkit-mask: $src center / var(--icon-size, #{$glyph}) var(--icon-size, #{$glyph}) no-repeat !important;
+			mask: $src center / var(--icon-size, #{$glyph}) var(--icon-size, #{$glyph}) no-repeat !important;
+		}
+	}
+}

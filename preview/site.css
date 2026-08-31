@@ -1,0 +1,98 @@
+.bc-i-live-chat svg {
+  display: none !important;
+}
+.bc-i-live-chat .CMSIconSVGWrapper {
+  display: none !important;
+}
+.bc-i-live-chat {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.bc-i-live-chat::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-color: var(--icon-color, #0febff) !important;
+  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/icons/ui/headset.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
+  mask: url("https://static-hep.hepbet-static.workers.dev/sass/icons/ui/headset.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
+}
+
+.header-custom-buttons .btn.bc-i-promotion svg {
+  display: none !important;
+}
+.header-custom-buttons .btn.bc-i-promotion .CMSIconSVGWrapper {
+  display: none !important;
+}
+.header-custom-buttons .btn.bc-i-promotion {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 32px) var(--icon-box, 32px);
+}
+.header-custom-buttons .btn.bc-i-promotion::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 32px) !important;
+  height: var(--icon-box, 32px) !important;
+  background-color: var(--icon-color, #0febff) !important;
+  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/icons/nav/promotions.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
+  mask: url("https://static-hep.hepbet-static.workers.dev/sass/icons/nav/promotions.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
+}
+
+.nav-menu-item svg {
+  display: none !important;
+}
+.nav-menu-item .CMSIconSVGWrapper {
+  display: none !important;
+}
+.nav-menu-item {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+}
+.nav-menu-item::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: var(--icon-box, 28px) !important;
+  height: var(--icon-box, 28px) !important;
+  background-color: var(--icon-color, #0febff) !important;
+  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/icons/nav/live-casino.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
+  mask: url("https://static-hep.hepbet-static.workers.dev/sass/icons/nav/live-casino.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
+}

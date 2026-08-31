@@ -20,7 +20,7 @@
 
 @each $name in $icon-flags {
 	.i-#{$name} {
-		@include hb-icon($icon: $name, $has-bg: true, $color: cyan);
+		@include hb-icon($icon: $name, $has-bg: false);
 	}
 }
 

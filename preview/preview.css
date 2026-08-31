@@ -1186,13 +1186,13 @@
   mask: url("https://static-hep.hepbet-static.workers.dev/sass/icons/ui/live-rtp.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
 }
 
-.i-football svg {
+.i-soccer svg {
   display: none !important;
 }
-.i-football .CMSIconSVGWrapper {
+.i-soccer .CMSIconSVGWrapper {
   display: none !important;
 }
-.i-football {
+.i-soccer {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -1202,7 +1202,7 @@
   background-position: left center;
   background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
-.i-football::before {
+.i-soccer::before {
   content: "" !important;
   display: inline-block !important;
   flex-shrink: 0 !important;
@@ -1214,17 +1214,17 @@
   background-position: center !important;
   width: var(--icon-box, 28px) !important;
   height: var(--icon-box, 28px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/football.svg") !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/soccer.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
-.i-basketball-ball svg {
+.i-basketball svg {
   display: none !important;
 }
-.i-basketball-ball .CMSIconSVGWrapper {
+.i-basketball .CMSIconSVGWrapper {
   display: none !important;
 }
-.i-basketball-ball {
+.i-basketball {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -1234,7 +1234,7 @@
   background-position: left center;
   background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
-.i-basketball-ball::before {
+.i-basketball::before {
   content: "" !important;
   display: inline-block !important;
   flex-shrink: 0 !important;
@@ -1246,7 +1246,7 @@
   background-position: center !important;
   width: var(--icon-box, 28px) !important;
   height: var(--icon-box, 28px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/basketball-ball.svg") !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/basketball.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
@@ -1474,13 +1474,13 @@
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
-.i-boxing-gloves svg {
+.i-boxing svg {
   display: none !important;
 }
-.i-boxing-gloves .CMSIconSVGWrapper {
+.i-boxing .CMSIconSVGWrapper {
   display: none !important;
 }
-.i-boxing-gloves {
+.i-boxing {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -1490,7 +1490,7 @@
   background-position: left center;
   background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
-.i-boxing-gloves::before {
+.i-boxing::before {
   content: "" !important;
   display: inline-block !important;
   flex-shrink: 0 !important;
@@ -1502,17 +1502,17 @@
   background-position: center !important;
   width: var(--icon-box, 28px) !important;
   height: var(--icon-box, 28px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/boxing-gloves.svg") !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/boxing.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
-.i-baseball-glove svg {
+.i-baseball svg {
   display: none !important;
 }
-.i-baseball-glove .CMSIconSVGWrapper {
+.i-baseball .CMSIconSVGWrapper {
   display: none !important;
 }
-.i-baseball-glove {
+.i-baseball {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -1522,7 +1522,7 @@
   background-position: left center;
   background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
-.i-baseball-glove::before {
+.i-baseball::before {
   content: "" !important;
   display: inline-block !important;
   flex-shrink: 0 !important;
@@ -1534,7 +1534,7 @@
   background-position: center !important;
   width: var(--icon-box, 28px) !important;
   height: var(--icon-box, 28px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/baseball-glove.svg") !important;
+  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/sports/baseball.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
 
@@ -1613,10 +1613,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-angola::before {
   content: "" !important;
@@ -1628,8 +1624,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/angola.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1645,10 +1641,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-argentina::before {
   content: "" !important;
@@ -1660,8 +1652,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/argentina.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1677,10 +1669,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-australia::before {
   content: "" !important;
@@ -1692,8 +1680,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/australia.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1709,10 +1697,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-brazil::before {
   content: "" !important;
@@ -1724,8 +1708,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/brazil.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1741,10 +1725,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-canada::before {
   content: "" !important;
@@ -1756,8 +1736,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/canada.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1773,10 +1753,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-england::before {
   content: "" !important;
@@ -1788,8 +1764,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/england.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1805,10 +1781,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-estonia::before {
   content: "" !important;
@@ -1820,8 +1792,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/estonia.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1837,10 +1809,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-european-union::before {
   content: "" !important;
@@ -1852,8 +1820,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/european-union.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1869,10 +1837,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-france::before {
   content: "" !important;
@@ -1884,8 +1848,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/france.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1901,10 +1865,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-germany::before {
   content: "" !important;
@@ -1916,8 +1876,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/germany.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1933,10 +1893,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-india::before {
   content: "" !important;
@@ -1948,8 +1904,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/india.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1965,10 +1921,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-italy::before {
   content: "" !important;
@@ -1980,8 +1932,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/italy.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -1997,10 +1949,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-kazakhstan::before {
   content: "" !important;
@@ -2012,8 +1960,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/kazakhstan.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2029,10 +1977,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-lebanon::before {
   content: "" !important;
@@ -2044,8 +1988,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/lebanon.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2061,10 +2005,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-malaysia::before {
   content: "" !important;
@@ -2076,8 +2016,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/malaysia.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2093,10 +2033,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-mexico::before {
   content: "" !important;
@@ -2108,8 +2044,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/mexico.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2125,10 +2061,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-myanmar::before {
   content: "" !important;
@@ -2140,8 +2072,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/myanmar.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2157,10 +2089,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-netherlands::before {
   content: "" !important;
@@ -2172,8 +2100,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/netherlands.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2189,10 +2117,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-new-zealand::before {
   content: "" !important;
@@ -2204,8 +2128,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/new-zealand.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2221,10 +2145,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-paraguay::before {
   content: "" !important;
@@ -2236,8 +2156,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/paraguay.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2253,10 +2173,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-peru::before {
   content: "" !important;
@@ -2268,8 +2184,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/peru.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2285,10 +2201,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-portugal::before {
   content: "" !important;
@@ -2300,8 +2212,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/portugal.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2317,10 +2229,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-south-korea::before {
   content: "" !important;
@@ -2332,8 +2240,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/south-korea.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2349,10 +2257,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-spain::before {
   content: "" !important;
@@ -2364,8 +2268,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/spain.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2381,10 +2285,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-tanzania::before {
   content: "" !important;
@@ -2396,8 +2296,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/tanzania.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2413,10 +2313,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-turkey::before {
   content: "" !important;
@@ -2428,8 +2324,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/turkey.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2445,10 +2341,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-united-kingdom::before {
   content: "" !important;
@@ -2460,8 +2352,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/united-kingdom.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2477,10 +2369,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-united-states::before {
   content: "" !important;
@@ -2492,8 +2380,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/united-states.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2509,10 +2397,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-uruguay::before {
   content: "" !important;
@@ -2524,8 +2408,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/uruguay.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2541,10 +2425,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-uzbekistan::before {
   content: "" !important;
@@ -2556,8 +2436,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/uzbekistan.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2573,10 +2453,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-vietnam::before {
   content: "" !important;
@@ -2588,8 +2464,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/vietnam.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }
@@ -2605,10 +2481,6 @@
   align-items: center;
   vertical-align: middle;
   gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
 }
 .i-world::before {
   content: "" !important;
@@ -2620,8 +2492,8 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
+  width: var(--icon-box, 20px) !important;
+  height: var(--icon-box, 20px) !important;
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/icons/flags/world.svg") !important;
   background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
 }

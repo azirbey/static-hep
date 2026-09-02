@@ -1,0 +1,206 @@
+#root {
+	.my-profile-info-block {
+		// Message List Items
+		&.inbox-page,
+		&.sent-page {
+			.messageBoxList-bc {
+				.message-block-bc {
+					min-height: 0;
+					background: @surface-header;
+					border: solid 1px @surface-elevated;
+
+					&.expanded {
+						.message-title-block {
+							border-bottom: none;
+						}
+
+						.message-more-icon {
+							transform: rotate(0deg) !important;
+						}
+					}
+					.message-title-block {
+						padding: 16px;
+						border-bottom: solid 1px @surface-elevated;
+						height: 60px;
+
+						.message-title-bc {
+							.hb-text(20px, 28px, 400, @text-hint);
+						}
+					}
+
+					.message-info-bc {
+						margin: 0;
+						padding: 16px;
+						.hb-text(13px, 20px, 400, @white);
+					}
+
+					.message-remove-icon {
+						&::before {
+						}
+					}
+
+					.message-more-time-bc {
+						margin-top: 0;
+						background: @surface-base;
+						height: 56px;
+						padding: 16px;
+						display: flex;
+						justify-content: space-between;
+
+						time {
+							.hb-text(15px, 25px, 400, @white);
+						}
+
+						.message-more-icon {
+							position: relative;
+							left: auto;
+							transform: rotate(180deg);
+							width: 36px;
+							height: 36px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							background: linear-gradient(180deg, @shade-7 0%, @shade-6 100%);
+							border-radius: 50%;
+							&::before {
+								color: @shade-21;
+								font-size: 10px;
+								line-height: 10px;
+							}
+						}
+					}
+
+					&[data-status="read"] {
+					}
+					&[data-status="unread"] {
+					}
+				}
+			}
+		}
+
+		// Inbox Messages Popup
+		&.inbox-page {
+			.filter-form-w-bc {
+				flex-direction: row;
+				gap: 8px;
+				padding: 0;
+				background: transparent;
+
+				.componentFilterBody-content {
+					flex: 1;
+					gap: 8px;
+					.u-i-p-control-item-holder-bc {
+						margin-inline-start: 0;
+						gap: 0px !important;
+						height: 100%;
+						.react-datepicker-wrapper {
+							.form-control-label-bc.inputs {
+								height: 56px;
+							}
+						}
+					}
+				}
+
+				.u-i-p-c-filter-footer-bc {
+					margin-top: 0;
+					.btn {
+						width: 56px;
+						height: 56px;
+						position: relative;
+
+						&::before {
+							content: "✓";
+							color: @white;
+							font-size: 15px;
+							font-weight: 700;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						}
+						span {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		// Sent Messages Popup
+		&.sent-page {
+		}
+		// New Messages Popup
+		&.new-page {
+			form {
+				.u-i-p-control-item-holder-bc {
+					margin-top: 0;
+
+					.form-control-bc {
+						&:has(.inputs) {
+							&.filled,
+							&.focused {
+								.form-control-title-bc {
+									top: 4px;
+								}
+							}
+						}
+						&:has(.textareas) {
+							&.filled,
+							&.focused {
+								.form-control-title-bc {
+									top: 20px;
+								}
+							}
+						}
+
+						.form-control-label-bc {
+							&.inputs,
+							&.textareas {
+								.form-control-title-bc {
+									left: 17px;
+								}
+							}
+							&.inputs {
+								height: 56px;
+
+								input {
+									padding: 20px 16px;
+									.hb-text(12px, 16px, 400, @text-hint);
+								}
+
+								.form-control-title-bc {
+									pointer-events: none;
+									.hb-text(12px, 16px, 400, @text-hint);
+								}
+							}
+
+							&.textareas {
+								.form-control-textarea-bc {
+									background: @surface-base;
+									border: solid 1px @surface-elevated;
+								}
+
+								textarea {
+									padding: 0;
+									// Placeholder color set text-hint
+									color: @text-hint;
+									.hb-text(12px, 16px, 400, @text-hint);
+									&::placeholder {
+										color: @text-hint;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.u-i-p-c-footer-bc {
+					margin-bottom: 0;
+
+					.btn {
+						height: 48px;
+					}
+				}
+			}
+		}
+	}
+}

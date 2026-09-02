@@ -6801,3 +6801,178 @@ div[id^="comm100-float-button"] > div {
 #root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-item-body:not(:has(+ .notification-new-item)) {
   margin-bottom: 0;
 }
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc {
+  min-height: 0;
+  background: #19222c;
+  border: solid 1px #2a3c50;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc.expanded .message-title-block,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc.expanded .message-title-block {
+  border-bottom: none;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc.expanded .message-more-icon,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc.expanded .message-more-icon {
+  transform: rotate(0deg) !important;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-title-block,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-title-block {
+  padding: 16px;
+  border-bottom: solid 1px #2a3c50;
+  height: 60px;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-title-block .message-title-bc,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-title-block .message-title-bc {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.01em !important;
+  color: #a1b6ce !important;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-info-bc,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-info-bc {
+  margin: 0;
+  padding: 16px;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-more-time-bc,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-more-time-bc {
+  margin-top: 0;
+  background: #1c2835;
+  height: 56px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-more-time-bc time,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-more-time-bc time {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 25px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-more-time-bc .message-more-icon,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-more-time-bc .message-more-icon {
+  position: relative;
+  left: auto;
+  transform: rotate(180deg);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #2a3c50 0%, #233243 100%);
+  border-radius: 50%;
+}
+#root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-more-time-bc .message-more-icon::before,
+#root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-more-time-bc .message-more-icon::before {
+  color: #bccbdc;
+  font-size: 10px;
+  line-height: 10px;
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc {
+  flex-direction: row;
+  gap: 8px;
+  padding: 0;
+  background: transparent;
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc .componentFilterBody-content {
+  flex: 1;
+  gap: 8px;
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc {
+  margin-inline-start: 0;
+  gap: 0px !important;
+  height: 100%;
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc .componentFilterBody-content .u-i-p-control-item-holder-bc .react-datepicker-wrapper .form-control-label-bc.inputs {
+  height: 56px;
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc .u-i-p-c-filter-footer-bc {
+  margin-top: 0;
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn::before {
+  content: "✓";
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#root .my-profile-info-block.inbox-page .filter-form-w-bc .u-i-p-c-filter-footer-bc .btn span {
+  display: none;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc {
+  margin-top: 0;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc:has(.inputs).filled .form-control-title-bc,
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc:has(.inputs).focused .form-control-title-bc {
+  top: 4px;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc:has(.textareas).filled .form-control-title-bc,
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc:has(.textareas).focused .form-control-title-bc {
+  top: 20px;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs .form-control-title-bc,
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.textareas .form-control-title-bc {
+  left: 17px;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs {
+  height: 56px;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs input {
+  padding: 20px 16px;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.01em !important;
+  color: #a1b6ce !important;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.inputs .form-control-title-bc {
+  pointer-events: none;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.01em !important;
+  color: #a1b6ce !important;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.textareas .form-control-textarea-bc {
+  background: #1c2835;
+  border: solid 1px #2a3c50;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.textareas textarea {
+  padding: 0;
+  color: #a1b6ce;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.01em !important;
+  color: #a1b6ce !important;
+}
+#root .my-profile-info-block.new-page form .u-i-p-control-item-holder-bc .form-control-bc .form-control-label-bc.textareas textarea::placeholder {
+  color: #a1b6ce;
+}
+#root .my-profile-info-block.new-page form .u-i-p-c-footer-bc {
+  margin-bottom: 0;
+}
+#root .my-profile-info-block.new-page form .u-i-p-c-footer-bc .btn {
+  height: 48px;
+}

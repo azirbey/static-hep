@@ -6682,3 +6682,122 @@ div[id^="comm100-float-button"] > div {
   max-width: 100%;
   height: 48px;
 }
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder {
+  padding: 20px !important;
+  flex-direction: column;
+  gap: 12px;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .overlay-header {
+  height: 36px !important;
+  min-height: 36px !important;
+  padding: 0 !important;
+  position: relative;
+  width: 100%;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .overlay-header .bc-i-close-remove {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #2a3c50 0%, #233243 100%);
+  border-radius: 50%;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .overlay-header .bc-i-close-remove::before {
+  color: #bccbdc;
+  font-size: 10px;
+  line-height: 10px;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .overlay-header span {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.01em !important;
+  color: inherit !important;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-header {
+  padding: 0;
+  height: fit-content;
+  margin-bottom: 12px;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-header time {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #a1b6ce !important;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-header span {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #a1b6ce !important;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item {
+  height: 44px;
+  border: solid 1px #2a3c50;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 12px;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item:has(+ .notification-item-body) {
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item + .notification-new-item {
+  margin-top: 0;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item[data-status="unread"]::before {
+  background: #0febff;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  top: -6px;
+  right: 0px;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item[data-status="unread"],
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item[data-status="read"] {
+  background: #1c2835;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item .notification-new-item-icon::before {
+  font-size: 13px;
+  color: #0febff;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item .notification-new-item-info {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  padding: 0;
+  margin: 0;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-new-item .bc-i-close-remove::before {
+  font-size: 10px;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-item-body {
+  margin-top: 0;
+  border: solid 1px #2a3c50;
+  border-top: none;
+  padding: 20px;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 8px;
+}
+#root .sidePanel-holder-bc:has(.notification-new-container) .sidePanel-holder .notification-new-container .notification-item-body:not(:has(+ .notification-new-item)) {
+  margin-bottom: 0;
+}

@@ -1,20 +1,21 @@
-.i-live-betting svg {
-  display: none !important;
-}
-.i-live-betting .CMSIconSVGWrapper {
-  display: none !important;
-}
-.i-live-betting {
+.i-soccer, .i-basketball, .i-tennis-balls, .i-volleyball, .i-ice-hockey, .i-handball, .i-table-tennis, .i-boxing, .i-beach-soccer, .i-beach-volley, .i-cricket, .i-dart, .i-golf, .i-rugby, .i-pickleball, .i-baseball, .i-biathlon, .i-globe, .i-snooker, .i-angola, .i-argentina, .i-australia, .i-brazil, .i-canada, .i-england, .i-estonia, .i-european-union, .i-france, .i-germany, .i-india, .i-italy, .i-kazakhstan, .i-lebanon, .i-malaysia, .i-mexico, .i-myanmar, .i-netherlands, .i-new-zealand, .i-paraguay, .i-peru, .i-portugal, .i-south-korea, .i-spain, .i-tanzania, .i-turkey, .i-united-kingdom, .i-united-states, .i-uruguay, .i-uzbekistan, .i-vietnam, .i-live-betting, .i-sports, .i-casino, .i-live-casino, .i-vip-slot, .i-crash-games, .i-aviator, .i-special-odds, .i-virtual-sports, .i-esports, .i-tv-games, .i-hep-tv, .i-hep-market, .i-coupon-wars, .i-affiliate, .i-promotions, .i-hepbet-iptv, .i-star, .i-search, .i-calendar, .i-clock, .i-stopwatch, .i-scoreboard, .i-more, .i-menu, .i-padlock, .i-gift-box, .i-call-back, .i-diamond, .i-headset, .i-whatsapp, .i-telegram, .i-wallet, .i-column-chart, .i-trend, .i-live-rtp {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
   gap: 8px;
+}
+.i-soccer :is(svg, .CMSIconSVGWrapper), .i-basketball :is(svg, .CMSIconSVGWrapper), .i-tennis-balls :is(svg, .CMSIconSVGWrapper), .i-volleyball :is(svg, .CMSIconSVGWrapper), .i-ice-hockey :is(svg, .CMSIconSVGWrapper), .i-handball :is(svg, .CMSIconSVGWrapper), .i-table-tennis :is(svg, .CMSIconSVGWrapper), .i-boxing :is(svg, .CMSIconSVGWrapper), .i-beach-soccer :is(svg, .CMSIconSVGWrapper), .i-beach-volley :is(svg, .CMSIconSVGWrapper), .i-cricket :is(svg, .CMSIconSVGWrapper), .i-dart :is(svg, .CMSIconSVGWrapper), .i-golf :is(svg, .CMSIconSVGWrapper), .i-rugby :is(svg, .CMSIconSVGWrapper), .i-pickleball :is(svg, .CMSIconSVGWrapper), .i-baseball :is(svg, .CMSIconSVGWrapper), .i-biathlon :is(svg, .CMSIconSVGWrapper), .i-globe :is(svg, .CMSIconSVGWrapper), .i-snooker :is(svg, .CMSIconSVGWrapper), .i-angola :is(svg, .CMSIconSVGWrapper), .i-argentina :is(svg, .CMSIconSVGWrapper), .i-australia :is(svg, .CMSIconSVGWrapper), .i-brazil :is(svg, .CMSIconSVGWrapper), .i-canada :is(svg, .CMSIconSVGWrapper), .i-england :is(svg, .CMSIconSVGWrapper), .i-estonia :is(svg, .CMSIconSVGWrapper), .i-european-union :is(svg, .CMSIconSVGWrapper), .i-france :is(svg, .CMSIconSVGWrapper), .i-germany :is(svg, .CMSIconSVGWrapper), .i-india :is(svg, .CMSIconSVGWrapper), .i-italy :is(svg, .CMSIconSVGWrapper), .i-kazakhstan :is(svg, .CMSIconSVGWrapper), .i-lebanon :is(svg, .CMSIconSVGWrapper), .i-malaysia :is(svg, .CMSIconSVGWrapper), .i-mexico :is(svg, .CMSIconSVGWrapper), .i-myanmar :is(svg, .CMSIconSVGWrapper), .i-netherlands :is(svg, .CMSIconSVGWrapper), .i-new-zealand :is(svg, .CMSIconSVGWrapper), .i-paraguay :is(svg, .CMSIconSVGWrapper), .i-peru :is(svg, .CMSIconSVGWrapper), .i-portugal :is(svg, .CMSIconSVGWrapper), .i-south-korea :is(svg, .CMSIconSVGWrapper), .i-spain :is(svg, .CMSIconSVGWrapper), .i-tanzania :is(svg, .CMSIconSVGWrapper), .i-turkey :is(svg, .CMSIconSVGWrapper), .i-united-kingdom :is(svg, .CMSIconSVGWrapper), .i-united-states :is(svg, .CMSIconSVGWrapper), .i-uruguay :is(svg, .CMSIconSVGWrapper), .i-uzbekistan :is(svg, .CMSIconSVGWrapper), .i-vietnam :is(svg, .CMSIconSVGWrapper), .i-live-betting :is(svg, .CMSIconSVGWrapper), .i-sports :is(svg, .CMSIconSVGWrapper), .i-casino :is(svg, .CMSIconSVGWrapper), .i-live-casino :is(svg, .CMSIconSVGWrapper), .i-vip-slot :is(svg, .CMSIconSVGWrapper), .i-crash-games :is(svg, .CMSIconSVGWrapper), .i-aviator :is(svg, .CMSIconSVGWrapper), .i-special-odds :is(svg, .CMSIconSVGWrapper), .i-virtual-sports :is(svg, .CMSIconSVGWrapper), .i-esports :is(svg, .CMSIconSVGWrapper), .i-tv-games :is(svg, .CMSIconSVGWrapper), .i-hep-tv :is(svg, .CMSIconSVGWrapper), .i-hep-market :is(svg, .CMSIconSVGWrapper), .i-coupon-wars :is(svg, .CMSIconSVGWrapper), .i-affiliate :is(svg, .CMSIconSVGWrapper), .i-promotions :is(svg, .CMSIconSVGWrapper), .i-hepbet-iptv :is(svg, .CMSIconSVGWrapper), .i-star :is(svg, .CMSIconSVGWrapper), .i-search :is(svg, .CMSIconSVGWrapper), .i-calendar :is(svg, .CMSIconSVGWrapper), .i-clock :is(svg, .CMSIconSVGWrapper), .i-stopwatch :is(svg, .CMSIconSVGWrapper), .i-scoreboard :is(svg, .CMSIconSVGWrapper), .i-more :is(svg, .CMSIconSVGWrapper), .i-menu :is(svg, .CMSIconSVGWrapper), .i-padlock :is(svg, .CMSIconSVGWrapper), .i-gift-box :is(svg, .CMSIconSVGWrapper), .i-call-back :is(svg, .CMSIconSVGWrapper), .i-diamond :is(svg, .CMSIconSVGWrapper), .i-headset :is(svg, .CMSIconSVGWrapper), .i-whatsapp :is(svg, .CMSIconSVGWrapper), .i-telegram :is(svg, .CMSIconSVGWrapper), .i-wallet :is(svg, .CMSIconSVGWrapper), .i-column-chart :is(svg, .CMSIconSVGWrapper), .i-trend :is(svg, .CMSIconSVGWrapper), .i-live-rtp :is(svg, .CMSIconSVGWrapper) {
+  display: none !important;
+}
+
+.i-live-betting, .i-sports, .i-casino, .i-live-casino, .i-vip-slot, .i-crash-games, .i-aviator, .i-special-odds, .i-virtual-sports, .i-esports, .i-tv-games, .i-hep-tv, .i-hep-market, .i-coupon-wars, .i-affiliate, .i-promotions, .i-hepbet-iptv, .i-star, .i-search, .i-calendar, .i-clock, .i-stopwatch, .i-scoreboard, .i-more, .i-menu, .i-padlock, .i-gift-box, .i-call-back, .i-diamond, .i-headset, .i-whatsapp, .i-telegram, .i-wallet, .i-column-chart, .i-trend, .i-live-rtp {
   background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
+  background-size: var(--icon-box) var(--icon-box);
 }
-.i-live-betting::before {
+
+.i-live-betting::before, .i-sports::before, .i-casino::before, .i-live-casino::before, .i-vip-slot::before, .i-crash-games::before, .i-aviator::before, .i-special-odds::before, .i-virtual-sports::before, .i-esports::before, .i-tv-games::before, .i-hep-tv::before, .i-hep-market::before, .i-coupon-wars::before, .i-affiliate::before, .i-promotions::before, .i-hepbet-iptv::before, .i-star::before, .i-search::before, .i-calendar::before, .i-clock::before, .i-stopwatch::before, .i-scoreboard::before, .i-more::before, .i-menu::before, .i-padlock::before, .i-gift-box::before, .i-call-back::before, .i-diamond::before, .i-headset::before, .i-whatsapp::before, .i-telegram::before, .i-wallet::before, .i-column-chart::before, .i-trend::before, .i-live-rtp::before, .i-soccer::before, .i-basketball::before, .i-tennis-balls::before, .i-volleyball::before, .i-ice-hockey::before, .i-handball::before, .i-table-tennis::before, .i-boxing::before, .i-beach-soccer::before, .i-beach-volley::before, .i-cricket::before, .i-dart::before, .i-golf::before, .i-rugby::before, .i-pickleball::before, .i-baseball::before, .i-biathlon::before, .i-globe::before, .i-snooker::before, .i-angola::before, .i-argentina::before, .i-australia::before, .i-brazil::before, .i-canada::before, .i-england::before, .i-estonia::before, .i-european-union::before, .i-france::before, .i-germany::before, .i-india::before, .i-italy::before, .i-kazakhstan::before, .i-lebanon::before, .i-malaysia::before, .i-mexico::before, .i-myanmar::before, .i-netherlands::before, .i-new-zealand::before, .i-paraguay::before, .i-peru::before, .i-portugal::before, .i-south-korea::before, .i-spain::before, .i-tanzania::before, .i-turkey::before, .i-united-kingdom::before, .i-united-states::before, .i-uruguay::before, .i-uzbekistan::before, .i-vietnam::before {
   content: "" !important;
   display: inline-block !important;
   flex-shrink: 0 !important;
@@ -24,2568 +25,487 @@
   color: transparent !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/live-betting.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/live-betting.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
+  width: var(--icon-box) !important;
+  height: var(--icon-box) !important;
 }
 
-.i-sports svg {
-  display: none !important;
+.i-live-betting::before, .i-sports::before, .i-casino::before, .i-live-casino::before, .i-vip-slot::before, .i-crash-games::before, .i-aviator::before, .i-special-odds::before, .i-virtual-sports::before, .i-esports::before, .i-tv-games::before, .i-hep-tv::before, .i-hep-market::before, .i-coupon-wars::before, .i-affiliate::before, .i-promotions::before, .i-hepbet-iptv::before, .i-star::before, .i-search::before, .i-calendar::before, .i-clock::before, .i-stopwatch::before, .i-scoreboard::before, .i-more::before, .i-menu::before, .i-padlock::before, .i-gift-box::before, .i-call-back::before, .i-diamond::before, .i-headset::before, .i-whatsapp::before, .i-telegram::before, .i-wallet::before, .i-column-chart::before, .i-trend::before, .i-live-rtp::before {
+  background-color: var(--icon-color) !important;
+  -webkit-mask: var(--icon-src) center/var(--icon-size) var(--icon-size) no-repeat !important;
+  mask: var(--icon-src) center/var(--icon-size) var(--icon-size) no-repeat !important;
 }
-.i-sports .CMSIconSVGWrapper {
-  display: none !important;
+
+.i-soccer::before, .i-basketball::before, .i-tennis-balls::before, .i-volleyball::before, .i-ice-hockey::before, .i-handball::before, .i-table-tennis::before, .i-boxing::before, .i-beach-soccer::before, .i-beach-volley::before, .i-cricket::before, .i-dart::before, .i-golf::before, .i-rugby::before, .i-pickleball::before, .i-baseball::before, .i-biathlon::before, .i-globe::before, .i-snooker::before, .i-angola::before, .i-argentina::before, .i-australia::before, .i-brazil::before, .i-canada::before, .i-england::before, .i-estonia::before, .i-european-union::before, .i-france::before, .i-germany::before, .i-india::before, .i-italy::before, .i-kazakhstan::before, .i-lebanon::before, .i-malaysia::before, .i-mexico::before, .i-myanmar::before, .i-netherlands::before, .i-new-zealand::before, .i-paraguay::before, .i-peru::before, .i-portugal::before, .i-south-korea::before, .i-spain::before, .i-tanzania::before, .i-turkey::before, .i-united-kingdom::before, .i-united-states::before, .i-uruguay::before, .i-uzbekistan::before, .i-vietnam::before {
+  background-image: var(--icon-src) !important;
+  background-size: var(--icon-size) var(--icon-size) !important;
+}
+
+.i-live-betting {
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/live-betting.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-sports {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-sports::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/sports.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/sports.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-casino svg {
-  display: none !important;
-}
-.i-casino .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/sports.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-casino {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-casino::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/casino.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/casino.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-live-casino svg {
-  display: none !important;
-}
-.i-live-casino .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/casino.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-live-casino {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-live-casino::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/live-casino.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/live-casino.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-vip-slot svg {
-  display: none !important;
-}
-.i-vip-slot .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/live-casino.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-vip-slot {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-vip-slot::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/vip-slot.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/vip-slot.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-crash-games svg {
-  display: none !important;
-}
-.i-crash-games .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/vip-slot.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-crash-games {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-crash-games::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/crash-games.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/crash-games.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-aviator svg {
-  display: none !important;
-}
-.i-aviator .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/crash-games.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-aviator {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-aviator::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/aviator.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/aviator.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-special-odds svg {
-  display: none !important;
-}
-.i-special-odds .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/aviator.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-special-odds {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-special-odds::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/special-odds.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/special-odds.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-virtual-sports svg {
-  display: none !important;
-}
-.i-virtual-sports .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/special-odds.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-virtual-sports {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-virtual-sports::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/virtual-sports.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/virtual-sports.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-esports svg {
-  display: none !important;
-}
-.i-esports .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/virtual-sports.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-esports {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-esports::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/esports.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/esports.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-tv-games svg {
-  display: none !important;
-}
-.i-tv-games .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/esports.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-tv-games {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-tv-games::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/tv-games.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/tv-games.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-hep-tv svg {
-  display: none !important;
-}
-.i-hep-tv .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/tv-games.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-hep-tv {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-hep-tv::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hep-tv.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hep-tv.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-hep-market svg {
-  display: none !important;
-}
-.i-hep-market .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hep-tv.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-hep-market {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-hep-market::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hep-market.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hep-market.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-coupon-wars svg {
-  display: none !important;
-}
-.i-coupon-wars .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hep-market.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-coupon-wars {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-coupon-wars::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/coupon-wars.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/coupon-wars.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-affiliate svg {
-  display: none !important;
-}
-.i-affiliate .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/coupon-wars.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-affiliate {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-affiliate::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/affiliate.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/affiliate.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-promotions svg {
-  display: none !important;
-}
-.i-promotions .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/affiliate.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-promotions {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-promotions::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/promotions.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/promotions.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-hepbet-iptv svg {
-  display: none !important;
-}
-.i-hepbet-iptv .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/promotions.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-hepbet-iptv {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-hepbet-iptv::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hepbet-iptv.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hepbet-iptv.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-star svg {
-  display: none !important;
-}
-.i-star .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/nav/hepbet-iptv.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-star {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-star::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/star.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/star.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-search svg {
-  display: none !important;
-}
-.i-search .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/star.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-search {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-search::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/search.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/search.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-calendar svg {
-  display: none !important;
-}
-.i-calendar .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/search.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-calendar {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-calendar::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/calendar.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/calendar.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-clock svg {
-  display: none !important;
-}
-.i-clock .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/calendar.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-clock {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-clock::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/clock.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/clock.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-stopwatch svg {
-  display: none !important;
-}
-.i-stopwatch .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/clock.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-stopwatch {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-stopwatch::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/stopwatch.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/stopwatch.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-scoreboard svg {
-  display: none !important;
-}
-.i-scoreboard .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/stopwatch.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-scoreboard {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-scoreboard::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/scoreboard.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/scoreboard.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-more svg {
-  display: none !important;
-}
-.i-more .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/scoreboard.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-more {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-more::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/more.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/more.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-menu svg {
-  display: none !important;
-}
-.i-menu .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/more.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-menu {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-menu::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/menu.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/menu.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-padlock svg {
-  display: none !important;
-}
-.i-padlock .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/menu.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-padlock {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-padlock::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/padlock.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/padlock.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-gift-box svg {
-  display: none !important;
-}
-.i-gift-box .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/padlock.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-gift-box {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-gift-box::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/gift-box.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/gift-box.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-call-back svg {
-  display: none !important;
-}
-.i-call-back .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/gift-box.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-call-back {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-call-back::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/call-back.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/call-back.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-diamond svg {
-  display: none !important;
-}
-.i-diamond .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/call-back.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-diamond {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-diamond::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/diamond.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/diamond.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-headset svg {
-  display: none !important;
-}
-.i-headset .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/diamond.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-headset {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-headset::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/headset.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/headset.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-whatsapp svg {
-  display: none !important;
-}
-.i-whatsapp .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/headset.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-whatsapp {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-whatsapp::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/whatsapp.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/whatsapp.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-telegram svg {
-  display: none !important;
-}
-.i-telegram .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/whatsapp.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-telegram {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-telegram::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/telegram.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/telegram.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-wallet svg {
-  display: none !important;
-}
-.i-wallet .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/telegram.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-wallet {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-wallet::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/wallet.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/wallet.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-column-chart svg {
-  display: none !important;
-}
-.i-column-chart .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/wallet.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-column-chart {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-column-chart::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/column-chart.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/column-chart.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-trend svg {
-  display: none !important;
-}
-.i-trend .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/column-chart.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-trend {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-trend::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/trend.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/trend.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-live-rtp svg {
-  display: none !important;
-}
-.i-live-rtp .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/trend.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-live-rtp {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/icon-bg.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: var(--icon-box, 28px) var(--icon-box, 28px);
-}
-.i-live-rtp::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 28px) !important;
-  height: var(--icon-box, 28px) !important;
-  background-color: var(--icon-color, #0febff) !important;
-  -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/live-rtp.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-  mask: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/live-rtp.svg") center/var(--icon-size, 16px) var(--icon-size, 16px) no-repeat !important;
-}
-
-.i-soccer svg {
-  display: none !important;
-}
-.i-soccer .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/ui/live-rtp.svg");
+  --icon-box: 28px;
+  --icon-size: 16px;
+  --icon-color: #0febff;
 }
 .i-soccer {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-soccer::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/soccer.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-basketball svg {
-  display: none !important;
-}
-.i-basketball .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/soccer.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-basketball {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-basketball::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/basketball.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-tennis-balls svg {
-  display: none !important;
-}
-.i-tennis-balls .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/basketball.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-tennis-balls {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-tennis-balls::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/tennis-balls.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-volleyball svg {
-  display: none !important;
-}
-.i-volleyball .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/tennis-balls.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-volleyball {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-volleyball::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/volleyball.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-ice-hockey svg {
-  display: none !important;
-}
-.i-ice-hockey .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/volleyball.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-ice-hockey {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-ice-hockey::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/ice-hockey.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-handball svg {
-  display: none !important;
-}
-.i-handball .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/ice-hockey.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-handball {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-handball::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/handball.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-table-tennis svg {
-  display: none !important;
-}
-.i-table-tennis .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/handball.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-table-tennis {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-table-tennis::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/table-tennis.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-boxing svg {
-  display: none !important;
-}
-.i-boxing .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/table-tennis.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-boxing {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-boxing::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/boxing.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-beach-soccer svg {
-  display: none !important;
-}
-.i-beach-soccer .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/boxing.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-beach-soccer {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-beach-soccer::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/beach-soccer.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-beach-volley svg {
-  display: none !important;
-}
-.i-beach-volley .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/beach-soccer.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-beach-volley {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-beach-volley::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/beach-volley.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-cricket svg {
-  display: none !important;
-}
-.i-cricket .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/beach-volley.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-cricket {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-cricket::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/cricket.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-dart svg {
-  display: none !important;
-}
-.i-dart .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/cricket.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-dart {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-dart::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/dart.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-golf svg {
-  display: none !important;
-}
-.i-golf .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/dart.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-golf {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-golf::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/golf.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-rugby svg {
-  display: none !important;
-}
-.i-rugby .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/golf.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-rugby {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-rugby::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/rugby.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-pickleball svg {
-  display: none !important;
-}
-.i-pickleball .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/rugby.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-pickleball {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-pickleball::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/pickleball.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-baseball svg {
-  display: none !important;
-}
-.i-baseball .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/pickleball.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-baseball {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-baseball::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/baseball.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-biathlon svg {
-  display: none !important;
-}
-.i-biathlon .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/baseball.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-biathlon {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-biathlon::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/biathlon.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-globe svg {
-  display: none !important;
-}
-.i-globe .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/biathlon.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-globe {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-globe::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/globe.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-snooker svg {
-  display: none !important;
-}
-.i-snooker .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/globe.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-snooker {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-snooker::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/snooker.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-angola svg {
-  display: none !important;
-}
-.i-angola .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/sports/snooker.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-angola {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-angola::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/angola.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-argentina svg {
-  display: none !important;
-}
-.i-argentina .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/angola.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-argentina {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-argentina::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/argentina.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-australia svg {
-  display: none !important;
-}
-.i-australia .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/argentina.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-australia {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-australia::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/australia.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-brazil svg {
-  display: none !important;
-}
-.i-brazil .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/australia.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-brazil {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-brazil::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/brazil.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-canada svg {
-  display: none !important;
-}
-.i-canada .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/brazil.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-canada {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-canada::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/canada.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-england svg {
-  display: none !important;
-}
-.i-england .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/canada.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-england {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-england::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/england.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-estonia svg {
-  display: none !important;
-}
-.i-estonia .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/england.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-estonia {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-estonia::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/estonia.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-european-union svg {
-  display: none !important;
-}
-.i-european-union .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/estonia.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-european-union {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-european-union::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/european-union.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-france svg {
-  display: none !important;
-}
-.i-france .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/european-union.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-france {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-france::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/france.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-germany svg {
-  display: none !important;
-}
-.i-germany .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/france.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-germany {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-germany::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/germany.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-india svg {
-  display: none !important;
-}
-.i-india .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/germany.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-india {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-india::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/india.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-italy svg {
-  display: none !important;
-}
-.i-italy .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/india.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-italy {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-italy::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/italy.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-kazakhstan svg {
-  display: none !important;
-}
-.i-kazakhstan .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/italy.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-kazakhstan {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-kazakhstan::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/kazakhstan.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-lebanon svg {
-  display: none !important;
-}
-.i-lebanon .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/kazakhstan.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-lebanon {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-lebanon::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/lebanon.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-malaysia svg {
-  display: none !important;
-}
-.i-malaysia .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/lebanon.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-malaysia {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-malaysia::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/malaysia.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-mexico svg {
-  display: none !important;
-}
-.i-mexico .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/malaysia.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-mexico {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-mexico::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/mexico.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-myanmar svg {
-  display: none !important;
-}
-.i-myanmar .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/mexico.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-myanmar {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-myanmar::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/myanmar.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-netherlands svg {
-  display: none !important;
-}
-.i-netherlands .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/myanmar.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-netherlands {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-netherlands::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/netherlands.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-new-zealand svg {
-  display: none !important;
-}
-.i-new-zealand .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/netherlands.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-new-zealand {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-new-zealand::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/new-zealand.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-paraguay svg {
-  display: none !important;
-}
-.i-paraguay .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/new-zealand.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-paraguay {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-paraguay::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/paraguay.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-peru svg {
-  display: none !important;
-}
-.i-peru .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/paraguay.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-peru {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-peru::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/peru.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-portugal svg {
-  display: none !important;
-}
-.i-portugal .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/peru.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-portugal {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-portugal::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/portugal.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-south-korea svg {
-  display: none !important;
-}
-.i-south-korea .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/portugal.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-south-korea {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-south-korea::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/south-korea.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-spain svg {
-  display: none !important;
-}
-.i-spain .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/south-korea.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-spain {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-spain::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/spain.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-tanzania svg {
-  display: none !important;
-}
-.i-tanzania .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/spain.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-tanzania {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-tanzania::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/tanzania.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-turkey svg {
-  display: none !important;
-}
-.i-turkey .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/tanzania.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-turkey {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-turkey::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/turkey.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-united-kingdom svg {
-  display: none !important;
-}
-.i-united-kingdom .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/turkey.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-united-kingdom {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-united-kingdom::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/united-kingdom.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-united-states svg {
-  display: none !important;
-}
-.i-united-states .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/united-kingdom.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-united-states {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-united-states::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/united-states.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-uruguay svg {
-  display: none !important;
-}
-.i-uruguay .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/united-states.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-uruguay {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-uruguay::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/uruguay.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-uzbekistan svg {
-  display: none !important;
-}
-.i-uzbekistan .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/uruguay.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-uzbekistan {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
-}
-.i-uzbekistan::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/uzbekistan.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
-.i-vietnam svg {
-  display: none !important;
-}
-.i-vietnam .CMSIconSVGWrapper {
-  display: none !important;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/uzbekistan.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
 .i-vietnam {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 8px;
+  --icon-src: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/vietnam.svg");
+  --icon-box: 20px;
+  --icon-size: 20px;
 }
-.i-vietnam::before {
-  content: "" !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: var(--icon-box, 20px) !important;
-  height: var(--icon-box, 20px) !important;
-  background-image: url("https://static-hep.hepbet-static.workers.dev/sass/images/icons/flags/vietnam.svg") !important;
-  background-size: var(--icon-size, 20px) var(--icon-size, 20px) !important;
-}
-
 .i-white {
   --icon-color: #ffffff;
 }

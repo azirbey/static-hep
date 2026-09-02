@@ -1,4 +1,4 @@
-@use "../sass/images/icons/hb-icon" as *;
+@use "../sass/05-components/ui/hb-icon" as *;
 
 @each $name in $icon-nav {
 	.i-#{$name} {

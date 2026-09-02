@@ -1,0 +1,123 @@
+#root {
+	.sidePanel-holder-bc {
+		&:has(.notification-new-container) {
+			.sidePanel-holder {
+				padding: 20px !important;
+				flex-direction: column;
+				gap: 12px;
+
+				.overlay-header {
+					height: 36px !important;
+					min-height: 36px !important;
+					padding: 0 !important;
+					position: relative;
+					width: 100%;
+
+					.bc-i-close-remove {
+						width: 36px;
+						height: 36px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: linear-gradient(180deg, @shade-7 0%, @shade-6 100%);
+						border-radius: 50%;
+						&::before {
+							color: @shade-21;
+							font-size: 10px;
+							line-height: 10px;
+						}
+					}
+
+					span {
+						.hb-text(20px, 28px, 600);
+					}
+				}
+
+				.notification-new-container {
+					margin: 0;
+					padding: 0;
+					gap: 0;
+					display: flex;
+					flex-direction: column;
+
+					.notification-new-header {
+						padding: 0;
+						height: fit-content;
+						margin-bottom: 12px;
+						time {
+							.hb-text(13px, 20px, 400, @shade-19);
+						}
+						span {
+							.hb-text(13px, 20px, 400, @shade-19);
+						}
+					}
+					.notification-new-item {
+						height: 44px;
+						border: solid 1px @shade-7;
+						border-radius: 6px;
+						margin-bottom: 8px;
+
+						&:has(+ .notification-item-body) {
+							border-radius: 6px 6px 0 0;
+							margin-bottom: 0;
+						}
+
+						padding-left: 20px;
+						padding-right: 20px;
+						gap: 12px;
+
+						& + .notification-new-item {
+							margin-top: 0;
+						}
+
+						&[data-status="unread"] {
+							&::before {
+								background: @cyan;
+								width: 12px;
+								height: 12px;
+								padding: 0;
+								border: none;
+								top: -6px;
+								right: 0px;
+							}
+						}
+
+						&[data-status="unread"],
+						&[data-status="read"] {
+							background: @shade-5;
+						}
+						.notification-new-item-icon {
+							&::before {
+								font-size: 13px;
+								color: @cyan;
+							}
+						}
+						.notification-new-item-info {
+							.hb-text(13px, 20px, 400, @white);
+							padding: 0;
+							margin: 0;
+						}
+						.bc-i-close-remove {
+							&::before {
+								font-size: 10px;
+							}
+						}
+					}
+
+					.notification-item-body {
+						margin-top: 0;
+						border: solid 1px @shade-7;
+						border-top: none;
+						padding: 20px;
+						border-radius: 0 0 6px 6px;
+						margin-bottom: 8px;
+
+						&:not(:has(+ .notification-new-item)) {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

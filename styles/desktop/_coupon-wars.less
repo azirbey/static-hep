@@ -1,0 +1,88 @@
+#root {
+	.special-games-container {
+		.expressWidgetWrapper {
+			.expressWidget {
+				background-image: url("https://static-hep.hepbet-static.workers.dev/images/box-shine.png");
+				background-size: 700px;
+				background-position-x: 150px;
+				background-position-y: -300px;
+				background-repeat: no-repeat;
+				background-color: rgba(25, 124, 255, 0.09);
+
+				&::before {
+					filter: grayscale(1);
+					opacity: 0.08;
+				}
+
+				.expressWidgetWrapperBonus {
+					background: #197cff;
+					color: #fff;
+
+					&::before {
+						border-color: #197cff transparent transparent #197cff;
+					}
+				}
+
+				.expressWidgetTitleContent {
+					line-height: 1;
+					display: flex;
+					padding-bottom: 12px;
+					margin-bottom: 12px;
+
+					p {
+						.hb-text(13px, 20px, 400, #BCCBDC);
+					}
+				}
+
+				.expressWidgetItem {
+					gap: 20px;
+					.expressWidgetItemInfo {
+						.expressWidgetDayTime,
+						.expressWidgetTeamName {
+							.hb-text(13px, 20px, 400, #BCCBDC);
+						}
+						.expressWidgetMarketOdd,
+						.expressWidgetMarketName {
+							.hb-text(13px, 20px, 600, #fff);
+						}
+					}
+
+					.expressInfo {
+						display: flex;
+						transform: rotate(45deg);
+						left: -6px;
+						position: relative;
+						.expressInfoIcon {
+							&::before {
+								content: "";
+								width: 8px;
+								height: 8px;
+								display: flex;
+								background: @cyan;
+								position: relative;
+							}
+						}
+					}
+				}
+
+				.expressWidgetBetslip {
+					.bs-bet-i-b-stake-bc {
+						height: 40px;
+						.bs-bet-i-b-s-i-holder-bc {
+							.bs-bet-i-b-s-i-block-bc {
+								background: #2a3c50;
+							}
+						}
+					}
+
+					.bet-button-wrapper-bc {
+						.btn {
+							background: #2a3c50 !important;
+							height: 48px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

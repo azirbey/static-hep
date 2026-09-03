@@ -104,22 +104,27 @@ $home-row-icons: (
 	9: profit,
 );
 
-// Mobile header main strip (nth-child). DOM from hdr-navigation-scrollable-bc first nav.
+// Mobile header main strip. Matched by href substring (same fragments as @hb-nav-items).
+// More specific paths must come after broader ones (e.g. SpecialBets after sports/pre-match/event-view).
 $nav-items: (
-	soccer,
-	soccer-jersey,
-	slot-machine,
-	roulette,
-	slot-machine-1,
-	rocket,
-	plane,
-	badge,
-	horse,
-	trophy,
-	microphone,
-	monitor,
-	coupon-wars,
-	affiliate
+	"bonus9": bonus-request,
+	"sports/live/event-view": soccer,
+	"sports/pre-match/event-view": soccer-jersey,
+	"casino/slots": slot-machine,
+	"live-casino/home": roulette,
+	"casino/slots/1634/vipslot": slot-machine-1,
+	"casino/slots/406/CrashGames": rocket,
+	"casino/game-view/806666/aviator": plane,
+	"SpecialBets": badge,
+	"virtual-sports": horse,
+	"esports": trophy,
+	"tv-games": microphone,
+	"hepbettv": monitor,
+	"?page=loyalty-points&profile=open": grocery-store,
+	"specialSection=multiple-of-the-day": coupon-wars,
+	"hepbetaffiliate": affiliate,
+	"aranmatalebi": call-back,
+	"hep.dokumanilet.com": document,
 );
 
 // Bottom tab bar. Files in images/menu-icons/. Empty = box only, no glyph.

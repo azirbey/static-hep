@@ -12,11 +12,21 @@
 	}
 }
 
-.hb-mobile-nav-main-icons(@i: 1) when (@i =< @hb-mobile-nav-item-count) {
-	@name: extract(@hb-mobile-nav-items, @i);
+.hb-mobile-nav-main-icons(@i: 1) when (@i =< @hb-nav-item-count) {
+	@row: extract(@hb-nav-items, @i);
+	@name: extract(@row, 1);
+	@href: extract(@row, 2);
 
-	& > .hdr-navigation-link-bc:nth-child(@{i}) {
-		.hb-mobile-nav-icon(@name);
+	& when (@href = "casino/slots") {
+		.hdr-navigation-link-bc[href*="casino/slots"]:not([href*="1634/vipslot"]):not([href*="406/CrashGames"]) {
+			.hb-mobile-nav-icon(@name);
+		}
+	}
+
+	& when not (@href = "casino/slots") {
+		.hdr-navigation-link-bc[href*="@{href}"] {
+			.hb-mobile-nav-icon(@name);
+		}
 	}
 
 	.hb-mobile-nav-main-icons(@i + 1);

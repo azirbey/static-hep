@@ -343,17 +343,17 @@
 	}
 }
 
-@mixin nav-main-icons($names) {
-	$i: 1;
-
-	@each $name in $names {
-		@if $name {
-			& > .hdr-navigation-link-bc:nth-child(#{$i}) {
+@mixin nav-main-icons($map) {
+	@each $href, $name in $map {
+		@if $href == "casino/slots" {
+			.hdr-navigation-link-bc[href*="casino/slots"]:not([href*="1634/vipslot"]):not([href*="406/CrashGames"]) {
+				@include nav-link-icon($name);
+			}
+		} @else {
+			.hdr-navigation-link-bc[href*="#{$href}"] {
 				@include nav-link-icon($name);
 			}
 		}
-
-		$i: $i + 1;
 	}
 }
 

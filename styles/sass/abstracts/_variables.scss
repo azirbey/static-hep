@@ -143,22 +143,29 @@ $tab-nav-icons: (
 // Aside drawer. Files in images/menu-icons/. Matched by href substring.
 $aside-nav-icons: (
 	"promotions": gift-box,
-	"casino/bonus": promo,
+	"bonus9": promo,
 	"openLiveChat": headset,
+	"hep.dokumanilet.com": document,
 	"casino/slots": slot-machine,
 	"live-casino/home": roulette,
-	"heptv": monitor,
+	"heptv.org": monitor,
 	"virtual-sports": horse,
 	"esports": trophy,
 	"games/home": rocket,
-	"aviator": plane,
-	"affiliate": deal,
+	"806666/aviator": plane,
+	"hepbetaffiliate": deal,
 );
 
-// Aside items without a stable href (1-based index in .m-block-nav-items-bc).
+// Aside icons from images/nav-menu-icons/svg/ — same CDN path as desktop header nav.
+$aside-nav-icons-from-nav: (
+	"525/predictor": predictor,
+	"openLuckyWheel": sport-reel,
+);
+
+// Aside items without href (1-based index in .m-block-nav-items-bc).
 $aside-nav-icons-nth: (
-	6: soccer-jersey,
-	7: soccer,
+	7: soccer-jersey,
+	8: soccer,
 );
 
 $nav-sub-items: (

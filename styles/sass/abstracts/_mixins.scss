@@ -273,7 +273,9 @@
 	}
 }
 
-@mixin aside-nav-icon($name, $glyph: layout(svg-size), $box: layout(icon-hit)) {
+@mixin aside-nav-icon($name, $glyph: layout(svg-size), $box: layout(icon-hit), $from-nav: false) {
+	$icon-url: if($from-nav, nav-icon($name), menu-icon($name));
+
 	.nav-ico-w-row-bc {
 		width: $box !important;
 		height: $box !important;
@@ -283,7 +285,7 @@
 		justify-content: center;
 
 		background:
-			url("#{menu-icon($name)}") center / #{$glyph} #{$glyph} no-repeat,
+			url("#{$icon-url}") center / #{$glyph} #{$glyph} no-repeat,
 			url("#{$cdn-icons-url}icon-bg-with-border.svg") center / contain no-repeat !important;
 
 		.asideMenuNavItemIconWrapper,
@@ -293,10 +295,16 @@
 	}
 }
 
-@mixin aside-nav-icons($href-map, $nth-map: ()) {
+@mixin aside-nav-icons($href-map, $nth-map: (), $nav-href-map: ()) {
 	@each $key, $name in $href-map {
 		.app-nav-link[href*="#{$key}"] {
 			@include aside-nav-icon($name);
+		}
+	}
+
+	@each $key, $name in $nav-href-map {
+		.app-nav-link[href*="#{$key}"] {
+			@include aside-nav-icon($name, $from-nav: true);
 		}
 	}
 

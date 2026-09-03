@@ -1,0 +1,15 @@
+@use "hb-icon" as *;
+
+.bc-i-live-chat {
+	@include hb-icon($has-bg: true, $icon: headset, $color: cyan);
+}
+
+.header-custom-buttons {
+	.btn.bc-i-promotion {
+		@include hb-icon($has-bg: true, $icon: promotions, $color: cyan);
+	}
+}
+
+.nav-menu-item {
+	@include hb-icon($has-bg: true, $icon: live-casino, $color: cyan);
+}

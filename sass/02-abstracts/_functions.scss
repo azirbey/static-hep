@@ -1,0 +1,36 @@
+@use "sass:color";
+@use "sass:map";
+@use "sass:meta";
+@use "../01-tokens" as *;
+
+@function token($map, $key) {
+	@if not map.has-key($map, $key) {
+		@error "Unknown token: #{$key}";
+	}
+
+	@return map.get($map, $key);
+}
+
+@function type-role($key) {
+	@return token($type-roles, $key);
+}
+
+@function type-weight($weight) {
+	@if meta.type-of($weight) == "number" {
+		@return $weight;
+	}
+
+	@return token($type-weights, $weight);
+}
+
+@function type-leading($size) {
+	@return token($type-leading, $size);
+}
+
+@function color-hex($key) {
+	@return token($colors, $key);
+}
+
+@function color-rgba($key, $alpha: 1) {
+	@return color.change(color-hex($key), $alpha: $alpha);
+}

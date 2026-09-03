@@ -274,7 +274,11 @@
 }
 
 @mixin aside-nav-icon($name, $glyph: layout(svg-size), $box: layout(icon-hit), $from-nav: false) {
-	$icon-url: if($from-nav, nav-icon($name), menu-icon($name));
+	$icon-url: menu-icon($name);
+
+	@if $from-nav {
+		$icon-url: nav-icon($name);
+	}
 
 	.nav-ico-w-row-bc {
 		width: $box !important;

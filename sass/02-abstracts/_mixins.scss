@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "sass:string";
+@use "../01-tokens" as *;
+@use "functions" as *;
+
+@mixin type($size: 13px, $weight: 600, $leading: null, $tracking: $type-tracking, $important: false) {
+	$i: null;
+	$resolved-weight: type-weight($weight);
+	$resolved-leading: $leading;
+
+	@if $resolved-leading == null {
+		$resolved-leading: type-leading($size);
+	}
+
+	@if $important {
+		$i: string.unquote("!important");
+	}
+
+	font-family: $font-family $i;
+	font-size: $size $i;
+	font-weight: $resolved-weight $i;
+	line-height: $resolved-leading $i;
+	letter-spacing: $tracking $i;
+}
+
+@mixin type-token($key, $important: false) {
+	$t: type-role($key);
+
+	@include type(
+		map.get($t, size),
+		map.get($t, weight),
+		map.get($t, leading),
+		$type-tracking,
+		$important
+	);
+}

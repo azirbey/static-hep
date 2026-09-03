@@ -1,0 +1,116 @@
+$cdn-url: "https://static-hep.hepbet-static.workers.dev";
+$cdn-fonts-url: $cdn-url + "/webfonts/HepBet/";
+
+$font-name: "Geist";
+$font-family: $font-name, sans-serif;
+
+$font-faces: (
+	Geist-Regular: 400,
+	Geist-Medium: 500,
+	Geist-SemiBold: 600,
+	Geist-Bold: 700,
+);
+
+$type-tracking: -0.01em;
+
+$type-weights: (
+	regular: 400,
+	medium: 500,
+	semibold: 600,
+	bold: 700,
+);
+
+$type-leading: (
+	9px: 12px,
+	11px: 16px,
+	12px: 16px,
+	13px: 20px,
+	15px: 20px,
+	16px: 24px,
+	20px: 28px,
+);
+
+$type-roles: (
+	badge: (
+		size: 9px,
+		weight: 700,
+		leading: 12px,
+	),
+	caption: (
+		size: 11px,
+		weight: 600,
+		leading: 16px,
+	),
+	control: (
+		size: 12px,
+		weight: 500,
+		leading: 16px,
+	),
+	label: (
+		size: 13px,
+		weight: 600,
+		leading: 20px,
+	),
+	label-bold: (
+		size: 13px,
+		weight: 700,
+		leading: 20px,
+	),
+	title: (
+		size: 15px,
+		weight: 700,
+		leading: 20px,
+	),
+	title-semibold: (
+		size: 15px,
+		weight: 600,
+		leading: 20px,
+	),
+	title-loose: (
+		size: 15px,
+		weight: 600,
+		leading: 24px,
+	),
+	heading: (
+		size: 16px,
+		weight: 700,
+		leading: 24px,
+	),
+	display: (
+		size: 20px,
+		weight: 700,
+		leading: 28px,
+	),
+);
+
+@font-face {
+	font-family: $font-name;
+	src: url("#{$cdn-fonts-url}Geist-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("#{$cdn-fonts-url}Geist-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("#{$cdn-fonts-url}Geist-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("#{$cdn-fonts-url}Geist-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

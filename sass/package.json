@@ -1,0 +1,15 @@
+{
+	"name": "hepbet-sass",
+	"version": "0.0.1",
+	"description": "HepBet sass structure",
+	"main": "index.js",
+	"scripts": {
+		"build:new-project": "sass --style=expanded --no-source-map main.scss ../custom-project.css",
+		"watch:new-project": "sass --watch --style=expanded --no-source-map main.scss ../custom-project.css"
+	},
+	"dependencies": {
+		"sass": "^1.89.0"
+	},
+	"author": "AzirBey",
+	"license": "MIT"
+}

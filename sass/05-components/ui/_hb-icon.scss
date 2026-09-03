@@ -1,0 +1,263 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+
+$icon-cyan: #0febff;
+$icon-white: #ffffff;
+$icon-gray: #bccbdc;
+
+$icon-root: "https://static-hep.hepbet-static.workers.dev/";
+$icon-path: "sass/images/icons";
+$icon-url: "#{$icon-root}#{$icon-path}";
+$icon-bg: url("#{$icon-url}/icon-bg.svg");
+
+$icon-box: 28px;
+
+$icon-colors: (
+	cyan: $icon-cyan,
+	white: $icon-white,
+	gray: $icon-gray,
+);
+
+$icon-nav: (
+	live-betting,
+	sports,
+	casino,
+	live-casino,
+	vip-slot,
+	crash-games,
+	aviator,
+	special-odds,
+	virtual-sports,
+	esports,
+	tv-games,
+	hep-tv,
+	hep-market,
+	coupon-wars,
+	affiliate,
+	promotions,
+	hepbet-iptv,
+);
+
+$icon-ui: (
+	star,
+	search,
+	calendar,
+	clock,
+	stopwatch,
+	scoreboard,
+	more,
+	menu,
+	padlock,
+	gift-box,
+	call-back,
+	diamond,
+	headset,
+	whatsapp,
+	telegram,
+	wallet,
+	column-chart,
+	trend,
+	live-rtp,
+);
+
+$icon-sports: (
+	soccer,
+	basketball,
+	tennis-balls,
+	volleyball,
+	ice-hockey,
+	handball,
+	table-tennis,
+	boxing,
+	beach-soccer,
+	beach-volley,
+	cricket,
+	dart,
+	golf,
+	rugby,
+	pickleball,
+	baseball,
+	biathlon,
+	globe,
+	snooker,
+);
+
+$icon-flags: (
+	angola,
+	argentina,
+	australia,
+	brazil,
+	canada,
+	england,
+	estonia,
+	european-union,
+	france,
+	germany,
+	india,
+	italy,
+	kazakhstan,
+	lebanon,
+	malaysia,
+	mexico,
+	myanmar,
+	netherlands,
+	new-zealand,
+	paraguay,
+	"peru",
+	portugal,
+	south-korea,
+	spain,
+	tanzania,
+	turkey,
+	united-kingdom,
+	united-states,
+	uruguay,
+	uzbekistan,
+	vietnam,
+);
+
+@function hb-icon-paint($color) {
+	@if map.has-key($icon-colors, $color) {
+		@return map.get($icon-colors, $color);
+	}
+
+	@return $color;
+}
+
+@function hb-icon-find($name) {
+	@each $item in $icon-nav {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: nav, kind: mono, native: 16px);
+		}
+	}
+
+	@each $item in $icon-ui {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: ui, kind: mono, native: 16px);
+		}
+	}
+
+	@each $item in $icon-sports {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: sports, kind: color, native: 20px);
+		}
+	}
+
+	@each $item in $icon-flags {
+		@if "#{$item}" == "#{$name}" {
+			@return (group: flags, kind: color, native: 20px);
+		}
+	}
+
+	@error "Unknown icon `#{$name}`.";
+}
+
+@function hb-to-px($v) {
+	@if $v == null {
+		@return null;
+	}
+
+	@if meta.type-of($v) == "number" and math.is-unitless($v) {
+		@return $v * 1px;
+	}
+
+	@return $v;
+}
+
+@function hb-icon-src($group, $icon) {
+	@return url("#{$icon-url}/#{$group}/#{$icon}.svg");
+}
+
+%hb-icon {
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	gap: 8px;
+
+	:is(svg, .CMSIconSVGWrapper) {
+		display: none !important;
+	}
+}
+
+%hb-icon-bg {
+	@extend %hb-icon;
+
+	background-image: $icon-bg;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: var(--icon-box) var(--icon-box);
+}
+
+%hb-icon-before {
+	content: "" !important;
+	display: inline-block !important;
+	flex-shrink: 0 !important;
+	box-sizing: border-box !important;
+	font-size: 0 !important;
+	line-height: 0 !important;
+	color: transparent !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	width: var(--icon-box) !important;
+	height: var(--icon-box) !important;
+}
+
+%hb-icon-mono-before {
+	background-color: var(--icon-color) !important;
+	-webkit-mask: var(--icon-src) center / var(--icon-size) var(--icon-size) no-repeat !important;
+	mask: var(--icon-src) center / var(--icon-size) var(--icon-size) no-repeat !important;
+}
+
+%hb-icon-color-before {
+	background-image: var(--icon-src) !important;
+	background-size: var(--icon-size) var(--icon-size) !important;
+}
+
+@mixin hb-icon($icon, $has-bg: false, $color: white, $size: null, $icon-size: null) {
+	$meta: hb-icon-find($icon);
+	$group: map.get($meta, group);
+	$kind: map.get($meta, kind);
+	$native: map.get($meta, native);
+	$paint: hb-icon-paint($color);
+
+	$box: $icon-box;
+	$glyph: $native;
+
+	@if $size {
+		$box: hb-to-px($size);
+	}
+
+	@if $icon-size {
+		$glyph: hb-to-px($icon-size);
+	} @else if $size and not $has-bg {
+		$glyph: hb-to-px($size);
+	}
+
+	$slot: $glyph;
+
+	@if $has-bg {
+		$slot: $box;
+		@extend %hb-icon-bg;
+	} @else {
+		@extend %hb-icon;
+	}
+
+	--icon-src: #{hb-icon-src($group, $icon)};
+	--icon-box: #{$slot};
+	--icon-size: #{$glyph};
+
+	@if $kind == mono {
+		--icon-color: #{$paint};
+	}
+
+	&::before {
+		@extend %hb-icon-before;
+
+		@if $kind == color {
+			@extend %hb-icon-color-before;
+		} @else {
+			@extend %hb-icon-mono-before;
+		}
+	}
+}

@@ -67,6 +67,27 @@ body {
   background: transparent !important;
   gap: 5px !important;
 }
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper svg {
+  display: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/bonus-request.svg") no-repeat center center / contain !important;
+}
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="sports/live/event-view"] span.CMSIconSVGWrapper {
   display: flex !important;
   align-items: center !important;
@@ -382,7 +403,7 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/affiliate.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -391,17 +412,17 @@ body {
   background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
   border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper::before {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper::before {
-  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/aranmatalebi.svg") no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/call-back.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="hep.dokumanilet.com"] span.CMSIconSVGWrapper {
   display: flex !important;
@@ -548,6 +569,27 @@ body {
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub {
   background: #0e141b !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper svg {
+  display: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="bonus9"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/bonus-request.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="sports/live/event-view"] span.CMSIconSVGWrapper {
   display: flex !important;
@@ -864,7 +906,7 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/affiliate.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -873,17 +915,17 @@ body {
   background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
   border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper::before {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="call-back"] span.CMSIconSVGWrapper::before {
-  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/aranmatalebi.svg") no-repeat center center / contain !important;
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="aranmatalebi"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/call-back.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hep.dokumanilet.com"] span.CMSIconSVGWrapper {
   display: flex !important;

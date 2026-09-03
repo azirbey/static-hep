@@ -37,7 +37,7 @@
 	@href: extract(@row, 2);
 
 	& when (@href = "casino/slots") {
-		& > a.nav-menu-item[href*="casino/slots"]:not([href*="1634-vipslots"]):not([href*="406-crashgames"]) {
+		& > a.nav-menu-item[href*="casino/slots"]:not([href*="1634/vipslot"]):not([href*="406/CrashGames"]) {
 			.hb-nav-apply-icon(@name);
 		}
 	}
@@ -58,7 +58,7 @@
 	@href: extract(@row, 2);
 
 	& when (@href = "casino/slots") {
-		a.nav-menu-item[href*="casino/slots"]:not([href*="1634-vipslots"]):not([href*="406-crashgames"]) {
+		a.nav-menu-item[href*="casino/slots"]:not([href*="1634/vipslot"]):not([href*="406/CrashGames"]) {
 			.hb-nav-apply-icon(@name);
 		}
 	}

@@ -161,4 +161,75 @@
 			background: color-hex(market-blue) !important;
 		}
 	}
+
+	.expressWidget {
+		background-image: url("#{$cdn-images-url}box-shine.png");
+		background-size: cover;
+		background-position: 110px -200px;
+		background-repeat: no-repeat;
+		background-color: color-rgba(main-color, 0.09);
+
+		.expressWidgetWrapperBonus {
+			background: color-hex(main-color);
+			color: color-hex(white-color);
+
+			&::before {
+				border-color: color-hex(main-color) transparent transparent color-hex(main-color);
+			}
+		}
+
+		.expressWidgetTitle {
+			color: color-hex(link-gray);
+		}
+
+		.expressWidgetItem {
+			gap: 20px;
+			.expressWidgetDayTime,
+			.expressWidgetTeamName {
+				color: color-hex(link-gray);
+			}
+
+			.expressWidgetMarketName,
+			.expressWidgetMarketOdd {
+				color: color-hex(white-color);
+			}
+
+			.expressInfo {
+				display: flex;
+				transform: rotate(45deg);
+				position: relative;
+
+				.expressInfoIcon {
+					display: flex;
+					font-size: 0 !important;
+					line-height: 0 !important;
+
+					&::before {
+						content: "" !important;
+						width: 8px;
+						height: 8px;
+						display: flex;
+						background: color-hex(cyan);
+						position: relative;
+					}
+				}
+			}
+		}
+
+		.expressWidgetBetslip {
+			.bs-bet-i-b-coefficient-bc {
+				color: color-hex(cyan);
+			}
+
+			.bs-bet-i-b-s-i-block-bc {
+				background: color-hex(nav-border-blue);
+			}
+
+			.bet-button-wrapper-bc {
+				.btn {
+					background: color-hex(nav-border-blue) !important;
+				}
+			}
+		}
+	}
 }

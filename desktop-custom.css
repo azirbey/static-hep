@@ -235,6 +235,48 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="casino/game-view/806666/aviator"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/plane.svg") no-repeat center center / contain !important;
 }
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper svg {
+  display: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/predictor.svg") no-repeat center center / contain !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper svg {
+  display: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/sport-reel.svg") no-repeat center center / contain !important;
+}
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="SpecialBets"] span.CMSIconSVGWrapper {
   display: flex !important;
   align-items: center !important;
@@ -361,7 +403,7 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="?page=loyalty-points&profile=open"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/grocery-store.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -370,16 +412,16 @@ body {
   background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
   border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper::before {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/coupon-wars.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container > ul.nav-menu > li > a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper {
@@ -738,6 +780,48 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/806666/aviator"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/plane.svg") no-repeat center center / contain !important;
 }
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper svg {
+  display: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="casino/game-view/525/predictor"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/predictor.svg") no-repeat center center / contain !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
+  border: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper svg {
+  display: none !important;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="openLuckyWheel"] span.CMSIconSVGWrapper::before {
+  background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/sport-reel.svg") no-repeat center center / contain !important;
+}
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="SpecialBets"] span.CMSIconSVGWrapper {
   display: flex !important;
   align-items: center !important;
@@ -864,7 +948,7 @@ body {
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="?page=loyalty-points&profile=open"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/grocery-store.svg") no-repeat center center / contain !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -873,16 +957,16 @@ body {
   background: url("https://static-hep.hepbet-static.workers.dev/images/icons/icon-bg-with-border.svg") no-repeat center / contain !important;
   border: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper svg {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper svg {
   display: none !important;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper::before {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
 }
-.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="tab=express"] span.CMSIconSVGWrapper::before {
+.layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="specialSection=multiple-of-the-day"] span.CMSIconSVGWrapper::before {
   background: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/coupon-wars.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item ul.nav-menu-sub a.nav-menu-item[href*="hepbetaffiliate"] span.CMSIconSVGWrapper {

@@ -29,13 +29,23 @@
 	}
 }
 
-// Main menu — nth-child from @hb-nav-items (icon, href)
+// Main menu — href from @hb-nav-items. Direct child only so submenus stay untouched.
+// casino/slots guarded so VIP/Crash do not steal Casino icon.
 .hb-nav-menu-icons(@i: 1) when (@i =< @hb-nav-item-count) {
 	@row: extract(@hb-nav-items, @i);
 	@name: extract(@row, 1);
+	@href: extract(@row, 2);
 
-	&:nth-child(@{i}) > a.nav-menu-item {
-		.hb-nav-apply-icon(@name);
+	& when (@href = "casino/slots") {
+		& > a.nav-menu-item[href*="casino/slots"]:not([href*="1634-vipslots"]):not([href*="406-crashgames"]) {
+			.hb-nav-apply-icon(@name);
+		}
+	}
+
+	& when not (@href = "casino/slots") {
+		& > a.nav-menu-item[href*="@{href}"] {
+			.hb-nav-apply-icon(@name);
+		}
 	}
 
 	.hb-nav-menu-icons(@i + 1);

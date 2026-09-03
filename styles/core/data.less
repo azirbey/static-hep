@@ -1,8 +1,7 @@
 // Content and asset configuration — not design tokens.
 //
-// The record lists below are read by mixins that walk them with nth-child, so
-// list order mirrors DOM order. Adding a menu item means adding a row here,
-// not writing a new rule.
+// Lists are walked by mixins. Desktop nav icons match href fragments (order
+// can change in admin). Other lists still use nth-child = DOM order.
 
 // ============================================
 // CDN roots
@@ -63,7 +62,8 @@
 
 @hb-nav-more-label: "Daha";
 
-// Records: (icon 'href') — main menu nth-child + more/overflow href match
+// Records: (icon 'href-fragment') — main + overflow matched with href*=
+// Keep path/query fragments, not full https URLs (platform hrefs vary by domain).
 @hb-nav-items:
 	soccer "sports/live/event-view",
 	soccer-jersey "sports/pre-match/event-view",
@@ -79,11 +79,14 @@
 	monitor "hepbettv",
 	grocery-store "?page=loyalty-points&profile=open",
 	coupon-wars "tab=express",
-	affiliate "hepbetaffiliate";
+	affiliate "hepbetaffiliate",
+	aranmatalebi "call-back",
+	document "hep.dokumanilet.com";
 @hb-nav-item-count: length(@hb-nav-items);
 
 // Mobile main strip — same icons as desktop, DOM order (loyalty is not in the mobile bar).
-@hb-mobile-nav-items: soccer, soccer-jersey, slot-machine, roulette, slot-machine-1, rocket, plane, badge, horse, trophy, microphone, monitor, coupon-wars, affiliate;
+@hb-mobile-nav-items: soccer, soccer-jersey, slot-machine, roulette, slot-machine-1, rocket, plane, badge, horse,
+	trophy, microphone, monitor, coupon-wars, affiliate;
 @hb-mobile-nav-item-count: length(@hb-mobile-nav-items);
 
 // Records: ('href' icon)

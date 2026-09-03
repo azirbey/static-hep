@@ -1,0 +1,124 @@
+@use "../../abstracts" as *;
+
+.overlay-sliding-wrapper-bc {
+	.overlay-sliding-w-c-content-slider-bc {
+		.back-nav-bc {
+			height: 56px;
+			background: rgba(var(--b), 1);
+			border-bottom: 1px solid color-hex(border-blue);
+			padding: 12px 16px;
+			gap: 12px;
+
+			.back-nav-icon-bc {
+				width: 32px;
+				height: 32px;
+				&::before {
+					font-size: 32px !important;
+					color: color-hex(nav-border-blue);
+				}
+			}
+
+			.back-nav-title-bc {
+				@include type(16px, 600, 24px);
+				color: color-hex(white-color);
+				margin: 0;
+			}
+		}
+
+		.notification-new-container {
+			padding: 16px;
+
+			display: flex;
+			flex-direction: column;
+
+			.notification-new-header {
+				padding: 0;
+				height: inherit;
+				margin-bottom: 16px;
+
+				time,
+				span {
+					color: color-hex(placeholder-gray);
+					@include type(13px, 600, 20px);
+				}
+			}
+
+			.notification-new-item {
+				height: 44px;
+				padding: 12px 16px;
+				background: color-hex(market-blue);
+				border: 1px solid color-hex(border-blue);
+				gap: 12px;
+				margin-bottom: 8px;
+				border-radius: 6px;
+
+				&[data-status="unread"] {
+					&::before {
+						top: 2px;
+						right: 2px;
+					}
+				}
+
+				&:has(+ .notification-item-body) {
+					margin-bottom: 0;
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+
+				.notification-new-item-icon {
+					&::before {
+						font-size: 13px !important;
+						color: color-hex(cyan);
+					}
+				}
+
+				.notification-new-item-info {
+					margin: 0;
+					color: color-hex(white-color);
+					@include type(13px, 600, 20px);
+				}
+
+				.bc-i-close-remove {
+					&::before {
+						font-size: 10px !important;
+						color: color-hex(link-gray);
+					}
+				}
+			}
+
+			.notification-item-body {
+				margin-top: 0;
+
+				.entrance-f-item-bc {
+					.entrance-f-error-message-bc {
+						padding: 16px;
+						border-radius: 6px;
+						border-top-left-radius: 0;
+						border-top-right-radius: 0;
+						background: color-hex(market-blue);
+						> div {
+							&:first-of-type {
+							}
+
+							&:last-of-type {
+								h2 {
+								}
+
+								p {
+									a {
+									}
+								}
+
+								a {
+								}
+							}
+						}
+
+						> p {
+						}
+					}
+				}
+			}
+		}
+	}
+}

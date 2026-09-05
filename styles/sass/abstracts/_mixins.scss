@@ -222,6 +222,18 @@
 	}
 }
 
+@mixin user-nav-order($classes) {
+	$i: 1;
+
+	@each $class in $classes {
+		&.#{$class} {
+			order: $i;
+		}
+
+		$i: $i + 1;
+	}
+}
+
 @mixin row-title-icon($name, $glyph: 12px, $box: 32px) {
 	.sectionTitle,
 	.page-view-more {

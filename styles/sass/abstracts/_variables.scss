@@ -86,13 +86,24 @@ $header-user-buttons: (
 	bc-i-money-dollar: (
 		file: withdraw,
 		size: 12px,
-		label: "Para Yatır",
 	),
+);
+
+// Visual order in .hdr-user-bc (DOM order is platform-controlled).
+// prettier-ignore
+$header-user-order: (
+	bc-i-call,
+	bc-i-whatsapp,
+	bc-i-telegram,
+	bc-i-tv,
+	bc-i-money-dollar,
+	bc-i-promotion,
+	bc-i-bonus-request,
 );
 
 // prettier-ignore
 $header-user-push: (
-  bc-i-promotion,
+	bc-i-telegram,
 );
 
 $home-row-icons: (

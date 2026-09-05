@@ -1,6 +1,27 @@
 @use "../../abstracts" as *;
 
 .overlay-sliding-wrapper-bc {
+	.message-content {
+		.form-control-input-bc,
+		.form-control-textarea-bc {
+			background: rgba(var(--b), 1);
+			border: solid 1px color-hex(border-blue);
+			color: color-hex(white-color);
+		}
+
+		.form-control-title-bc {
+			color: color-hex(placeholder-gray) !important;
+			@include type-token(body-control, true);
+		}
+
+		.u-i-p-c-footer-bc {
+			.btn {
+				background: color-hex(main-color);
+				color: color-hex(white-color);
+			}
+		}
+	}
+
 	.messageBoxWrapper-bc {
 		.componentFilterLabel-bc {
 			background: rgba(var(--b), 1);

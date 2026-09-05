@@ -73,6 +73,10 @@ $header-user-buttons: (
 		file: whatsapp,
 		size: 16px,
 	),
+	bc-i-telegram: (
+		file: telegram,
+		size: 16px,
+	),
 	bc-i-promotion: (
 		file: gift-box,
 		size: 12px,
@@ -103,7 +107,7 @@ $header-user-order: (
 
 // prettier-ignore
 $header-user-push: (
-	bc-i-telegram,
+	bc-i-tv,
 );
 
 $home-row-icons: (

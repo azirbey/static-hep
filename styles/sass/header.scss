@@ -42,7 +42,7 @@
 			@include user-nav-order($header-user-order);
 			@include user-nav-push($header-user-push);
 
-			// Only telegram may absorb leftover space. Promo used to, and
+			// Only TV may absorb leftover space. Promo used to, and
 			// its class-specific auto would otherwise keep splitting the row.
 			&.bc-i-promotion {
 				margin-inline-start: 0 !important;

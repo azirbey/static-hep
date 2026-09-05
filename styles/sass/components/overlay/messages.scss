@@ -1,0 +1,68 @@
+@use "../../abstracts" as *;
+
+.overlay-sliding-wrapper-bc {
+	.messageBoxWrapper-bc {
+		.componentFilterLabel-bc {
+			background: rgba(var(--b), 1);
+			border: solid 1px color-hex(nav-border-blue);
+		}
+
+		.componentFilterBody-bc {
+			.filter-form-w-bc {
+				background: rgba(var(--b), 1);
+				padding: 10px 0;
+
+				.form-control-input-bc {
+					background: color-hex(border-blue);
+				}
+
+				.u-i-p-c-footer-bc {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.messageBoxList-bc {
+			min-height: 0;
+
+			.message-block-bc {
+				border: solid 1px color-hex(nav-border-blue);
+
+				&[data-status="read"] {
+					background: rgba(var(--b), 1);
+					.message-more-time-bc {
+						background: color-hex(ui-kit-toggle-disabled);
+					}
+				}
+
+				&[data-status="unread"] {
+					background: color-hex(nav-border-blue);
+					.message-more-time-bc {
+						background: color-hex(ds-button-blue);
+					}
+				}
+
+				.message-title-block {
+				}
+
+				.message-more-time-bc {
+					margin-top: 0;
+					justify-content: space-between;
+
+					.message-more-icon {
+						position: relative;
+						left: unset;
+						transform: rotate(180deg);
+						border-radius: 100%;
+						width: 32px;
+						height: 32px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: color-hex(nav-border-blue);
+					}
+				}
+			}
+		}
+	}
+}

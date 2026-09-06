@@ -1,0 +1,46 @@
+@use "../../abstracts" as *;
+
+.overlay-sliding-wrapper-bc {
+	.description-wrapper-bc {
+		.deposit,
+		.withdraw {
+			gap: space(small-spacing);
+			display: flex;
+			flex-direction: column;
+
+			.second-tabs-bc {
+				margin-bottom: space(small-spacing);
+			}
+
+			.description-c-row-bc {
+				gap: space(default-spacing);
+				padding: space(default-spacing) space(medium-spacing);
+				background: color-hex(market-blue);
+				margin-bottom: 0;
+				display: grid;
+				grid-template-columns: auto 1fr;
+
+				.description-c-row-column-bc {
+					padding-inline-start: 0;
+
+					&.pay-logo {
+						border-radius: radius();
+						overflow: hidden;
+
+						img {
+							max-height: 54px;
+						}
+					}
+				}
+			}
+		}
+
+		.second-tabs-bc {
+			@include tab-menu();
+
+			.tab-bc {
+				padding: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+@use "../../abstracts" as *;
+
+.overlay-sliding-wrapper-bc {
+	.sportBonusWrapper-bc {
+		padding: space(default-spacing);
+
+		.sport-casino-bonus-container {
+			&:empty {
+				display: none;
+			}
+		}
+
+		.second-tabs-bc {
+			@include tab-menu();
+
+			.tab-bc {
+				padding: 0;
+			}
+		}
+	}
+
+	.promoCodeWrapper-bc {
+		height: 100%;
+		padding: space(default-spacing);
+
+		form {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+
+			.u-i-p-c-footer-bc {
+				margin-top: auto;
+
+				.btn {
+					@include form-btn();
+				}
+			}
+		}
+	}
+}

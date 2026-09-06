@@ -51,5 +51,52 @@
 				}
 			}
 		}
+
+		& + .overlay-sliding-wrapper-bc {
+			.payment-details-scrollable-container {
+				height: 100%;
+
+				.payment-info-bc {
+					height: 100%;
+					padding: space(default-spacing);
+
+					.payment-info-content {
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+
+						.expandableContentWrapper {
+							padding: space(small-spacing);
+							background: rgba(15, 235, 255, 0.04);
+							border: 1px solid rgba(15, 235, 255, 0.12);
+
+							p {
+								margin-bottom: 0;
+								color: color-hex(white-color);
+								@include type(12px, 400, 16px);
+							}
+						}
+
+						.withdraw-form-l-bc {
+							border-bottom: none;
+							padding: 0;
+							flex: 1;
+
+							form {
+								height: 100%;
+								display: flex;
+								flex-direction: column;
+								.u-i-p-c-footer-bc {
+									margin-top: auto;
+									.btn {
+										@include form-btn();
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

@@ -2,9 +2,14 @@
 
 .overlay-sliding-wrapper-bc {
 	&.user-profile-container {
-
 		.back-nav-icon-bc {
-			// buraya bg ile prev-button.svg ekle 32x32 olsun
+			width: 32px;
+			height: 32px;
+			background: url("#{$cdn-images-url}prev-button.svg") no-repeat center / contain;
+
+			&::before {
+				display: none;
+			}
 		}
 
 		.user-profile {
@@ -97,7 +102,10 @@
 		}
 
 		.form-control-label-bc {
-			height: 48px;
+			&:not(:has(textarea)) {
+				height: 48px;
+			}
+
 			&:has(input) {
 				@include form-input();
 			}

@@ -54,7 +54,15 @@ $_form-input-controls: (
 
 		& ~ span:first-of-type {
 			left: 16px;
-			top: 7px;
+			top: 17px;
+
+			&:is(.form-control-bc.focused *, .form-control-bc.valid.filled *) {
+				top: 7px;
+			}
+
+			&:is(.form-control-bc.invalid.filled *) {
+				top: 7px;
+			}
 		}
 
 		&:read-only,
@@ -69,6 +77,31 @@ $_form-input-controls: (
 	color: color-hex(white-color);
 	height: 48px;
 	@include type(15px, 700, 20px);
+}
+
+@mixin tab-menu {
+	background: color-hex(ds-button-blue);
+	height: 48px;
+	padding: space(mini-spacing);
+	border-radius: radius();
+
+	.tab-bc {
+		border-radius: radius();
+		margin: 0;
+		background: color-hex(ds-button-blue);
+		height: 40px;
+		@include type(13px, 400, 20px);
+
+		&::before {
+			display: none;
+		}
+
+		&.active {
+			@include form-btn();
+			height: 40px;
+			@include type(13px, 400, 20px);
+		}
+	}
 }
 
 @mixin item-size($name) {

@@ -185,8 +185,12 @@
 		$label: map.get($meta, label);
 
 		@if $label {
-			&.#{$class}::after {
-				content: $label;
+			&.#{$class} {
+				padding: space(small-spacing);
+
+				&::after {
+					content: $label;
+				}
 			}
 		}
 	}

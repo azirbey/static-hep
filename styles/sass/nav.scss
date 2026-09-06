@@ -10,6 +10,18 @@
 		display: none;
 	}
 
+	.overlay-sliding-wrapper-bc & {
+		.hdr-navigation-scrollable-content {
+			gap: space(small-spacing) !important;
+
+			.hdr-navigation-link-bc {
+				&::before {
+					display: none !important;
+				}
+			}
+		}
+	}
+
 	.hdr-navigation-scrollable-content {
 		padding-inline-start: space(default-spacing) !important;
 		padding-inline-end: space(default-spacing) !important;

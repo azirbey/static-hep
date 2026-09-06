@@ -11,6 +11,9 @@
 	}
 
 	.overlay-sliding-wrapper-bc & {
+		background: rgba(var(--b), 1);
+		border-bottom: solid 1px color-hex(border-blue);
+
 		.hdr-navigation-scrollable-content {
 			gap: space(small-spacing) !important;
 

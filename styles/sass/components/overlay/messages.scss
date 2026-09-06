@@ -2,16 +2,31 @@
 
 .overlay-sliding-wrapper-bc {
 	.message-content {
+		form {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+
+			.u-i-p-c-footer-bc {
+				margin-top: auto;
+			}
+		}
+
 		.form-control-input-bc,
 		.form-control-textarea-bc {
 			background: rgba(var(--b), 1);
 			border: solid 1px color-hex(border-blue);
 			color: color-hex(white-color);
+
+			textarea {
+				padding: 0;
+			}
 		}
 
 		.form-control-title-bc {
 			color: color-hex(placeholder-gray) !important;
 			@include type-token(body-control, true);
+			left: 16px;
 		}
 
 		.u-i-p-c-footer-bc {
@@ -24,7 +39,7 @@
 
 	.messageBoxWrapper-bc {
 		.componentFilterLabel-bc {
-			background: rgba(var(--b), 1);
+			background: color-hex(market-blue);
 			border: solid 1px color-hex(nav-border-blue);
 		}
 
@@ -34,41 +49,87 @@
 				padding: 10px 0;
 
 				.form-control-input-bc {
-					background: color-hex(border-blue);
+					background: color-hex(market-blue);
+					border: solid 1px color-hex(nav-border-blue);
 				}
 
 				.u-i-p-c-footer-bc {
 					margin-top: 0;
+					.btn {
+						background: color-hex(main-color);
+						color: color-hex(white-color);
+					}
 				}
 			}
 		}
 
 		.messageBoxList-bc {
 			min-height: 0;
+			gap: 8px;
+			display: flex;
+			flex-direction: column;
+
+			& + a {
+				display: none;
+			}
 
 			.message-block-bc {
 				border: solid 1px color-hex(nav-border-blue);
 
+				.message-title-block {
+					height: 48px;
+					padding: 8px 16px;
+				}
+				.message-title-bc {
+					align-items: center;
+					display: flex;
+				}
+
 				&[data-status="read"] {
 					background: rgba(var(--b), 1);
+
 					.message-more-time-bc {
 						background: color-hex(ui-kit-toggle-disabled);
+					}
+
+					.message-title-block {
+						.message-remove-icon {
+							margin-inline-start: 0;
+							width: 32px;
+							height: 32px;
+							justify-content: center;
+							align-items: center;
+							display: flex;
+							&::before {
+								@include bg-icon(trash, 16px);
+							}
+						}
 					}
 				}
 
 				&[data-status="unread"] {
 					background: color-hex(nav-border-blue);
+
+					&::before {
+						top: 2px;
+						right: 2px;
+					}
+
 					.message-more-time-bc {
 						background: color-hex(ds-button-blue);
 					}
-				}
 
-				.message-title-block {
+					.message-title-block {
+						.message-remove-icon {
+							display: none;
+						}
+					}
 				}
 
 				.message-more-time-bc {
 					margin-top: 0;
 					justify-content: space-between;
+					padding: 8px 16px;
 
 					.message-more-icon {
 						position: relative;
@@ -82,6 +143,17 @@
 						justify-content: center;
 						background: color-hex(nav-border-blue);
 					}
+				}
+
+				& + .message-block-bc {
+					margin-top: 0;
+				}
+
+				& .message-info-bc {
+					margin: 0;
+					padding: 16px;
+					@include type-token(body-control, true);
+					color: color-hex(white-color);
 				}
 			}
 		}

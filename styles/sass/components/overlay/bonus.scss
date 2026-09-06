@@ -30,6 +30,7 @@
 
 			.u-i-p-c-footer-bc {
 				margin-top: auto;
+				margin-inline-start: 0;
 
 				.btn {
 					@include form-btn();

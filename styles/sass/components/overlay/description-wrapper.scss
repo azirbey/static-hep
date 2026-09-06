@@ -22,13 +22,16 @@
 
 				.description-c-row-column-bc {
 					padding-inline-start: 0;
+					min-width: 0;
 
 					&.pay-logo {
 						border-radius: radius();
 						overflow: hidden;
 
 						img {
-							max-height: 54px;
+							max-height: 51px;
+							aspect-ratio: 440 / 216;
+							width: auto;
 						}
 					}
 				}

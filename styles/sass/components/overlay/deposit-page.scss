@@ -64,16 +64,56 @@
 						height: 100%;
 						display: flex;
 						flex-direction: column;
+						gap: space(small-spacing);
+
+						.description-c-row-bc {
+							gap: space(default-spacing);
+							padding: space(default-spacing) space(medium-spacing);
+							background: color-hex(market-blue);
+							margin-bottom: 0;
+							display: grid;
+							grid-template-columns: auto 1fr;
+
+							.description-c-row-column-bc {
+								padding-inline-start: 0;
+								min-width: 0;
+
+								&.pay-logo {
+									border-radius: radius();
+									overflow: hidden;
+
+									img {
+										max-height: 51px;
+										aspect-ratio: 440 / 216;
+										width: auto;
+									}
+								}
+							}
+						}
 
 						.expandableContentWrapper {
 							padding: space(small-spacing);
 							background: rgba(15, 235, 255, 0.04);
 							border: 1px solid rgba(15, 235, 255, 0.12);
 
-							p {
-								margin-bottom: 0;
-								color: color-hex(white-color);
-								@include type(12px, 400, 16px);
+							.expandableContentData {
+								p {
+									margin-bottom: 0;
+									color: color-hex(white-color);
+									@include type(12px, 400, 16px);
+								}
+							}
+
+							.expandableContent {
+								padding: 0;
+
+								.expandableContentBody {
+									p {
+										img {
+											width: 100%;
+										}
+									}
+								}
 							}
 						}
 

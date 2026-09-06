@@ -84,11 +84,13 @@ $_form-input-controls: (
 	height: 48px;
 	padding: space(mini-spacing);
 	border-radius: radius();
+	position: relative;
 
 	.tab-bc {
 		border-radius: radius();
 		margin: 0;
 		background: color-hex(ds-button-blue);
+		background: transparent;
 		height: 40px;
 		@include type(13px, 400, 20px);
 

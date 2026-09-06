@@ -1,0 +1,106 @@
+@use "../../abstracts" as *;
+
+.overlay-sliding-wrapper-bc {
+	&.user-profile-container {
+
+		.back-nav-icon-bc {
+			// buraya bg ile prev-button.svg ekle 32x32 olsun
+		}
+
+		.user-profile {
+			gap: space(default-spacing);
+			display: flex;
+			flex-direction: column;
+
+			&.u-i-common-content {
+				padding: space(default-spacing);
+			}
+
+			.personalDetailsUnlockWarnings {
+				margin: 0;
+
+				&:empty {
+					display: none;
+				}
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+				gap: space(default-spacing);
+
+				.u-i-p-control-item-holder-bc {
+					margin-bottom: 0;
+
+					.eligible-bonus {
+						background: rgba(15, 235, 255, 0.04);
+						border: 1px solid rgba(15, 235, 255, 0.12);
+						height: 42px;
+						border-radius: radius();
+						padding: space(medium-spacing);
+						color: color-hex(link-gray);
+						@include type(13px, 400, 16px);
+
+						i {
+							width: 16px;
+							height: 16px;
+							font-size: 16px;
+						}
+
+						.eligible-bonus-title {
+							margin: 0 space(small-spacing);
+
+							&::first-letter {
+								text-transform: uppercase;
+							}
+
+							text-transform: lowercase;
+						}
+
+						.eligible-bonus-status.green {
+							color: color-hex(cyan);
+						}
+					}
+				}
+
+				.userProfile-content {
+					.userProfileWrapper-bc {
+						margin: 0;
+						gap: space(small-spacing);
+						display: flex;
+						flex-direction: column;
+					}
+				}
+
+				.u-i-p-c-footer-bc {
+					margin-top: auto;
+
+					.btn {
+						@include form-btn();
+					}
+				}
+			}
+		}
+
+		form.u-i-common-content {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+
+			.u-i-p-c-footer-bc {
+				margin-top: auto;
+
+				.btn {
+					@include form-btn();
+				}
+			}
+		}
+
+		.form-control-label-bc {
+			height: 48px;
+			&:has(input) {
+				@include form-input();
+			}
+		}
+	}
+}

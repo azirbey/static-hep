@@ -18,6 +18,8 @@
 			gap: space(small-spacing) !important;
 
 			.hdr-navigation-link-bc {
+				height: 28px !important;
+
 				&::before {
 					display: none !important;
 				}

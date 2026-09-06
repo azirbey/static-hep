@@ -25,6 +25,52 @@
 	@include type(map.get($t, size), map.get($t, weight), map.get($t, leading), map.get($t, tracking), $important);
 }
 
+$_form-input-controls: (
+	input: input,
+	textarea: textarea,
+	text: 'input[type="text"]',
+	password: 'input[type="password"]',
+	email: 'input[type="email"]',
+	number: 'input[type="number"]',
+	search: 'input[type="search"]',
+	tel: 'input[type="tel"]',
+);
+
+@mixin form-input($control: input) {
+	$selector: map.get($_form-input-controls, $control) or $control;
+
+	#{$selector} {
+		background: color-hex(market-blue);
+		border: 1px solid color-hex(nav-border-blue);
+		color: color-hex(white-color);
+		@include type(12px, 600, 16px);
+		padding: space(large-spacing) space(default-spacing) space(small-spacing);
+
+		&::placeholder,
+		& ~ span:first-of-type {
+			color: color-hex(placeholder-gray);
+			@include type(12px, 600, 16px);
+		}
+
+		& ~ span:first-of-type {
+			left: 16px;
+			top: 7px;
+		}
+
+		&:read-only,
+		&:disabled {
+			border: none;
+		}
+	}
+}
+
+@mixin form-btn {
+	background: color-hex(main-color);
+	color: color-hex(white-color);
+	height: 48px;
+	@include type(15px, 700, 20px);
+}
+
 @mixin item-size($name) {
 	height: token($items, $name) !important;
 }
@@ -341,10 +387,10 @@
 		flex-shrink: 0;
 		width: $box;
 		height: $box;
-		background-image:
-			url("#{menu-icon($name)}"),
-			url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
-		background-size: $glyph $glyph, contain !important;
+		background-image: url("#{menu-icon($name)}"), url("#{$cdn-icons-url}icon-bg-with-border.svg") !important;
+		background-size:
+			$glyph $glyph,
+			contain !important;
 		background-position: center, center !important;
 		background-repeat: no-repeat, no-repeat !important;
 	}

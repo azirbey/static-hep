@@ -2467,8 +2467,6 @@ body .layout-content-holder-bc {
   gap: var(--fds-ref-spacing-medium);
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc {
-  border-bottom: 1px solid #233243 !important;
-  padding-bottom: 24px !important;
   margin-top: 0 !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:has(.casinoTopWinnersWidgetNoData) {

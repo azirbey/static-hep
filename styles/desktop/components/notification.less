@@ -1,0 +1,75 @@
+#root {
+	#push-prompt-toast {
+		background: @surface-base;
+		padding: 20px;
+
+		.Toastify__toast-body {
+			padding: 0;
+		}
+
+		.ds-title {
+			.hb-text(16px, 24px, 400, @white);
+		}
+
+		.toast-notification-text {
+			gap: 0;
+		}
+
+		.ds-body {
+			.hb-text(13px, 20px, 400, @text-muted);
+		}
+
+		.toast-notification-content {
+			&::before {
+				content: "";
+				min-width: 48px;
+				height: 48px;
+				background: url("@{hb-cdn}/notification.svg") no-repeat center / contain;
+			}
+
+			.toast-notification-image {
+				display: none;
+			}
+		}
+
+		.Toastify__close-button {
+			background: #2a3c50;
+			border-radius: 50%;
+			width: 28px;
+			height: 28px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			opacity: 1;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+
+			& > svg {
+				left: 1px;
+				position: relative;
+			}
+		}
+
+		.toast-notification-actions {
+			justify-content: flex-start;
+			padding-inline-start: calc(48px + var(--fds-ref-spacing-xsmall));
+			gap: 8px;
+
+			.ds-btn {
+				&.ds-btn-variant--transparent {
+					background: @border-strong;
+					span {
+						.hb-text(13px, 20px, 700, @white);
+					}
+				}
+				&.ds-btn-variant--primary {
+					span {
+						.hb-text(13px, 20px, 700, @white);
+					}
+				}
+			}
+		}
+	}
+}

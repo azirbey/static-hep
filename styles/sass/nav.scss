@@ -110,5 +110,17 @@
 			width: 24px !important;
 			height: 24px !important;
 		}
+
+		.count-odd-animation {
+			top: -5px;
+			right: -5px;
+			min-width: 12px;
+
+			&:after {
+				width: 100%;
+				top: 0;
+				right: 0;
+			}
+		}
 	}
 }

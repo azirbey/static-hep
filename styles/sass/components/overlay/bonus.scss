@@ -24,17 +24,23 @@
 		padding: space(default-spacing);
 
 		form {
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-
+			gap: space(small-spacing);
 			.u-i-p-c-footer-bc {
 				margin-top: auto;
 				margin-inline-start: 0;
 
 				.btn {
 					@include form-btn();
+					height: 48px;
 				}
+			}
+		}
+
+		&:not(.profile-panel-promo-code) {
+			form {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
 			}
 		}
 	}

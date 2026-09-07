@@ -15,17 +15,43 @@
 					width: 100% !important;
 
 					& + .swiper-slide.swiper-slide-next {
-						right: 20% !important;
+						right: 18% !important;
+						transform: scale(1);
 					}
 				}
 
 				.u-i-p-amounts-bc {
+					min-height: 118px;
+
 					&.withdrawable .u-i-p-a-content-bc {
 						background: color-hex(main-color);
 					}
 
 					&.bonuses .u-i-p-a-content-bc {
 						background: color-hex(green-color);
+					}
+					.u-i-p-a-content-bc {
+						box-shadow: none;
+						border: solid 1px color-rgba(white-color, 0.2);
+						justify-content: space-between;
+						padding: space(medium-spacing);
+
+						&::before {
+							background: transparent;
+						}
+
+						&::after {
+							content: "" !important;
+							position: absolute !important;
+							top: 0 !important;
+							right: 0 !important;
+							width: 100px !important;
+							height: 100px !important;
+							background: url("#{$cdn-images-url}profile-balance-bg.svg") no-repeat top right / contain !important;
+							pointer-events: none !important;
+							opacity: 0.5 !important;
+							z-index: 1 !important;
+						}
 					}
 				}
 

@@ -66,6 +66,15 @@
 						flex-direction: column;
 						gap: space(small-spacing);
 
+						.WithdrawAmount-All {
+							background: color-hex(market-blue);
+
+							.WithdrawAmount-Row-Value,
+							.WithdrawAmount-Row-ValueBalance {
+								color: color-hex(white-color);
+							}
+						}
+
 						.description-c-row-bc {
 							gap: space(default-spacing);
 							padding: space(default-spacing) space(medium-spacing);
@@ -73,6 +82,7 @@
 							margin-bottom: 0;
 							display: grid;
 							grid-template-columns: auto 1fr;
+							border-radius: radius();
 
 							.description-c-row-column-bc {
 								padding-inline-start: 0;
@@ -92,22 +102,59 @@
 						}
 
 						.expandableContentWrapper {
-							padding: space(small-spacing);
-							background: rgba(15, 235, 255, 0.04);
-							border: 1px solid rgba(15, 235, 255, 0.12);
+							padding: space(small-spacing) space(default-spacing);
+							margin-bottom: 0;
+
+							&:has(.not-expandable) {
+								background: rgba(15, 235, 255, 0.04);
+								border: 1px solid rgba(15, 235, 255, 0.12);
+							}
 
 							.expandableContentData {
 								p {
 									margin-bottom: 0;
 									color: color-hex(white-color);
 									@include type(12px, 400, 16px);
+
+									&:first-child {
+										padding: space(small-spacing);
+										border-radius: radius();
+
+										&:has(+ p) {
+											margin-bottom: space(small-spacing);
+											text-align: center;
+										}
+									}
 								}
 							}
 
 							.expandableContent {
 								padding: 0;
 
+								.expandableContentToggle {
+									.expandableContentIcon {
+										&::before {
+											width: 32px;
+											height: 32px;
+											display: flex;
+											align-items: center;
+											justify-content: center;
+											border-radius: 100%;
+											background: color-hex(nav-border-blue);
+										}
+									}
+								}
+
+								&.opened {
+									.expandableContentBody {
+										max-height: 100%;
+									}
+								}
+
 								.expandableContentBody {
+									max-height: 140px;
+									transition: max-height 0.3s ease-in-out;
+
 									p {
 										img {
 											width: 100%;

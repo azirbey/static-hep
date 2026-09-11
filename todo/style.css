@@ -694,6 +694,7 @@ html.edit-enabled .item-text {
 	border-radius: 6px;
 	font-size: 12px;
 	font-weight: 600;
+	border: 1px solid #d5dde6;
 }
 
 .num-save {

@@ -22,7 +22,9 @@
 						background: @surface-raised !important;
 						border-radius: @hb-radius !important;
 
-						&.active {
+						&.active,
+						&:hover {
+							background: fade(@main-color, 12%) !important;
 							border: solid 2px @highlight !important;
 						}
 					}
@@ -42,6 +44,12 @@
 						background-color: @surface-raised !important;
 						height: 44px !important;
 
+						&:hover {
+							background-color: fade(@main-color, 12%) !important;
+							border: 1px solid rgba(@cyan-rgb, 0.4) !important;
+							box-shadow: none !important;
+						}
+
 						.casinoProvidersPopupContent__providerListViewItem--text {
 							.hb-text(15px; 24px; 600; @shade-22) !important;
 						}
@@ -51,8 +59,9 @@
 						}
 
 						&.casinoProvidersPopupContent__providerListViewItem--selected {
-							background-color: rgba(25, 124, 255, 0.12) !important;
-							border: 1px solid rgba(15, 235, 255, 0.4) !important;
+							background-color: rgba(@main-color-rgb, 0.12) !important;
+							border: 1px solid rgba(@cyan-rgb, 0.4) !important;
+							box-shadow: none !important;
 
 							.casinoProvidersPopupContent__providerListViewItem--text {
 								.hb-text(15px; 24px; 600; @white) !important;
@@ -86,6 +95,22 @@
 				}
 				&:disabled {
 					opacity: 0.8 !important;
+				}
+			}
+		}
+	}
+}
+
+#root {
+	.ds-popup__header {
+		&:has(~ .ds-popup__content .casinoProvidersPopupContent) {
+			.ds-popup__header-content {
+				display: flex;
+				align-items: center;
+				gap: var(--fds-ref-spacing-medium);
+
+				&::before {
+					.hb-bg-icon("@{hb-cdn}/menus-blue.svg"; @hb-icon-size-md);
 				}
 			}
 		}

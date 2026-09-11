@@ -564,6 +564,11 @@ html.edit-enabled .edit-switch .icon--edit-on {
 	border-color: #7eb8c9;
 }
 
+.item-temp > *:not(label) {
+	opacity: 0.7;
+	filter: blur(2px);
+}
+
 .item > div,
 .item-body {
 	flex: 1;

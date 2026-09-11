@@ -2907,7 +2907,7 @@ body .layout-content-holder-bc {
   padding: 16px !important;
   gap: 8px !important;
   background: rgba(49, 70, 94, 0.2) !important;
-  backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(40px) !important;
   border-radius: 6px !important;
 }
 #root.casino-slots .layout-content-holder-bc .casinoLobbyContainer > .hm-row-bc:nth-child(4) .tournamentsWidgetCounter {
@@ -3168,6 +3168,9 @@ body .layout-content-holder-bc {
 #root.tournament .layout-content-holder-bc .tournamentSectionMoreTxtIcon {
   color: #0febff !important;
 }
+#root.tournament .layout-content-holder-bc .casinoTournamentInfoSectionBc {
+  background: transparent !important;
+}
 #root.tournament .layout-content-holder-bc .horizontalCategoryItem.casinoTournamentInfoItem,
 #root.tournament .layout-content-holder-bc .casinoTournamentInfoItem {
   position: relative !important;
@@ -3183,6 +3186,7 @@ body .layout-content-holder-bc {
   border-radius: 6px !important;
   font-size: initial !important;
   box-shadow: none !important;
+  border: solid 1px rgba(15, 235, 255, 0.08) !important;
 }
 #root.tournament .layout-content-holder-bc .horizontalCategoryItem.casinoTournamentInfoItem::before,
 #root.tournament .layout-content-holder-bc .casinoTournamentInfoItem::before,
@@ -4567,7 +4571,7 @@ div[id^="comm100-float-button"] > div img {
   background: linear-gradient(#19222c, #19222c) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)) border-box !important;
 }
 .ds-popup .ds-popup__header {
-  padding: 20px 20px 12px 20px !important;
+  padding: 12px 20px !important;
 }
 .ds-popup .ds-popup__header .ds-popup__header-content .ds-label {
   font-family: "Geist", sans-serif !important;
@@ -5431,7 +5435,9 @@ div[id^="comm100-float-button"] > div img {
   background: #233243 !important;
   border-radius: 6px !important;
 }
-.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsInner.active {
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsInner.active,
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsInner:hover {
+  background: rgba(25, 124, 255, 0.12) !important;
   border: solid 2px #0febff !important;
 }
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid .providerItemsBtn svg path,
@@ -5442,6 +5448,11 @@ div[id^="comm100-float-button"] > div img {
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem {
   background-color: #233243 !important;
   height: 44px !important;
+}
+.ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem:hover {
+  background-color: rgba(25, 124, 255, 0.12) !important;
+  border: 1px solid rgba(15, 235, 255, 0.4) !important;
+  box-shadow: none !important;
 }
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem .casinoProvidersPopupContent__providerListViewItem--text {
   font-family: "Geist", sans-serif !important;
@@ -5457,6 +5468,7 @@ div[id^="comm100-float-button"] > div img {
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem.casinoProvidersPopupContent__providerListViewItem--selected {
   background-color: rgba(25, 124, 255, 0.12) !important;
   border: 1px solid rgba(15, 235, 255, 0.4) !important;
+  box-shadow: none !important;
 }
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__underSearchContent .casinoProvidersPopupContent__section .casinoProvidersPopupContent__grid--list .casinoProvidersPopupContent__providerListViewItem.casinoProvidersPopupContent__providerListViewItem--selected .casinoProvidersPopupContent__providerListViewItem--text {
   font-family: "Geist", sans-serif !important;
@@ -5493,6 +5505,22 @@ div[id^="comm100-float-button"] > div img {
 }
 .ds-popup__content .casinoProvidersPopupContent .casinoProvidersPopupContent__footer .ds-btn:disabled {
   opacity: 0.8 !important;
+}
+#root .ds-popup__header:has(~ .ds-popup__content .casinoProvidersPopupContent) .ds-popup__header-content {
+  display: flex;
+  align-items: center;
+  gap: var(--fds-ref-spacing-medium);
+}
+#root .ds-popup__header:has(~ .ds-popup__content .casinoProvidersPopupContent) .ds-popup__header-content::before {
+  content: '';
+  display: block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/menus-blue.svg") no-repeat center center / contain !important;
+}
+.ds-popup__content .randomGamePopupContent {
+  margin-top: 0;
 }
 .ds-popup__content .randomGamePopupContent .randomGamePopupBtnGroup .ds-btn-variant--transparent {
   background: #31465e !important;
@@ -5759,6 +5787,10 @@ div[id^="comm100-float-button"] > div img {
 }
 #root .tournamentDetailsContainerWrp .casinoTournamentInfoRowWrp.active:nth-child(3) {
   background: rgba(242, 165, 23, 0.12);
+}
+#root .tournamentDetailsContainerWrp .casinoTournamentInfoColumn {
+  padding: 20px;
+  background: #1c2835;
 }
 #root .tournamentDetailsContainerWrp .casinoTournamentInfoColumn.Rules {
   background: #1c2835;
@@ -6198,7 +6230,8 @@ div[id^="comm100-float-button"] > div img {
 #root .my-profile-info-block.won-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i,
 #root .my-profile-info-block.lost-return-page .betHistoryList-scroller .betHistoryList-table .betHistoryListEl .betHistoryListEl-borrow-cell + .betHistoryListEl-list-item i {
   border-radius: 50%;
-  top: 20px;
+  top: 0;
+  position: relative;
   right: 20px;
   width: 35px;
   height: 35px;
@@ -7371,4 +7404,24 @@ div[id^="comm100-float-button"] > div img {
 #root .special-games-container .expressWidgetWrapper .expressWidget .expressWidgetBetslip .bet-button-wrapper-bc .btn {
   background: #2a3c50 !important;
   height: 48px !important;
+}
+#root .footerWrapper {
+  box-shadow: none !important;
+}
+#root .casinoNavigationAndFilters {
+  border-top: solid 1px #233243 !important;
+  margin: 0;
+  margin-bottom: 24px;
+}
+#root .casinoNavigationAndFilters .casinoCategories {
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+#root .casinoLobbyContainer .hm-row-bc:nth-child(n + 4) {
+  border-top: solid 1px #233243 !important;
+  padding-top: 24px;
+  margin-top: 24px;
+}
+#root .casinoLobbyContainer .tournamentsWidgetInfo:before {
+  display: none;
 }

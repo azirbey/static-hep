@@ -1,0 +1,33 @@
+#root {
+	.footerWrapper {
+		box-shadow: none !important;
+	}
+
+	// Slot Page
+	.casinoNavigationAndFilters {
+		border-top: solid 1px #233243 !important;
+		margin: 0;
+		margin-bottom: 24px;
+
+		.casinoCategories {
+			padding-top: 24px;
+			padding-bottom: 12px;
+		}
+	}
+
+	.casinoLobbyContainer {
+		.hm-row-bc {
+			&:nth-child(n + 4) {
+				border-top: solid 1px #233243 !important;
+				padding-top: 24px;
+				margin-top: 24px;
+			}
+		}
+
+		.tournamentsWidgetInfo {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}

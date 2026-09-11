@@ -14,6 +14,10 @@
 				if (localStorage.getItem("hep-ui-edit") === "1") {
 					document.documentElement.classList.add("edit-enabled");
 				}
+				var savedView = localStorage.getItem("hep-ui-view");
+				if (savedView === "done" || savedView === "archive") {
+					document.documentElement.dataset.view = savedView;
+				}
 			} catch (err) {}
 		</script>
 	</head>
@@ -21,10 +25,42 @@
 		<div class="layout">
 			<div class="col col-list">
 				<div class="col-list-header-container">
-					<h1>Hepbet UI Notları</h1>
-					<div class="col-list-header-actions">
-						<label class="edit-mode">
-							<span class="edit-mode-label">Düzenleme</span>
+					<div class="col-list-header-main">
+						<div class="page-title">
+							<span
+								class="page-title-icon"
+								aria-hidden="true">
+								<span
+									class="page-title-icon-item"
+									data-view="open">
+									<i
+										data-lucide="clipboard"
+										class="icon icon--page-title"
+										aria-hidden="true"></i>
+								</span>
+								<span
+									class="page-title-icon-item"
+									data-view="done">
+									<i
+										data-lucide="package"
+										class="icon icon--page-title"
+										aria-hidden="true"></i>
+								</span>
+								<span
+									class="page-title-icon-item"
+									data-view="archive">
+									<i
+										data-lucide="archive"
+										class="icon icon--page-title"
+										aria-hidden="true"></i>
+								</span>
+							</span>
+							<h1>Hepbet UI Notları</h1>
+						</div>
+						<label
+							class="edit-mode"
+							aria-label="Düzenleme"
+							title="Düzenleme">
 							<input
 								type="checkbox"
 								id="edit-enabled"
@@ -32,9 +68,138 @@
 							<span
 								class="edit-switch"
 								aria-hidden="true">
-								<span class="edit-switch-thumb"></span>
+								<span class="edit-switch-thumb">
+									<i
+										data-lucide="ban"
+										class="icon icon--edit-off"
+										aria-hidden="true"></i>
+									<i
+										data-lucide="pencil"
+										class="icon icon--edit-on"
+										aria-hidden="true"></i>
+								</span>
 							</span>
 						</label>
+					</div>
+					<div class="col-list-header-actions">
+						<div class="count-meta">
+							<span
+								id="count"
+								class="count-badge"
+								hidden></span>
+							<button
+								type="button"
+								id="btn-archive-all"
+								class="nav-btn nav-btn-dark"
+								hidden>
+								Arşive Taşı
+							</button>
+						</div>
+						<div
+							class="view-dropdown"
+							id="view-dropdown">
+							<button
+								type="button"
+								class="view-dropdown-trigger nav-btn"
+								id="view-dropdown-trigger"
+								aria-haspopup="listbox"
+								aria-expanded="false"
+								aria-controls="view-dropdown-menu">
+								<span
+									id="view-dropdown-label"
+									class="view-dropdown-label">
+									<span
+										class="view-dropdown-label-item"
+										data-view="open">
+										<i
+											data-lucide="clipboard"
+											class="icon icon--view"
+											aria-hidden="true"></i>
+										<span class="view-dropdown-label-text"
+											>Açık</span
+										>
+									</span>
+									<span
+										class="view-dropdown-label-item"
+										data-view="done">
+										<i
+											data-lucide="package"
+											class="icon icon--view"
+											aria-hidden="true"></i>
+										<span class="view-dropdown-label-text"
+											>Tamamlanan</span
+										>
+									</span>
+									<span
+										class="view-dropdown-label-item"
+										data-view="archive">
+										<i
+											data-lucide="archive"
+											class="icon icon--view"
+											aria-hidden="true"></i>
+										<span class="view-dropdown-label-text"
+											>Arşiv</span
+										>
+									</span>
+								</span>
+								<svg
+									class="view-dropdown-icon"
+									width="14"
+									height="14"
+									viewBox="0 0 24 24"
+									fill="none"
+									aria-hidden="true">
+									<path
+										d="M4 7H20M4 12H20M4 17H20"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round" />
+								</svg>
+							</button>
+							<div
+								class="view-dropdown-menu"
+								id="view-dropdown-menu"
+								role="listbox"
+								aria-labelledby="view-dropdown-trigger"
+								hidden>
+								<button
+									type="button"
+									class="view-dropdown-option"
+									data-view="open"
+									role="option"
+									aria-selected="false">
+									<i
+										data-lucide="clipboard"
+										class="icon icon--view"
+										aria-hidden="true"></i>
+									<span>Açık</span>
+								</button>
+								<button
+									type="button"
+									class="view-dropdown-option"
+									data-view="done"
+									role="option"
+									aria-selected="false">
+									<i
+										data-lucide="package"
+										class="icon icon--view"
+										aria-hidden="true"></i>
+									<span>Tamamlanan</span>
+								</button>
+								<button
+									type="button"
+									class="view-dropdown-option"
+									data-view="archive"
+									role="option"
+									aria-selected="false">
+									<i
+										data-lucide="archive"
+										class="icon icon--view"
+										aria-hidden="true"></i>
+									<span>Arşiv</span>
+								</button>
+							</div>
+						</div>
 						<button
 							type="button"
 							id="btn-add"
@@ -55,83 +220,6 @@
 						</button>
 					</div>
 				</div>
-				<nav>
-					<div
-						class="view-dropdown"
-						id="view-dropdown">
-						<button
-							type="button"
-							class="view-dropdown-trigger nav-btn"
-							id="view-dropdown-trigger"
-							aria-haspopup="listbox"
-							aria-expanded="false"
-							aria-controls="view-dropdown-menu">
-							<span id="view-dropdown-label">Açık</span>
-							<svg
-								class="view-dropdown-chevron"
-								width="14"
-								height="14"
-								viewBox="0 0 24 24"
-								fill="none"
-								aria-hidden="true">
-								<path
-									d="M6 9L12 15L18 9"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round" />
-							</svg>
-						</button>
-						<div
-							class="view-dropdown-menu"
-							id="view-dropdown-menu"
-							role="listbox"
-							aria-labelledby="view-dropdown-trigger"
-							hidden>
-							<button
-								type="button"
-								class="view-dropdown-option active"
-								data-view="open"
-								role="option"
-								aria-selected="true">
-								Açık
-							</button>
-							<button
-								type="button"
-								class="view-dropdown-option"
-								data-view="done"
-								role="option"
-								aria-selected="false">
-								Tamamlanan
-							</button>
-							<button
-								type="button"
-								class="view-dropdown-option"
-								data-view="archive"
-								role="option"
-								aria-selected="false">
-								Arşiv
-							</button>
-						</div>
-					</div>
-					<div class="count-meta">
-						<span id="count"></span>
-						<span
-							id="count-sep"
-							class="count-sep"
-							hidden
-							aria-hidden="true">
-							-
-						</span>
-						<button
-							type="button"
-							id="btn-archive-all"
-							class="nav-btn"
-							hidden>
-							Tümünü Arşive Taşı
-						</button>
-					</div>
-				</nav>
 				<div id="list"></div>
 			</div>
 			<div class="col col-add">

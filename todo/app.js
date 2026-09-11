@@ -3,9 +3,12 @@ const SUPABASE_KEY = "sb_publishable_uCEqBHisCoijis0BOWFkOA_DruDz-m6";
 const TABLE = "hep_ui_notes";
 const DEV_FLAG = "hep-ui-dev";
 const EDIT_FLAG = "hep-ui-edit";
+const VIEW_FLAG = "hep-ui-view";
 const TEMP_KEY = "hep-ui-temp-done";
 
-let view = "open";
+const VIEW_KEYS = ["open", "done", "archive"];
+
+let view = initView();
 let items = [];
 let editingId = null;
 let editingDraft = null;
@@ -69,8 +72,11 @@ function toggleViewDropdown() {
 }
 
 function updateViewDropdown() {
-  const label = document.getElementById("view-dropdown-label");
-  if (label) label.textContent = VIEW_LABELS[view];
+  if (view === "open") {
+    delete document.documentElement.dataset.view;
+  } else {
+    document.documentElement.dataset.view = view;
+  }
   document.querySelectorAll(".view-dropdown-option").forEach(function (btn) {
     const active = btn.getAttribute("data-view") === view;
     btn.classList.toggle("active", active);
@@ -78,11 +84,31 @@ function updateViewDropdown() {
   });
 }
 
+function initView() {
+  try {
+    const saved = localStorage.getItem(VIEW_FLAG);
+    if (VIEW_KEYS.indexOf(saved) !== -1) return saved;
+  } catch (err) {}
+  return "open";
+}
+
+function saveView(nextView) {
+  view = nextView;
+  try {
+    localStorage.setItem(VIEW_FLAG, nextView);
+  } catch (err) {}
+  if (nextView === "open") {
+    delete document.documentElement.dataset.view;
+  } else {
+    document.documentElement.dataset.view = nextView;
+  }
+}
+
 function setView(nextView) {
   closeViewDropdown();
   if (view === nextView) return;
   resetEditingState();
-  view = nextView;
+  saveView(nextView);
   load();
 }
 
@@ -177,6 +203,48 @@ function pruneTempDone() {
 
 function isTempDone(item) {
   return isDev && getTempDone().has(item.id);
+}
+
+function getTempDoneCount(openItems) {
+  if (!isDev) return 0;
+  const ids = getTempDone();
+  return openItems.filter(function (item) {
+    return ids.has(item.id);
+  }).length;
+}
+
+function openCountBadgeHtml(openCount, tempDoneCount) {
+  let html = "";
+  if (isDev && tempDoneCount > 0) {
+    html +=
+      '<span class="count-badge-part">' +
+      '<span class="count-badge-num">' +
+      tempDoneCount +
+      '</span><span class="count-badge-icon-dev" aria-hidden="true">' +
+      '<i data-lucide="circle-dashed" class="icon icon--count icon--count-dev"></i>' +
+      '<i data-lucide="check" class="icon icon--count-dev-mark"></i>' +
+      "</span></span>" +
+      '<span class="count-badge-sep" aria-hidden="true">-</span>';
+  }
+  html +=
+    '<span class="count-badge-part">' +
+    '<span class="count-badge-num">' +
+    openCount +
+    '</span><i data-lucide="circle-check" class="icon icon--count" aria-hidden="true"></i>' +
+    "</span>";
+  return html;
+}
+
+function bulkActionBtnHtml(icon, label, count) {
+  const text = count != null ? label + " ( " + count + " )" : label;
+  return (
+    '<i data-lucide="' +
+    icon +
+    '" class="icon icon--bulk" aria-hidden="true"></i>' +
+    "<span>" +
+    escapeHtml(text) +
+    "</span>"
+  );
 }
 
 function escapeHtml(value) {
@@ -373,11 +441,18 @@ function datePopoverHtml(item, viewMode) {
 const EMPTY_LUCIDE_ICONS = {
   open: "clipboard-x",
   done: "package-x",
-  archive: "trash-2",
+  archive: "archive-x",
 };
 
-function emptyStateIcon(viewMode) {
-  const name = EMPTY_LUCIDE_ICONS[viewMode] || EMPTY_LUCIDE_ICONS.open;
+const VIEW_LUCIDE_ICONS = {
+  open: "clipboard",
+  done: "package",
+  archive: "archive",
+};
+
+function emptyStateIcon(viewMode, iconName) {
+  const name =
+    iconName || EMPTY_LUCIDE_ICONS[viewMode] || EMPTY_LUCIDE_ICONS.open;
   return (
     '<i data-lucide="' +
     name +
@@ -412,9 +487,11 @@ function emptyStateHtml(viewMode) {
   );
 }
 
-function itemHtml(item, checked, viewMode) {
+function itemHtml(item, checked, viewMode, displayOrder) {
   const showTemp = isDev && viewMode === null;
   const tempChecked = showTemp && isTempDone(item);
+  const isArchiveView = viewMode === "archive";
+  const isDoneView = viewMode === "done";
   const tempBox = showTemp
     ? '<label class="check-wrap" title="Geçici (yalnızca bu tarayıcı)">' +
       '<input type="checkbox" data-temp="1" data-id="' +
@@ -422,13 +499,15 @@ function itemHtml(item, checked, viewMode) {
       '"' +
       (tempChecked ? " checked" : "") +
       ">" +
-      '<span class="check check-temp"></span>' +
+      '<span class="check check-temp">' +
+      '<i data-lucide="check" class="icon icon--temp-check" aria-hidden="true"></i>' +
+      "</span>" +
       "</label>"
     : "";
   const numHtml =
     viewMode === "done" || viewMode === "archive"
       ? '<span class="num num-dates" tabindex="0">' +
-        item.sort_order +
+        displayOrder +
         '<span class="num-popover" role="tooltip">' +
         datePopoverHtml(item, viewMode) +
         "</span>" +
@@ -446,7 +525,23 @@ function itemHtml(item, checked, viewMode) {
           '<span class="num-save-icon" aria-hidden="true"></span>' +
           '<span class="num-save-spinner" aria-hidden="true"></span>' +
           "</button>"
-        : '<span class="num">' + item.sort_order + "</span>";
+        : '<span class="num">' + displayOrder + "</span>";
+  let checkClass = "check";
+  let checkInner = "";
+  let checkTitle = "";
+
+  if (isArchiveView) {
+    checkClass = "check check-undo";
+    checkInner =
+      '<i data-lucide="package-check" class="icon icon--item-action" aria-hidden="true"></i>';
+    checkTitle = "Geri al";
+  } else if (isDoneView) {
+    checkClass = "check check-restore";
+    checkInner =
+      '<i data-lucide="clipboard-copy" class="icon icon--item-action" aria-hidden="true"></i>';
+    checkTitle = "Açığa al";
+  }
+
   return (
     '<div class="item' +
     (tempChecked ? " item-temp" : "") +
@@ -455,13 +550,19 @@ function itemHtml(item, checked, viewMode) {
     numHtml +
     bodyHtml(item, viewMode) +
     tempBox +
-    '<label class="check-wrap">' +
+    '<label class="check-wrap"' +
+    (checkTitle ? ' title="' + checkTitle + '"' : "") +
+    ">" +
     '<input type="checkbox" data-id="' +
     item.id +
     '"' +
     (checked ? " checked" : "") +
     ">" +
-    '<span class="check"></span>' +
+    '<span class="' +
+    checkClass +
+    '">' +
+    checkInner +
+    "</span>" +
     "</label>" +
     "</div>"
   );
@@ -490,17 +591,53 @@ function render() {
 
   const hasItems = shown.length > 0;
   const countMeta = document.querySelector(".count-meta");
-  if (countMeta) countMeta.hidden = !hasItems;
-
-  document.getElementById("count").textContent = shown.length + " madde";
+  const countEl = document.getElementById("count");
   const bulkBtn = document.getElementById("btn-archive-all");
   const showBulkAction =
     hasItems &&
     ((view === "done" && doneItems.length > 0) ||
       (view === "archive" && archivedItems.length > 0));
-  document.getElementById("count-sep").hidden = !showBulkAction;
+  const showOpenCount = hasItems && view === "open";
+
+  if (countMeta) countMeta.hidden = !showOpenCount && !showBulkAction;
+
+  if (showOpenCount) {
+    const tempDoneCount = getTempDoneCount(openItems);
+    let ariaLabel = shown.length + " madde";
+    if (tempDoneCount > 0) {
+      ariaLabel = tempDoneCount + " geçici tamamlanan, " + ariaLabel;
+    }
+    countEl.hidden = false;
+    countEl.classList.add("is-visible");
+    countEl.setAttribute("aria-label", ariaLabel);
+    countEl.innerHTML = openCountBadgeHtml(shown.length, tempDoneCount);
+    hydrateIcons(countEl);
+  } else {
+    countEl.hidden = true;
+    countEl.classList.remove("is-visible");
+    countEl.removeAttribute("aria-label");
+    countEl.innerHTML = "";
+  }
+
   bulkBtn.hidden = !showBulkAction;
-  bulkBtn.textContent = view === "archive" ? "Tümünü Geri Al" : "Tümünü Arşive Taşı";
+  if (view === "archive") {
+    bulkBtn.innerHTML = bulkActionBtnHtml(
+      "package-plus",
+      "Geri Al",
+      archivedItems.length
+    );
+    hydrateIcons(bulkBtn);
+  } else if (view === "done") {
+    bulkBtn.innerHTML = bulkActionBtnHtml(
+      "archive-restore",
+      "Arşive Taşı",
+      doneItems.length
+    );
+    hydrateIcons(bulkBtn);
+  } else {
+    bulkBtn.innerHTML = bulkActionBtnHtml("archive-restore", "Arşive Taşı");
+    hydrateIcons(bulkBtn);
+  }
 
   const dateView = view === "done" || view === "archive" ? view : null;
 
@@ -513,18 +650,35 @@ function render() {
 
   list.innerHTML = shown.length
     ? shown
-        .map(function (item) {
-          return itemHtml(item, item.done || item.archived, dateView);
+        .map(function (item, index) {
+          return itemHtml(
+            item,
+            item.done || item.archived,
+            dateView,
+            index + 1
+          );
         })
         .join("")
     : emptyStateHtml(view);
 
-  if (!shown.length) hydrateIcons(list);
+  hydrateIcons(list);
 
   focusEditor();
 }
 
+function showListLoading() {
+  const list = document.getElementById("list");
+  const countMeta = document.querySelector(".count-meta");
+  if (countMeta) countMeta.hidden = true;
+  list.innerHTML =
+    '<div class="list-empty list-loading" role="status" aria-live="polite" aria-busy="true">' +
+    '<span class="list-loading-spinner" aria-hidden="true"></span>' +
+    '<span class="list-loading-text">Yükleniyor...</span>' +
+    "</div>";
+}
+
 async function load() {
+  showListLoading();
   try {
     const res = await fetch(
       SUPABASE_URL + "/rest/v1/" + TABLE + "?select=*&order=sort_order.asc",
@@ -534,14 +688,16 @@ async function load() {
       }
     );
     if (!res.ok) {
-      document.getElementById("list").textContent = "Liste yüklenemedi.";
+      document.getElementById("list").innerHTML =
+        '<p class="list-error">Liste yüklenemedi.</p>';
       return;
     }
     items = await res.json();
     pruneTempDone();
     render();
   } catch (err) {
-    document.getElementById("list").textContent = "Liste yüklenemedi.";
+    document.getElementById("list").innerHTML =
+      '<p class="list-error">Liste yüklenemedi.</p>';
   }
 }
 
@@ -708,7 +864,7 @@ document
       );
       btn.disabled = false;
       if (!res.ok) return;
-      view = "done";
+      saveView("done");
       resetEditingState();
       await load();
       return;
@@ -737,7 +893,7 @@ document
       .forEach(function (item) {
         clearTempDone(item.id);
       });
-    view = "archive";
+    saveView("archive");
     resetEditingState();
     await load();
   });
@@ -766,9 +922,12 @@ document.getElementById("form").addEventListener("submit", async function (e) {
   });
   if (!res.ok) return;
   document.getElementById("form").reset();
-  view = "open";
+  saveView("open");
   await load();
 });
 
 load();
 updateEditModeUi();
+hydrateIcons(document.querySelector(".page-title"));
+hydrateIcons(document.getElementById("view-dropdown"));
+hydrateIcons(document.querySelector(".edit-mode"));

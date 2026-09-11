@@ -9,45 +9,128 @@
 		<link
 			rel="stylesheet"
 			href="style.css" />
+		<script>
+			try {
+				if (localStorage.getItem("hep-ui-edit") === "1") {
+					document.documentElement.classList.add("edit-enabled");
+				}
+			} catch (err) {}
+		</script>
 	</head>
 	<body>
 		<div class="layout">
 			<div class="col col-list">
 				<div class="col-list-header-container">
 					<h1>Hepbet UI Notları</h1>
-					<button
-						type="button"
-						id="btn-add"
-						class="nav-btn add-button">
-						<svg
-							width="14"
-							height="14"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M12 5V19M5 12H19"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-					</button>
+					<div class="col-list-header-actions">
+						<label class="edit-mode">
+							<span class="edit-mode-label">Düzenleme</span>
+							<input
+								type="checkbox"
+								id="edit-enabled"
+								class="edit-switch-input" />
+							<span
+								class="edit-switch"
+								aria-hidden="true">
+								<span class="edit-switch-thumb"></span>
+							</span>
+						</label>
+						<button
+							type="button"
+							id="btn-add"
+							class="nav-btn add-button">
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12 5V19M5 12H19"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
 				</div>
 				<nav>
-					<button
-						type="button"
-						id="btn-open"
-						class="nav-btn active">
-						Açık
-					</button>
-					<button
-						type="button"
-						id="btn-done"
-						class="nav-btn">
-						Tamamlanan
-					</button>
-					<span id="count"></span>
+					<div
+						class="view-dropdown"
+						id="view-dropdown">
+						<button
+							type="button"
+							class="view-dropdown-trigger nav-btn"
+							id="view-dropdown-trigger"
+							aria-haspopup="listbox"
+							aria-expanded="false"
+							aria-controls="view-dropdown-menu">
+							<span id="view-dropdown-label">Açık</span>
+							<svg
+								class="view-dropdown-chevron"
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								aria-hidden="true">
+								<path
+									d="M6 9L12 15L18 9"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</button>
+						<div
+							class="view-dropdown-menu"
+							id="view-dropdown-menu"
+							role="listbox"
+							aria-labelledby="view-dropdown-trigger"
+							hidden>
+							<button
+								type="button"
+								class="view-dropdown-option active"
+								data-view="open"
+								role="option"
+								aria-selected="true">
+								Açık
+							</button>
+							<button
+								type="button"
+								class="view-dropdown-option"
+								data-view="done"
+								role="option"
+								aria-selected="false">
+								Tamamlanan
+							</button>
+							<button
+								type="button"
+								class="view-dropdown-option"
+								data-view="archive"
+								role="option"
+								aria-selected="false">
+								Arşiv
+							</button>
+						</div>
+					</div>
+					<div class="count-meta">
+						<span id="count"></span>
+						<span
+							id="count-sep"
+							class="count-sep"
+							hidden
+							aria-hidden="true">
+							-
+						</span>
+						<button
+							type="button"
+							id="btn-archive-all"
+							class="nav-btn"
+							hidden>
+							Tümünü Arşive Taşı
+						</button>
+					</div>
 				</nav>
 				<div id="list"></div>
 			</div>
@@ -62,6 +145,7 @@
 				</form>
 			</div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>

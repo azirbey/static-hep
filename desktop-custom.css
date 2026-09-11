@@ -7435,7 +7435,7 @@ div[id^="comm100-float-button"] > div img {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(15, 235, 255, 0.1);
+  background: linear-gradient(to bottom, #3f5a78, #31465e);
   color: #0febff;
   font-weight: 600;
   font-size: 15px;

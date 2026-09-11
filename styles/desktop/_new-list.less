@@ -3,6 +3,77 @@
 		box-shadow: none !important;
 	}
 
+	.footerInfoPage {
+		.footerInfoContent {
+			.content {
+				ol {
+					list-style: none;
+					padding-inline-start: 0;
+					margin: 0;
+					counter-reset: footer-info-step;
+
+					> li {
+						counter-increment: footer-info-step;
+						margin-block-end: @hb-space-4;
+
+						> strong:first-of-type {
+							.hb-text(18px; 24px; 700; @text-strong);
+						}
+
+						&::before {
+							content: counter(footer-info-step);
+							display: inline-flex;
+							align-items: center;
+							justify-content: center;
+							flex-shrink: 0;
+							width: 28px;
+							height: 28px;
+							border-radius: 50%;
+							background: fade(@cyan, 10%);
+							color: @cyan;
+							font-weight: 600;
+							font-size: 15px;
+							line-height: 1;
+							vertical-align: middle;
+							margin-inline-end: @hb-space-3;
+						}
+
+						> ul {
+							list-style: none;
+							padding-inline-start: 0;
+							margin-block-start: @hb-space-2;
+							margin-inline-start: calc(28px + @hb-space-3);
+
+							li {
+								position: relative;
+								padding-inline-start: @hb-space-4;
+								.hb-text(15px; 24px; 500; @text-body);
+
+								&::before {
+									content: "";
+									position: absolute;
+									inset-inline-start: 0;
+									top: 0.75em;
+									width: 6px;
+									height: 6px;
+									border-radius: 50%;
+									background: @shade-10;
+									transform: translateY(-50%);
+								}
+
+								ul {
+									list-style: none;
+									padding-inline-start: 0;
+									margin-block-start: @hb-space-2;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	// Slot Page
 	.casinoNavigationAndFilters {
 		border-top: solid 1px #233243 !important;

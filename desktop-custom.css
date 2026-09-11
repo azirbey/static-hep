@@ -7408,6 +7408,73 @@ div[id^="comm100-float-button"] > div img {
 #root .footerWrapper {
   box-shadow: none !important;
 }
+#root .footerInfoPage .footerInfoContent .content ol {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+  counter-reset: footer-info-step;
+}
+#root .footerInfoPage .footerInfoContent .content ol > li {
+  counter-increment: footer-info-step;
+  margin-block-end: 16px;
+}
+#root .footerInfoPage .footerInfoContent .content ol > li > strong:first-of-type {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .footerInfoPage .footerInfoContent .content ol > li::before {
+  content: counter(footer-info-step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(15, 235, 255, 0.1);
+  color: #0febff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  vertical-align: middle;
+  margin-inline-end: 12px;
+}
+#root .footerInfoPage .footerInfoContent .content ol > li > ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 8px;
+  margin-inline-start: calc(28px + 12px);
+}
+#root .footerInfoPage .footerInfoContent .content ol > li > ul li {
+  position: relative;
+  padding-inline-start: 16px;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #d7e0ea !important;
+}
+#root .footerInfoPage .footerInfoContent .content ol > li > ul li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.75em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3f5a78;
+  transform: translateY(-50%);
+}
+#root .footerInfoPage .footerInfoContent .content ol > li > ul li ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 8px;
+}
 #root .casinoNavigationAndFilters {
   border-top: solid 1px #233243 !important;
   margin: 0;

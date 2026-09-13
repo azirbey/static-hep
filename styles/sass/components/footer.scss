@@ -296,6 +296,7 @@ $social-platforms: twitter, instagram, facebook, bluesky, tiktok, pinterest, you
 					}
 
 					a {
+						position: relative;
 						display: flex;
 						flex-direction: column;
 						align-items: center;
@@ -314,20 +315,33 @@ $social-platforms: twitter, instagram, facebook, bluesky, tiktok, pinterest, you
 						@include type(13px, 600, 20px, -0.01em, true);
 						color: color-hex(white-color);
 
-						&::before {
+						&::before,
+						&::after {
 							content: "";
+							box-sizing: border-box;
+						}
+
+						&::before {
 							display: block;
 							flex-shrink: 0;
-							box-sizing: border-box;
 							width: 40px;
 							height: 40px;
 							border-radius: radius();
 							border: 1px solid transparent;
 							background:
-								var(--hb-social-icon) no-repeat center / 16px padding-box,
 								linear-gradient(180deg, #3f5a78 0%, color-hex(ds-button-blue) 100%) padding-box,
 								linear-gradient(to bottom, color-rgba(white-color, 0.05), color-rgba(white-color, 0.2))
 									border-box;
+						}
+
+						&::after {
+							position: absolute;
+							top: calc(#{space(medium-spacing)} + (40px - 16px) / 2);
+							left: 50%;
+							transform: translateX(-50%);
+							width: 16px;
+							height: 16px;
+							background: var(--hb-social-icon) no-repeat center / contain;
 						}
 					}
 

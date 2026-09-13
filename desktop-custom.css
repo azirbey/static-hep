@@ -585,7 +585,7 @@ body {
   height: 16px;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu .nav-menu-container .nav-menu-other > li.nav-menu-item i.bc-i-apps::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1064,7 +1064,7 @@ body {
   gap: 10px !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/event-view"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1076,7 +1076,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/soccer.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/live-calendar"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1088,7 +1088,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/live/results"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1100,7 +1100,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/event-view"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1112,7 +1112,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/stopwatch.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/live-calendar"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1124,7 +1124,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/calendar.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/results"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1136,7 +1136,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/scoreboard.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="sports/pre-match/tournaments"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1148,7 +1148,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/slots"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1160,7 +1160,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/slot-machine.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/tournaments"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1172,7 +1172,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/trophy.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/jackpot"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1184,7 +1184,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/diamond.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="live-casino/home"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1196,7 +1196,7 @@ body {
   background-image: url("https://static-hep.hepbet-static.workers.dev/images/nav-menu-icons/svg/white/roulette.svg") !important;
 }
 .layout-header-holder-bc header .nav-content-bc .nav-content-menu + .nav-menu-container ul.nav-menu a.nav-menu-item[href*="casino/live-rtp"]::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -1257,7 +1257,7 @@ body {
   position: relative !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc::before {
-  content: '' !important;
+  content: "" !important;
   background: #233243 !important;
   width: 1px !important;
   height: 30px !important;
@@ -1281,12 +1281,12 @@ body {
   height: 32px;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc a.bc-i-telegram:before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/telegram.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/telegram.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc a.bc-i-tv {
   background: #233243 !important;
@@ -1313,7 +1313,7 @@ body {
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(1)::after,
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(2)::after,
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc .header-custom-buttons:nth-child(6)::after {
-  content: '' !important;
+  content: "" !important;
   background: #233243 !important;
   width: 1px !important;
   height: 30px !important;
@@ -1334,12 +1334,12 @@ body {
   height: 32px;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(1):before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(2) {
   background: transparent !important;
@@ -1348,12 +1348,12 @@ body {
   height: 32px;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(2):before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3) {
   background: #233243 !important;
@@ -1365,12 +1365,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3):before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(3) span {
   font-size: 0 !important;
@@ -1396,12 +1396,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(4):before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(4) span {
   font-size: 0 !important;
@@ -1427,12 +1427,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(5):before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons a:nth-child(5) span {
   font-size: 0 !important;
@@ -1471,7 +1471,7 @@ body {
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-call::after,
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-whatsapp::after,
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-custom-buttons > a.bc-i-telegram::after {
-  content: '' !important;
+  content: "" !important;
   background: #233243 !important;
   width: 1px !important;
   height: 30px !important;
@@ -1629,7 +1629,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-user::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1654,7 +1654,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-wallet::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1679,7 +1679,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-money::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1704,7 +1704,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-balance-management::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1729,7 +1729,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-history::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1754,7 +1754,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-bonus::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1779,7 +1779,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-promotion::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1804,7 +1804,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-messages::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1829,7 +1829,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-message::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1854,7 +1854,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-loyalty::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1879,7 +1879,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-rewards::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1904,7 +1904,7 @@ body {
   color: transparent !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:has(.header-user-nav) .header-user-nav .nav-menu-other.profileDetails .nav-menu-sub i.bc-i-logout::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -1946,12 +1946,12 @@ body {
   height: 32px;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(1) a:before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(2) a {
   background: transparent !important;
@@ -1960,12 +1960,12 @@ body {
   height: 32px;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(2) a:before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a {
   background: #233243 !important;
@@ -1977,12 +1977,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a:before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/gift-box.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(3) a span {
   font-size: 0 !important;
@@ -2008,12 +2008,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(4) a:before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/bonus-request.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(4) a span {
   font-size: 0 !important;
@@ -2039,12 +2039,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(5) a:before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/withdraw.svg") no-repeat center center / contain !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .header-custom-buttons:nth-child(5) a span {
   font-size: 0 !important;
@@ -2094,7 +2094,7 @@ body {
   position: relative !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .hdr-user-bc:not(:has(.header-user-nav)) .btn.sign-in::before {
-  content: '' !important;
+  content: "" !important;
   background: #233243 !important;
   width: 1px !important;
   height: 30px !important;
@@ -2114,7 +2114,7 @@ body {
   position: relative !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .form-control-bc::before {
-  content: '' !important;
+  content: "" !important;
   background: #233243 !important;
   width: 1px !important;
   height: 30px !important;
@@ -2223,7 +2223,7 @@ body {
   position: relative !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .infoTime::before {
-  content: '' !important;
+  content: "" !important;
   background: #233243 !important;
   width: 1px !important;
   height: 30px !important;
@@ -2245,7 +2245,7 @@ body {
   position: relative !important;
 }
 .layout-header-holder-bc header .hdr-main-content-bc .smartPanel-bc::before {
-  content: '' !important;
+  content: "" !important;
   background: #233243 !important;
   width: 1px !important;
   height: 30px !important;
@@ -2627,8 +2627,8 @@ body .layout-content-holder-bc {
   color: #fff !important;
   box-shadow: none !important;
 }
-#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon,
-#root.live-casino-games .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon {
+#root.casino-slots .horizontal-scroll [class="category-Lobby"] span.CMSIconSVGWrapper.chip__icon,
+#root.live-casino-games .horizontal-scroll [class="category-Lobby"] span.CMSIconSVGWrapper.chip__icon {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2636,18 +2636,18 @@ body .layout-content-holder-bc {
   height: 16px !important;
   color: transparent !important;
 }
-#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon svg,
-#root.live-casino-games .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon svg {
+#root.casino-slots .horizontal-scroll [class="category-Lobby"] span.CMSIconSVGWrapper.chip__icon svg,
+#root.live-casino-games .horizontal-scroll [class="category-Lobby"] span.CMSIconSVGWrapper.chip__icon svg {
   display: none !important;
 }
-#root.casino-slots .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon::before,
-#root.live-casino-games .horizontal-scroll [class='category-Lobby'] span.CMSIconSVGWrapper.chip__icon::before {
-  content: '';
+#root.casino-slots .horizontal-scroll [class="category-Lobby"] span.CMSIconSVGWrapper.chip__icon::before,
+#root.live-casino-games .horizontal-scroll [class="category-Lobby"] span.CMSIconSVGWrapper.chip__icon::before {
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/list-text.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/list-text.svg") no-repeat center center / contain !important;
 }
 #root.casino-slots .casinoNavigationAndFilters,
 #root.live-casino-games .casinoNavigationAndFilters {
@@ -2717,7 +2717,7 @@ body .layout-content-holder-bc {
 }
 #root.casino-slots .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn::before,
 #root.live-casino-games .casinoGameProviderFilters .casinoRandomGameButtonWrapper .ds-btn::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -2803,7 +2803,7 @@ body .layout-content-holder-bc {
 }
 #root.casino-slots .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon::before,
 #root.live-casino-games .casinoGameProviderFilters span.CMSIconSVGWrapper.ds-select__icon::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -3480,7 +3480,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Soccer::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3500,7 +3500,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Basketball::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3520,7 +3520,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Volleyball::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3540,7 +3540,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Tennis::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3560,7 +3560,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-IceHockey::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3580,7 +3580,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Baseball::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3600,7 +3600,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-TableTennis::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3620,7 +3620,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Cricket::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3640,7 +3640,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Handball::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3660,7 +3660,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Rugby::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3680,7 +3680,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyUnion::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3700,7 +3700,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-RugbyLeague::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3720,7 +3720,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Golf::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3740,7 +3740,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Boxing::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3760,7 +3760,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Darts::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3780,7 +3780,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Snooker::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3800,7 +3800,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachVolleyball::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3820,7 +3820,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-BeachSoccer::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3840,7 +3840,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Biathlon::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3860,7 +3860,7 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .pp-sport-list-holder-bc .sp-s-l-h-flag-bc.bc-i-Pickleball::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -3944,14 +3944,14 @@ body .layout-content-holder-bc {
   border-radius: 6px;
 }
 #root.sportsbook #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper .bc-i-field-soccer::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
 }
 #root.sportsbook #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper .bc-i-field-soccer::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/football.svg') no-repeat center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/football.svg") no-repeat center / contain !important;
 }
 #root.sportsbook #betslip_container .betslip-game-animation-block .game-details-container-bc .game-details-c-live-icons-row-bc .tooltipIconWrapper::after {
   content: "Animasyonlar";
@@ -3973,12 +3973,12 @@ body .layout-content-holder-bc {
   padding-inline-end: 12px !important;
 }
 #root.sportsbook #betslip_container .bs-f-header-bc .settings-r-b-row-bc::after {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/calculator.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/calculator.svg") no-repeat center center / contain !important;
 }
 #root.sportsbook #betslip_container .bs-f-header-sub-navigation-bc {
   background: #2a3c50 !important;
@@ -4115,14 +4115,14 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream) > i::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/video-camera.svg') no-repeat center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/video-camera.svg") no-repeat center / contain !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white {
   background: #197cff !important;
@@ -4138,14 +4138,14 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-stream).a-white > i::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/video-camera-white.svg') no-repeat center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/video-camera-white.svg") no-repeat center / contain !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) {
   display: flex !important;
@@ -4167,14 +4167,14 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world) > i::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/world.svg') no-repeat center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/world.svg") no-repeat center / contain !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white {
   background: #197cff !important;
@@ -4190,14 +4190,14 @@ body .layout-content-holder-bc {
   color: transparent !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .filter-sports-bc .tooltipIconWrapper .btn.s-small.a-outline:has(> .filter-icon-bc.bc-i-world).a-white > i::before {
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/world-white.svg') no-repeat center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/world-white.svg") no-repeat center / contain !important;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc {
   overflow-y: scroll !important;
@@ -4567,8 +4567,8 @@ div[id^="comm100-float-button"] > div img {
 }
 .ds-popup {
   border-radius: 6px;
-  border: 1px solid transparent;
-  background: linear-gradient(#19222c, #19222c) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)) border-box !important;
+  border: 1px solid transparent !important;
+  background: linear-gradient(180deg, #19222c 0%, #19222c 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)) border-box !important;
 }
 .ds-popup .ds-popup__header {
   padding: 12px 20px !important;
@@ -4673,7 +4673,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-user::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4697,7 +4697,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-wallet::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4721,7 +4721,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-money::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4745,7 +4745,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-balance-management::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4769,7 +4769,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-history::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4793,7 +4793,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-bonus::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4817,7 +4817,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-promotion::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4841,7 +4841,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-messages::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4865,7 +4865,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-message::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4889,7 +4889,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-loyalty::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4913,7 +4913,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-rewards::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4937,7 +4937,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav i.user-profile-nav-icon.bc-i-logout::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4961,7 +4961,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav:has([href*="account=profile"]) i.user-profile-nav-icon::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -4985,7 +4985,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav:has([href*="account=balance"]) i.user-profile-nav-icon::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -5009,7 +5009,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav:has([href*="account=history"]) i.user-profile-nav-icon::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -5033,7 +5033,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav:has([href*="account=bonuses"]) i.user-profile-nav-icon::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -5057,7 +5057,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav:has([href*="account=messages"]) i.user-profile-nav-icon::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -5081,7 +5081,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .user-profile-nav:has([href*="account=rewards"]) i.user-profile-nav-icon::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -5165,7 +5165,7 @@ div[id^="comm100-float-button"] > div img {
   color: transparent !important;
 }
 .userLogoutBtn i::before {
-  content: '' !important;
+  content: "" !important;
   display: block !important;
   flex-shrink: 0;
   width: 20px;
@@ -5512,7 +5512,7 @@ div[id^="comm100-float-button"] > div img {
   gap: var(--fds-ref-spacing-medium);
 }
 #root .ds-popup__header:has(~ .ds-popup__content .casinoProvidersPopupContent) .ds-popup__header-content::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -5852,7 +5852,7 @@ div[id^="comm100-float-button"] > div img {
   height: 16px;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.upcoming-matches > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -5863,7 +5863,7 @@ div[id^="comm100-float-button"] > div img {
   -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/images/sports-nav-icons/upcoming-matches.svg") no-repeat center / contain;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.popular-matches > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -5874,7 +5874,7 @@ div[id^="comm100-float-button"] > div img {
   -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/images/sports-nav-icons/popular-matches.svg") no-repeat center / contain;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.popular-competitions > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -5885,7 +5885,7 @@ div[id^="comm100-float-button"] > div img {
   -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/images/sports-nav-icons/popular-tournaments.svg") no-repeat center / contain;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.multiple-of-the-day > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -5896,7 +5896,7 @@ div[id^="comm100-float-button"] > div img {
   -webkit-mask: url("https://static-hep.hepbet-static.workers.dev/images/sports-nav-icons/combo-of-the-day.svg") no-repeat center / contain;
 }
 #root.sportsbook .sportsbook-container .left-menu-container .pp-sport-list-holder-bc .left-menu-scroll > .sp-sub-list-bc.SpecialBets > .sp-s-l-head-bc .sp-s-l-h-flag-bc::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -7170,12 +7170,12 @@ div[id^="comm100-float-button"] > div img {
 }
 #root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-remove-icon::before,
 #root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-remove-icon::before {
-  content: '';
+  content: "";
   display: block;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background: url('https://static-hep.hepbet-static.workers.dev/images/icons/trash.svg') no-repeat center center / contain !important;
+  background: url("https://static-hep.hepbet-static.workers.dev/images/icons/trash.svg") no-repeat center center / contain !important;
 }
 #root .my-profile-info-block.inbox-page .messageBoxList-bc .message-block-bc .message-more-time-bc,
 #root .my-profile-info-block.sent-page .messageBoxList-bc .message-block-bc .message-more-time-bc {
@@ -7416,7 +7416,7 @@ div[id^="comm100-float-button"] > div img {
 }
 #root .footerInfoPage .footerInfoContent .content ol > li {
   counter-increment: footer-info-step;
-  margin-block-end: 16px;
+  margin-block-end: 12px;
 }
 #root .footerInfoPage .footerInfoContent .content ol > li > strong:first-of-type {
   font-family: "Geist", sans-serif !important;
@@ -7491,4 +7491,59 @@ div[id^="comm100-float-button"] > div img {
 }
 #root .casinoLobbyContainer .tournamentsWidgetInfo:before {
   display: none;
+}
+#root .footerInfoPage .footerInfoContent {
+  background: #131b24;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#root .footerInfoPage .footerInfoContent .footerInfoTitle {
+  padding: 0;
+}
+#root .footerInfoPage .footerInfoContent .footerInfoTitle .back-nav-bc .back-nav-icon-bc {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  border: 1px solid transparent !important;
+  background: linear-gradient(180deg, #2a3c50 0%, #233243 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)) border-box !important;
+}
+#root .footerInfoPage .footerInfoContent .footerInfoTitle .back-nav-bc .back-nav-icon-bc::before {
+  content: "";
+  font-size: 0.6rem;
+}
+#root .footerInfoPage .footerInfoContent .footerInfoTitle .footerInfoTitleText {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .footerInfoPage .footerInfoContent .footerInfoTitle .footerInfoTitleText + .btn {
+  height: 40px;
+}
+#root .footerInfoPage .footerInfoContent .footerInfoTitle .footerInfoTitleText + .btn span {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .footerInfoPage .footerInfoContent .content {
+  padding: 0;
+  overflow: hidden;
+}
+#root .footerInfoPage .footerInfoContent .content [style] {
+  font-size: unset !important;
+  font-family: unset !important;
+  font-weight: unset !important;
+  line-height: unset !important;
+  text-align: unset !important;
+  color: unset !important;
 }

@@ -1,9 +1,6 @@
 .ds-popup {
 	border-radius: @hb-radius;
-	border: 1px solid transparent;
-	background:
-		linear-gradient(@surface-header, @surface-header) padding-box,
-		linear-gradient(to bottom, @border-soft, fade(@text-strong, 2%)) border-box !important;
+	.hb-framed-fill(@surface-header; @surface-header);
 
 	.ds-popup__header {
 		padding: @hb-space-3 @hb-space-5 !important;

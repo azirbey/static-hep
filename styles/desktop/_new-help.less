@@ -1,0 +1,72 @@
+#root {
+	.footerInfoPage {
+		.footerInfoContent {
+			background: @shade-3;
+			padding: @hb-space-5;
+			display: flex;
+			flex-direction: column;
+			gap: @hb-space-5;
+
+			.footerInfoTitle {
+				padding: 0;
+
+				.back-nav-bc {
+					.back-nav-icon-bc {
+						.hb-flex-center();
+						width: 40px !important;
+						height: 40px !important;
+						border-radius: 50% !important;
+						.hb-framed-fill();
+
+						&::before {
+							content: "";
+							font-size: 0.6rem;
+						}
+					}
+
+					.back-nav-title-bc {
+					}
+				}
+
+				.footerInfoTitleText {
+					.hb-text(24px; 32px; 700; @text-strong);
+					& + .btn {
+						height: 40px;
+						span {
+							.hb-text(15px; 20px; 600; @text-strong);
+						}
+					}
+				}
+			}
+
+			.content {
+				padding: 0;
+				overflow: hidden;
+
+				[style] {
+					font-size: unset !important;
+					font-family: unset !important;
+					font-weight: unset !important;
+					line-height: unset !important;
+					text-align: unset !important;
+					color: unset !important;
+				}
+				.contact-list {
+					.contact-item {
+						.contact-title {
+						}
+						.contact-value {
+							a {
+							}
+						}
+					}
+				}
+
+				.button-group {
+					.button {
+					}
+				}
+			}
+		}
+	}
+}

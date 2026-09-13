@@ -15,6 +15,15 @@
 					> li {
 						counter-increment: footer-info-step;
 						margin-block-end: @hb-space-3;
+						.hb-text(15px; 24px; 500; @text-body);
+
+						a {
+							.hb-text(15px; 24px; 500; @cyan);
+							text-decoration: none;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
 
 						> strong:first-of-type {
 							.hb-text(18px; 24px; 700; @text-strong);

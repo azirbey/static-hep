@@ -7417,6 +7417,24 @@ div[id^="comm100-float-button"] > div img {
 #root .footerInfoPage .footerInfoContent .content ol > li {
   counter-increment: footer-info-step;
   margin-block-end: 12px;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #d7e0ea !important;
+}
+#root .footerInfoPage .footerInfoContent .content ol > li a {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #0febff !important;
+  text-decoration: none;
+}
+#root .footerInfoPage .footerInfoContent .content ol > li a:hover {
+  text-decoration: underline;
 }
 #root .footerInfoPage .footerInfoContent .content ol > li > strong:first-of-type {
   font-family: "Geist", sans-serif !important;
@@ -7538,6 +7556,15 @@ div[id^="comm100-float-button"] > div img {
 #root .footerInfoPage .footerInfoContent .content {
   padding: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #d7e0ea !important;
 }
 #root .footerInfoPage .footerInfoContent .content [style] {
   font-size: unset !important;
@@ -7546,4 +7573,189 @@ div[id^="comm100-float-button"] > div img {
   line-height: unset !important;
   text-align: unset !important;
   color: unset !important;
+}
+#root .footerInfoPage .footerInfoContent .content .contact-list {
+  overflow: hidden;
+  border: 1px solid #2a3c50;
+  border-radius: 6px;
+  background: #1c2835;
+  width: 520px;
+}
+#root .footerInfoPage .footerInfoContent .content .contact-list .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+}
+#root .footerInfoPage .footerInfoContent .content .contact-list .contact-item:not(:last-child) {
+  box-shadow: inset 0 -1px 0 #233243;
+}
+#root .footerInfoPage .footerInfoContent .content .contact-list .contact-item .contact-title {
+  flex: 1 0 0;
+  min-width: 0;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #bccbdc !important;
+}
+#root .footerInfoPage .footerInfoContent .content .contact-list .contact-item .contact-value {
+  flex: 1 0 0;
+  min-width: 0;
+  text-align: right;
+  overflow-wrap: break-word;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .footerInfoPage .footerInfoContent .content .contact-list .contact-item .contact-value a {
+  color: inherit;
+  text-decoration: none;
+}
+#root .footerInfoPage .footerInfoContent .content .button-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#root .footerInfoPage .footerInfoContent .content .button-group .button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 44px;
+  padding: 0 20px;
+  gap: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .footerInfoPage .footerInfoContent .content .button-group .button::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  mask: no-repeat center / contain;
+  -webkit-mask: no-repeat center / contain;
+}
+#root .footerInfoPage .footerInfoContent .content .button-group .button:nth-child(1) {
+  border: 1px solid transparent !important;
+  background: linear-gradient(180deg, #197cff 0%, #197cff 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)) border-box !important;
+}
+#root .footerInfoPage .footerInfoContent .content .button-group .button:nth-child(1)::before {
+  mask-image: url("https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg");
+  -webkit-mask-image: url("https://static-hep.hepbet-static.workers.dev/images/icons/call-back.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .button-group .button:nth-child(2) {
+  border: 1px solid transparent !important;
+  background: linear-gradient(180deg, #23aa27 0%, #23aa27 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)) border-box !important;
+}
+#root .footerInfoPage .footerInfoContent .content .button-group .button:nth-child(2)::before {
+  mask-image: url("https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg");
+  -webkit-mask-image: url("https://static-hep.hepbet-static.workers.dev/images/icons/whatsapp.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group > strong {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group > ul > li {
+  margin: 0;
+  padding: 0;
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 160px;
+  padding: 16px;
+  border: 1px solid #2a3c50;
+  border-radius: 6px;
+  background: #1c2835;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group a::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: var(--hb-social-icon) no-repeat center / 20px padding-box, linear-gradient(180deg, #3f5a78 0%, #31465e 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)) border-box;
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.twitter {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/twitter.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.instagram {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/instagram.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.facebook {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/facebook.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.bluesky {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/bluesky.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.tiktok {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/tiktok.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.pinterest {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/pinterest.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.youtube {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/youtube.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.telegram {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/telegram.svg");
+}
+#root .footerInfoPage .footerInfoContent .content .social-list .social-group.whatsapp {
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/whatsapp.svg");
 }

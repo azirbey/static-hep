@@ -1,0 +1,343 @@
+@use "../abstracts" as *;
+
+$social-platforms: twitter, instagram, facebook, bluesky, tiktok, pinterest, youtube, telegram, whatsapp;
+
+.footerInfoPage {
+	.footerInfoContent {
+		background: color-hex(footer-bg);
+		padding: space(default-spacing);
+		display: flex;
+		flex-direction: column;
+		gap: space(default-spacing);
+
+		.footerInfoTitle {
+			padding: 0;
+
+			.back-nav-icon-bc {
+				width: 32px !important;
+				height: 32px !important;
+				border-radius: 50% !important;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include linear-border-box($fill: color-hex(nav-border-blue));
+
+				&::before {
+					content: "";
+					font-size: 0.6rem;
+				}
+			}
+
+			.footerInfoTitleText {
+				@include type(16px, 700, 24px, -0.01em, true);
+				color: color-hex(white-color);
+
+				& + .btn {
+					height: 32px;
+					padding: 0 space(medium-spacing);
+
+					span {
+						@include type(13px, 600, 20px, -0.01em, true);
+						color: color-hex(white-color);
+					}
+				}
+			}
+		}
+
+		.content {
+			padding: 0;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			gap: space(medium-spacing);
+			@include type(13px, 500, 20px, -0.01em, true);
+			color: color-hex(ds-chip-gray);
+
+			[style] {
+				font-size: unset !important;
+				font-family: unset !important;
+				font-weight: unset !important;
+				line-height: unset !important;
+				text-align: unset !important;
+				color: unset !important;
+			}
+
+			ol {
+				list-style: none;
+				padding-inline-start: 0;
+				margin: 0;
+				counter-reset: footer-info-step;
+
+				> li {
+					counter-increment: footer-info-step;
+					margin-block-end: space(medium-spacing);
+					@include type(13px, 500, 20px, -0.01em, true);
+					color: color-hex(ds-chip-gray);
+
+					a {
+						@include type(13px, 500, 20px, -0.01em, true);
+						color: color-hex(cyan);
+						text-decoration: none;
+					}
+
+					> strong:first-of-type {
+						@include type(15px, 700, 24px, -0.01em, true);
+						color: color-hex(white-color);
+					}
+
+					&::before {
+						content: counter(footer-info-step);
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						flex-shrink: 0;
+						width: 28px;
+						height: 28px;
+						border-radius: 50%;
+						background: linear-gradient(to bottom, #3f5a78, color-hex(ds-button-blue));
+						color: color-hex(cyan);
+						font-weight: 600;
+						font-size: 15px;
+						line-height: 1;
+						vertical-align: middle;
+						margin-inline-end: space(medium-spacing);
+					}
+
+					> ul {
+						list-style: none;
+						padding-inline-start: 0;
+						margin-block-start: space(small-spacing);
+						margin-inline-start: 0;
+
+						li {
+							position: relative;
+							padding-inline-start: 28px;
+							@include type(13px, 500, 20px, -0.01em, true);
+							color: color-hex(ds-chip-gray);
+
+							&::before {
+								content: "";
+								position: absolute;
+								inset-inline-start: 11px;
+								top: 0.75em;
+								width: 6px;
+								height: 6px;
+								border-radius: 50%;
+								background: #3f5a78;
+								transform: translateY(-50%);
+							}
+
+							ul {
+								list-style: none;
+								padding-inline-start: 0;
+								margin-block-start: space(small-spacing);
+							}
+						}
+					}
+				}
+			}
+
+			.contact-list {
+				overflow: hidden;
+				border: 1px solid color-hex(nav-border-blue);
+				border-radius: radius();
+				background: color-hex(market-blue);
+				width: 100%;
+
+				.contact-item {
+					display: flex;
+					align-items: center;
+					gap: space(small-spacing);
+					width: 100%;
+					padding: space(compact-spacing) space(default-spacing);
+
+					&:not(:last-child) {
+						box-shadow: inset 0 -1px 0 color-hex(border-blue);
+					}
+
+					.contact-title {
+						flex: 1 0 0;
+						min-width: 0;
+						@include type(13px, 600, 20px, -0.01em, true);
+						color: color-hex(link-gray);
+					}
+
+					.contact-value {
+						flex: 1 0 0;
+						min-width: 0;
+						text-align: right;
+						overflow-wrap: break-word;
+						@include type(13px, 600, 20px, -0.01em, true);
+						color: color-hex(white-color);
+
+						a {
+							color: inherit;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+
+			.button-group {
+				display: flex;
+				align-items: stretch;
+				gap: space(small-spacing);
+				width: 100%;
+
+				.button {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex: 1 1 0;
+					min-width: 0;
+					height: layout(control-height);
+					padding: 0 space(default-spacing);
+					gap: space(small-spacing);
+					border-radius: radius();
+					text-decoration: none;
+					cursor: pointer;
+					@include type(13px, 600, 20px, -0.01em, true);
+					color: color-hex(white-color);
+
+					&::before {
+						content: "";
+						display: block;
+						flex-shrink: 0;
+						width: layout(svg-size);
+						height: layout(svg-size);
+						background-color: color-hex(white-color);
+						mask: no-repeat center / contain;
+						-webkit-mask: no-repeat center / contain;
+					}
+
+					&:nth-child(1) {
+						@include linear-border-box($fill: color-hex(main-color));
+
+						&::before {
+							mask-image: url("#{$cdn-icons-url}call-back.svg");
+							-webkit-mask-image: url("#{$cdn-icons-url}call-back.svg");
+						}
+					}
+
+					&:nth-child(2) {
+						@include linear-border-box($fill: color-hex(green-color));
+
+						&::before {
+							mask-image: url("#{$cdn-icons-url}whatsapp.svg");
+							-webkit-mask-image: url("#{$cdn-icons-url}whatsapp.svg");
+						}
+					}
+				}
+			}
+
+			.social-list {
+				display: flex;
+				flex-direction: column;
+				gap: space(medium-spacing);
+
+				.social-group {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: space(medium-spacing);
+					width: 100%;
+
+					> strong {
+						position: relative;
+						display: block;
+						width: 100%;
+						min-height: 28px;
+						padding-inline-start: calc(28px + #{space(medium-spacing)});
+						@include type(15px, 700, 24px, -0.01em, true);
+						color: color-hex(white-color);
+
+						&::before,
+						&::after {
+							content: "";
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							box-sizing: border-box;
+						}
+
+						&::before {
+							inset-inline-start: 0;
+							width: 28px;
+							height: 28px;
+							border-radius: radius();
+							border: 1px solid transparent;
+							background:
+								linear-gradient(180deg, #3f5a78 0%, color-hex(ds-button-blue) 100%) padding-box,
+								linear-gradient(to bottom, color-rgba(white-color, 0.05), color-rgba(white-color, 0.2))
+									border-box;
+						}
+
+						&::after {
+							inset-inline-start: 8px;
+							width: 12px;
+							height: 12px;
+							background: var(--hb-social-icon) no-repeat center / contain;
+						}
+					}
+
+					> ul {
+						display: grid;
+						grid-template-columns: repeat(2, minmax(0, 1fr));
+						gap: space(small-spacing);
+						width: 100%;
+						margin: 0;
+						padding: 0;
+						list-style: none;
+
+						> li {
+							margin: 0;
+							padding: 0;
+						}
+					}
+
+					a {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						gap: space(medium-spacing);
+						width: 100%;
+						padding: space(medium-spacing);
+						border: 1px solid color-hex(nav-border-blue);
+						border-radius: radius();
+						background: color-hex(market-blue);
+						text-decoration: none;
+						text-align: center;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						@include type(13px, 600, 20px, -0.01em, true);
+						color: color-hex(white-color);
+
+						&::before {
+							content: "";
+							display: block;
+							flex-shrink: 0;
+							box-sizing: border-box;
+							width: 40px;
+							height: 40px;
+							border-radius: radius();
+							border: 1px solid transparent;
+							background:
+								var(--hb-social-icon) no-repeat center / 16px padding-box,
+								linear-gradient(180deg, #3f5a78 0%, color-hex(ds-button-blue) 100%) padding-box,
+								linear-gradient(to bottom, color-rgba(white-color, 0.05), color-rgba(white-color, 0.2))
+									border-box;
+						}
+					}
+
+					@each $name in $social-platforms {
+						&.#{$name} {
+							--hb-social-icon: url("#{$cdn-socials-url}#{$name}.svg");
+						}
+					}
+				}
+			}
+		}
+	}
+}

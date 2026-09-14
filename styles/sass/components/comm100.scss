@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+#comm100-container {
+	width: fit-content !important;
+	height: fit-content !important;
+	position: fixed;
+	bottom: 60px;
+	right: 16px;
+	z-index: 2147483642;
+
+	div {
+		&:nth-child(1) {
+			height: fit-content !important;
+			display: flex !important;
+		}
+	}
+
+	#chat_button_bar_container {
+		right: 0 !important;
+		position: relative !important;
+		border: none !important;
+	}
+}

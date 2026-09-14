@@ -22,6 +22,8 @@
 	}
 }
 
+@include meta.load-css("components/comm100");
+
 html.is-mobile,
 html.is-mobile body {
 	@include theme-colors;

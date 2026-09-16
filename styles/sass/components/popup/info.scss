@@ -1,0 +1,73 @@
+@use "../../abstracts" as *;
+
+.popup-holder-bc {
+	&.info {
+		.popup-inner-bc {
+			border-radius: radius();
+			border: 1px solid color-rgba(white-color, 0.12);
+			width: 100%;
+		}
+
+		#base_popup_id {
+			.e-p-close-icon-bc {
+				top: space(default-spacing) !important;
+				right: space(default-spacing) !important;
+				width: layout(icon-hit);
+				height: layout(icon-hit);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 0;
+				background: transparent !important;
+				background-image: none !important;
+
+				&::before {
+					@include bg-icon(close-circle, layout(icon-hit));
+					position: static;
+					top: 0;
+					line-height: 0;
+				}
+			}
+		}
+
+		.status-popup-content-w-bc {
+			width: 100%;
+			background-color: color-hex(border-blue);
+			padding: space(default-spacing);
+			display: flex;
+			flex-direction: column;
+			gap: gap(default);
+
+			.casino-popup-title {
+				margin: 0;
+				text-align: start;
+				@include type(20px, 700, 36px, $important: true);
+				color: color-hex(white-color) !important;
+			}
+
+			.casino-popup-content {
+				margin: 0;
+
+				img {
+					max-width: 100%;
+					height: auto !important;
+				}
+			}
+
+			.casino-popup-button-block {
+				margin: 0;
+
+				.btn {
+					height: 48px;
+					margin: 0;
+					max-width: 100%;
+				}
+			}
+
+			.checkbox-control-content-bc {
+				width: fit-content;
+				margin: auto;
+			}
+		}
+	}
+}

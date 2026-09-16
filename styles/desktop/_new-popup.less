@@ -1,0 +1,96 @@
+#root {
+	.my-profile-info-block {
+		&.loyalty-points-page {
+			.loyaltyWrapper {
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+
+				.loyaltyProgramSection {
+					background: @shade-3 !important;
+					border-radius: 6px;
+					padding: 20px;
+
+					.hb-vip-icons(loyaltyProgramImg);
+
+					.loyaltyProgramInfo {
+						padding: 0;
+					}
+					.loyaltyLevelCardsUser {
+					}
+				}
+				.loyaltyProgramWrapper {
+					margin-top: 0;
+
+					.loyaltyHorizontalList {
+						border-radius: 6px;
+						.hb-framed-fill(
+							@surface-raised;
+							@surface-raised;
+							fade(@white, 4%);
+							fade(@white, 0%);
+							2px;
+							to right
+						);
+
+						.hb-vip-icons(loyaltySliderCard);
+					}
+				}
+			}
+		}
+	}
+	.popup-holder-bc {
+		&.info {
+			.popup-inner-bc {
+				border-radius: 6px;
+				border: 1px solid rgba(255, 255, 255, 0.12);
+				width: 440px;
+			}
+
+			.e-p-close-icon-bc {
+				top: 20px;
+				right: 20px;
+				.hb-icon-glyph(close-circle; @hb-control-md);
+				background: transparent !important;
+
+				&:hover {
+					background: transparent !important;
+				}
+			}
+
+			.status-popup-content-w-bc {
+				width: 440px;
+				background-color: @surface-raised;
+				padding: 20px;
+				gap: 12px;
+				display: flex;
+				flex-direction: column;
+
+				.casino-popup-title {
+					margin: 0;
+					text-align: start;
+					.hb-text(20px; 36px; 700; @text-strong);
+				}
+
+				.casino-popup-content {
+					margin: 0;
+				}
+
+				.casino-popup-button-block {
+					margin: 0;
+					.btn {
+						height: 48px;
+						margin: 0;
+						max-width: 100%;
+					}
+				}
+
+				.checkbox-control-content-bc {
+					width: fit-content;
+					margin: auto;
+				}
+			}
+		}
+	}
+}

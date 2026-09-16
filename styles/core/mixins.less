@@ -21,13 +21,21 @@
 	background: linear-gradient(180deg, @surface-elevated 0%, @surface-raised 100%);
 }
 
-// Fill + 1px gradient stroke. Border-radius stays at the call site.
+// Fill + gradient stroke. Border-radius stays at the call site.
+// Existing 0/2-arg calls keep 1px, to-bottom, white 5%→20%.
 // Solid fill: .hb-framed-fill(@surface-header; @surface-header);
-.hb-framed-fill(@from: @surface-elevated; @to: @surface-raised) {
-	border: 1px solid transparent !important;
+.hb-framed-fill(
+	@from: @surface-elevated;
+	@to: @surface-raised;
+	@stroke-from: fade(@white, 5%);
+	@stroke-to: fade(@white, 20%);
+	@width: 1px;
+	@stroke-dir: to bottom
+) {
+	border: @width solid transparent !important;
 	background:
 		linear-gradient(180deg, @from 0%, @to 100%) padding-box,
-		linear-gradient(to bottom, fade(@white, 5%), fade(@white, 20%)) border-box !important;
+		linear-gradient(@stroke-dir, @stroke-from, @stroke-to) border-box !important;
 }
 
 .hb-soft-border() {
@@ -493,4 +501,62 @@
 	width: @hb-control-md !important;
 	height: @hb-control-md !important;
 	border-radius: 50% !important;
+}
+
+// Swap platform loyalty PNGs for CDN VIP SVGs.
+//   .hb-vip-icons(loyaltyProgramImg);
+//   .hb-vip-icons(loyaltyProgramImg; Diamond-Vip);
+//   .hb-vip-icons(loyaltyProgramImg; Diamond-Vip; 64px);
+//   .hb-vip-icons(loyaltyProgramImg; 64px);
+//   .hb-vip-icons();
+//   .hb-vip-icons(_; Emperor-Vip);
+.hb-vip-icons-apply(@title; @src; @file; @size) {
+	&:has(> img[src*="@{src}"]),
+	&:has([data-title="@{title}"]) {
+		img {
+			display: none !important;
+		}
+
+		&:before {
+			.hb-bg-icon("@{hb-vip-icons-cdn}/@{file}.svg"; @size);
+		}
+	}
+}
+
+.hb-vip-icons-maybe(@icon; @title; @src; @file; @size) when (@icon = _) {
+	.hb-vip-icons-apply(@title; @src; @file; @size);
+}
+
+.hb-vip-icons-maybe(@icon; @title; @src; @file; @size) when (@icon = @file),
+	(@icon = @title),
+	(@icon = @src) {
+	.hb-vip-icons-apply(@title; @src; @file; @size);
+}
+
+.hb-vip-icons-each(@size; @icon: _; @i: 1) when (@i =< @hb-vip-icon-count) {
+	@row: extract(@hb-vip-icons, @i);
+	.hb-vip-icons-maybe(@icon; extract(@row, 1); extract(@row, 2); extract(@row, 3); @size);
+	.hb-vip-icons-each(@size; @icon; @i + 1);
+}
+
+.hb-vip-icons-wrap(@card; @icon; @size) when (@card = _) {
+	.hb-vip-icons-each(@size; @icon);
+}
+
+.hb-vip-icons-wrap(@card; @icon; @size) when not (@card = _) {
+	.@{card} {
+		.hb-vip-icons-each(@size; @icon);
+	}
+}
+
+.hb-vip-icons(@card: _; @icon: _; @size: 40px) when (ispixel(@card)) {
+	.hb-vip-icons-wrap(_; _; @card);
+}
+
+.hb-vip-icons(@card: _; @icon: _; @size: 40px) when (ispixel(@icon)) {
+	.hb-vip-icons-wrap(@card; _; @icon);
+}
+
+.hb-vip-icons(@card: _; @icon: _; @size: 40px) when not (ispixel(@card)) and not (ispixel(@icon)) {
+	.hb-vip-icons-wrap(@card; @icon; @size);
 }

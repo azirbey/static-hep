@@ -23,6 +23,7 @@
 @hb-profile-icons-gray: "@{hb-profile-icons}/gray";
 @hb-profile-icons-blue: "@{hb-profile-icons}/blue";
 @hb-sports-cdn: "@{hb-cdn-root}/images/sports-icons/sports";
+@hb-vip-icons-cdn: "@{hb-cdn-root}/images/vip";
 
 // ============================================
 // Header buttons
@@ -172,3 +173,32 @@
 	bc-i-Biathlon biathlon,
 	bc-i-Pickleball pickleball;
 @hb-sport-icon-count: length(@hb-sport-icons);
+
+// ============================================
+// VIP / loyalty level icons
+// ============================================
+
+// Records: ('data-title' 'src-fragment' IconFile)
+// src-fragment matches platform PNGs under /loyalty_points/{fragment}.png
+@hb-vip-icons:
+	"Classic VIP" "classic vip" Classic-Vip,
+	"Amateur VIP" "amateur vip" Amateur-Vip,
+	"Iron VIP" "iron vip" Iron-Vip,
+	"Bronze VIP" "bronze vip" Bronze-Vip,
+	"Silver VIP" "silver vip" Silver-Vip,
+	"Gold VIP" "gold vip" Gold-Vip,
+	"Platinum VIP" "platinum vip" Platinum-Vip,
+	"Diamond VIP" "diamond vip" Diamond-Vip,
+	"Emerald VIP" "emerald vip" Emerald-Vip,
+	"Lord VIP" "lord vip" Lord-Vip,
+	"Emperor VIP" "emperor vip" Emperor-Vip,
+	"Legend VIP" "legend vip" Legend-Vip,
+	"Master VIP" "master vip" Master-Vip,
+	"Gamblingmaster VIP" "gamblingmaster vip" Gamblingmaster-Vip,
+	"Grandmaster VIP" "grandmaster vip" Grandmaster-Vip,
+	"Challenger VIP" "challenger vip" Challenger-Vip,
+	"Winner VIP" "winner vip" Winner-Vip,
+	"ThePro VIP" "thepro vip" ThePro-Vip,
+	"Champion VIP" "champion vip" Champion-Vip,
+	"King Of The Hep VIP" "king of the hep vip" King-Of-The-Hep-Vip;
+@hb-vip-icon-count: length(@hb-vip-icons);

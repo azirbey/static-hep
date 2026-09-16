@@ -7770,268 +7770,17 @@ div[id^="comm100-float-button"] > div img {
   border-radius: 6px;
   padding: 20px;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="classic vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Classic VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="classic vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Classic VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Classic-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="amateur vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Amateur VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="amateur vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Amateur VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Amateur-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="iron vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Iron VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="iron vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Iron VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Iron-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="bronze vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Bronze VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="bronze vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Bronze VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Bronze-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="silver vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Silver VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="silver vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Silver VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Silver-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="gold vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Gold VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="gold vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Gold VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Gold-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="platinum vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Platinum VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="platinum vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Platinum VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Platinum-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="diamond vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Diamond VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="diamond vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Diamond VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Diamond-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="emerald vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Emerald VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="emerald vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Emerald VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Emerald-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="lord vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Lord VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="lord vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Lord VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Lord-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="emperor vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Emperor VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="emperor vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Emperor VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Emperor-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="legend vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Legend VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="legend vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Legend VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Legend-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="master vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Master VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="master vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Master VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Master-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="gamblingmaster vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Gamblingmaster VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="gamblingmaster vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Gamblingmaster VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Gamblingmaster-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="grandmaster vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Grandmaster VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="grandmaster vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Grandmaster VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Grandmaster-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="challenger vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Challenger VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="challenger vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Challenger VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Challenger-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="winner vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Winner VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="winner vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Winner VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Winner-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="thepro vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="ThePro VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="thepro vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="ThePro VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/ThePro-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="champion vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Champion VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="champion vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="Champion VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Champion-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="king of the hep vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="King Of The Hep VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has( > img[src*="king of the hep vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramImg:has([data-title="King Of The Hep VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/King-Of-The-Hep-Vip.svg") no-repeat center center / contain !important;
-}
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramInfo {
   padding: 0;
+}
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramInfo .loyaltyProgramInfoRight {
+  max-width: 330px;
+  background: #19222c;
+  border-radius: 6px;
+  padding: 16px;
+}
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramInfo .loyaltyProgramInfoRight .loyaltyProgressBar {
+  height: 12px;
 }
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper {
   margin-top: 0;
@@ -8041,265 +7790,101 @@ div[id^="comm100-float-button"] > div img {
   border: 2px solid transparent !important;
   background: linear-gradient(180deg, #233243 0%, #233243 100%) padding-box, linear-gradient(to right, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)) border-box !important;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="classic vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Classic VIP"]) img {
-  display: none !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelCards {
+  background: #1c2835;
+  border-radius: 6px;
+  padding: 12px;
+  border: 2px solid transparent !important;
+  background: linear-gradient(180deg, #1c2835 0%, #1c2835 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)) border-box !important;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="classic vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Classic VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Classic-Vip.svg") no-repeat center center / contain !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelCards .loyaltyLevelInfoTitle {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  height: fit-content;
+  justify-content: center;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="amateur vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Amateur VIP"]) img {
-  display: none !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelCards .loyaltyLevelCardsItem .loyaltyLevelCardsError {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.01em !important;
+  color: #a1b6ce !important;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="amateur vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Amateur VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Amateur-Vip.svg") no-repeat center center / contain !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus {
+  background: #1c2835;
+  border-radius: 6px;
+  padding: 12px;
+  border: 2px solid transparent !important;
+  background: linear-gradient(180deg, #1c2835 0%, #1c2835 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)) border-box !important;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="iron vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Iron VIP"]) img {
-  display: none !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelInfoTitle {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  height: fit-content;
+  justify-content: center;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="iron vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Iron VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Iron-Vip.svg") no-repeat center center / contain !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable {
+  border: none;
+  border-radius: 0;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="bronze vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Bronze VIP"]) img {
-  display: none !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableHeader {
+  background: transparent;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="bronze vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Bronze VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Bronze-Vip.svg") no-repeat center center / contain !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody {
+  background: transparent;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="silver vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Silver VIP"]) img {
-  display: none !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody .loyaltyLevelTableRow {
+  border-bottom: none;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="silver vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Silver VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Silver-Vip.svg") no-repeat center center / contain !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody .loyaltyLevelTableRow .loyaltyLevelTableCell {
+  color: #bccbdc !important;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="gold vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Gold VIP"]) img {
-  display: none !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody .loyaltyLevelTableRow .loyaltyCurrentRowBorder {
+  display: none;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="gold vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Gold VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Gold-Vip.svg") no-repeat center center / contain !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelInfoWrapper {
+  background: #1c2835;
+  border-radius: 6px;
+  padding: 12px;
+  border: 2px solid transparent !important;
+  background: linear-gradient(180deg, #1c2835 0%, #1c2835 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)) border-box !important;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="platinum vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Platinum VIP"]) img {
-  display: none !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelInfoWrapper .loyaltyLevelInfoTitle {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  height: fit-content;
+  justify-content: center;
 }
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="platinum vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Platinum VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Platinum-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="diamond vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Diamond VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="diamond vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Diamond VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Diamond-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="emerald vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Emerald VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="emerald vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Emerald VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Emerald-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="lord vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Lord VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="lord vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Lord VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Lord-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="emperor vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Emperor VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="emperor vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Emperor VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Emperor-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="legend vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Legend VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="legend vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Legend VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Legend-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="master vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Master VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="master vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Master VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Master-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="gamblingmaster vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Gamblingmaster VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="gamblingmaster vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Gamblingmaster VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Gamblingmaster-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="grandmaster vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Grandmaster VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="grandmaster vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Grandmaster VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Grandmaster-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="challenger vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Challenger VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="challenger vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Challenger VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Challenger-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="winner vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Winner VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="winner vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Winner VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Winner-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="thepro vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="ThePro VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="thepro vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="ThePro VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/ThePro-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="champion vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Champion VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="champion vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="Champion VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/Champion-Vip.svg") no-repeat center center / contain !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="king of the hep vip"]) img,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="King Of The Hep VIP"]) img {
-  display: none !important;
-}
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has( > img[src*="king of the hep vip"]):before,
-#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyHorizontalList .loyaltySliderCard:has([data-title="King Of The Hep VIP"]):before {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: url("https://static-hep.hepbet-static.workers.dev/images/vip/King-Of-The-Hep-Vip.svg") no-repeat center center / contain !important;
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelInfoWrapper .loyaltyLevelContent {
+  padding: 0;
+  background: transparent;
+  color: #d7e0ea;
 }
 #root .popup-holder-bc.info .popup-inner-bc {
   border-radius: 6px;

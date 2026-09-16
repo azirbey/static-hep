@@ -1,0 +1,393 @@
+@use "../../abstracts" as *;
+
+.overlay-sliding-wrapper-bc {
+	.loyaltyWrapper {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		background: color-rgba-rgb(header, 1);
+
+		.loyaltyProgramSection {
+			background: color-hex(footer-bg) !important;
+			border-radius: 0;
+			padding: space(default-spacing);
+			gap: gap(default);
+			display: flex;
+			flex-direction: column;
+
+			.loyaltyProgramInfo {
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				gap: gap(default);
+				width: 100%;
+
+				.loyaltyProgramInfoLeft {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: gap(default);
+					width: 100%;
+
+					.loyaltyProgramImg {
+						margin: 0;
+						flex-shrink: 0;
+						width: 100px;
+						height: 80px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: color-rgba-rgb(header, 1);
+						border: 1px solid color-hex(nav-border-blue);
+						border-radius: radius();
+
+						img {
+							width: 60px;
+							height: 60px;
+							object-fit: contain;
+						}
+					}
+
+					.loyaltyPointsLevel {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						justify-content: center;
+						gap: space(small-spacing);
+						flex: 1;
+						min-width: 0;
+						margin: 0;
+
+						.loyaltyPointsLevelValue {
+							@include type(20px, 700, 28px, -0.01em, true);
+							color: color-hex(white-color) !important;
+						}
+
+						.loyaltyPointsLevelInfo {
+							@include type(15px, 500, 24px, -0.01em, true);
+							color: color-hex(cyan) !important;
+						}
+					}
+				}
+
+				.loyaltyProgramInfoRight {
+					max-width: none;
+					width: 100%;
+					background: color-rgba-rgb(header, 1);
+					border: 1px solid color-hex(nav-border-blue);
+					border-radius: radius();
+					padding: space(medium-spacing) space(default-spacing);
+					display: flex;
+					flex-direction: column;
+					gap: space(default-spacing);
+
+					.loyaltyPointsNumbers {
+						display: flex;
+						align-items: flex-start;
+						gap: gap(default);
+						width: 100%;
+
+						.loyaltyPointsNumbersPrev,
+						.loyaltyPointsNumbersNext {
+							flex: 1;
+							margin: 0;
+							@include type(15px, 600, 20px, -0.01em, true);
+							color: color-hex(white-color) !important;
+						}
+
+						.loyaltyPointsNumbersNext {
+							text-align: right;
+						}
+					}
+
+					.loyaltyProgressBar {
+						height: 12px;
+						border: none;
+						border-radius: 16px;
+						overflow: hidden;
+						background: color-hex(border-blue);
+
+						.loyalProgressBarStick {
+							height: 12px;
+							border-radius: 16px;
+							background: url("#{$cdn-icons-url}progress-bar.svg") no-repeat left center !important;
+
+							&::after {
+								display: none;
+							}
+						}
+					}
+
+					.loyaltyPointsLevelPoints {
+						margin: 0;
+						text-align: right;
+						@include type(13px, 600, 20px, -0.01em, true);
+						color: color-hex(link-gray) !important;
+
+						span {
+							@include type(13px, 600, 20px, -0.01em, true);
+							color: color-hex(link-gray) !important;
+						}
+					}
+				}
+			}
+
+			.loyaltyLevelCardsUser {
+				gap: gap(default);
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+
+				.loyaltyLevelCardsUserSelect {
+					padding: 0;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: gap(default);
+
+					.loyaltyLevelInfoTitle {
+						margin: 0;
+						flex: 1;
+						@include type(15px, 600, 24px, -0.01em, true);
+						color: color-hex(white-color) !important;
+					}
+
+					.loyaltyLevelCardSelect {
+						height: auto;
+						width: auto;
+						flex-shrink: 0;
+						border-radius: radius();
+
+						.form-control-label-bc {
+							height: auto !important;
+							min-height: 36px;
+							padding: space(small-spacing) space(default-spacing);
+							background: color-rgba-rgb(header, 1) !important;
+							border: 1px solid color-hex(nav-border-blue) !important;
+							border-radius: radius();
+							gap: space(small-spacing);
+						}
+
+						.form-control-select-bc {
+							@include type(15px, 600, 20px, -0.01em, true);
+							color: color-hex(ds-chip-gray) !important;
+							border: none !important;
+							background: transparent !important;
+							padding: 0 !important;
+						}
+					}
+				}
+
+				.loyaltyLevelCardsUserItem {
+					padding: 0;
+					width: 100%;
+					flex: none;
+
+					.loyaltyLevelCardsError {
+						background: transparent;
+						border: none;
+						padding: 0;
+						text-align: center;
+						@include type(13px, 600, 20px, -0.01em, true);
+						color: color-hex(placeholder-gray) !important;
+					}
+				}
+			}
+		}
+
+		.loyaltyProgramWrapper {
+			margin-top: 0;
+			display: flex;
+			flex-direction: column;
+			.horizontalList {
+				background: transparent;
+				border-bottom: none !important;
+				padding: 0;
+
+				.horizontalSliderWrapper {
+					.loyaltyHorizontalList {
+						border-radius: 0;
+						background: color-hex(border-blue);
+						padding: space(mini-spacing);
+						gap: space(mini-spacing);
+
+						.horizontalCategoryItemWrp {
+							padding: 0;
+						}
+
+						.loyaltySliderCard {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: center;
+							gap: space(small-spacing);
+							padding: space(medium-spacing);
+							border-radius: radius();
+							background: color-hex(border-blue) !important;
+
+							.loyaltySliderCardImg {
+								width: 28px;
+								height: 28px;
+								object-fit: contain;
+							}
+
+							.loyaltySliderCardTitle {
+								margin: 0;
+								@include type(13px, 600, 20px, -0.01em, true);
+								color: color-hex(link-gray) !important;
+							}
+
+							.loyaltySliderCardInfo {
+								margin: 0;
+								background: color-hex(footer-bg) !important;
+								border: none !important;
+								box-shadow: none !important;
+								border-radius: radius(medium);
+								padding: space(x-small-spacing) space(tiny-spacing);
+								@include type(13px, 600, 20px, -0.01em, true);
+								color: color-hex(link-gray) !important;
+							}
+
+							&.active {
+								background: color-rgba-rgb(header, 1) !important;
+
+								&::after {
+									display: none;
+								}
+
+								.loyaltySliderCardTitle {
+									color: color-hex(white-color) !important;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.loyaltyProgramItems {
+				padding: space(default-spacing);
+				display: flex;
+				flex-direction: column;
+				gap: space(small-spacing);
+				background: color-rgba-rgb(header, 1);
+				margin-top: 0;
+
+				.loyaltyLevelCards,
+				.loyaltyLevelBonus,
+				.loyaltyLevelInfoWrapper {
+					background: #1c2835;
+					padding: space(medium-spacing) space(default-spacing);
+					gap: gap(default);
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+
+					.loyaltyLevelInfoTitle {
+						margin: 0;
+						width: 100%;
+						height: fit-content;
+						justify-content: center;
+						text-align: center;
+						@include type(15px, 700, 24px, -0.01em, true);
+						color: color-hex(white-color) !important;
+
+						.bc-i-help {
+							display: none;
+						}
+					}
+				}
+
+				.loyaltyLevelCards {
+					.loyaltyLevelCardsItem {
+						.loyaltyLevelCardsError {
+							align-items: center;
+							display: flex;
+							flex: 1;
+							width: 100%;
+							justify-content: center;
+							text-align: center;
+							background: transparent;
+							border: none;
+							padding: 0;
+							@include type(13px, 600, 20px, -0.01em, true);
+							color: color-hex(placeholder-gray) !important;
+						}
+					}
+				}
+
+				.loyaltyLevelBonus {
+					.loyaltyLevelTable {
+						border: none;
+						border-radius: 0;
+						width: 100%;
+
+						.loyaltyLevelTableHeader {
+							background: transparent;
+							padding: 0 space(small-spacing);
+							gap: space(small-spacing);
+
+							.loyaltyLevelTableCell {
+								p {
+									@include type(11px, 600, 16px, -0.01em, true);
+									color: color-hex(link-gray) !important;
+								}
+							}
+						}
+
+						.loyaltyLevelTableBody {
+							background: transparent;
+							display: flex;
+							flex-direction: column;
+							gap: space(mini-spacing);
+
+							.loyaltyLevelTableRow {
+								border-bottom: none;
+								background: color-hex(border-blue);
+								padding: space(small-spacing) space(default-spacing);
+								border-radius: radius();
+								gap: space(small-spacing);
+
+								&:nth-child(odd),
+								&.loyaltyCurrentRow {
+									background: color-hex(nav-border-blue);
+								}
+
+								&:nth-child(even) {
+									background: color-hex(border-blue);
+								}
+
+								.loyaltyLevelTableCell {
+									@include type(13px, 600, 20px, -0.01em, true);
+									color: color-hex(link-gray) !important;
+
+									&:last-child {
+										color: color-hex(cyan) !important;
+										text-align: right;
+									}
+								}
+
+								.loyaltyCurrentRowBorder {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+
+				.loyaltyLevelInfoWrapper {
+					.loyaltyLevelContent {
+						padding: 0;
+						background: transparent;
+						@include type(13px, 500, 20px, -0.01em, true);
+						color: color-hex(ds-chip-gray) !important;
+						border: none !important;
+						background: transparent !important;
+						border-radius: 0;
+					}
+				}
+			}
+		}
+	}
+}

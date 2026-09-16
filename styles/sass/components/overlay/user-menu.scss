@@ -99,6 +99,11 @@
 				}
 			}
 
+			.u-i-p-a-loyaltyPoint-bc {
+				order: 3;
+				margin-bottom: 0;
+			}
+
 			.u-i-p-p-u-i-edit-button-bc {
 				order: 2;
 				margin-bottom: 0;
@@ -133,7 +138,7 @@
 			}
 
 			.u-i-p-links-lists-holder-bc {
-				order: 4;
+				order: 5;
 				gap: gap(small);
 				display: flex;
 				flex-direction: column;
@@ -215,7 +220,7 @@
 
 			.promoCodeWrapper-bc {
 				padding: 0;
-				order: 3;
+				order: 4;
 				height: auto;
 
 				form {
@@ -247,7 +252,7 @@
 
 			.userLogoutBtn {
 				padding-inline: 0;
-				order: 5;
+				order: 6;
 				margin-block-start: calc(space(medium-spacing) * -1);
 				height: 48px;
 				padding: space(medium-spacing) space(default-spacing);

@@ -4,25 +4,28 @@
 	&.info {
 		.popup-inner-bc {
 			border-radius: radius();
-			border: 1px solid color-rgba(white-color, 0.12);
+			border: 1px solid color-rgba(white-color, 0.08);
 			width: 100%;
+			background: color-rgba-rgb(header, 1);
+			overflow: hidden;
 		}
 
 		#base_popup_id {
 			.e-p-close-icon-bc {
 				top: space(default-spacing) !important;
 				right: space(default-spacing) !important;
-				width: layout(icon-hit);
-				height: layout(icon-hit);
+				width: 36px;
+				height: 36px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				font-size: 0;
+				z-index: 1;
 				background: transparent !important;
 				background-image: none !important;
 
 				&::before {
-					@include bg-icon(close-circle, layout(icon-hit));
+					@include bg-icon(close-circle, 36px);
 					position: static;
 					top: 0;
 					line-height: 0;
@@ -32,23 +35,34 @@
 
 		.status-popup-content-w-bc {
 			width: 100%;
-			background-color: color-hex(border-blue);
+			background-color: color-rgba-rgb(header, 1);
 			padding: space(default-spacing);
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			gap: gap(default);
 
 			.casino-popup-title {
 				margin: 0;
+				width: 100%;
+				min-height: 36px;
+				display: flex;
+				align-items: center;
+				padding-inline-end: calc(36px + #{gap(default)});
 				text-align: start;
-				@include type(20px, 700, 36px, $important: true);
+				@include type(20px, 700, 28px, -0.01em, true);
+				@include reset-text-transform;
 				color: color-hex(white-color) !important;
 			}
 
 			.casino-popup-content {
 				margin: 0;
+				width: 100%;
+				text-align: start;
 
 				img {
+					display: block;
+					width: 100%;
 					max-width: 100%;
 					height: auto !important;
 				}
@@ -56,17 +70,61 @@
 
 			.casino-popup-button-block {
 				margin: 0;
+				width: 100%;
 
 				.btn {
-					height: 48px;
-					margin: 0;
+					@include form-btn;
+					@include type(15px, 600, 20px, -0.01em, true);
+					width: 100%;
 					max-width: 100%;
+					height: 48px !important;
+					margin: 0;
+					border-radius: radius();
+					background: color-hex(main-color) !important;
+					color: color-hex(white-color) !important;
 				}
 			}
 
 			.checkbox-control-content-bc {
-				width: fit-content;
-				margin: auto;
+				width: 100%;
+				height: 24px;
+				margin: 0;
+				justify-content: center;
+				align-items: center;
+				gap: gap(default);
+
+				&.popup-checkbox {
+					margin-top: 0;
+				}
+
+				.checkbox-control-icon-bc {
+					width: 24px !important;
+					height: 24px !important;
+					background: color-hex(market-blue) !important;
+					border: 1px solid color-hex(nav-border-blue);
+					border-radius: radius(medium);
+					font-size: 12px;
+					line-height: 24px;
+					color: color-hex(white-color);
+
+					&::before {
+						line-height: 24px;
+					}
+
+					& + .checkbox-control-text-bc {
+						margin-inline-start: 0;
+					}
+				}
+
+				.checkbox-control-input-bc:checked ~ .checkbox-control-icon-bc {
+					background: color-hex(market-blue) !important;
+				}
+
+				.checkbox-control-text-bc {
+					flex: none;
+					@include type(15px, 500, 24px, -0.01em, true);
+					color: color-hex(link-gray) !important;
+				}
 			}
 		}
 	}

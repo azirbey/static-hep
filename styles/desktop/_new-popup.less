@@ -195,12 +195,30 @@
 
 								.loyaltyLevelTableHeader {
 									background: transparent;
+
+									.loyaltyLevelTableCell {
+										p {
+											.hb-text(11px; 16px; 400; @text-muted);
+										}
+									}
 								}
 
 								.loyaltyLevelTableBody {
 									background: transparent;
+									display: flex;
+									flex-direction: column;
+									gap: 4px;
+
 									.loyaltyLevelTableRow {
 										border-bottom: none;
+										background: @shade-6;
+										padding: 8px;
+										border-radius: 6px;
+
+										&:nth-child(even) {
+											background: @shade-7;
+										}
+
 										.loyaltyLevelTableCell {
 											color: @text-muted !important;
 										}

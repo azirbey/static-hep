@@ -7948,11 +7948,28 @@ div[id^="comm100-float-button"] > div img {
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableHeader {
   background: transparent;
 }
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableHeader .loyaltyLevelTableCell p {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.01em !important;
+  color: #bccbdc !important;
+}
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody {
   background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody .loyaltyLevelTableRow {
   border-bottom: none;
+  background: #233243;
+  padding: 8px;
+  border-radius: 6px;
+}
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody .loyaltyLevelTableRow:nth-child(even) {
+  background: #2a3c50;
 }
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramWrapper .loyaltyProgramItems .loyaltyLevelBonus .loyaltyLevelTable .loyaltyLevelTableBody .loyaltyLevelTableRow .loyaltyLevelTableCell {
   color: #bccbdc !important;

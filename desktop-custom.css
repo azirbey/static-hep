@@ -7741,14 +7741,14 @@ div[id^="comm100-float-button"] > div img {
   padding: 0;
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group a {
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 160px;
-  padding: 16px;
-  border: 1px solid #2a3c50;
+  height: 44px;
+  padding: 12px 16px;
+  border: 1px solid #233243;
   border-radius: 6px;
   background: #1c2835;
   text-decoration: none;
@@ -7767,39 +7767,36 @@ div[id^="comm100-float-button"] > div img {
   content: "";
   display: block;
   flex-shrink: 0;
-  box-sizing: border-box;
-  width: 44px;
-  height: 44px;
-  border-radius: 6px;
-  border: 1px solid transparent;
-  background: var(--hb-social-icon) no-repeat center / 20px padding-box, linear-gradient(180deg, #3f5a78 0%, #31465e 100%) padding-box, linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)) border-box;
+  width: 16px;
+  height: 16px;
+  background: var(--hb-social-icon) no-repeat center / contain;
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.twitter {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/twitter.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/twitter.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.instagram {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/instagram.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/instagram.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.facebook {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/facebook.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/facebook.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.bluesky {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/bluesky.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/bluesky.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.tiktok {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/tiktok.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/tiktok.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.pinterest {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/pinterest.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/pinterest.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.youtube {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/youtube.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/youtube.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.telegram {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/telegram.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/telegram.svg");
 }
 #root .footerInfoPage .footerInfoContent .content .social-list .social-group.whatsapp {
-  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/socials/whatsapp.svg");
+  --hb-social-icon: url("https://static-hep.hepbet-static.workers.dev/images/social-icons/whatsapp.svg");
 }
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper {
   padding: 20px;

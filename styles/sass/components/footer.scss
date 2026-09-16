@@ -239,50 +239,20 @@ $social-platforms: twitter, instagram, facebook, bluesky, tiktok, pinterest, you
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start;
-					gap: space(medium-spacing);
+					gap: space(small-spacing);
 					width: 100%;
 
 					> strong {
-						position: relative;
 						display: block;
 						width: 100%;
-						min-height: 28px;
-						padding-inline-start: calc(28px + #{space(medium-spacing)});
 						@include type(15px, 700, 24px, -0.01em, true);
 						color: color-hex(white-color);
-
-						&::before,
-						&::after {
-							content: "";
-							position: absolute;
-							top: 50%;
-							transform: translateY(-50%);
-							box-sizing: border-box;
-						}
-
-						&::before {
-							inset-inline-start: 0;
-							width: 28px;
-							height: 28px;
-							border-radius: radius();
-							border: 1px solid transparent;
-							background:
-								linear-gradient(180deg, #3f5a78 0%, color-hex(ds-button-blue) 100%) padding-box,
-								linear-gradient(to bottom, color-rgba(white-color, 0.05), color-rgba(white-color, 0.2))
-									border-box;
-						}
-
-						&::after {
-							inset-inline-start: 8px;
-							width: 12px;
-							height: 12px;
-							background: var(--hb-social-icon) no-repeat center / contain;
-						}
 					}
 
 					> ul {
-						display: grid;
-						grid-template-columns: repeat(2, minmax(0, 1fr));
+						display: flex;
+						flex-wrap: wrap;
+						align-items: center;
 						gap: space(small-spacing);
 						width: 100%;
 						margin: 0;
@@ -296,15 +266,14 @@ $social-platforms: twitter, instagram, facebook, bluesky, tiktok, pinterest, you
 					}
 
 					a {
-						position: relative;
+						box-sizing: border-box;
 						display: flex;
-						flex-direction: column;
 						align-items: center;
 						justify-content: center;
-						gap: space(medium-spacing);
-						width: 100%;
-						padding: space(medium-spacing);
-						border: 1px solid color-hex(nav-border-blue);
+						gap: space(small-spacing);
+						height: layout(control-height);
+						padding: space(medium-spacing) space(default-spacing);
+						border: 1px solid color-hex(border-blue);
 						border-radius: radius();
 						background: color-hex(market-blue);
 						text-decoration: none;
@@ -315,32 +284,12 @@ $social-platforms: twitter, instagram, facebook, bluesky, tiktok, pinterest, you
 						@include type(13px, 600, 20px, -0.01em, true);
 						color: color-hex(white-color);
 
-						&::before,
-						&::after {
-							content: "";
-							box-sizing: border-box;
-						}
-
 						&::before {
+							content: "";
 							display: block;
 							flex-shrink: 0;
-							width: 40px;
-							height: 40px;
-							border-radius: radius();
-							border: 1px solid transparent;
-							background:
-								linear-gradient(180deg, #3f5a78 0%, color-hex(ds-button-blue) 100%) padding-box,
-								linear-gradient(to bottom, color-rgba(white-color, 0.05), color-rgba(white-color, 0.2))
-									border-box;
-						}
-
-						&::after {
-							position: absolute;
-							top: calc(#{space(medium-spacing)} + (40px - 16px) / 2);
-							left: 50%;
-							transform: translateX(-50%);
-							width: 16px;
-							height: 16px;
+							width: layout(svg-size);
+							height: layout(svg-size);
 							background: var(--hb-social-icon) no-repeat center / contain;
 						}
 					}

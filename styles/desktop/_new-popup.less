@@ -11,26 +11,98 @@
 					background: @shade-3 !important;
 					border-radius: 6px;
 					padding: 20px;
+					gap: 12px;
+					display: flex;
+					flex-direction: column;
 
 					.loyaltyProgramInfo {
 						padding: 0;
 
 						.loyaltyProgramInfoLeft {
+							align-items: flex-start;
+
+							.loyaltyPointsLevel {
+								.loyaltyPointsLevelValue {
+									.hb-text(28px; 36px; 700; @white);
+								}
+								.loyaltyPointsLevelInfo {
+									.hb-text(16px; 24px; 400; @cyan);
+								}
+							}
 						}
+
 						.loyaltyProgramInfoRight {
 							max-width: 330px;
 							background: @surface-header;
 							border-radius: 6px;
 							padding: 16px;
 
+							.loyaltyPointsNumbers {
+								.loyaltyPointsNumbersPrev {
+									.hb-text(15px; 20px; 400; @white);
+								}
+								.loyaltyPointsNumbersNext {
+									.hb-text(15px; 20px; 400; @white);
+								}
+							}
+
 							.loyaltyProgressBar {
 								height: 12px;
+								border: none;
+
+								.loyalProgressBarStick {
+									height: 12px;
+									background: url("@{hb-cdn}/progress-bar.svg") no-repeat left center !important;
+
+									&::after {
+										display: none;
+									}
+								}
+							}
+
+							.loyaltyPointsLevelPoints {
+								span {
+									&:not(.loyaltyPointsLevelPointsItem) {
+									}
+								}
 							}
 						}
 					}
 					.loyaltyLevelCardsUser {
+						gap: 12px;
+						display: flex;
+
+						.loyaltyLevelCardsUserSelect {
+							padding: 0;
+							width: auto;
+
+							.loyaltyLevelInfoTitle {
+								.hb-text(15px; 24px; 400; @white);
+							}
+
+							.loyaltyLevelCardSelect {
+								height: 36px;
+								border-radius: 6px;
+								.form-control-label-bc {
+									border: solid 1px #2a3c50;
+								}
+							}
+						}
+						.loyaltyLevelCardsUserItem {
+							padding: 0;
+							flex: 1;
+
+							.loyaltyLevelCardsError {
+								background: rgba(@cyan-rgb, 0.04);
+								border: 1px solid rgba(@cyan-rgb, 0.12);
+								padding: 12px;
+								border-radius: 6px;
+								.hb-text(15px; 24px; 400; @text-hint);
+							}
+						}
 					}
 				}
+
 				.loyaltyProgramWrapper {
 					margin-top: 0;
 
@@ -44,6 +116,22 @@
 							2px;
 							to right
 						);
+						.loyaltySliderCard {
+							border-radius: 6px;
+
+							&.active {
+								background: @surface-header !important;
+								&::after {
+									display: none;
+								}
+							}
+
+							.loyaltySliderCardInfo {
+								border-radius: 6px;
+								border: none !important;
+								box-shadow: none !important;
+							}
+						}
 					}
 
 					.loyaltyProgramItems {

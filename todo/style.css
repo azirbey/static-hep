@@ -753,6 +753,7 @@ html.edit-enabled .edit-switch .icon--edit-on {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 1;
+	line-clamp: 1;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	word-break: break-word;
@@ -761,6 +762,7 @@ html.edit-enabled .edit-switch .icon--edit-on {
 .item-replies-open .item-text,
 .item-text-expanded .item-text {
 	-webkit-line-clamp: unset;
+	line-clamp: unset;
 	display: block;
 	overflow: visible;
 	cursor: pointer;

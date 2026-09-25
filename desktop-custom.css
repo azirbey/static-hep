@@ -5778,11 +5778,24 @@ div[id^="comm100-float-button"] > div img {
 #root .results-game-details-header-bc:has(i.opened) {
   border-radius: var(--border-radius) var(--border-radius);
 }
+#root .ds-popup.casinoGameDetailsPopup {
+  width: 760px !important;
+  max-width: 760px !important;
+}
+#root .ds-popup.casinoGameDetailsPopup .casinoGameDetails .cgdContent {
+  padding: 20px 20px 0 20px;
+}
 #root .ds-popup.casinoGameDetailsPopup .casinoGameDetails .cgdHeroSection {
-  align-items: flex-start;
+  align-items: stretch;
+  gap: 12px;
+}
+#root .ds-popup.casinoGameDetailsPopup .casinoGameDetails .cgdHeroSection .cgdThumbnail {
+  width: 272px;
 }
 #root .ds-popup.casinoGameDetailsPopup .casinoGameDetails .cgdHeroSection .cgdInfoPanel {
-  height: fit-content;
+  background: linear-gradient(180deg, rgba(14, 20, 27, 0.72) 0%, rgba(14, 20, 27, 0) 100%);
+  height: auto;
+  justify-content: flex-start;
 }
 #root .ds-popup.casinoGameDetailsPopup .casinoGameDetails .cgdHeroSection .cgdInfoPanel .cgdProviderWrapper {
   align-items: flex-start;

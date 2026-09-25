@@ -719,6 +719,12 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;");
 }
 
+function ctaPillHtml(label) {
+  return (
+    '<span class="cta-pill" role="tooltip">' + escapeHtml(label) + "</span>"
+  );
+}
+
 function escapeTextarea(value) {
   return escapeHtml(value);
 }
@@ -1353,7 +1359,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
   const replyOpen = repliesOpenId === item.id;
   const replyCount = (repliesCache[item.id] || []).length;
   const tempBox = showTemp
-    ? '<label class="check-wrap" aria-label="Geçici tamamla">' +
+    ? '<label class="check-wrap has-cta-pill" aria-label="Geçici tamamla">' +
       '<input type="checkbox" data-temp="1" data-id="' +
       item.id +
       '"' +
@@ -1362,6 +1368,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
       '<span class="check check-temp">' +
       '<i data-lucide="check" class="icon icon--temp-check" aria-hidden="true"></i>' +
       "</span>" +
+      ctaPillHtml("Geçici tamamla") +
       "</label>"
     : "";
   const numHtml =
@@ -1405,7 +1412,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
   const replyTip = replyOpen ? "Cevapları kapat" : "Cevap yaz";
   const replyBtn = isArchiveView
     ? ""
-    : '<button type="button" class="reply-toggle' +
+    : '<button type="button" class="reply-toggle has-cta-pill' +
       (replyOpen ? " is-open" : "") +
       '" data-id="' +
       item.id +
@@ -1418,6 +1425,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
       (replyCount > 0
         ? '<span class="reply-count">' + replyCount + "</span>"
         : "") +
+      ctaPillHtml(replyTip) +
       "</button>";
 
   return (
@@ -1431,7 +1439,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
     numHtml +
     bodyHtml(item, viewMode) +
     tempBox +
-    '<label class="check-wrap" aria-label="' +
+    '<label class="check-wrap has-cta-pill" aria-label="' +
     escapeHtml(checkTip) +
     '">' +
     '<input type="checkbox" data-id="' +
@@ -1444,6 +1452,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
     '">' +
     checkInner +
     "</span>" +
+    ctaPillHtml(checkTip) +
     "</label>" +
     replyBtn +
     "</div>" +

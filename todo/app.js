@@ -12,6 +12,7 @@ const VIEW_FLAG = "hep-ui-view";
 const TEMP_KEY = "hep-ui-temp-done";
 const AUTHOR_KEY = "hep-ui-author";
 const CLIENT_ID_KEY = "hep-ui-client-id";
+const ADD_PANEL_FLAG = "hep-ui-add-panel";
 
 const VIEW_KEYS = ["open", "done", "archive"];
 
@@ -167,6 +168,41 @@ function openConfirmModal(options) {
     okBtn.textContent = options.confirmLabel || "Sil";
     modal.hidden = false;
     okBtn.focus();
+  });
+}
+
+function isAddPanelOpen() {
+  return document.documentElement.classList.contains("add-panel-open");
+}
+
+function setAddPanelOpen(on) {
+  document.documentElement.classList.toggle("add-panel-open", on);
+  const btn = document.getElementById("btn-add");
+  const panel = document.getElementById("col-add");
+  const isMobile = window.matchMedia("(max-width: 860px)").matches;
+  if (btn) {
+    btn.setAttribute("aria-expanded", on ? "true" : "false");
+    btn.disabled = !!(on && isMobile);
+  }
+  if (panel) panel.classList.toggle("active", on);
+  try {
+    localStorage.setItem(ADD_PANEL_FLAG, on ? "1" : "0");
+  } catch (err) {}
+}
+
+function initAddPanel() {
+  let open = false;
+  try {
+    const saved = localStorage.getItem(ADD_PANEL_FLAG);
+    if (saved === "1") open = true;
+    else if (saved === "0") open = false;
+    else open = window.matchMedia("(min-width: 861px)").matches;
+  } catch (err) {
+    open = window.matchMedia("(min-width: 861px)").matches;
+  }
+  setAddPanelOpen(open);
+  window.matchMedia("(max-width: 860px)").addEventListener("change", function () {
+    setAddPanelOpen(isAddPanelOpen());
   });
 }
 
@@ -892,30 +928,34 @@ function repliesPanelHtml(item) {
   }
 
   const canSend = !!replyDraft.trim() && !replySaving;
+  const replyFormHtml =
+    view === "archive"
+      ? ""
+      : '<div class="reply-form">' +
+        '<textarea class="reply-edit" data-id="' +
+        item.id +
+        '" rows="1" placeholder="Cevap yaz..."' +
+        (replySaving ? " disabled" : "") +
+        ">" +
+        escapeTextarea(replyDraft) +
+        "</textarea>" +
+        '<button type="button" class="reply-send' +
+        (replySaving ? " is-loading" : "") +
+        '" data-id="' +
+        item.id +
+        '" title="Gönder" aria-label="Gönder"' +
+        (canSend ? "" : " disabled") +
+        ">" +
+        '<i data-lucide="send" class="icon icon--reply-send" aria-hidden="true"></i>' +
+        '<span class="reply-send-spinner" aria-hidden="true"></span>' +
+        "</button>" +
+        "</div>";
 
   return (
     '<div class="item-replies">' +
     noteImagesSectionHtml(item) +
     listHtml +
-    '<div class="reply-form">' +
-    '<textarea class="reply-edit" data-id="' +
-    item.id +
-    '" rows="1" placeholder="Cevap yaz..."' +
-    (replySaving ? " disabled" : "") +
-    ">" +
-    escapeTextarea(replyDraft) +
-    "</textarea>" +
-    '<button type="button" class="reply-send' +
-    (replySaving ? " is-loading" : "") +
-    '" data-id="' +
-    item.id +
-    '" title="Gönder" aria-label="Gönder"' +
-    (canSend ? "" : " disabled") +
-    ">" +
-    '<i data-lucide="send" class="icon icon--reply-send" aria-hidden="true"></i>' +
-    '<span class="reply-send-spinner" aria-hidden="true"></span>' +
-    "</button>" +
-    "</div>" +
+    replyFormHtml +
     "</div>"
   );
 }
@@ -1094,18 +1134,15 @@ function bodyHtml(item, viewMode) {
       "</div>"
     );
   }
-  if (viewMode === null) {
-    return (
-      '<div class="item-body" data-id="' +
-      item.id +
-      '">' +
-      '<p class="item-text">' +
-      escapeHtml(item.body) +
-      "</p>" +
-      "</div>"
-    );
-  }
-  return "<div><p>" + escapeHtml(item.body) + "</p></div>";
+  return (
+    '<div class="item-body" data-id="' +
+    item.id +
+    '">' +
+    '<p class="item-text">' +
+    escapeHtml(item.body) +
+    "</p>" +
+    "</div>"
+  );
 }
 
 async function saveItemBody(id, text) {
@@ -1347,25 +1384,26 @@ function itemHtml(item, checked, viewMode, displayOrder) {
     checkTitle = "Açığa al";
   }
 
-  const replyBtn =
-    '<button type="button" class="reply-toggle' +
-    (replyOpen ? " is-open" : "") +
-    '" data-id="' +
-    item.id +
-    '" title="Cevaplar" aria-label="Cevaplar" aria-expanded="' +
-    (replyOpen ? "true" : "false") +
-    '">' +
-    '<i data-lucide="message-circle" class="icon icon--reply" aria-hidden="true"></i>' +
-    (replyCount > 0
-      ? '<span class="reply-count">' + replyCount + "</span>"
-      : "") +
-    "</button>";
+  const replyBtn = isArchiveView
+    ? ""
+    : '<button type="button" class="reply-toggle' +
+      (replyOpen ? " is-open" : "") +
+      '" data-id="' +
+      item.id +
+      '" title="Cevaplar" aria-label="Cevaplar" aria-expanded="' +
+      (replyOpen ? "true" : "false") +
+      '">' +
+      '<i data-lucide="message-circle" class="icon icon--reply" aria-hidden="true"></i>' +
+      (replyCount > 0
+        ? '<span class="reply-count">' + replyCount + "</span>"
+        : "") +
+      "</button>";
 
   return (
     '<div class="item' +
     (tempChecked ? " item-temp" : "") +
     (viewMode === null && editingId === item.id ? " item-editing" : "") +
-    (replyOpen ? " item-replies-open" : "") +
+    (!isArchiveView && replyOpen ? " item-replies-open" : "") +
     (textExpandedId === item.id ? " item-text-expanded" : "") +
     '">' +
     '<div class="item-row">' +
@@ -1388,7 +1426,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
     "</label>" +
     replyBtn +
     "</div>" +
-    repliesPanelHtml(item) +
+    (isArchiveView ? "" : repliesPanelHtml(item)) +
     "</div>"
   );
 }
@@ -1561,7 +1599,7 @@ document.getElementById("list").addEventListener("click", function (e) {
   }
 
   const textEl = e.target.closest(".item-text");
-  if (textEl && !editEnabled) {
+  if (textEl && (!editEnabled || view !== "open")) {
     const bodyEl = textEl.closest(".item-body");
     if (bodyEl) {
       const id = Number(bodyEl.getAttribute("data-id"));
@@ -1901,8 +1939,12 @@ document
   });
 
 document.getElementById("btn-add").addEventListener("click", function () {
-  this.classList.toggle("active");
-  document.querySelector(".col-add").classList.toggle("active");
+  if (this.disabled) return;
+  setAddPanelOpen(true);
+});
+
+document.getElementById("btn-add-close").addEventListener("click", function () {
+  setAddPanelOpen(false);
 });
 
 document.getElementById("form").addEventListener("submit", async function (e) {
@@ -1929,8 +1971,11 @@ document.getElementById("form").addEventListener("submit", async function (e) {
 });
 
 getClientId();
+initAddPanel();
 load();
 updateEditModeUi();
 hydrateIcons(document.querySelector(".page-title"));
 hydrateIcons(document.getElementById("view-dropdown"));
 hydrateIcons(document.querySelector(".edit-mode"));
+hydrateIcons(document.getElementById("btn-add"));
+hydrateIcons(document.getElementById("col-add"));

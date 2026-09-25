@@ -21,6 +21,14 @@
 				if (savedView === "done" || savedView === "archive") {
 					document.documentElement.dataset.view = savedView;
 				}
+				var addPanel = localStorage.getItem("hep-ui-add-panel");
+				if (
+					addPanel === "1" ||
+					(addPanel !== "0" &&
+						window.matchMedia("(min-width: 861px)").matches)
+				) {
+					document.documentElement.classList.add("add-panel-open");
+				}
 			} catch (err) {}
 		</script>
 	</head>
@@ -206,28 +214,43 @@
 						<button
 							type="button"
 							id="btn-add"
-							class="nav-btn add-button">
-							<svg
-								width="14"
-								height="14"
-								viewBox="0 0 24 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M12 5V19M5 12H19"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round" />
-							</svg>
+							class="nav-btn add-button"
+							title="Yeni madde"
+							aria-label="Yeni madde paneli"
+							aria-controls="col-add"
+							aria-expanded="false">
+							<i
+								data-lucide="plus"
+								class="icon icon--add-plus"
+								aria-hidden="true"></i>
+							<i
+								data-lucide="eye"
+								class="icon icon--add-eye"
+								aria-hidden="true"></i>
 						</button>
 					</div>
 				</div>
 				<div id="list"></div>
 			</div>
-			<div class="col col-add">
+			<div
+				class="col col-add"
+				id="col-add">
+				<div class="col-add-header">
+					<h2 class="col-add-title">Yeni madde</h2>
+					<button
+						type="button"
+						id="btn-add-close"
+						class="btn-add-close"
+						title="Gizle"
+						aria-label="Ekle panelini gizle">
+						<i
+							data-lucide="eye-off"
+							class="icon icon--add-hide"
+							aria-hidden="true"></i>
+					</button>
+				</div>
 				<form id="form">
-					<p class="hint">Yeni madde listenin en sonuna eklenir.</p>
+					<p class="hint">Listenin en sonuna eklenir.</p>
 					<textarea
 						id="text"
 						rows="8"

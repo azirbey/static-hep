@@ -38,6 +38,7 @@ html.add-panel-open .layout {
 .col-list {
 	border-right: 0;
 	min-width: 0;
+	height: 100%;
 }
 
 html.add-panel-open .col-list {
@@ -49,10 +50,23 @@ html.add-panel-open .col-list {
 	position: sticky;
 	top: 0;
 	min-width: 0;
+	height: 100%;
 }
 
 html.add-panel-open .col-add {
 	display: block;
+}
+
+@media (min-width: 861px) {
+	.col-add {
+		background: #f4f6f8;
+		transition: background 0.15s ease;
+	}
+
+	.col-add:has(.btn-add-close:hover),
+	.col-add:has(.btn-add-close:focus-visible) {
+		background: #e8ecf0;
+	}
 }
 
 .col-add-header {
@@ -1760,6 +1774,7 @@ p.hint {
 			0 4px 6px rgb(26 35 48 / 4%),
 			0 12px 28px rgb(26 35 48 / 12%);
 		display: none;
+		height: auto;
 	}
 
 	html.add-panel-open .col-add {

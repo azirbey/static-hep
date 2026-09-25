@@ -2611,6 +2611,7 @@ body .layout-content-holder-bc {
   width: 500px;
   height: 300px;
   background-image: url(https://static-hep.hepbet-static.workers.dev/images/box-shine.png);
+  position: absolute;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemHeaderVersion1,
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemBodyVersion1 {

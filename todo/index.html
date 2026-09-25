@@ -11,7 +11,10 @@
 			href="style.css" />
 		<script>
 			try {
-				if (localStorage.getItem("hep-ui-edit") === "1") {
+				if (
+					localStorage.getItem("hep-ui-dev") === "1" &&
+					localStorage.getItem("hep-ui-edit") === "1"
+				) {
 					document.documentElement.classList.add("edit-enabled");
 				}
 				var savedView = localStorage.getItem("hep-ui-view");

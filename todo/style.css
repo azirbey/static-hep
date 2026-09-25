@@ -161,10 +161,14 @@ html[data-view="archive"] .page-title-icon-item[data-view="archive"] {
 }
 
 .edit-mode {
-	display: flex;
+	display: none;
 	align-items: center;
 	cursor: pointer;
 	user-select: none;
+}
+
+body.is-dev .edit-mode {
+	display: flex;
 }
 
 .edit-switch-input {

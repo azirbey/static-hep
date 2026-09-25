@@ -21,8 +21,8 @@ let editingId = null;
 let editingDraft = null;
 let savingId = null;
 let skipEditBlur = false;
-let editEnabled = initEditMode();
 const isDev = initDevMode();
+let editEnabled = initEditMode();
 
 let repliesOpenId = null;
 let repliesCache = {};
@@ -558,6 +558,15 @@ function initDevMode() {
 }
 
 function initEditMode() {
+  if (!isDev) {
+    try {
+      localStorage.removeItem(EDIT_FLAG);
+    } catch (err) {}
+    document.documentElement.classList.remove("edit-enabled");
+    const input = document.getElementById("edit-enabled");
+    if (input) input.checked = false;
+    return false;
+  }
   const enabled = localStorage.getItem(EDIT_FLAG) === "1";
   document.documentElement.classList.toggle("edit-enabled", enabled);
   const input = document.getElementById("edit-enabled");

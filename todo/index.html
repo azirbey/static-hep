@@ -5,7 +5,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1" />
-		<title>Hepbet UI Notları</title>
+		<title>HepBet UI Notları</title>
 		<link
 			rel="stylesheet"
 			href="style.css" />
@@ -55,7 +55,7 @@
 										aria-hidden="true"></i>
 								</span>
 							</span>
-							<h1>Hepbet UI Notları</h1>
+							<h1>HepBet UI Notları</h1>
 						</div>
 						<label
 							class="edit-mode"
@@ -231,6 +231,121 @@
 						required></textarea>
 					<button type="submit">Ekle</button>
 				</form>
+			</div>
+		</div>
+		<div
+			id="author-modal"
+			class="author-modal"
+			hidden>
+			<div
+				class="author-modal-dialog"
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="author-modal-title">
+				<form id="author-form">
+					<h2 id="author-modal-title">İsminiz</h2>
+					<p class="author-modal-hint">
+						Cevaplarda görünecek adı girin. Bu tarayıcıda hatırlanır.
+					</p>
+					<input
+						id="author-input"
+						type="text"
+						autocomplete="nickname"
+						required
+						placeholder="Adınız" />
+					<div class="author-modal-actions">
+						<button
+							type="button"
+							id="author-modal-cancel"
+							class="author-modal-btn author-modal-btn-ghost">
+							İptal
+						</button>
+						<button
+							type="submit"
+							id="author-modal-save"
+							class="author-modal-btn author-modal-btn-primary">
+							Kaydet
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div
+			id="confirm-modal"
+			class="author-modal confirm-modal"
+			hidden>
+			<div
+				class="author-modal-dialog"
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="confirm-modal-title">
+				<h2 id="confirm-modal-title">Onay</h2>
+				<p
+					id="confirm-modal-text"
+					class="author-modal-hint">
+					Emin misiniz?
+				</p>
+				<div class="author-modal-actions">
+					<button
+						type="button"
+						id="confirm-modal-cancel"
+						class="author-modal-btn author-modal-btn-ghost">
+						Vazgeç
+					</button>
+					<button
+						type="button"
+						id="confirm-modal-ok"
+						class="author-modal-btn author-modal-btn-danger">
+						Sil
+					</button>
+				</div>
+			</div>
+		</div>
+		<div
+			id="image-modal"
+			class="image-modal"
+			hidden>
+			<div
+				class="image-modal-dialog"
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="image-modal-title">
+				<div class="image-modal-header">
+					<h2 id="image-modal-title">Görsel</h2>
+					<button
+						type="button"
+						id="image-modal-close"
+						class="image-modal-close"
+						aria-label="Kapat">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							aria-hidden="true">
+							<path
+								d="M18 6L6 18M6 6L18 18"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round" />
+						</svg>
+					</button>
+				</div>
+				<div class="image-modal-body">
+					<img
+						id="image-modal-img"
+						alt="" />
+				</div>
+				<div class="image-modal-actions">
+					<a
+						id="image-modal-full"
+						class="author-modal-btn author-modal-btn-primary"
+						href="#"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Tam boy gör</a
+					>
+				</div>
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>

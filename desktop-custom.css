@@ -2633,6 +2633,69 @@ body .layout-content-holder-bc {
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemBodyVersion1 .market-group-holder-bc .market-group-item-bc .market-bc .market-name-bc {
   color: #bccbdc !important;
 }
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem {
+  background-image: url("https://static-hep.hepbet-static.workers.dev/images/bb-ai-bg.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  gap: 12px !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__header {
+  border-bottom-color: rgba(15, 235, 255, 0.08) !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__match {
+  color: #fff !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__league,
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__matchIcon {
+  display: none !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__marketBulletDot {
+  border-radius: 0 !important;
+  background: #0febff !important;
+  transform: rotate(45deg) !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__marketBulletLine {
+  background: rgba(255, 255, 255, 0.12) !important;
+  width: 2px !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__marketLabel {
+  font-style: normal !important;
+  color: color-hex(link-gray) !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__marketText {
+  padding-bottom: gap(small) !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__marketValue {
+  font-style: normal !important;
+  color: color-hex(white-color) !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__player-label {
+  color: color-hex(white-color) !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__meta span,
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__meta span time {
+  color: #bccbdc !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__footer {
+  flex-direction: row !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__addBtn {
+  flex: 1 !important;
+  max-width: 120px !important;
+  height: 40px !important;
+  max-height: 40px !important;
+  background: #197cff !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__total:first-child {
+  display: none !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__totalLabel {
+  color: #bccbdc !important;
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(9) .bbAiRecBets .bbAiRecBetsItem__oddsValue {
+  color: #0febff !important;
+}
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .product-banner-container-bc .carouselWrapper {
   margin-inline-start: 0 !important;
 }

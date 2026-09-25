@@ -69,9 +69,8 @@
 							<h1>HepBet UI Notları</h1>
 						</div>
 						<label
-							class="edit-mode"
-							aria-label="Düzenleme"
-							title="Düzenleme">
+							class="edit-mode has-cta-tip"
+							aria-label="Düzenleme">
 							<input
 								type="checkbox"
 								id="edit-enabled"
@@ -90,6 +89,11 @@
 										aria-hidden="true"></i>
 								</span>
 							</span>
+							<span
+								class="cta-tip"
+								role="tooltip"
+								>Düzenleme</span
+							>
 						</label>
 					</div>
 					<div class="col-list-header-actions">
@@ -101,9 +105,14 @@
 							<button
 								type="button"
 								id="btn-archive-all"
-								class="nav-btn nav-btn-dark"
+								class="nav-btn nav-btn-dark has-cta-tip"
 								hidden>
 								Arşive Taşı
+								<span
+									class="cta-tip"
+									role="tooltip"
+									>Arşive Taşı</span
+								>
 							</button>
 						</div>
 						<div
@@ -111,11 +120,12 @@
 							id="view-dropdown">
 							<button
 								type="button"
-								class="view-dropdown-trigger nav-btn"
+								class="view-dropdown-trigger nav-btn has-cta-tip"
 								id="view-dropdown-trigger"
 								aria-haspopup="listbox"
 								aria-expanded="false"
-								aria-controls="view-dropdown-menu">
+								aria-controls="view-dropdown-menu"
+								aria-label="Görünüm seç">
 								<span
 									id="view-dropdown-label"
 									class="view-dropdown-label">
@@ -166,6 +176,11 @@
 										stroke-width="2"
 										stroke-linecap="round" />
 								</svg>
+								<span
+									class="cta-tip"
+									role="tooltip"
+									>Görünüm</span
+								>
 							</button>
 							<div
 								class="view-dropdown-menu"
@@ -214,8 +229,7 @@
 						<button
 							type="button"
 							id="btn-add"
-							class="nav-btn add-button"
-							title="Yeni madde"
+							class="nav-btn add-button has-cta-tip"
 							aria-label="Yeni madde paneli"
 							aria-controls="col-add"
 							aria-expanded="false">
@@ -227,6 +241,16 @@
 								data-lucide="eye"
 								class="icon icon--add-eye"
 								aria-hidden="true"></i>
+							<span
+								class="cta-tip cta-tip-add-plus"
+								role="tooltip"
+								>Yeni madde</span
+							>
+							<span
+								class="cta-tip cta-tip-add-eye"
+								role="tooltip"
+								>Paneli aç</span
+							>
 						</button>
 					</div>
 				</div>
@@ -240,13 +264,17 @@
 					<button
 						type="button"
 						id="btn-add-close"
-						class="btn-add-close"
-						title="Gizle"
+						class="btn-add-close has-cta-tip"
 						aria-label="Ekle panelini gizle">
 						<i
 							data-lucide="eye-off"
 							class="icon icon--add-hide"
 							aria-hidden="true"></i>
+						<span
+							class="cta-tip"
+							role="tooltip"
+							>Paneli gizle</span
+						>
 					</button>
 				</div>
 				<form id="form">

@@ -1,0 +1,83 @@
+.bbAiRecBets {
+	.bbAiRecBetsItem {
+        background-image: url("@{hb-cdn-root}/images/bb-ai-bg.png") !important;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: transparent !important;
+		gap: 12px !important;
+
+		&__header {
+			border-bottom-color: rgba(@cyan, 0.08) !important;
+		}
+
+		&__match {
+			color: @white !important;
+		}
+
+		&__league,
+		&__matchIcon {
+			display: none !important;
+		}
+
+		&__marketBulletDot {
+			border-radius: 0 !important;
+			background: @cyan !important;
+			transform: rotate(45deg) !important;
+		}
+
+		&__marketBulletLine {
+			background: rgba(@white, 0.12) !important;
+			width: 2px !important;
+		}
+
+		&__marketLabel {
+			font-style: normal !important;
+			color: color-hex(link-gray) !important;
+		}
+		&__marketText {
+			padding-bottom: gap(small) !important;
+		}
+
+		&__marketValue {
+			font-style: normal !important;
+			color: color-hex(white-color) !important;
+		}
+
+		&__player-label {
+			color: color-hex(white-color) !important;
+		}
+
+		&__meta {
+			span,
+			span time {
+				color: @text-muted !important;
+			}
+		}
+
+		&__footer {
+			flex-direction: row !important;
+		}
+
+		&__addBtn {
+			flex: 1 !important;
+			max-width: 120px !important;
+			height: 40px !important;
+			max-height: 40px !important;
+			background: @main-color !important;
+		}
+
+		&__total {
+			&:first-child {
+				display: none !important;
+			}
+		}
+
+		&__totalLabel {
+			color: @text-muted !important;
+		}
+
+		&__oddsValue {
+			color: @cyan !important;
+		}
+	}
+}

@@ -708,7 +708,8 @@ function bulkActionBtnHtml(icon, label, count) {
     '" class="icon icon--bulk" aria-hidden="true"></i>' +
     "<span>" +
     escapeHtml(text) +
-    "</span>"
+    "</span>" +
+    ctaTipHtml(label)
   );
 }
 
@@ -717,6 +718,12 @@ function escapeHtml(value) {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
+}
+
+function ctaTipHtml(label) {
+  return (
+    '<span class="cta-tip" role="tooltip">' + escapeHtml(label) + "</span>"
+  );
 }
 
 function escapeTextarea(value) {
@@ -765,17 +772,18 @@ function replyItemHtml(reply) {
   const canDelete = isOwnReply(reply);
   const deleting = replyDeletingId === reply.id;
   const deleteBtn = canDelete
-    ? '<button type="button" class="reply-delete' +
+    ? '<button type="button" class="reply-delete has-cta-tip' +
       (deleting ? " is-loading" : "") +
       '" data-reply-id="' +
       reply.id +
       '" data-note-id="' +
       reply.note_id +
-      '" title="Sil" aria-label="Cevabı sil"' +
+      '" aria-label="Cevabı sil"' +
       (deleting ? " disabled" : "") +
       ">" +
       '<i data-lucide="trash-2" class="icon icon--reply-delete" aria-hidden="true"></i>' +
       '<span class="reply-delete-spinner" aria-hidden="true"></span>' +
+      ctaTipHtml("Cevabı sil") +
       "</button>"
     : "";
 
@@ -804,17 +812,18 @@ function noteImageItemHtml(image) {
   const deleting = imageDeletingId === image.id;
   const url = imagePublicUrl(image.path);
   const deleteBtn = canDelete
-    ? '<button type="button" class="note-image-delete' +
+    ? '<button type="button" class="note-image-delete has-cta-tip' +
       (deleting ? " is-loading" : "") +
       '" data-image-id="' +
       image.id +
       '" data-note-id="' +
       image.note_id +
-      '" title="Sil" aria-label="Görseli sil"' +
+      '" aria-label="Görseli sil"' +
       (deleting ? " disabled" : "") +
       ">" +
       '<i data-lucide="trash-2" class="icon icon--note-image-delete" aria-hidden="true"></i>' +
       '<span class="note-image-delete-spinner" aria-hidden="true"></span>' +
+      ctaTipHtml("Görseli sil") +
       "</button>"
     : "";
 
@@ -822,16 +831,17 @@ function noteImageItemHtml(image) {
     '<div class="note-image-item' +
     (canDelete ? " is-own" : "") +
     '">' +
-    '<button type="button" class="note-image-open" data-url="' +
+    '<button type="button" class="note-image-open has-cta-tip" data-url="' +
     escapeHtml(url) +
     '" data-name="' +
     escapeHtml(image.name || "Görsel") +
-    '" title="Önizle" aria-label="Görseli önizle">' +
+    '" aria-label="Görseli önizle">' +
     '<img src="' +
     escapeHtml(url) +
     '" alt="' +
     escapeHtml(image.name || "Görsel") +
     '" loading="lazy" />' +
+    ctaTipHtml("Önizle") +
     "</button>" +
     deleteBtn +
     "</div>"
@@ -879,13 +889,14 @@ function noteImagesSectionHtml(item) {
   if (imagesGridOpen) {
     const cells = images.map(noteImageItemHtml).join("");
     const addCell = canAdd
-      ? '<button type="button" class="note-image-add" data-id="' +
+      ? '<button type="button" class="note-image-add has-cta-tip" data-id="' +
         item.id +
-        '" title="Görsel ekle" aria-label="Görsel ekle"' +
+        '" aria-label="Görsel ekle"' +
         (imageUploading ? " disabled" : "") +
         ">" +
         '<i data-lucide="plus" class="icon icon--note-image-add" aria-hidden="true"></i>' +
         "<span>Ekle</span>" +
+        ctaTipHtml("Görsel ekle") +
         "</button>"
       : "";
     const hintHtml = !isFull
@@ -957,15 +968,16 @@ function repliesPanelHtml(item) {
         ">" +
         escapeTextarea(replyDraft) +
         "</textarea>" +
-        '<button type="button" class="reply-send' +
+        '<button type="button" class="reply-send has-cta-tip' +
         (replySaving ? " is-loading" : "") +
         '" data-id="' +
         item.id +
-        '" title="Gönder" aria-label="Gönder"' +
+        '" aria-label="Gönder"' +
         (canSend ? "" : " disabled") +
         ">" +
         '<i data-lucide="send" class="icon icon--reply-send" aria-hidden="true"></i>' +
         '<span class="reply-send-spinner" aria-hidden="true"></span>' +
+        ctaTipHtml("Gönder") +
         "</button>" +
         "</div>";
 
@@ -1353,7 +1365,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
   const replyOpen = repliesOpenId === item.id;
   const replyCount = (repliesCache[item.id] || []).length;
   const tempBox = showTemp
-    ? '<label class="check-wrap" title="Geçici (yalnızca bu tarayıcı)">' +
+    ? '<label class="check-wrap has-cta-tip" aria-label="Geçici tamamla">' +
       '<input type="checkbox" data-temp="1" data-id="' +
       item.id +
       '"' +
@@ -1362,6 +1374,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
       '<span class="check check-temp">' +
       '<i data-lucide="check" class="icon icon--temp-check" aria-hidden="true"></i>' +
       "</span>" +
+      ctaTipHtml("Geçici tamamla") +
       "</label>"
     : "";
   const numHtml =
@@ -1373,48 +1386,53 @@ function itemHtml(item, checked, viewMode, displayOrder) {
         "</span>" +
         "</span>"
       : viewMode === null && editingId === item.id
-        ? '<button type="button" class="num num-save' +
+        ? '<button type="button" class="num num-save has-cta-tip' +
           (savingId === item.id ? " is-loading" : "") +
           '" data-id="' +
           item.id +
-          '" title="Kaydet" aria-label="Kaydet" aria-busy="' +
+          '" aria-label="Kaydet" aria-busy="' +
           (savingId === item.id ? "true" : "false") +
           '"' +
           (savingId === item.id ? " disabled" : "") +
           ">" +
           '<span class="num-save-icon" aria-hidden="true"></span>' +
           '<span class="num-save-spinner" aria-hidden="true"></span>' +
+          ctaTipHtml("Kaydet") +
           "</button>"
         : '<span class="num">' + displayOrder + "</span>";
   let checkClass = "check";
   let checkInner = "";
-  let checkTitle = "";
+  let checkTip = "Tamamla";
 
   if (isArchiveView) {
     checkClass = "check check-undo";
     checkInner =
       '<i data-lucide="package-check" class="icon icon--item-action" aria-hidden="true"></i>';
-    checkTitle = "Geri al";
+    checkTip = "Geri al";
   } else if (isDoneView) {
     checkClass = "check check-restore";
     checkInner =
       '<i data-lucide="clipboard-copy" class="icon icon--item-action" aria-hidden="true"></i>';
-    checkTitle = "Açığa al";
+    checkTip = "Açığa al";
   }
 
+  const replyTip = replyOpen ? "Cevapları kapat" : "Cevap yaz";
   const replyBtn = isArchiveView
     ? ""
-    : '<button type="button" class="reply-toggle' +
+    : '<button type="button" class="reply-toggle has-cta-tip' +
       (replyOpen ? " is-open" : "") +
       '" data-id="' +
       item.id +
-      '" title="Cevaplar" aria-label="Cevaplar" aria-expanded="' +
+      '" aria-label="' +
+      replyTip +
+      '" aria-expanded="' +
       (replyOpen ? "true" : "false") +
       '">' +
       '<i data-lucide="message-circle" class="icon icon--reply" aria-hidden="true"></i>' +
       (replyCount > 0
         ? '<span class="reply-count">' + replyCount + "</span>"
         : "") +
+      ctaTipHtml(replyTip) +
       "</button>";
 
   return (
@@ -1428,9 +1446,9 @@ function itemHtml(item, checked, viewMode, displayOrder) {
     numHtml +
     bodyHtml(item, viewMode) +
     tempBox +
-    '<label class="check-wrap"' +
-    (checkTitle ? ' title="' + checkTitle + '"' : "") +
-    ">" +
+    '<label class="check-wrap has-cta-tip" aria-label="' +
+    escapeHtml(checkTip) +
+    '">' +
     '<input type="checkbox" data-id="' +
     item.id +
     '"' +
@@ -1441,6 +1459,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
     '">' +
     checkInner +
     "</span>" +
+    ctaTipHtml(checkTip) +
     "</label>" +
     replyBtn +
     "</div>" +

@@ -1,39 +1,51 @@
-.featuredGameItem {
-    height: 180px !important;
-    background: @surface-base !important;
-    .hb-soft-border();
+.featuredGameItemVersion1 {
+	height: 180px !important;
+	background: @surface-base !important;
 
-    .featuredGameItemHeader,
-    .featuredGameItemBody {
-        background: transparent !important;
-    }
+	&::before {
+		content: "";
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: -60px;
+		background-position-y: -300px;
+		width: 500px;
+		height: 300px;
+		background-image: url(https://static-hep.hepbet-static.workers.dev/images/box-shine.png);
+	}
 
-    .featuredGameItemHeader {
-        .featuredGameItemHeaderContent {
-            .featuredGameItemCompetitionName {
-                font-size: 15px !important;
-                font-weight: 700 !important;
-                line-height: 20px !important;
-                letter-spacing: -0.01em !important;
-                color: @text-muted !important;
-            }
-        }
-    }
+	.hb-soft-border();
 
-    .featuredGameItemBody {
-        .market-group-holder-bc {
-            .market-group-item-bc {
-                background: @surface-raised !important;
-                border-radius: @hb-radius !important;
+	.featuredGameItemHeaderVersion1,
+	.featuredGameItemBodyVersion1 {
+		background: transparent !important;
+	}
 
-                .market-bc {
-                    background: transparent !important;
+	.featuredGameItemHeaderVersion1 {
+		.featuredGameItemHeaderContentVersion1 {
+			.featuredGameItemCompetitionNameVersion1 {
+				font-size: 15px !important;
+				font-weight: 700 !important;
+				line-height: 20px !important;
+				letter-spacing: -0.01em !important;
+				color: @text-muted !important;
+			}
+		}
+	}
 
-                    .market-name-bc {
-                        color: @text-muted !important;
-                    }
-                }
-            }
-        }
-    }
+	.featuredGameItemBodyVersion1 {
+		.market-group-holder-bc {
+			.market-group-item-bc {
+				background: @surface-raised !important;
+				border-radius: @hb-radius !important;
+
+				.market-bc {
+					background: transparent !important;
+
+					.market-name-bc {
+						color: @text-muted !important;
+					}
+				}
+			}
+		}
+	}
 }

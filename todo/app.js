@@ -865,10 +865,15 @@ function noteImagesSectionHtml(item) {
   const images = imagesCache[item.id] || [];
   const count = images.length;
   const isFull = count >= MAX_NOTE_IMAGES;
+  const hasImages = count > 0;
   const canAdd = !isFull && !imageUploading;
-  const toggleLabel = isFull
-    ? "Görseller"
-    : "Görsel Ekle · " + count + "/" + MAX_NOTE_IMAGES;
+  const toggleLabel = isFull ? "Görseller" : "Görsel Ekle";
+  const countPill =
+    '<span class="note-images-count">' +
+    count +
+    "/" +
+    MAX_NOTE_IMAGES +
+    "</span>";
 
   let gridHtml = "";
   if (imagesGridOpen) {
@@ -903,6 +908,7 @@ function noteImagesSectionHtml(item) {
     '<div class="note-images">' +
     '<button type="button" class="note-images-toggle' +
     (imagesGridOpen ? " is-open" : "") +
+    (hasImages ? " has-images" : "") +
     '" data-id="' +
     item.id +
     '" aria-expanded="' +
@@ -912,6 +918,7 @@ function noteImagesSectionHtml(item) {
     "<span>" +
     escapeHtml(toggleLabel) +
     "</span>" +
+    countPill +
     '<i data-lucide="chevron-down" class="icon icon--note-images-chevron" aria-hidden="true"></i>' +
     "</button>" +
     gridHtml +

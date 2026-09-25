@@ -2594,33 +2594,43 @@ body .layout-content-holder-bc {
   border-radius: 6px !important;
   color: #fff !important;
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide {
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide {
   border-radius: 6px !important;
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem {
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 {
   height: 180px !important;
   background: #1c2835 !important;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem .featuredGameItemHeader,
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody {
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1::before {
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -60px;
+  background-position-y: -300px;
+  width: 500px;
+  height: 300px;
+  background-image: url(https://static-hep.hepbet-static.workers.dev/images/box-shine.png);
+}
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemHeaderVersion1,
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemBodyVersion1 {
   background: transparent !important;
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem .featuredGameItemHeader .featuredGameItemHeaderContent .featuredGameItemCompetitionName {
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemHeaderVersion1 .featuredGameItemHeaderContentVersion1 .featuredGameItemCompetitionNameVersion1 {
   font-size: 15px !important;
   font-weight: 700 !important;
   line-height: 20px !important;
   letter-spacing: -0.01em !important;
   color: #bccbdc !important;
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody .market-group-holder-bc .market-group-item-bc {
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemBodyVersion1 .market-group-holder-bc .market-group-item-bc {
   background: #233243 !important;
   border-radius: 6px !important;
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody .market-group-holder-bc .market-group-item-bc .market-bc {
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemBodyVersion1 .market-group-holder-bc .market-group-item-bc .market-bc {
   background: transparent !important;
 }
-#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGames .swiper-slide .featuredGameItem .featuredGameItemBody .market-group-holder-bc .market-group-item-bc .market-bc .market-name-bc {
+#root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(8) .featuredGamesVersion1 .swiper-slide .featuredGameItemVersion1 .featuredGameItemBodyVersion1 .market-group-holder-bc .market-group-item-bc .market-bc .market-name-bc {
   color: #bccbdc !important;
 }
 #root.is-home-page .layout-content-holder-bc > .hm-row-bc:nth-child(10) .product-banner-container-bc .carouselWrapper {
@@ -6076,6 +6086,7 @@ div[id^="comm100-float-button"] > div img {
 }
 #root .my-profile-info-block.history-page .balanceHistory-table {
   width: 100%;
+  padding: 0 16px;
 }
 #root .my-profile-info-block.history-page .balanceHistoryItem-expand-button {
   border-radius: 50%;
@@ -7818,6 +7829,9 @@ div[id^="comm100-float-button"] > div img {
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramInfo .loyaltyProgramInfoLeft {
   align-items: flex-start;
 }
+#root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramInfo .loyaltyProgramInfoLeft .loyaltyProgramImg img {
+  filter: none !important;
+}
 #root .my-profile-info-block.loyalty-points-page .loyaltyWrapper .loyaltyProgramSection .loyaltyProgramInfo .loyaltyProgramInfoLeft .loyaltyPointsLevel .loyaltyPointsLevelValue {
   font-family: "Geist", sans-serif !important;
   font-weight: 700 !important;
@@ -8040,6 +8054,8 @@ div[id^="comm100-float-button"] > div img {
   padding: 0;
   background: transparent;
   color: #d7e0ea;
+  border-radius: 0;
+  border: none;
 }
 #root .popup-holder-bc.info .popup-inner-bc {
   border-radius: 6px;

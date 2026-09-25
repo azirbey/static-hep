@@ -667,6 +667,17 @@ function getTempDoneCount(openItems) {
   }).length;
 }
 
+function sortOpenItemsForDisplay(openItems) {
+  if (!isDev) return openItems.slice();
+  const temp = [];
+  const rest = [];
+  openItems.forEach(function (item) {
+    if (isTempDone(item)) temp.push(item);
+    else rest.push(item);
+  });
+  return temp.concat(rest);
+}
+
 function openCountBadgeHtml(openCount, tempDoneCount) {
   let html = "";
   if (isDev && tempDoneCount > 0) {
@@ -1447,7 +1458,7 @@ function render() {
 
   const shown =
     view === "open"
-      ? openItems
+      ? sortOpenItemsForDisplay(openItems)
       : view === "done"
         ? doneItems
         : archivedItems;

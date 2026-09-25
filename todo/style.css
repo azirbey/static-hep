@@ -5,6 +5,7 @@
 body {
 	--control-h: 28px;
 	--icon-size: 28px;
+	--logo-size: 20px;
 	--edit-switch-w: 40px;
 	--edit-switch-h: 24px;
 	--edit-switch-thumb: 18px;
@@ -104,21 +105,16 @@ html.add-panel-open .col-add {
 	align-items: center;
 	gap: 10px;
 	min-width: 0;
-	height: var(--control-h);
-	padding: 0 12px 0 6px;
+	background: #ffffff;
+	border-radius: 20px;
+	padding: 8px 15px;
 	border: 1px solid #d5dde6;
-	border-radius: 10px;
-	background: #fff;
-	box-shadow: 0 1px 2px rgb(26 35 48 / 4%);
 }
 
 .page-title-icon {
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 24px;
-	height: 24px;
+	width: 22px;
+	height: 22px;
 	flex-shrink: 0;
 }
 
@@ -126,8 +122,8 @@ html.add-panel-open .col-add {
 	display: none;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	height: 100%;
+	width: 22px;
+	height: 22px;
 }
 
 html:not([data-view]) .page-title-icon-item[data-view="open"],
@@ -139,20 +135,19 @@ html[data-view="archive"] .page-title-icon-item[data-view="archive"] {
 
 .icon--page-title,
 .icon--page-title.lucide {
-	width: 18px;
-	height: 18px;
+	width: 22px;
+	height: 22px;
 	flex-shrink: 0;
 	color: #1a2330;
 }
 
 .col-list-header-container h1 {
 	margin: 0;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 1.2;
-	letter-spacing: -0.02em;
-	color: #1a2330;
-	white-space: nowrap;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 22px;
+	text-decoration: underline;
+	text-underline-offset: 1px;
 }
 
 .col-list-header-main {
@@ -594,8 +589,8 @@ html[data-view="archive"] .view-dropdown-option[data-view="archive"] {
 .icon,
 .icon.lucide {
 	display: block;
-	width: var(--icon-size);
-	height: var(--icon-size);
+	width: var(--logo-size);
+	height: var(--logo-size);
 	flex-shrink: 0;
 }
 

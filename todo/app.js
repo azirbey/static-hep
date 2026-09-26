@@ -157,6 +157,7 @@ function openConfirmModal(options) {
     const titleEl = document.getElementById("confirm-modal-title");
     const textEl = document.getElementById("confirm-modal-text");
     const okBtn = document.getElementById("confirm-modal-ok");
+    const cancelBtn = document.getElementById("confirm-modal-cancel");
     if (!modal || !titleEl || !textEl || !okBtn) {
       resolve(false);
       return;
@@ -166,6 +167,7 @@ function openConfirmModal(options) {
     titleEl.textContent = options.title || "Onay";
     textEl.textContent = options.message || "Emin misiniz?";
     okBtn.textContent = options.confirmLabel || "Sil";
+    if (cancelBtn) cancelBtn.textContent = options.cancelLabel || "Vazgeç";
     modal.hidden = false;
     okBtn.focus();
   });
@@ -1916,9 +1918,23 @@ document
   .getElementById("btn-archive-all")
   .addEventListener("click", async function () {
     const btn = this;
-    btn.disabled = true;
 
     if (view === "archive") {
+      const count = items.filter(function (item) {
+        return item.archived;
+      }).length;
+      if (!count) return;
+      const confirmed = await openConfirmModal({
+        title: "Geri Al",
+        message:
+          count +
+          " işi (tümünü) Tamamlananlara taşımak istediğinize emin misiniz?",
+        confirmLabel: "Taşı",
+        cancelLabel: "İptal",
+      });
+      if (!confirmed) return;
+
+      btn.disabled = true;
       const res = await fetch(
         SUPABASE_URL + "/rest/v1/" + TABLE + "?archived=eq.true",
         {
@@ -1939,6 +1955,22 @@ document
       return;
     }
 
+    if (view !== "done") return;
+
+    const count = items.filter(function (item) {
+      return item.done && !item.archived;
+    }).length;
+    if (!count) return;
+    const confirmed = await openConfirmModal({
+      title: "Arşive Taşı",
+      message:
+        count + " işi (tümünü) arşive taşımak istediğinize emin misiniz?",
+      confirmLabel: "Taşı",
+      cancelLabel: "İptal",
+    });
+    if (!confirmed) return;
+
+    btn.disabled = true;
     const res = await fetch(
       SUPABASE_URL +
         "/rest/v1/" +

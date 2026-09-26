@@ -1412,6 +1412,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
   }
 
   const replyTip = replyOpen ? "Cevapları kapat" : "Cevap yaz";
+  const hasImages = (imagesCache[item.id] || []).length > 0;
   const replyBtn = isArchiveView
     ? ""
     : '<button type="button" class="reply-toggle has-cta-pill' +
@@ -1436,6 +1437,7 @@ function itemHtml(item, checked, viewMode, displayOrder) {
     (viewMode === null && editingId === item.id ? " item-editing" : "") +
     (!isArchiveView && replyOpen ? " item-replies-open" : "") +
     (textExpandedId === item.id ? " item-text-expanded" : "") +
+    (hasImages ? " item-has-images" : "") +
     '">' +
     '<div class="item-row">' +
     numHtml +
@@ -2041,3 +2043,7 @@ hydrateIcons(document.getElementById("view-dropdown"));
 hydrateIcons(document.querySelector(".edit-mode"));
 hydrateIcons(document.getElementById("btn-add"));
 hydrateIcons(document.getElementById("col-add"));
+
+document.getElementById("btn-page-title").addEventListener("click", function () {
+  setView("open");
+});

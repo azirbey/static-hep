@@ -240,7 +240,13 @@
 				class="col col-add"
 				id="col-add">
 				<div class="col-add-header">
-					<h2 class="col-add-title">Yeni madde</h2>
+					<h2 class="col-add-title">
+						<i
+							data-lucide="plus"
+							class="icon icon--add-title"
+							aria-hidden="true"></i>
+						<span class="col-add-title-text">Yeni madde</span>
+					</h2>
 					<button
 						type="button"
 						id="btn-add-close"
@@ -254,11 +260,17 @@
 					</button>
 				</div>
 				<form id="form">
-					<p class="hint">Listenin en sonuna eklenir.</p>
 					<textarea
 						id="text"
 						rows="8"
 						required></textarea>
+					<p class="hint">
+						<i
+							data-lucide="info"
+							class="icon icon--hint"
+							aria-hidden="true"></i>
+						<span>Listenin en sonuna eklenir.</span>
+					</p>
 					<button type="submit">Ekle</button>
 				</form>
 			</div>

@@ -74,13 +74,37 @@ html.add-panel-open .col-add {
 	align-items: center;
 	justify-content: space-between;
 	gap: 8px;
-	margin-bottom: 10px;
+	margin-bottom: 16px;
+	min-height: var(--control-h);
 }
 
 .col-add-title {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
 	margin: 0;
-	font-size: 14px;
+	padding: 8px 15px;
+	border: 1px solid #d5dde6;
+	border-radius: 20px;
+	background: #fff;
+	font-size: 12px;
 	font-weight: 600;
+	line-height: 1.25;
+	color: #1a2330;
+	overflow: hidden;
+}
+
+.col-add-title-text {
+	text-decoration: underline;
+	text-underline-offset: 1px;
+	white-space: nowrap;
+}
+
+.icon--add-title,
+.icon--add-title.lucide {
+	width: 22px;
+	height: 22px;
+	flex-shrink: 0;
 	color: #1a2330;
 }
 
@@ -112,6 +136,7 @@ html.add-panel-open .col-add {
 	justify-content: space-between;
 	gap: 12px;
 	margin-bottom: 16px;
+	min-height: var(--control-h);
 }
 
 .page-title {
@@ -435,7 +460,6 @@ html.add-panel-open .add-button:focus-within > .cta-pill {
 	gap: 8px;
 	min-width: 148px;
 	justify-content: space-between;
-	padding-right: 8px;
 }
 
 .view-dropdown-label {
@@ -1745,7 +1769,20 @@ p {
 }
 
 p.hint {
-	font-size: 12px;
+	display: flex;
+	align-items: flex-start;
+	gap: 6px;
+	margin: 0;
+	font-size: 11px;
+	color: #5a6b7d;
+}
+
+.icon--hint,
+.icon--hint.lucide {
+	width: 14px;
+	height: 14px;
+	flex-shrink: 0;
+	margin-top: 1px;
 	color: #5a6b7d;
 }
 
@@ -1757,6 +1794,11 @@ p.hint {
 	border-radius: 6px;
 	font: inherit;
 	background: #fff;
+}
+
+#form textarea {
+	min-width: 100%;
+	box-sizing: border-box;
 }
 
 #form button {
@@ -1822,8 +1864,6 @@ p.hint {
 		min-width: 0;
 		width: auto;
 		justify-content: center;
-		padding-left: 10px;
-		padding-right: 10px;
 		gap: 0;
 	}
 
